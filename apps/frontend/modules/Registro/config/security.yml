@@ -1,0 +1,24 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/08-Security
+
+default:
+  is_secure:   false
+  credentials: Ver_Adquisiciones_Registro
+
+index:
+  credentials: Ver_Adquisiciones_Registro
+
+show:
+  credentials: Ver_Adquisiciones_Registro
+
+new:
+  credentials: Ver_Adquisiciones_Registro
+
+edit:
+  credentials: Ver_Adquisiciones_Registro
+
+update:
+  credentials: Ver_Adquisiciones_Registro
+
+delete:
+  credentials: Ver_Adquisiciones_Registro

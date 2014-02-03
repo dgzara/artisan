@@ -1,0 +1,42 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/08-Security
+
+default:
+  is_secure:   true
+  credentials: Ver_Produccion_ProduccionReal
+
+index:
+  credentials: Ver_Produccion_ProduccionReal_ListaLotesElaborados
+
+show:
+  credentials: Ver_Produccion_ProduccionReal_ListaLotesElaborados
+
+new:
+  credentials: admin
+
+edit:
+  credentials: Ver_Produccion_ProduccionReal_EditarLotesElaborados
+
+update:
+  credentials: Ver_Produccion_ProduccionReal_EditarLotesElaborados
+
+delete:
+  credentials: Ver_Produccion_ProduccionReal_EditarLotesElaborados
+
+productosElaborados:
+  credentials: Ver_Produccion_ProduccionReal_ListaProductosElaborados
+
+trazabilidad:
+  credentials: Ver_Produccion_ProduccionReal_TrazabilidadDeProductosElaborados
+
+madurar:
+  credentials: Ver_Produccion_ProduccionReal_ListaLotes_Madurar
+
+retirar:
+  credentials: Ver_Produccion_ProduccionReal_ListaLotes_Retirar
+
+empacar:
+  credentials: Ver_Produccion_ProduccionReal_ListaLotes_Empacar
+
+despachar:
+  credentials: Ver_Produccion_ProduccionReal_ListaLotes_Despachar

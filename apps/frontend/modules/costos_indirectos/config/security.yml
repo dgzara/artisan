@@ -1,0 +1,24 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/08-Security
+
+default:
+  is_secure:   true
+  credentials: Ver_Costos_CostosIndirectos
+
+index:
+  credentials: Ver_Costos_CostosIndirectos_Lista
+
+show:
+  credentials: Ver_Costos_CostosIndirectos_Lista
+
+new:
+  credentials: Ver_Costos_CostosIndirectos_Agregar
+
+edit:
+  credentials: Ver_Costos_CostosIndirectos_Editar
+
+update:
+  credentials: Ver_Costos_CostosIndirectos_Editar
+
+delete:
+  credentials: Ver_Costos_CostosIndirectos_Editar

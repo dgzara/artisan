@@ -1,0 +1,24 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/08-Security
+
+default:
+  is_secure:   true
+  credentials: Ver_Administración_Clientes
+
+index:
+  credentials: Ver_Administracion_ProductosEnVenta_VerAsociaciones
+
+show:
+  credentials: Ver_Administracion_ProductosEnVenta_VerAsociaciones
+
+new:
+  credentials: Ver_Administracion_ProductosEnVenta_AsociarACliente
+
+edit:
+  credentials: Ver_Administracion_ProductosEnVenta_EditarAsociaciones
+
+update:
+  credentials: Ver_Administracion_ProductosEnVenta_EditarAsociaciones
+
+delete:
+  credentials: Ver_Administracion_ProductosEnVenta_EditarAsociaciones

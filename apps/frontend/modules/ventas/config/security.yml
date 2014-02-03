@@ -1,0 +1,30 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/08-Security
+
+default:
+  is_secure:   true
+  credentials: Ver_Ventas_RecepcionProductos
+
+index:
+  credentials: Ver_Ventas_RecepcionProductos
+
+show:
+  credentials: Ver_Ventas_RecepcionProductos
+
+new:
+  credentials: Ver_Ventas_RecepcionProductos
+
+edit:
+  credentials: Ver_Ventas_RecepcionProductos
+
+update:
+  credentials: Ver_Ventas_RecepcionProductos
+
+delete:
+  credentials: Ver_Ventas_RecepcionProductos
+
+recepcionar:
+  credentials: Ver_Ventas_RecepcionProductos_Recepcionar
+
+inventario:
+  credentials: Ver_Ventas_InventarioSantiago

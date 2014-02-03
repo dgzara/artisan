@@ -1,0 +1,21 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/08-Security
+
+default:
+  is_secure:   true
+  credentials: Ver_Administración_Usuarios
+
+index:
+  credentials: Ver_Administracion_Usuarios_ManejoGrupos
+
+new:
+  credentials: Ver_Administracion_Usuarios_AgregarGrupo
+
+edit:
+  credentials: Ver_Administracion_Usuarios_EditarGrupos
+
+update:
+  credentials: Ver_Administracion_Usuarios_EditarGrupos
+
+delete:
+  credentials: Ver_Administracion_Usuarios_EditarGrupos

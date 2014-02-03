@@ -1,0 +1,24 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/08-Security
+
+default:
+  is_secure:   true
+  credentials: Ver_Movil_AspectosCalidad
+
+index:
+  credentials: Ver_Movil_AspectosCalidad_Lista
+
+show:
+  credentials: Ver_Movil_AspectosCalidad_Lista
+
+new:
+  credentials: Ver_Movil_AspectosCalidad_Agregar
+
+edit:
+  credentials: Ver_Movil_AspectosCalidad_Editar
+
+update:
+  credentials: Ver_Movil_AspectosCalidad_Editar
+
+delete:
+  credentials: Ver_Movil_AspectosCalidad_Editar

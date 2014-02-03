@@ -1,0 +1,10 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/13-View
+
+default:
+  components:
+    menu: [menu, movil]
+    submenu: [submenu, capturas]
+    ayuda: [ayuda, capturas]
+
+  javascripts:    [jquery-1.5.2.js, jquery.ui.js, jquery.dataTables.js, dataTables.currency.js, dataTables.date.js]

@@ -1,0 +1,36 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/08-Security
+
+default:
+  is_secure:   true
+  credentials: Ver_Adquisiciones_OrdenesDeCompra
+
+index:
+  credentials: Ver_Adquisiciones_OrdenesDeCompra_VerLista
+
+show:
+  credentials: Ver_Adquisiciones_OrdenesDeCompra_VerLista
+
+validar:
+  credentials: Ver_Adquisiciones_OrdenesDeCompra_Lista_Validar
+
+recepcionar:
+  credentials: Ver_Adquisiciones_OrdenesDeCompra_Lista_Recepcionar
+
+pagar:
+  credentials: Ver_Adquisiciones_OrdenesDeCompra_Lista_Pagar
+
+new:
+  credentials: Ver_Adquisiciones_OrdenesDeCompra_NuevaOrden
+
+edit:
+  credentials: Ver_Adquisiciones_OrdenesDeCompra_EditarLista
+
+update:
+  credentials: Ver_Adquisiciones_OrdenesDeCompra_EditarLista
+
+delete:
+  credentials: Ver_Adquisiciones_OrdenesDeCompra_EditarLista
+
+cotizar:
+  credentials: Ver_Adquisiciones_OrdenesDeCompra_Cotizar

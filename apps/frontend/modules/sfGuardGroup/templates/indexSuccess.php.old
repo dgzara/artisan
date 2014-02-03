@@ -1,0 +1,24 @@
+<h1>Lista de Grupos</h1>
+<table class="one-table">
+  <thead>
+   <tr>
+      <th>Nombre</th>
+      <th>Descripción</th>
+      <?php if($sf_user->hasPermission("Ver_Administracion_Usuarios_EditarGrupos")):?>
+      <th colspan="2">Acciones</th>
+      <?php endif;?>
+    </tr>
+  </thead>
+  <tbody>
+    <?php foreach ($grupos as $grupo): ?>
+    <tr>
+      <td><?php echo $grupo->getName() ?></td>
+      <td><?php echo $grupo->getDescription() ?></td>
+      <?php if($sf_user->hasPermission("Ver_Administracion_Usuarios_EditarGrupos")):?>
+      <td><a href="<?php echo url_for('sfGuardGroup/edit?id='.$grupo->getId()) ?>">Modificar</a></td>
+      <td><?php echo link_to('Eliminar', 'sfGuardGroup/delete?id='.$grupo->getId(), array('method' => 'delete', 'confirm' => '¿Se encuentra seguro de que desea eliminar este grupo?')) ?></td>
+      <?php endif;?>
+    </tr>
+    <?php endforeach; ?>
+  </tbody>
+</table>

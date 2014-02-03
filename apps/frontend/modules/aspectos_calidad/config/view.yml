@@ -1,0 +1,5 @@
+default:
+  components:
+    menu: [menu, movil]
+    submenu: [submenu, aspectosCalidad]
+    ayuda: [ayuda, calidades]

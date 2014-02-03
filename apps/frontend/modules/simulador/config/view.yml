@@ -1,0 +1,7 @@
+default:
+  components:
+    menu: [menu, simulacion]
+    ayuda: [ayuda, costos]
+    filtroFecha: [filtroFecha, simulador]
+
+  javascripts: [jquery-1.5.2.js, jquery.ui.js, regex.js, https://www.google.com/jsapi, simulador.js]

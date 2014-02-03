@@ -1,0 +1,16 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/08-Security
+default:
+  is_secure:   on
+
+#new:
+#  credentials: [[adquisicion_edicion, produccion_edicion, capturas_edicion]]      # With the admin credential
+
+#edit:
+#  credentials: [[adquisicion_edicion, produccion_edicion, capturas_edicion]]      # With the admin credential
+
+#update:
+#  credentials: [[adquisicion_edicion, produccion_edicion, capturas_edicion]]      # With the admin credential
+
+#delete:
+#  credentials: [[adquisicion_edicion, produccion_edicion, capturas_edicion]]      # With the admin credential

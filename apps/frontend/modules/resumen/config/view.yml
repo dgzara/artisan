@@ -1,0 +1,9 @@
+default:
+  components:
+    menu: [menu, simulacion]
+    submenu: [submenu, resumen]
+    filtroFecha: [filtroFecha, resumen]
+    filtroFecha2: [filtroFecha, costosIndirectos]
+    filtroFecha4: [filtroFecha, costosProductos]
+    filtroFecha5: [filtroFecha, insumos]
+    ayuda: [ayuda, costos]

@@ -1,0 +1,12 @@
+sfDoctrineAjaxFormPlugin
+========================
+
+The `sfDoctrineAjaxFormPlugin` is a symfony plugin for Diem CMS for relationships with
+embedded forms using Ajax.
+
+TODO
+----
+
+  * documentation
+  * many to many relationship
+  * make it work with symfony and not only with Diem

@@ -1,0 +1,24 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/08-Security
+
+default:
+  is_secure:   true
+  credentials: Ver_Costos_Simulacion
+
+index:
+  credentials: Ver_Costos_Simulacion
+
+show:
+  credentials: Ver_Costos_Simulacion
+
+new:
+  credentials: Ver_Costos_Simulacion
+
+edit:
+  credentials: Ver_Costos_Simulacion
+
+update:
+  credentials: Ver_Costos_Simulacion
+
+delete:
+  credentials: Ver_Costos_Simulacion

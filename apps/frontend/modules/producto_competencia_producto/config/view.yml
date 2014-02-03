@@ -1,0 +1,5 @@
+default:
+  components:
+    menu: [menu, movil]
+    submenu: [submenu, productosCompetencia]
+    ayuda: [ayuda, competencias]

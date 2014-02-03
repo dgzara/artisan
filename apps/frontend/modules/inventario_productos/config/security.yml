@@ -1,0 +1,24 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/08-Security
+
+default:
+  is_secure:   true
+  credentials: Ver_Produccion_InventarioValdivia
+
+index:
+  credentials: Ver_Produccion_InventarioValdivia
+
+show:
+  credentials: Ver_Produccion_InventarioValdivia
+
+new:
+  credentials: Ver_Produccion_InventarioValdivia
+
+edit:
+  credentials: Ver_Produccion_InventarioValdivia
+
+update:
+  credentials: Ver_Produccion_InventarioValdivia
+
+delete:
+  credentials: Ver_Produccion_InventarioValdivia

@@ -1,0 +1,24 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/08-Security
+
+default:
+  is_secure:   true
+  credentials: Ver_Movil_ProductosCompetencia
+
+index:
+  credentials: Ver_Movil_ProductosCompetencia_ListaCompetencias
+
+show:
+  credentials: Ver_Movil_ProductosCompetencia_ListaCompetencias
+
+new:
+  credentials: Ver_Movil_ProductosCompetencia_AgregarCompetencia
+
+edit:
+  credentials: Ver_Movil_ProductosCompetencia_EditarCompetencias
+
+update:
+  credentials: Ver_Movil_ProductosCompetencia_EditarCompetencias
+
+delete:
+  credentials: Ver_Movil_ProductosCompetencia_EditarCompetencias

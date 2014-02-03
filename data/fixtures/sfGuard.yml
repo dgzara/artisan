@@ -1,0 +1,518 @@
+sfGuardUser:
+  User_admin:
+    first_name:     Administrador
+    last_name:      Artisan
+    email_address:  admin@artisan.cl
+    username:       admin
+    password:       admin
+    is_super_admin: true
+    Groups:         [Group_admininistrador_general]
+
+  Hernan Vigil:
+    first_name:     Hernán
+    last_name:      Vigil
+    email_address:  vigilh@gmail.com
+    username:       hernan
+    password:       hernan123
+    is_super_admin: false
+    Groups:         [Group_admininistrador_general]
+
+  Supervisor_S:
+    first_name:     Supervisor
+    last_name:      EnSantiago
+    email_address:  supervisors@uc.cl
+    username:       supervisors
+    password:       supervisors
+    is_super_admin: false
+    Groups:         [Group_supervisores_S]
+
+  Supervisor_V:
+    first_name:     Supervisor
+    last_name:      EnValdivia
+    email_address:  supervisorv@uc.cl
+    username:       supervisorv
+    password:       supervisorv
+    is_super_admin: false
+    Groups:         [Group_supervisores_V]
+
+  Operario_S:
+    first_name:     Operario
+    last_name:      EnSantiago
+    email_address:  operarios@gmail.com
+    username:       operarios
+    password:       operarios
+    is_super_admin: false
+    Groups:         [Group_operarios_S]
+
+  Operario_V:
+    first_name:     Operario
+    last_name:      EnValdivia
+    email_address:  operariov@gmail.com
+    username:       operariov
+    password:       operariov
+    is_super_admin: false
+    Groups:         [Group_operarios_V]
+
+  Contador_S:
+    first_name:     Contador
+    last_name:      EnSantiago
+    email_address:  contadors@gmail.com
+    username:       contadors
+    password:       contadors
+    is_super_admin: false
+    Groups:         [Group_contador_S]
+
+sfGuardGroup:
+  Group_admininistrador_general:
+    name:           admin
+    description:    Grupo de Administradores Generales
+    Permissions:    [Permission_Ver_Movil_Capturas_Estadisticas, Permission_Ver_Movil_Capturas_Alertas, Permission_Ver_Produccion_ProduccionReal_EditarLotesElaborados, Permission_Ver_Ventas_RecepcionProductos_Recepcionar, Permission_Ver_Movil_ProductosCompetencia, Permission_Ver_Movil_ProductosCompetencia_ListaMarcas, Permission_Ver_Movil_ProductosCompetencia_EditarMarcas, Permission_Ver_Movil_ProductosCompetencia_AgregarMarca, Permission_Ver_Movil_ProductosCompetencia_ListaCompetencias, Permission_Ver_Movil_ProductosCompetencia_AgregarCompetencia, Permission_Ver_Movil_ProductosCompetencia_ListaAsociaciones, Permission_Ver_Movil_ProductosCompetencia_AgregarAsociacion, Permission_Ver_Movil_AspectosCalidad, Permission_Ver_Costos_CostosIndirectos_Editar, Permission_Ver_Produccion_PlanDeProduccion_Editar, Permission_Ver_Produccion_ProduccionReal_EditarElaboraciones, Permission_Ver_Produccion_ProduccionReal_ListaLotes_Madurar, Permission_Ver_Produccion_ProduccionReal_ListaLotes_Retirar, Permission_Ver_Produccion_ProduccionReal_ListaLotes_Empacar, Permission_Ver_Produccion_ProduccionReal_ListaLotes_Despachar, Permission_Ver_Ventas_OrdenVenta_Lista_Validar, Permission_Ver_Ventas_OrdenVenta_Lista_Despachar, Permission_Ver_Ventas_OrdenVenta_Lista_Recepcion, Permission_Ver_Ventas_OrdenVenta_Lista_Cobrar, Permission_Ver_Ventas_OrdenVenta_Lista_Devolucion, Permission_Ver_Ventas_OrdenVenta_Editar, Permission_Ver_Movil_ProductosCompetencia_EditarAsociaciones, Permission_Ver_Movil_ProductosCompetencia_EditarCompetencias, Permission_Ver_Movil_AspectosCalidad_Lista, Permission_Ver_Movil_AspectosCalidad_Agregar, Permission_Ver_Movil_AspectosCalidad_Editar, Permission_Ver_Adquisiciones_OrdenesDeCompra_Lista_Validar, Permission_Ver_Adquisiciones_OrdenesDeCompra_Lista_Recepcionar, Permission_Ver_Adquisiciones_OrdenesDeCompra_Lista_Pagar, Permission_Ver_Administracion_Costos_EditarCentrosDeCosto, Permission_Ver_Administracion_Costos_EditarAreasDeCosto, Permission_Ver_Administracion_Costos_AgregarCostosIndirectos, Permission_Ver_Administracion_Costos_EditarCostosIndirectos, Permission_Ver_Administracion_Insumos_EditarInsumosParaComprar, Permission_Ver_Administracion_Insumos_EditarAsociaciones, Permission_Ver_Administracion_Insumos_EditarProveedores, Permission_Ver_Administracion_Pautas_EditarPlantillas, Permission_Ver_Administracion_Insumos_EditarAsociaciones, Permission_Ver_Administracion_Pautas_EditarColumnas, Permission_Ver_Adquisiciones_OrdenesDeCompra_EditarLista, Permission_Ver_Administracion_ProductosEnVenta_EditarAsociaciones, Permission_Ver_Administracion_ProductosEnVenta_EditarAreasdeNegocio, Permission_Ver_Administracion_ProductosEnVenta_EditarListaProductos, Permission_Ver_Administracion_Usuarios_EditarGrupos, Permission_Ver_Administracion_Usuarios_EditarUsuario, Permission_Ver_Administracion_Clientes_EditarLocales, Permission_Ver_Administracion_Clientes_EditarCliente, Permission_Ver_Ventas_OrdenVenta_Lista, Permission_Ver_Ventas_OrdenVenta_NuevaOrden, Permission_Ver_Ventas_OrdenVenta_Facturas, Permission_Ver_Movil_Capturas_Lista, Permission_Ver_Costos_CostosIndirectos_Lista, Permission_Ver_Costos_CostosIndirectos_Agregar, Permission_Ver_Produccion_PlanDeProduccion_Lista, Permission_Ver_Produccion_PlanDeProduccion_NuevoPlan, Permission_Ver_Produccion_ProduccionReal_ListaElaboraciones, Permission_Ver_Produccion_ProduccionReal_IngresarElaboracion, Permission_Ver_Produccion_ProduccionReal_ListaLotesElaborados, Permission_Ver_Produccion_ProduccionReal_ListaProductosElaborados, Permission_Ver_Produccion_ProduccionReal_TrazabilidadDeProductosElaborados, Permission_Ver_Adquisiciones_OrdenesDeCompra_VerLista, Permission_Ver_Adquisiciones_OrdenesDeCompra_NuevaOrden, Permission_Ver_Adquisiciones_OrdenesDeCompra_Cotizar, Permission_Ver_Administracion_Pautas_VerPlantillas, Permission_Ver_Administracion_Pautas_AgregarPlantilla, Permission_Ver_Administracion_Pautas_VerColumnas, Permission_Ver_Administracion_Pautas_AgregarColumnas, Permission_Ver_Administracion_Insumos_VerInsumosParaComprar, Permission_Ver_Administracion_Insumos_AgregarInsumoParaComprar, Permission_Ver_Administracion_Insumos_VerProveedores, Permission_Ver_Administracion_Insumos_AgregarProveedor, Permission_Ver_Administracion_Insumos_VerAsociaciones, Permission_Ver_Administracion_Insumos_AsociarAProveedor, Permission_Ver_Administracion_Costos_VerAreasDeCosto, Permission_Ver_Administracion_Costos_AgregarAreaDeCosto, Permission_Ver_Administracion_Costos_VerCentrosDeCosto, Permission_Ver_Administracion_Costos_AgregarCentroDeCosto, Permission_Ver_Administracion_ProductosEnVenta_AgregarAreaDeNegocio, Permission_Ver_Administracion_ProductosEnVenta_VerAreasdeNegocio, Permission_Ver_Administracion_ProductosEnVenta_AsociarACliente, Permission_Ver_Administracion_ProductosEnVenta_VerAsociaciones, Permission_Ver_Administracion_ProductosEnVenta_AgregarProducto, Permission_Ver_Administracion_ProductosEnVenta_VerListaProductos, Permission_Ver_Administracion_Clientes_AgregarLocal, Permission_Ver_Administracion_Clientes_VerLocales, Permission_Ver_Administracion_Clientes_AgregarCliente, Permission_Ver_Administracion_Clientes_VerCliente, Permission_Ver_Administracion_Lugares, Permission_Ver_Administracion_Lugares_Ver, Permission_Ver_Administracion_Lugares_Editar, Permission_Ver_Administracion_Lugares_Agregar, Permission_Ver_Costos_CostosIndirectos, Permission_Ver_Costos_Simulacion, Permission_Ver_Costos_Resumen, Permission_Ver_Movil_Capturas, Permission_Ver_Ventas_InventarioSantiago, Permission_Ver_Ventas_OrdenesDeVenta, Permission_Ver_Ventas_RecepcionProductos, Permission_Ver_Produccion_InventarioValdivia, Permission_Ver_Produccion_ProduccionReal, Permission_Ver_Produccion_PlanDeProduccion, Permission_Ver_Adquisiciones_InventarioMateriaPrima, Permission_Ver_Adquisiciones_OrdenesDeCompra, Permission_Ver_Administracion_Usuarios, Permission_Ver_Administracion_Pautas, Permission_Ver_Administracion_Insumos, Permission_Ver_Administracion_Costos, Permission_Ver_Administracion_ProductosEnVenta, Permission_Ver_Administracion_Clientes, Permission_Ver_Administracion_Usuarios_ListadoPermisos, Permission_Ver_Administracion_Usuarios_ManejoGrupos, Permission_Ver_Administracion_Usuarios_ManejoUsuario, Permission_Ver_Administracion_Usuarios_AgregarGrupo, Permission_Ver_Administracion_Usuarios_AgregarUsuario, Permission_Ver_Administracion, Permission_Ver_Adquisiciones, Permission_Ver_Produccion, Permission_Ver_Ventas, Permission_Ver_Movil, Permission_Ver_Costos, Permission_admin]
+  Group_Probando_General:
+    name:           probando_general
+    description:    Grupo con todos los permisos para pruebas
+    Permissions:    [Permission_Ver_Movil_Capturas_Estadisticas, Permission_Ver_Movil_Capturas_Alertas, Permission_Ver_Produccion_ProduccionReal_EditarLotesElaborados, Permission_Ver_Ventas_RecepcionProductos_Recepcionar, Permission_Ver_Movil_ProductosCompetencia, Permission_Ver_Movil_ProductosCompetencia_ListaMarcas, Permission_Ver_Movil_ProductosCompetencia_EditarMarcas, Permission_Ver_Movil_ProductosCompetencia_AgregarMarca, Permission_Ver_Movil_ProductosCompetencia_ListaCompetencias, Permission_Ver_Movil_ProductosCompetencia_AgregarCompetencia, Permission_Ver_Movil_ProductosCompetencia_ListaAsociaciones, Permission_Ver_Movil_ProductosCompetencia_AgregarAsociacion, Permission_Ver_Movil_AspectosCalidad, Permission_Ver_Costos_CostosIndirectos_Editar, Permission_Ver_Produccion_PlanDeProduccion_Editar, Permission_Ver_Produccion_ProduccionReal_EditarElaboraciones, Permission_Ver_Produccion_ProduccionReal_ListaLotes_Madurar, Permission_Ver_Produccion_ProduccionReal_ListaLotes_Retirar, Permission_Ver_Produccion_ProduccionReal_ListaLotes_Empacar, Permission_Ver_Produccion_ProduccionReal_ListaLotes_Despachar, Permission_Ver_Ventas_OrdenVenta_Lista_Validar, Permission_Ver_Ventas_OrdenVenta_Lista_Despachar, Permission_Ver_Ventas_OrdenVenta_Lista_Recepcion, Permission_Ver_Ventas_OrdenVenta_Lista_Cobrar, Permission_Ver_Ventas_OrdenVenta_Lista_Devolucion, Permission_Ver_Ventas_OrdenVenta_Editar, Permission_Ver_Movil_ProductosCompetencia_EditarAsociaciones, Permission_Ver_Movil_ProductosCompetencia_EditarCompetencias, Permission_Ver_Movil_AspectosCalidad_Lista, Permission_Ver_Movil_AspectosCalidad_Agregar, Permission_Ver_Movil_AspectosCalidad_Editar, Permission_Ver_Adquisiciones_OrdenesDeCompra_Lista_Validar, Permission_Ver_Adquisiciones_OrdenesDeCompra_Lista_Recepcionar, Permission_Ver_Adquisiciones_OrdenesDeCompra_Lista_Pagar, Permission_Ver_Administracion_Costos_EditarCentrosDeCosto, Permission_Ver_Administracion_Costos_EditarAreasDeCosto, Permission_Ver_Administracion_Costos_AgregarCostosIndirectos, Permission_Ver_Administracion_Costos_EditarCostosIndirectos, Permission_Ver_Administracion_Insumos_EditarInsumosParaComprar, Permission_Ver_Administracion_Insumos_EditarAsociaciones, Permission_Ver_Administracion_Insumos_EditarProveedores, Permission_Ver_Administracion_Pautas_EditarPlantillas, Permission_Ver_Administracion_Insumos_EditarAsociaciones, Permission_Ver_Administracion_Pautas_EditarColumnas, Permission_Ver_Adquisiciones_OrdenesDeCompra_EditarLista, Permission_Ver_Administracion_ProductosEnVenta_EditarAsociaciones, Permission_Ver_Administracion_ProductosEnVenta_EditarAreasdeNegocio, Permission_Ver_Administracion_ProductosEnVenta_EditarListaProductos, Permission_Ver_Administracion_Usuarios_EditarGrupos, Permission_Ver_Administracion_Usuarios_EditarUsuario, Permission_Ver_Administracion_Clientes_EditarLocales, Permission_Ver_Administracion_Clientes_EditarCliente, Permission_Ver_Ventas_OrdenVenta_Lista, Permission_Ver_Ventas_OrdenVenta_NuevaOrden, Permission_Ver_Ventas_OrdenVenta_Facturas, Permission_Ver_Movil_Capturas_Lista, Permission_Ver_Costos_CostosIndirectos_Lista, Permission_Ver_Costos_CostosIndirectos_Agregar, Permission_Ver_Produccion_PlanDeProduccion_Lista, Permission_Ver_Produccion_PlanDeProduccion_NuevoPlan, Permission_Ver_Produccion_ProduccionReal_ListaElaboraciones, Permission_Ver_Produccion_ProduccionReal_IngresarElaboracion, Permission_Ver_Produccion_ProduccionReal_ListaLotesElaborados, Permission_Ver_Produccion_ProduccionReal_ListaProductosElaborados, Permission_Ver_Produccion_ProduccionReal_TrazabilidadDeProductosElaborados, Permission_Ver_Adquisiciones_OrdenesDeCompra_VerLista, Permission_Ver_Adquisiciones_OrdenesDeCompra_NuevaOrden, Permission_Ver_Adquisiciones_OrdenesDeCompra_Cotizar, Permission_Ver_Administracion_Pautas_VerPlantillas, Permission_Ver_Administracion_Pautas_AgregarPlantilla, Permission_Ver_Administracion_Pautas_VerColumnas, Permission_Ver_Administracion_Pautas_AgregarColumnas, Permission_Ver_Administracion_Insumos_VerInsumosParaComprar, Permission_Ver_Administracion_Insumos_AgregarInsumoParaComprar, Permission_Ver_Administracion_Insumos_VerProveedores, Permission_Ver_Administracion_Insumos_AgregarProveedor, Permission_Ver_Administracion_Insumos_VerAsociaciones, Permission_Ver_Administracion_Insumos_AsociarAProveedor, Permission_Ver_Administracion_Costos_VerAreasDeCosto, Permission_Ver_Administracion_Costos_AgregarAreaDeCosto, Permission_Ver_Administracion_Costos_VerCentrosDeCosto, Permission_Ver_Administracion_Costos_AgregarCentroDeCosto, Permission_Ver_Administracion_ProductosEnVenta_AgregarAreaDeNegocio, Permission_Ver_Administracion_ProductosEnVenta_VerAreasdeNegocio, Permission_Ver_Administracion_ProductosEnVenta_AsociarACliente, Permission_Ver_Administracion_ProductosEnVenta_VerAsociaciones, Permission_Ver_Administracion_ProductosEnVenta_AgregarProducto, Permission_Ver_Administracion_ProductosEnVenta_VerListaProductos, Permission_Ver_Administracion_Clientes_AgregarLocal, Permission_Ver_Administracion_Clientes_VerLocales, Permission_Ver_Administracion_Clientes_AgregarCliente, Permission_Ver_Administracion_Clientes_VerCliente, Permission_Ver_Administracion_Lugares, Permission_Ver_Administracion_Lugares_Ver, Permission_Ver_Administracion_Lugares_Editar, Permission_Ver_Administracion_Lugares_Agregar, Permission_Ver_Costos_CostosIndirectos, Permission_Ver_Costos_Simulacion, Permission_Ver_Costos_Resumen, Permission_Ver_Movil_Capturas, Permission_Ver_Ventas_InventarioSantiago, Permission_Ver_Ventas_OrdenesDeVenta, Permission_Ver_Ventas_RecepcionProductos, Permission_Ver_Produccion_InventarioValdivia, Permission_Ver_Produccion_ProduccionReal, Permission_Ver_Produccion_PlanDeProduccion, Permission_Ver_Adquisiciones_InventarioMateriaPrima, Permission_Ver_Adquisiciones_OrdenesDeCompra, Permission_Ver_Administracion_Usuarios, Permission_Ver_Administracion_Pautas, Permission_Ver_Administracion_Insumos, Permission_Ver_Administracion_Costos, Permission_Ver_Administracion_ProductosEnVenta, Permission_Ver_Administracion_Clientes, Permission_Ver_Administracion_Usuarios_ListadoPermisos, Permission_Ver_Administracion_Usuarios_ManejoGrupos, Permission_Ver_Administracion_Usuarios_ManejoUsuario, Permission_Ver_Administracion_Usuarios_AgregarGrupo, Permission_Ver_Administracion_Usuarios_AgregarUsuario, Permission_Ver_Administracion, Permission_Ver_Adquisiciones, Permission_Ver_Produccion, Permission_Ver_Ventas, Permission_Ver_Movil, Permission_Ver_Costos]
+  Group_supervisores_V:
+    name:           supervisores_valdivia
+    description:    Grupo de Supervisores de Valdivia
+    Permissions:    [Permission_Ver_Adquisiciones, Permission_Ver_Adquisiciones_OrdenesDeCompra, Permission_Ver_Adquisiciones_OrdenesDeCompra_VerLista, Permission_Ver_Adquisiciones_OrdenesDeCompra_Lista_Validar, Permission_Ver_Adquisiciones_OrdenesDeCompra_Lista_Recepcionar, Permission_Ver_Adquisiciones_OrdenesDeCompra_Lista_Pagar, Permission_Ver_Adquisiciones_OrdenesDeCompra_EditarLista, Permission_Ver_Adquisiciones_OrdenesDeCompra_NuevaOrden, Permission_Ver_Adquisiciones_OrdenesDeCompra_Cotizar, Permission_Ver_Adquisiciones_InventarioMateriaPrima, Permission_Ver_Produccion, Permission_Ver_Produccion_PlanDeProduccion, Permission_Ver_Produccion_PlanDeProduccion_Lista, Permission_Ver_Produccion_PlanDeProduccion_Editar, Permission_Ver_Produccion_PlanDeProduccion_NuevoPlan, Permission_Ver_Produccion_ProduccionReal, Permission_Ver_Produccion_ProduccionReal_ListaElaboraciones, Permission_Ver_Produccion_ProduccionReal_EditarElaboraciones, Permission_Ver_Produccion_ProduccionReal_IngresarElaboracion, Permission_Ver_Produccion_ProduccionReal_ListaLotesElaborados, Permission_Ver_Produccion_ProduccionReal_ListaLotes_Madurar, Permission_Ver_Produccion_ProduccionReal_ListaLotes_Retirar, Permission_Ver_Produccion_ProduccionReal_ListaLotes_Empacar, Permission_Ver_Produccion_ProduccionReal_ListaLotes_Despachar, Permission_Ver_Produccion_ProduccionReal_EditarLotesElaborados, Permission_Ver_Produccion_ProduccionReal_ListaProductosElaborados, Permission_Ver_Produccion_ProduccionReal_TrazabilidadDeProductosElaborados, Permission_Ver_Produccion_InventarioValdivia]
+  Group_operarios_V:
+    name:           operarios_valdivia
+    description:    Grupo de Operarios de Valdivia
+    Permissions:    [Permission_Ver_Adquisiciones, Permission_Ver_Adquisiciones_OrdenesDeCompra, Permission_Ver_Adquisiciones_OrdenesDeCompra_VerLista, Permission_Ver_Adquisiciones_OrdenesDeCompra_Lista_Recepcionar, Permission_Ver_Adquisiciones_OrdenesDeCompra_Lista_Pagar, Permission_Ver_Adquisiciones_OrdenesDeCompra_NuevaOrden, Permission_Ver_Adquisiciones_OrdenesDeCompra_Cotizar, Permission_Ver_Adquisiciones_InventarioMateriaPrima, Permission_Ver_Produccion, Permission_Ver_Produccion_PlanDeProduccion, Permission_Ver_Produccion_PlanDeProduccion_Lista, Permission_Ver_Produccion_ProduccionReal, Permission_Ver_Produccion_ProduccionReal_ListaElaboraciones, Permission_Ver_Produccion_ProduccionReal_IngresarElaboracion, Permission_Ver_Produccion_ProduccionReal_ListaLotesElaborados, Permission_Ver_Produccion_ProduccionReal_ListaLotes_Madurar, Permission_Ver_Produccion_ProduccionReal_ListaLotes_Retirar, Permission_Ver_Produccion_ProduccionReal_ListaLotes_Empacar, Permission_Ver_Produccion_ProduccionReal_ListaLotes_Despachar,  Permission_Ver_Produccion_ProduccionReal_ListaProductosElaborados, Permission_Ver_Produccion_ProduccionReal_TrazabilidadDeProductosElaborados, Permission_Ver_Produccion_InventarioValdivia]
+  Group_supervisores_S:
+    name:           supervisores_santiago
+    description:    Grupo de Supervisores de Santiago
+    Permissions:    [Permission_Ver_Ventas, Permission_Ver_Ventas_RecepcionProductos, Permission_Ver_Ventas_RecepcionProductos_Recepcionar, Permission_Ver_Ventas_OrdenesDeVenta, Permission_Ver_Ventas_OrdenVenta_Lista, Permission_Ver_Ventas_OrdenVenta_Lista_Validar, Permission_Ver_Ventas_OrdenVenta_Lista_Despachar, Permission_Ver_Ventas_OrdenVenta_Lista_Recepcion, Permission_Ver_Ventas_OrdenVenta_Lista_Cobrar, Permission_Ver_Ventas_OrdenVenta_Lista_Devolucion, Permission_Ver_Ventas_OrdenVenta_Editar, Permission_Ver_Ventas_OrdenVenta_NuevaOrden, Permission_Ver_Ventas_OrdenVenta_Facturas, Permission_Ver_Ventas_InventarioSantiago, Permission_Ver_Movil, Permission_Ver_Movil_Capturas, Permission_Ver_Movil_Capturas_Lista, Permission_Ver_Movil_ProductosCompetencia, Permission_Ver_Movil_ProductosCompetencia_ListaMarcas, Permission_Ver_Movil_ProductosCompetencia_EditarMarcas, Permission_Ver_Movil_ProductosCompetencia_AgregarMarca, Permission_Ver_Movil_ProductosCompetencia_ListaCompetencias, Permission_Ver_Movil_ProductosCompetencia_EditarCompetencias, Permission_Ver_Movil_ProductosCompetencia_AgregarCompetencia, Permission_Ver_Movil_ProductosCompetencia_ListaAsociaciones, Permission_Ver_Movil_ProductosCompetencia_EditarAsociaciones, Permission_Ver_Movil_ProductosCompetencia_AgregarAsociacion, Permission_Ver_Movil_AspectosCalidad, Permission_Ver_Movil_AspectosCalidad_Lista, Permission_Ver_Movil_AspectosCalidad_Agregar, Permission_Ver_Movil_AspectosCalidad_Editar, Permission_Ver_Movil_Capturas_Alertas, Permission_Ver_Movil_Capturas_Estadisticas]
+  Group_operarios_S:
+    name:           operarios_santiago
+    description:    Grupo de Supervisores de Santiago
+    Permissions:    [Permission_Ver_Ventas, Permission_Ver_Ventas_RecepcionProductos, Permission_Ver_Ventas_RecepcionProductos_Recepcionar, Permission_Ver_Ventas_OrdenesDeVenta, Permission_Ver_Ventas_OrdenVenta_Lista, Permission_Ver_Ventas_OrdenVenta_Lista_Despachar, Permission_Ver_Ventas_OrdenVenta_Lista_Recepcion, Permission_Ver_Ventas_OrdenVenta_Lista_Cobrar, Permission_Ver_Ventas_OrdenVenta_Lista_Devolucion, Permission_Ver_Ventas_OrdenVenta_NuevaOrden, Permission_Ver_Ventas_OrdenVenta_Facturas, Permission_Ver_Ventas_InventarioSantiago]
+  Group_contador_S:
+    name:           contador_santiago
+    description:    Grupo de Contadores de Santiago
+    Permissions:    [Permission_Ver_Costos, Permission_Ver_Costos_CostosIndirectos, Permission_Ver_Costos_CostosIndirectos_Lista, Permission_Ver_Costos_CostosIndirectos_Editar, Permission_Ver_Costos_CostosIndirectos_Agregar, Permission_Ver_Costos_Resumen, Permission_Ver_Costos_Simulacion]
+sfGuardPermission:
+  Permission_admin:
+    name:           admin
+    description:    Permiso administrador
+  Permission_Ver_Administracion:
+    name:           Ver_Administración
+    description:    1 Permiso para ver Administración
+
+  Permission_Ver_Administracion_Clientes:
+    name:           Ver_Administración_Clientes
+    description:    1.1 Permiso para ver Administración -> Clientes
+  Permission_Ver_Administracion_Clientes_VerCliente:
+    name:           Ver_Administracion_Clientes_VerCliente
+    description:    1.1.1 Permiso para ver Administración -> Clientes -> Ver Clientes
+  Permission_Ver_Administracion_Clientes_EditarCliente:
+    name:           Ver_Administracion_Clientes_EditarCliente
+    description:    1.1.1E Permiso para ver Administración -> Clientes -> Editar Clientes
+  Permission_Ver_Administracion_Clientes_AgregarCliente:
+    name:           Ver_Administracion_Clientes_AgregarCliente
+    description:    1.1.2 Permiso para ver Administración -> Clientes -> Agregar Cliente
+  Permission_Ver_Administracion_Clientes_VerLocales:
+    name:           Ver_Administracion_Clientes_VerLocales
+    description:    1.1.3 Permiso para ver Administración -> Clientes -> Ver Locales
+  Permission_Ver_Administracion_Clientes_EditarLocales:
+    name:           Ver_Administracion_Clientes_EditarLocales
+    description:    1.1.3E Permiso para ver Administración -> Clientes -> Editar Locales
+  Permission_Ver_Administracion_Clientes_AgregarLocal:
+    name:           Ver_Administracion_Clientes_AgregarLocal
+    description:    1.1.4 Permiso para ver Administración -> Clientes -> Agregar Local
+  Permission_Ver_Administracion_ProductosEnVenta_VerAsociaciones:
+    name:           Ver_Administracion_ProductosEnVenta_VerAsociaciones
+    description:    1.1.5 Permiso para ver Administración -> Clientes -> Ver Asociaciones
+  Permission_Ver_Administracion_ProductosEnVenta_EditarAsociaciones:
+    name:           Ver_Administracion_ProductosEnVenta_EditarAsociaciones
+    description:    1.1.5E Permiso para ver Administración -> Clientes -> Editar Asociaciones
+  Permission_Ver_Administracion_ProductosEnVenta_AsociarACliente:
+    name:           Ver_Administracion_ProductosEnVenta_AsociarACliente
+    description:    1.1.6 Permiso para ver Administración -> Clientes -> Asociar a Cliente
+
+
+  Permission_Ver_Administracion_ProductosEnVenta:
+    name:           Ver_Administración_ProductosEnVenta
+    description:    1.2 Permiso para ver Administración -> Productos En Venta
+  Permission_Ver_Administracion_ProductosEnVenta_VerListaProductos:
+    name:           Ver_Administracion_ProductosEnVenta_VerListaProductos
+    description:    1.2.1 Permiso para ver Administración -> Productos En Venta -> Ver Lista Productos
+  Permission_Ver_Administracion_ProductosEnVenta_EditarListaProductos:
+    name:           Ver_Administracion_ProductosEnVenta_EditarListaProductos
+    description:    1.2.1E Permiso para ver Administración -> Productos En Venta -> Editar Lista Productos
+  Permission_Ver_Administracion_ProductosEnVenta_AgregarProducto:
+    name:           Ver_Administracion_ProductosEnVenta_AgregarProducto
+    description:    1.2.2 Permiso para ver Administración -> Productos En Venta -> Agregar Producto
+#  Permission_Ver_Administracion_ProductosEnVenta_VerDescripctores:
+#    name:           Ver_Administracion_ProductosEnVenta_VerDescripctores
+#    description:    1.2.3 Permiso para ver Administración -> Productos En Venta -> Ver Descriptores
+#  Permission_Ver_Administracion_ProductosEnVenta_EditarDescripctores:
+#    name:           Ver_Administracion_ProductosEnVenta_EditarDescripctores
+#    description:    1.2.3E Permiso para ver Administración -> Productos En Venta -> Editar Descriptores
+#  Permission_Ver_Administracion_ProductosEnVenta_AgregarDescripcion:
+#    name:           Ver_Administracion_ProductosEnVenta_AgregarDescripcion
+#    description:    1.2.4 Permiso para ver Administración -> Productos En Venta -> Agregar Descripción
+  Permission_Ver_Administracion_ProductosEnVenta_VerAreasdeNegocio:
+    name:           Ver_Administracion_ProductosEnVenta_VerAreasdeNegocio
+    description:    1.2.3 Permiso para ver Administración -> Productos En Venta -> Ver áreas de Negocio
+  Permission_Ver_Administracion_ProductosEnVenta_EditarAreasdeNegocio:
+    name:           Ver_Administracion_ProductosEnVenta_EditarAreasdeNegocio
+    description:    1.2.3E Permiso para ver Administración -> Productos En Venta -> Editar áreas de Negocio
+  Permission_Ver_Administracion_ProductosEnVenta_AgregarAreaDeNegocio:
+    name:           Ver_Administracion_ProductosEnVenta_AgregarAreaDeNegocio
+    description:    1.2.3 Permiso para ver Administración -> Productos En Venta -> Agregar área de Negocio
+
+  Permission_Ver_Administracion_Costos:
+    name:           Ver_Administración_Costos
+    description:    1.3 Permiso para ver Administración -> Costos
+  Permission_Ver_Administracion_Costos_VerAreasDeCosto:
+    name:           Ver_Administracion_Costos_VerAreasDeCosto
+    description:    1.3.1 Permiso para ver Administración -> Costos -> Ver Áreas de Costo
+  Permission_Ver_Administracion_Costos_EditarAreasDeCosto:
+    name:           Ver_Administracion_Costos_EditarAreasDeCosto
+    description:    1.3.1E Permiso para ver Administración -> Costos -> Editar Áreas de Costo
+  Permission_Ver_Administracion_Costos_AgregarAreaDeCosto:
+    name:           Ver_Administracion_Costos_AgregarAreaDeCosto
+    description:    1.3.2 Permiso para ver Administración -> Costos -> Agregar Área de Costo
+  Permission_Ver_Administracion_Costos_VerCentrosDeCosto:
+    name:           Ver_Administracion_Costos_VerCentrosDeCosto
+    description:    1.3.3 Permiso para ver Administración -> Costos -> Ver Centros de Costo
+  Permission_Ver_Administracion_Costos_EditarCentrosDeCosto:
+    name:           Ver_Administracion_Costos_EditarCentrosDeCosto
+    description:    1.3.3E Permiso para ver Administración -> Costos -> Editar Centros de Costo
+  Permission_Ver_Administracion_Costos_AgregarCentroDeCosto:
+    name:           Ver_Administracion_Costos_AgregarCentroDeCosto
+    description:    1.3.4 Permiso para ver Administración -> Costos -> Agregar Centro de Costo
+  Permission_Ver_Administracion_Costos_AgregarCostosIndirectos:
+    name:           Ver_Administracion_Costos_AgregarCostosIndirectos
+    description:    1.3.5 Permiso para ver Administración -> Costos -> Agregar Centro de Costo
+  Permission_Ver_Administracion_Costos_EditarCostosIndirectos:
+    name:           Ver_Administracion_Costos_EditarCostosIndirectos
+    description:    1.3.5E Permiso para ver Administración -> Costos -> Editar Centro de Costo
+
+  Permission_Ver_Administracion_Insumos:
+    name:           Ver_Administración_Insumos
+    description:    1.4 Permiso para ver Administración -> Insumos
+  Permission_Ver_Administracion_Insumos_VerInsumosParaComprar:
+    name:           Ver_Administracion_Insumos_VerInsumosParaComprar
+    description:    1.4.1 Permiso para ver Administración -> Insumos -> Ver Insumos para Comprar
+  Permission_Ver_Administracion_Insumos_EditarInsumosParaComprar:
+    name:           Ver_Administracion_Insumos_EditarInsumosParaComprar
+    description:    1.4.1E Permiso para ver Administración -> Insumos -> Editar Insumos para Comprar
+  Permission_Ver_Administracion_Insumos_AgregarInsumoParaComprar:
+    name:           Ver_Administracion_Insumos_AgregarInsumoParaComprar
+    description:    1.4.2 Permiso para ver Administración -> Insumos -> Agregar Insumo para Comprar
+  Permission_Ver_Administracion_Insumos_VerProveedores:
+    name:           Ver_Administracion_Insumos_VerProveedores
+    description:    1.4.3 Permiso para ver Administración -> Insumos -> Ver Proveedores
+  Permission_Ver_Administracion_Insumos_EditarProveedores:
+    name:           Ver_Administracion_Insumos_EditarProveedores
+    description:    1.4.3E Permiso para ver Administración -> Insumos -> Editar Proveedores
+  Permission_Ver_Administracion_Insumos_AgregarProveedor:
+    name:           Ver_Administracion_Insumos_AgregarProveedor
+    description:    1.4.4 Permiso para ver Administración -> Insumos -> Agregar Proveedor
+  Permission_Ver_Administracion_Insumos_VerAsociaciones:
+    name:           Ver_Administracion_Insumos_VerAsociaciones
+    description:    1.4.5 Permiso para ver Administración -> Insumos -> Ver Asociaciones
+  Permission_Ver_Administracion_Insumos_EditarAsociaciones:
+    name:           Ver_Administracion_Insumos_EditarAsociaciones
+    description:    1.4.5E Permiso para ver Administración -> Insumos -> Editar Asociaciones
+  Permission_Ver_Administracion_Insumos_AsociarAProveedor:
+    name:           Ver_Administracion_Insumos_AsociarAProveedor
+    description:    1.4.6 Permiso para ver Administración -> Insumos -> Asociar a Proveedor
+  
+  Permission_Ver_Administracion_Pautas:
+    name:           Ver_Administración_Pautas
+    description:    1.5 Permiso para ver Administración -> Pautas
+  Permission_Ver_Administracion_Pautas_VerPlantillas:
+    name:           Ver_Administracion_Pautas_VerPlantillas
+    description:    1.5.1 Permiso para ver Administración -> Pautas -> Ver Plantillas
+  Permission_Ver_Administracion_Pautas_EditarPlantillas:
+    name:           Ver_Administracion_Pautas_EditarPlantillas
+    description:    1.5.1E Permiso para ver Administración -> Pautas -> Editar Plantillas
+  Permission_Ver_Administracion_Pautas_AgregarPlantilla:
+    name:           Ver_Administracion_Pautas_AgregarPlantilla
+    description:    1.5.2 Permiso para ver Administración -> Pautas -> Agregar Plantilla
+  Permission_Ver_Administracion_Pautas_VerColumnas:
+    name:           Ver_Administracion_Pautas_VerColumnas
+    description:    1.5.3 Permiso para ver Administración -> Pautas -> Ver Columnas
+  Permission_Ver_Administracion_Pautas_EditarColumnas:
+    name:           Ver_Administracion_Pautas_EditarColumnas
+    description:    1.5.3E Permiso para ver Administración -> Pautas -> Editar Columnas
+  Permission_Ver_Administracion_Pautas_AgregarColumnas:
+    name:           Ver_Administracion_Pautas_AgregarColumnas
+    description:    1.5.4 Permiso para ver Administración -> Pautas -> Agregar Columnas
+
+  Permission_Ver_Administracion_Usuarios:
+    name:           Ver_Administración_Usuarios
+    description:    1.6 Permiso para ver Administración -> Usuarios
+  Permission_Ver_Administracion_Usuarios_AgregarUsuario:
+    name:           Ver_Administracion_Usuarios_AgregarUsuario
+    description:    1.6.1 Permiso para ver Administración -> Usuarios -> Agregar Usuario
+  Permission_Ver_Administracion_Usuarios_AgregarGrupo:
+    name:           Ver_Administracion_Usuarios_AgregarGrupo
+    description:    1.6.2 Permiso para ver Administración -> Usuarios -> Agregar Grupo
+  Permission_Ver_Administracion_Usuarios_ManejoUsuario:
+    name:           Ver_Administracion_Usuarios_ManejoUsuario
+    description:    1.6.3 Permiso para ver Administración -> Usuarios -> Manejo de Usuarios
+  Permission_Ver_Administracion_Usuarios_EditarUsuario:
+    name:           Ver_Administracion_Usuarios_EditarUsuario
+    description:    1.6.3E Permiso para ver Administración -> Usuarios -> Editar Usuarios
+  Permission_Ver_Administracion_Usuarios_ManejoGrupos:
+    name:           Ver_Administracion_Usuarios_ManejoGrupos
+    description:    1.6.4 Permiso para ver Administración -> Usuarios -> Manejo de Grupos
+  Permission_Ver_Administracion_Usuarios_EditarGrupos:
+    name:           Ver_Administracion_Usuarios_EditarGrupos
+    description:    1.6.4E Permiso para ver Administración -> Usuarios -> Editar Grupos
+  Permission_Ver_Administracion_Usuarios_ListadoPermisos:
+    name:           Ver_Administracion_Usuarios_ListadoPermisos
+    description:    1.6.5 Permiso para ver Administración -> Usuarios -> Listado de Permisos
+
+
+  Permission_Ver_Administracion_Lugares:
+    name:           Ver_Administración_Lugares
+    description:    1.7 Permiso para ver Administración -> Lugares
+  Permission_Ver_Administracion_Lugares_Ver:
+    name:           Ver_Administracion_Lugares_Ver
+    description:    1.7.1 Permiso para ver Administración -> Lugares -> Ver Lugar
+  Permission_Ver_Administracion_Lugares_Editar:
+    name:           Ver_Administracion_Lugares_Editar
+    description:    1.7.1E Permiso para ver Administración -> Lugares -> Editar Lugar
+  Permission_Ver_Administracion_Lugares_Agregar:
+    name:           Ver_Administracion_Lugares_Agregar
+    description:    1.7.2 Permiso para ver Administración -> Lugares -> Agregar Lugar
+
+
+  Permission_Ver_Adquisiciones:
+    name:           Ver_Adquisiciones
+    description:    2 Permiso para ver Adquisiciones
+
+  Permission_Ver_Adquisiciones_OrdenesDeCompra:
+    name:           Ver_Adquisiciones_OrdenesDeCompra
+    description:    2.1 Permiso para ver Adquisiciones -> Órdenes de Compra
+  Permission_Ver_Adquisiciones_OrdenesDeCompra_VerLista:
+    name:           Ver_Adquisiciones_OrdenesDeCompra_VerLista
+    description:    2.1.1 Permiso para ver Adquisiciones -> Órdenes de compra -> Ver Lista
+  Permission_Ver_Adquisiciones_OrdenesDeCompra_Lista_Validar:
+    name:           Ver_Adquisiciones_OrdenesDeCompra_Lista_Validar
+    description:    2.1.1.1 Permiso para ver Adquisiciones -> Órdenes de compra -> Lista -> Validar
+  Permission_Ver_Adquisiciones_OrdenesDeCompra_Lista_Recepcionar:
+    name:           Ver_Adquisiciones_OrdenesDeCompra_Lista_Recepcionar
+    description:    2.1.1.2 Permiso para ver Adquisiciones -> Órdenes de compra -> Lista -> Recepcionar
+  Permission_Ver_Adquisiciones_OrdenesDeCompra_Lista_Pagar:
+    name:           Ver_Adquisiciones_OrdenesDeCompra_Lista_Pagar
+    description:    2.1.1.3 Permiso para ver Adquisiciones -> Órdenes de compra ->  Lista -> Pagar
+  Permission_Ver_Adquisiciones_OrdenesDeCompra_EditarLista:
+    name:           Ver_Adquisiciones_OrdenesDeCompra_EditarLista
+    description:    2.1.1E Permiso para ver Adquisiciones -> Órdenes de compra -> Editar Lista
+  Permission_Ver_Adquisiciones_OrdenesDeCompra_NuevaOrden:
+    name:           Ver_Adquisiciones_OrdenesDeCompra_NuevaOrden
+    description:    2.1.2 Permiso para ver Adquisiciones -> Órdenes de compra -> Nueva Orden
+  Permission_Ver_Adquisiciones_OrdenesDeCompra_Cotizar:
+    name:           Ver_Adquisiciones_OrdenesDeCompra_Cotizar
+    description:    2.1.3 Permiso para ver Adquisiciones -> Órdenes de compra -> Cotizar
+
+  Permission_Ver_Adquisiciones_InventarioMateriaPrima:
+    name:           Ver_Adquisiciones_InventarioMateriaPrima
+    description:    2.2 Permiso para ver Adquisiciones -> Inventario Materia Prima
+
+  Permission_Ver_Produccion:
+    name:           Ver_Producción
+    description:    3 Permiso para ver Produccion
+
+  Permission_Ver_Produccion_PlanDeProduccion:
+    name:           Ver_Produccion_PlanDeProduccion
+    description:    3.1 Permiso para ver Produccion -> Plan De Producción
+  Permission_Ver_Produccion_PlanDeProduccion_Lista:
+    name:           Ver_Produccion_PlanDeProduccion_Lista
+    description:    3.1.1 Permiso para ver Produccion -> Plan De Producción -> Lista
+  Permission_Ver_Produccion_PlanDeProduccion_Editar:
+    name:           Ver_Produccion_PlanDeProduccion_Editar
+    description:    3.1.1E Permiso para ver Produccion -> Plan De Producción -> Editar
+  Permission_Ver_Produccion_PlanDeProduccion_NuevoPlan:
+    name:           Ver_Produccion_PlanDeProduccion_NuevoPlan
+    description:    3.1.2 Permiso para ver Produccion -> Plan De Producción -> Nuevo Plan
+
+
+
+  Permission_Ver_Produccion_ProduccionReal:
+    name:           Ver_Produccion_ProduccionReal
+    description:    3.2 Permiso para ver Produccion -> Producción Real
+  Permission_Ver_Produccion_ProduccionReal_ListaElaboraciones:
+    name:           Ver_Produccion_ProduccionReal_ListaElaboraciones
+    description:    3.2.1 Permiso para ver Produccion -> Producción Real -> Lista Elaboraciones
+  Permission_Ver_Produccion_ProduccionReal_EditarElaboraciones:
+    name:           Ver_Produccion_ProduccionReal_EditarElaboraciones
+    description:    3.2.1E Permiso para ver Produccion -> Producción Real -> Editar Elaboraciones
+  Permission_Ver_Produccion_ProduccionReal_IngresarElaboracion:
+    name:           Ver_Produccion_ProduccionReal_IngresarElaboracion
+    description:    3.2.2 Permiso para ver Produccion -> Producción Real -> Ingresar Elaboración
+  Permission_Ver_Produccion_ProduccionReal_ListaLotesElaborados:
+    name:           Ver_Produccion_ProduccionReal_ListaLotesElaborados
+    description:    3.2.3 Permiso para ver Produccion -> Producción Real -> Lista Estado de Maduración
+
+  Permission_Ver_Produccion_ProduccionReal_ListaLotes_Madurar:
+    name:           Ver_Produccion_ProduccionReal_ListaLotes_Madurar
+    description:    3.2.3.1 Permiso para ver Produccion -> Producción Real -> Lista Estado de Maduración -> Ingresar a Maduración
+  Permission_Ver_Produccion_ProduccionReal_ListaLotes_Retirar:
+    name:           Ver_Produccion_ProduccionReal_ListaLotes_Retirar
+    description:    3.2.3.2 Permiso para ver Produccion -> Producción Real -> Lista Estado de Maduración -> Retirar de Maduración
+  Permission_Ver_Produccion_ProduccionReal_ListaLotes_Empacar:
+    name:           Ver_Produccion_ProduccionReal_ListaLotes_Empacar
+    description:    3.2.3.3 Permiso para ver Produccion -> Producción Real -> Lista Estado de Maduración -> Empacar
+  Permission_Ver_Produccion_ProduccionReal_ListaLotes_Despachar:
+    name:           Ver_Produccion_ProduccionReal_ListaLotes_Despachar
+    description:    3.2.3.4 Permiso para ver Produccion -> Producción Real -> Lista Estado de Maduración -> Despachar
+
+  Permission_Ver_Produccion_ProduccionReal_EditarLotesElaborados:
+    name:           Ver_Produccion_ProduccionReal_EditarLotesElaborados
+    description:    3.2.3E Permiso para ver Produccion -> Producción Real -> Editar Estado de Maduración
+  Permission_Ver_Produccion_ProduccionReal_ListaProductosElaborados:
+    name:           Ver_Produccion_ProduccionReal_ListaProductosElaborados
+    description:    3.2.4 Permiso para ver Produccion -> Producción Real -> Nivel de Producción
+  Permission_Ver_Produccion_ProduccionReal_TrazabilidadDeProductosElaborados:
+    name:           Ver_Produccion_ProduccionReal_TrazabilidadDeProductosElaborados
+    description:    3.2.5 Permiso para ver Produccion -> Producción Real -> Stock y Estado de Maduración
+
+  Permission_Ver_Produccion_InventarioValdivia:
+    name:           Ver_Produccion_InventarioValdivia
+    description:    3.3 Permiso para ver Produccion -> Inventario Valdivia
+
+  Permission_Ver_Ventas:
+    name:           Ver_Ventas
+    description:    4 Permiso para ver Ventas
+
+  Permission_Ver_Ventas_RecepcionProductos:
+    name:           Ver_Ventas_RecepcionProductos
+    description:    4.1 Permiso para ver Ventas -> Recepción Productos
+  Permission_Ver_Ventas_RecepcionProductos_Recepcionar:
+    name:           Ver_Ventas_RecepcionProductos_Recepcionar
+    description:    4.1.1 Permiso para ver Ventas -> Recepción Productos -> Recepcionar
+
+  Permission_Ver_Ventas_OrdenesDeVenta:
+    name:           Ver_Ventas_OrdenesDeVenta
+    description:    4.2 Permiso para ver Ventas -> Órdenes de Ventas
+  Permission_Ver_Ventas_OrdenVenta_Lista:
+    name:           Ver_Ventas_OrdenVenta_Lista
+    description:    4.2.1 Permiso para ver Ventas -> Órdenes de Ventas -> Lista
+  Permission_Ver_Ventas_OrdenVenta_Lista_Validar:
+    name:           Ver_Ventas_OrdenVenta_Lista_Validar
+    description:    4.2.1.1 Permiso para ver Ventas -> Órdenes de Ventas -> Lista -> Validar
+  Permission_Ver_Ventas_OrdenVenta_Lista_Despachar:
+    name:           Ver_Ventas_OrdenVenta_Lista_Despachar
+    description:    4.2.1.2 Permiso para ver Ventas -> Órdenes de Ventas -> Lista -> Despachar
+  Permission_Ver_Ventas_OrdenVenta_Lista_Recepcion:
+    name:           Ver_Ventas_OrdenVenta_Lista_Recepcion
+    description:    4.2.1.3 Permiso para ver Ventas -> Órdenes de Ventas -> Lista -> Registrar Recepción
+  Permission_Ver_Ventas_OrdenVenta_Lista_Cobrar:
+    name:           Ver_Ventas_OrdenVenta_Lista_Cobrar
+    description:    4.2.1.4 Permiso para ver Ventas -> Órdenes de Ventas -> Lista -> Cobrar
+  Permission_Ver_Ventas_OrdenVenta_Lista_Devolucion:
+    name:           Ver_Ventas_OrdenVenta_Lista_Devolucion
+    description:    4.2.1.5 Permiso para ver Ventas -> Órdenes de Ventas -> Lista -> Registrar Devolución
+  Permission_Ver_Ventas_OrdenVenta_Editar:
+    name:           Ver_Ventas_OrdenVenta_Editar
+    description:    4.2.1E Permiso para ver Ventas -> Órdenes de Ventas -> Editar
+  Permission_Ver_Ventas_OrdenVenta_NuevaOrden:
+    name:           Ver_Ventas_OrdenVenta_NuevaOrden
+    description:    4.2.2 Permiso para ver Ventas -> Órdenes de Ventas -> Nueva Órden
+  Permission_Ver_Ventas_OrdenVenta_Facturas:
+    name:           Ver_Ventas_OrdenVenta_Facturas
+    description:    4.2.3 Permiso para ver Ventas -> Órdenes de Ventas -> Ver por Facturas
+  Permission_Ver_Ventas_InventarioSantiago:
+    name:           Ver_Ventas_InventarioSantiago
+    description:    4.3 Permiso para ver Ventas -> Inventario Santiago
+
+
+  Permission_Ver_Movil:
+    name:           Ver_Móvil
+    description:    5 Permiso para ver Capturas
+  Permission_Ver_Movil_Capturas:
+    name:           Ver_Movil_Capturas
+    description:    5.1 Permiso para ver Capturas -> Capturas
+  Permission_Ver_Movil_Capturas_Lista:
+    name:           Ver_Movil_Capturas_Lista
+    description:    5.1.1 Permiso para ver Capturas -> Capturas -> Lista
+  Permission_Ver_Movil_Capturas_Alertas:
+    name:           Ver_Movil_Capturas_Alertas
+    description:    5.1.1 Permiso para ver Capturas -> Capturas -> Alertas
+  Permission_Ver_Movil_Capturas_Estadisticas:
+    name:           Ver_Movil_Capturas_Estadisticas
+    description:    5.1.2 Permiso para ver Capturas -> Capturas -> Estadisticas
+  Permission_Ver_Movil_ProductosCompetencia:
+    name:           Ver_Movil_ProductosCompetencia
+    description:    5.2 Permiso para ver Capturas -> Productos Competencia
+  Permission_Ver_Movil_ProductosCompetencia:
+    name:           Ver_Movil_ProductosCompetencia
+    description:    5.2 Permiso para ver Capturas -> Productos Competencia
+  Permission_Ver_Movil_ProductosCompetencia_ListaMarcas:
+    name:           Ver_Movil_ProductosCompetencia_ListaMarcas
+    description:    5.2.1 Permiso para ver Capturas -> Productos Competencia -> Lista de Marcas
+  Permission_Ver_Movil_ProductosCompetencia_EditarMarcas:
+    name:           Ver_Movil_ProductosCompetencia_EditarMarcas
+    description:    5.2.1E Permiso para ver Capturas -> Productos Competencia -> Editar Marcas
+  Permission_Ver_Movil_ProductosCompetencia_AgregarMarca:
+    name:           Ver_Movil_ProductosCompetencia_AgregarMarca
+    description:    5.2.2 Permiso para ver Capturas -> Productos Competencia -> Agregar Marca
+  Permission_Ver_Movil_ProductosCompetencia_ListaCompetencias:
+    name:           Ver_Movil_ProductosCompetencia_ListaCompetencias
+    description:    5.2.3 Permiso para ver Capturas -> Productos Competencia -> Lista de Competencias
+  Permission_Ver_Movil_ProductosCompetencia_EditarCompetencias:
+    name:           Ver_Movil_ProductosCompetencia_EditarCompetencias
+    description:    5.2.3E Permiso para ver Capturas -> Productos Competencia -> Editar Competencias
+  Permission_Ver_Movil_ProductosCompetencia_AgregarCompetencia:
+    name:           Ver_Movil_ProductosCompetencia_AgregarCompetencia
+    description:    5.2.4 Permiso para ver Capturas -> Productos Competencia -> Agregar Competencia
+  Permission_Ver_Movil_ProductosCompetencia_ListaAsociaciones:
+    name:           Ver_Movil_ProductosCompetencia_ListaAsociaciones
+    description:    5.2.5 Permiso para ver Capturas -> Productos Competencia -> Lista Asociaciones
+  Permission_Ver_Movil_ProductosCompetencia_EditarAsociaciones:
+    name:           Ver_Movil_ProductosCompetencia_EditarAsociaciones
+    description:    5.2.5E Permiso para ver Capturas -> Productos Competencia -> Editar Asociaciones
+  Permission_Ver_Movil_ProductosCompetencia_AgregarAsociacion:
+    name:           Ver_Movil_ProductosCompetencia_AgregarAsociacion
+    description:    5.2.6 Permiso para ver Capturas -> Productos Competencia -> Agregar Asociación
+
+  Permission_Ver_Movil_AspectosCalidad:
+    name:           Ver_Movil_AspectosCalidad
+    description:    5.3 Permiso para ver Capturas -> Aspectos Calidad
+  Permission_Ver_Movil_AspectosCalidad_Lista:
+    name:           Ver_Movil_AspectosCalidad_Lista
+    description:    5.3.1 Permiso para ver Capturas -> Aspectos Calidad -> Lista Aspectos de Calidad
+  Permission_Ver_Movil_AspectosCalidad_Agregar:
+    name:           Ver_Movil_AspectosCalidad_Agregar
+    description:    5.3.2 Permiso para ver Capturas -> Aspectos Calidad -> Agregar Aspecto de Calidad
+  Permission_Ver_Movil_AspectosCalidad_Editar:
+    name:           Ver_Movil_AspectosCalidad_Editar
+    description:    5.3.3 Permiso para ver Capturas -> Aspectos Calidad -> Editar Aspecto de Calidad
+
+
+
+  Permission_Ver_Costos:
+    name:           Ver_Costos
+    description:    6 Permiso para ver Costos
+
+  Permission_Ver_Costos_CostosIndirectos:
+    name:           Ver_Costos_CostosIndirectos
+    description:    6.1 Permiso para ver Costos -> Costos Indirectos
+  Permission_Ver_Costos_CostosIndirectos_Lista:
+    name:           Ver_Costos_CostosIndirectos_Lista
+    description:    6.1.1 Permiso para ver Costos -> Costos Indirectos -> Lista
+  Permission_Ver_Costos_CostosIndirectos_ListaPropios:
+    name:           Ver_Costos_CostosIndirectos_ListaPropios
+    description:    6.1.1Propios Permiso para ver Costos -> Costos Indirectos -> Lista Propios
+  Permission_Ver_Costos_CostosIndirectos_Editar:
+    name:           Ver_Costos_CostosIndirectos_Editar
+    description:    6.1.1E Permiso para ver Costos -> Costos Indirectos -> Editar
+  Permission_Ver_Costos_CostosIndirectos_Agregar:
+    name:           Ver_Costos_CostosIndirectos_Agregar
+    description:    6.1.2 Permiso para ver Costos -> Costos Indirectos -> Agregar
+
+  Permission_Ver_Costos_Resumen:
+    name:           Ver_Costos_Resumen
+    description:    6.2 Permiso para ver Costos -> Resumen
+
+  Permission_Ver_Costos_Simulacion:
+    name:           Ver_Costos_Simulacion
+    description:    6.3 Permiso para ver Costos -> Simulación
+

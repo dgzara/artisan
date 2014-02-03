@@ -1,0 +1,121 @@
+@charset "utf-8";
+/* CSS Document */
+
+body,td,th {
+	color: #727375;
+	font-family: Arial;
+	font-size: 11px;
+}
+.Estilo1 {
+	color: #742427;
+	font-weight: bold;
+}
+.Estilo2 {
+	color: #FFFFFF;
+	font-family: Tahoma;
+	font-size: 11px;
+}
+.link {
+     color:#727375;
+
+}
+.bordeazul {
+	border: 1px solid #84B819;
+}
+.Estilo3 {
+	color: #FFFFFF;
+	font-family: Tahoma;
+	font-size: 11px;
+}
+.Estilo4 {
+	color: #742427;
+	font-family: Arial;
+	font-size: 9px;
+}
+.Estilo5 {
+	color: #742427;
+	font-family: Arial;
+	font-size: 14px;
+}
+.menuline4 {
+	MARGIN-LEFT: 0px;
+	border-right-width: 2px;
+	border-top-style: none;
+	border-right-style: solid;
+	border-bottom-style: none;
+	border-left-style: none;
+	border-right-color:#323493;
+}
+.menuline5 {
+	MARGIN-LEFT: 0px;
+	border: 2px solid #84B819;
+}
+.menuline7 {
+	MARGIN-LEFT: 0px;
+	border: 1px solid #4A1718;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 11px;
+}
+.menuline6 {
+	MARGIN-LEFT: 0px;
+	border-bottom-width: 2px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: solid;
+	border-left-style: none;
+	border-bottom-color: #84B819;
+}
+.waQueryBoxInput {
+	FONT-SIZE: 11px;
+	WIDTH: 100px;
+	COLOR: #ABBCD6;
+	LINE-HEIGHT: 11px;
+	MARGIN-RIGHT: 6px;
+	HEIGHT: 16px;
+	BACKGROUND-COLOR: #F4F5F9;
+	border: 1px solid #ABBCD6;
+}
+.waQueryBoxInputboton {
+	FONT-SIZE: 11px;
+	WIDTH: auto;
+	COLOR: #FFFFFF;
+	LINE-HEIGHT: 11px;
+	MARGIN-RIGHT: 6px;
+	HEIGHT: 20px;
+	BACKGROUND-COLOR: #742427
+}
+a:link {
+	text-decoration: none;
+	
+}
+a:visited {
+	text-decoration: none;
+	
+}
+a:hover {
+	text-decoration: underline;
+	
+}
+a:active {
+	text-decoration: none;
+	
+}
+#MenuBar1 li {
+	width: auto;
+	white-space: nowrap;
+}
+#MenuBar1 ul {
+	width: auto;
+}
+#MenuBar1 ul li {
+	float: none;
+	background-color: transparent;
+}
+#MenuBar1 a.MenuBarItemSubmenu {
+	background-position: 100% 50%;
+}
+th 
+{
+	min-width:60px;
+}

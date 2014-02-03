@@ -1,0 +1,24 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/08-Security
+
+default:
+  is_secure:   true
+  credentials: Ver_Administración_Lugares
+
+index:
+  credentials: Ver_Administracion_Lugares_Ver
+
+show:
+  credentials: Ver_Administracion_Lugares_Ver
+
+new:
+  credentials: Ver_Administracion_Lugares_Agregar
+
+edit:
+  credentials: Ver_Administracion_Lugares_Editar
+
+update:
+  credentials: Ver_Administracion_Lugares_Editar
+
+delete:
+  credentials: Ver_Administracion_Lugares_Editar

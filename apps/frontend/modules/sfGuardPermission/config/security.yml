@@ -1,0 +1,21 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/08-Security
+
+default:
+  is_secure:   true
+  credentials: Ver_Administración_Usuarios
+
+index:
+  credentials: Ver_Administracion_Usuarios_ListadoPermisos
+
+new:
+  credentials: admin
+
+edit:
+  credentials: admin
+
+update:
+  credentials: admin
+
+delete:
+  credentials: admin

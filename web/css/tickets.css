@@ -1,0 +1,3683 @@
+/* --------------------------------------------------
+= Some old styles are remaining to test and will later remove
+----------------------------------------------------- */
+
+/* --------------------------------------------------
+= show ticket list top section
+----------------------------------------------------- */
+
+#content div div h1 {
+  font-size: 18px;
+}
+
+.ttop-bar {
+  margin: 0 0 15px 0;
+  padding: 0px;
+  float: left;
+  width: 100%;
+}
+
+.tb-topleft {
+  float: left;
+  padding: 3px 0px;
+}
+
+.tb-topcenter {
+  margin: 0 auto;
+  padding-top: 6px;
+  padding-right: 30px;
+  font-weight: bold;
+  color: #888888;
+  width: 55px;
+  text-align: center;
+}
+
+.tb-topcenter a {
+  text-decoration: none;
+}
+
+.tb-topcenter img {
+  vertical-align: middle;
+}
+
+.tb-topcenter div {
+  width: 50px;
+  margin: 0 auto;
+}
+
+.tb-topright {
+  padding: 5px 0 0 0;
+  float: right;
+  text-align: right;
+  overflow: visible;
+}
+
+.tb-topright form#reports {
+  overflow: visible;
+}
+
+.tb-topright form#reports input {
+  display: inline;
+}
+
+.tb-topright form#reports label {
+  font-weight: normal;
+  margin: 0 5px;
+  display: inline;
+  padding: 0;
+}
+
+.tb-topright form#reports label.tb-listname {
+  font-weight: bold;
+  text-align: right;
+  color: #666;
+}
+
+.tb-topright form#reports select#tickets_report_id {
+  width: 180px;
+  font-size: 13px;
+  padding: 2px 0;
+  color: #333;
+  display: inline;
+}
+
+.tb-topright form#reports input#ticket_id {
+  width: 50px;
+  margin-right: 4px;
+}
+
+#tickets_report_id option {
+  margin: 0.15em;
+}
+
+#report-rss {
+  font-size: 0.6em;
+  float: none;
+  margin-left: 10px
+}
+
+ul.menu-submenu {
+  height: 20px;
+}
+
+/* --------------------------------------------------
+= New Ticket
+----------------------------------------------------- */
+
+.top-ticket_details .summary_blur {
+  color: #ccc;
+}
+
+.top-ticket_details .summary_focus {
+  color: #000;
+}
+
+.associate_as {
+  margin: 5px 0 0 0;
+  padding: 4px 0 9px 0;
+  font-size: 13px;
+  border-top: 1px solid #eee;
+}
+
+.associate_as label {
+  color: #666;
+}
+
+.associate_as select {
+  margin: 7px 3px 0 4px;
+  font-size: 14px;
+}
+
+.associate_as p {
+  font-size: 14px;
+  margin: 7px 5px 0 0;
+  padding: 2px;
+  font-weight: bold;
+  color: #5274A5;
+  display: inline;
+}
+
+.top-ticket_details {
+  background: #d4dce8;
+  border: 1px solid #d4dce8;
+  padding: 0 14px 0 12px;
+  margin: 0;
+  min-height: 38px;
+}
+
+.top-ticket-summary {
+/*float: left;*/
+  width: 100%;
+  margin-top: 10px;
+}
+
+.top-ticket_details h1 {
+  color: #000;
+  font-size: 20px;
+  line-height: 1.25em;
+  margin: 0 55px 12px 5px;
+  padding-bottom: 0;
+  padding-top: 2px;
+}
+
+.top-ticket_details h1 input {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 0 1px 1px 2px;
+  margin: 0 0 0 -2px !important;
+  width: 85%;
+}
+
+.top-ticket_details em {
+  font-size: 20px;
+  margin-right: 10px;
+  padding: 0 6px 0 7px  !important;
+  background-color: #fff;
+  color: #2e4b73;
+  font-style: normal;
+  font-weight: bold;
+  float: left;
+  margin-top: -2px;
+}
+
+#top-edit-option {
+  float: right;
+  margin: 1px 0 0 0;
+  width: 40px;
+  position: relative;
+  overflow: visible;
+}
+
+#top-edit-option a {
+  position: absolute;
+  bottom: 0;
+  background: #E7FABB;
+  color: #303F0C;
+  font-weight: bold;
+  text-decoration: underline;
+  font-family: arial;
+  padding: 5px 9px 0 9px;
+  margin-right: 14px;
+  margin-top: 0;
+  border-top: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  height: 22px;
+}
+
+#top-edit-option a:hover {
+  background: #BADF61;
+  color: #303F0C;
+  text-decoration: none;
+  border-top: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+
+.extra_fields{
+  margin-top: 15px;
+}
+
+/* --------------------------------------------------
+= New Ticket - meta
+----------------------------------------------------- */
+
+#ticket ul.ticket_details {
+  height: 1%;
+  border: 1px solid #d4dce8;
+  border-top: 0;
+  margin-top: -1px;
+  margin-bottom: 15px;
+  padding: 7px 0 0 15px;
+  clear: both;
+}
+
+#ticket ul li.meta {
+  margin: 1px 0 18px 0;
+}
+
+#ticket ul li.meta h1 {
+  margin: 0 0 12px;
+  padding: 0px 0px 4px 0px;
+  line-height: 1.4em;
+  color: #0c1725;
+  font-size: 1.75em;
+}
+
+#ticket ul li.meta h1 em {
+  margin-right: 4px;
+  padding: 4px 8px 4px;
+  color: #2e4b73;
+}
+
+#ticket ul li.meta div.description {
+  color: #0c1725;
+  clear: both;
+  margin: 0;
+  padding: 0;
+  max-width: 1200px;
+
+}
+
+#ticket ul li.meta div.description p {
+  margin: 0;
+  padding: 8px 0;
+  line-height: 1.45em;
+}
+
+#ticket ul li.meta div.description em {
+  font-style: italic;
+}
+
+#ticket ul li.meta ul {
+  width: 48%;
+  margin-right: 10px;
+  margin-bottom: 15px;
+  float: left;
+  font-size: 12px;
+}
+
+#ticket ul li.meta ul.last {
+  margin-right: 0;
+  margin-left: 8px;
+}
+
+#ticket ul li.meta ul li {
+  border-bottom: 1px solid #eee;
+  padding: 3px 0;
+  color: #0c1725;
+  height: 19px;
+}
+
+#ticket ul li.meta ul li input[type=text] {
+  height: 16px;
+  font-size: 12px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+#ticket ul li.meta ul li em {
+  font-weight: bold;
+  font-style: normal;
+  text-align: left;
+  min-width: 115px;
+  margin: 1px 8px 0 0;
+  float: left;
+  color: #666;
+}
+
+#ticket ul li.meta ul li select {
+  width: 150px;
+  margin: 0 4px 1px 0;
+}
+
+/* Ticket status ajax table */
+
+ul.ajax_table li {
+  height: 21px;
+  padding: 0.2em 0.5em;
+  text-align: left;
+}
+
+ul.ajax_table .headers {
+  margin-bottom: 5px;
+  background: none repeat scroll 0 0 #EAF3FA;
+  color: #333333;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+ul.ajax_table li div {
+  float:left;
+}
+
+
+/* Fix for agile planner select boxes */
+
+#ticket #ticket_form ul.ticket_details li.meta ul {
+  margin: 0 0 10px 0 !important;
+}
+
+#ticket #ticket_form ul.ticket_details li.meta ul li {
+  padding: 0 0 4px 0 !important;
+  margin: 0 0 4px 0 !important;
+}
+
+#ticket #ticket_form ul.ticket_details li.meta ul li.fieldWithErrors {
+  padding-bottom: 5px;
+  display: block;
+  border-bottom: 1px solid #eee;
+}
+
+#ticket #ticket_form ul.ticket_details li.meta ul li select {
+  width: 140px;
+  margin: 0 !important;
+}
+
+ul.ticket_details li.meta .description label span.box-size {
+  float: right;
+  font-size: 10px;
+  margin-right: 30px;
+}
+
+textarea#ticket_description {
+  clear: both;
+  width: 97%;
+}
+
+.simple_wikitext {
+  font: normal 12px Arial, Helvetica, sans-serif;
+  letter-spacing: normal;
+  line-height: 140%;
+}
+
+span.req {
+  color: #AA273D;
+  font-weight: bold;
+  font-size: small;
+}
+
+#ticket ul li.meta div.description label em {
+  font-weight: bold;
+  font-style: normal;
+  text-align: left;
+  margin-right: 10px;
+  float: left;
+  color: #666;
+}
+
+#ticket ul li.meta div.description ul li em {
+  font-weight: normal;
+  min-width: 0;
+  color: #000;
+}
+
+#ticket ul li.meta div.description ul {
+  width: auto;
+  margin-right: 0px;
+  margin-bottom: 15px;
+  float: none;
+  font-size: 1em;
+  color: #000;
+}
+
+#ticket ul li.meta div.description ul li {
+  float: none;
+  height: auto;
+}
+
+#ticket ul li.meta div.description ul li ul {
+  margin-bottom: 5px;
+}
+
+#ticket ul li.meta div.description ul li ul li {
+  float: none;
+  height: auto;
+}
+
+#ticket ul li.meta ul li em.none {
+  float: none;
+  color: #aaa;
+  font-weight: normal;
+}
+
+
+
+/* --------------------------------------------------
+= New Ticket - Sub-Sections
+----------------------------------------------------- */
+
+#ticket ul li.section ul div.section {
+  border: none;
+  padding: 0;
+}
+
+#ticket ul li.section ul div.section h2, div.section h2 {
+  display: none;
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0;
+  background: none;
+  color: #666;
+  border-bottom: 1px dotted #ddd;
+}
+
+#ticket ul li.section ul div.section div.content {
+  padding: 15px 0 0;
+  float: left;
+}
+
+.content table {
+  float: left;
+}
+
+.section-title {
+  background-color: #E0E7EF;
+  font-size: 20px;
+  padding: 6px 0px 6px 9px;
+  color: #2e4b73;
+  margin: 10px 0 8px 0;
+  font-weight: bold;
+  width: 99%;
+  float: left;
+  font-family: Arial, sans-serif;
+}
+
+#notifications .section-title {
+  padding-top: 1px;
+}
+
+#notifications .section-title span {
+  background: transparent url(/images/star-on.png) left top no-repeat;
+  padding-left: 21px;
+}
+
+.new-ticket-attachments .section-title {
+  margin: 0 0 5px 0;
+}
+
+.section-title span {
+  font-size: 15px;
+  margin-right: 5px;
+}
+
+.section-title span a {
+  text-decoration: none;
+  font-size: 14px;
+}
+
+#notifications .section-title p.followers-info-email {
+  color: #222;
+  font-size:11px;
+  font-weight:normal;
+  display:inline-block;
+  margin: -1px 0 0 8px !important;
+  padding:0
+}
+
+.section-title .laside {
+  float: left;
+  width: 26%;
+  margin-top: 1px;
+}
+
+.section-title .raside {
+  float: right;
+  width: 70%;
+  text-align: right;
+}
+
+a.custom_button {
+  font-size: 13px !important;
+  padding: 4px 8px !important;
+}
+
+/*------------------------------------------------------
+= Show Ticket Basics
+----------------------------------------------------- */
+
+#ticket {
+  color: #333;
+}
+
+#ticket em {
+  font-style: normal;
+}
+
+#ticket ul {
+  padding: 0;
+  margin: 0;
+  font-family: Arial;
+  font-size: 12px;
+}
+
+#ticket ul li {
+  list-style-type: none;
+}
+
+#ticket ul li.hide {
+  display: none;
+}
+
+.ticket_details em label {
+  display: inline;
+}
+
+/* --------------------------------------------------
+  = show tickets - table style
+----------------------------------------------------- */
+
+.tickets tbody td :link, .tickets tbody td :visited {
+  display: block;
+}
+
+.tickets .inlineTD :link, .tickets .inlineTD :visited {
+  display: inline;
+}
+
+.tickets {
+  border-bottom: none;
+}
+
+.tickets thead th {
+  text-transform: capitalize;
+  overflow: hidden;
+  border-left-width: 1px;
+  border-right-width: 1px;
+  border-left-style: solid;
+  border-right-style: solid;
+  border-left-color: #cccccc;
+  border-right-color: #cccccc;
+  background-color: #eee;
+  font-size: 1em;
+}
+
+.tickets tbody td, .reports tbody td {
+  min-width: 150px;
+  white-space: normal;
+  padding-top: 0;
+  padding-right: 0.3em;
+  padding-bottom: 0;
+  padding-left: 0.3em;
+  border-width: 1px;
+  border-style: solid;
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+}
+
+.tickets td {
+  cursor: pointer;
+  vertical-align: top;
+}
+
+.tickets td a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.tickets td a.real {
+  text-decoration: underline;
+  color: #15478C;
+}
+
+.label {
+  text-align: right;
+}
+
+.tickets .select_td {
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+
+.tickets td.rel4 {
+  cursor: default;
+  font-weight: 900;
+  color: white;
+  background-color: #DF0070;
+}
+
+.tickets td.rel0 {
+  cursor: default;
+  font-weight: 900;
+  color: white;
+  background-color: #FF6A22;
+}
+
+.tickets td.rel1 {
+  cursor: default;
+  font-weight: 900;
+  color: white;
+  background-color: #0070FD;
+}
+
+.tickets td.rel2 {
+  cursor: default;
+  font-weight: 900;
+  color: white;
+  background-color: #49611F;
+}
+
+.tickets td.rel3 {
+  cursor: default;
+  font-weight: 900;
+  color: white;
+  background-color: red;
+}
+
+.tickets td.number {
+  min-width: 50px;
+}
+
+.tickets td.summary {
+  white-space: normal;
+  min-width: 100%;
+  width: 100%;
+}
+
+.tickets td.ticket_status_id {
+  min-width: 100px;
+}
+
+.tickets td.priority {
+  min-width: 80px;
+}
+
+.tickets td.invested_hours, .tickets td.working_hours {
+  min-width: 50px;
+}
+
+.tickets td.permission_type {
+  min-width: 80px;
+}
+
+.tickets td.created_on, .tickets td.completed_date {
+  min-width: 70px;
+}
+
+.tickets td.custom {
+  overflow: hidden;
+}
+
+.tickets tbody td a, .reports tbody td a {
+  border-bottom: none
+}
+
+.tickets tbody td.id :link, .tickets tbody td.id :visited {
+  font-weight: bold;
+}
+
+.tickets tbody tr:hover {
+  background: #EAF3FA;
+  color: #000;
+}
+
+.tickets tr.no-tickets, .tickets tr.no-tickets:hover {
+  background: #fff !important;
+  color: #333;
+  text-align: center;
+}
+
+.tickets tr.no-tickets td, .tickets tr.no-tickets td:hover {
+  background: #fff !important;
+  color: #333;
+  text-align: center;
+  padding: 3px 0;
+  border: 1px solid #ddd !important;
+}
+
+.no-tickets td {
+  text-align: center;
+}
+
+.tickets tbody tr:nth-child(even) {
+  background: #f8f8f8;
+  border-color: #ccc;
+  color: #333
+}
+.tickets tbody tr:nth-child(odd) {
+  background: #fcfcfc;
+  border-color: #ddd;
+  color: #444
+}
+
+.tickets tbody tr:nth-child(odd) td {
+  border-color: #ddd;
+}
+
+.tickets tbody tr:nth-child(even) td {
+  border-color: #ccc;
+}
+
+.tickets tbody tr:hover {
+  background: #EAF3FA;
+  color: #000;
+}
+
+.tickets tr.color1-odd {
+  background: #fdc;
+  border-color: #ffb4b4;
+  color: #a22
+}
+
+.tickets tr.color1-even {
+  background: #fed;
+  border-color: #ffb4b4;
+  color: #a22
+}
+
+.tickets tr.color1-odd  td {
+  border-color: #ffb4b4;
+}
+
+.tickets tr.color1-even td {
+  border-color: #ffb4b4;
+}
+
+.tickets tr.color2-odd {
+  background: #ffb;
+  border-color: #eea;
+  color: #880
+}
+
+.tickets tr.color2-even {
+  background: #ffd;
+  border-color: #dd8;
+  color: #880
+}
+
+.tickets tr.color2-odd  td {
+  border-color: #eea;
+}
+
+.tickets tr.color2-even td {
+  border-color: #dd8;
+}
+
+.tickets tr.color3-odd {
+  background: #fcfcfc;
+  border-color: #ddd;
+  color: #444
+}
+
+.tickets tr.color3-even {
+  background: #f8f8f8;
+  border-color: #ccc;
+  color: #333
+}
+
+.tickets tr.color3-odd  td {
+  border-color: #ddd;
+}
+
+.tickets tr.color3-even td {
+  border-color: #ccc;
+}
+
+.tickets tr.color4-odd {
+  background: #e7ffff;
+  border-color: #cee;
+  color: #099
+}
+
+.tickets tr.color4-even {
+  background: #dff;
+  border-color: #bee;
+  color: #099
+}
+
+.tickets tr.color4-odd  td {
+  border-color: #cee;
+}
+
+.tickets tr.color4-even td {
+  border-color: #bee;
+}
+
+.tickets tr.color5-odd {
+  background: #e7eeff;
+  border-color: #cde;
+  color: #469
+}
+
+.tickets tr.color5-even {
+  background: #dde7ff;
+  border-color: #cde;
+  color: #469
+}
+
+.tickets tr.color5-odd  td {
+  border-color: #cde;
+}
+
+.tickets tr.color5-even td {
+  border-color: #cde;
+}
+
+.tickets tr.color6-odd {
+  background: #fcfcfc;
+  border-color: #ddd;
+  color: #888
+}
+
+.tickets tr.color6-even {
+  background: #f8f8f8;
+  border-color: #ddd;
+  color: #888
+}
+
+.tickets tr.color6-odd a, .color6-even a {
+  color: #b66
+}
+
+.tickets tbody tr.fullrow td, .tickets tbody td.fullrow {
+  border: none;
+  color: #333;
+  background: transparent;
+  font-size: 85%;
+}
+
+.tickets tbody tr.fullrow:hover {
+  background: transparent !important
+}
+
+.tickets .fullrow :link, .tickets .fullrow :visited {
+  display: inline
+}
+
+.tickets .fullrow .meta {
+  color: #999;
+  margin-bottom: -.5em;
+  margin-left: -1em
+}
+
+.tickets .fullrow hr {
+  display: none
+}
+
+/* --------------------------------------------------
+= batch update
+
+----------------------------------------------------- */
+
+#mass_att {
+  margin-top: 1em;
+}
+
+.mass {
+  background-color: #d4dce8;
+}
+
+.title-division h3 {
+  background-color: #D4DCE8;
+  background-image: none;
+  background-repeat: repeat;
+  background-attachment: scroll;
+  background-x-position: 0%;
+  background-y-position: 0%;
+  border: 1px solid #D4DCE8;
+  margin-top: 1em;
+  margin-right: 0pt;
+  margin-bottom: 0pt;
+  margin-left: 0pt;
+  padding: .1em .5em;
+}
+
+/* --------------------------------------------------
+= Rest
+----------------------------------------------------- */
+
+.clearfix:after,
+.content:after,
+li:after,
+li.section ul#section_nav:after,
+li.section h2:after,
+#action:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clearfix {
+  display: inline-block;
+}
+
+html[xmlns] .clearfix {
+  display: block;
+}
+
+* html .clearfix {
+  height: 1%;
+}
+
+.hide {
+  display: none;
+}
+
+li.system_changeset {
+  list-style-type: none;
+  padding-left: 0;
+  clear: both;
+}
+
+li.horz_changeset {
+  border-bottom: 0;
+}
+
+.empty-panel {
+  color: #666;
+  text-align: center;
+  background-color: #fff;
+}
+
+.ttop-bar {
+  margin: -3px 0 8px 0;
+  padding: 0px;
+}
+
+b.rtop, b.rbottom {
+  display: block;
+  background: #FFF;
+}
+
+b.rtop b, b.rbottom b {
+  display: block;
+  height: 1px;
+  overflow: hidden;
+  background: #F6F6F6;
+}
+
+b.r1 {
+  margin: 0 5px;
+}
+
+b.r2 {
+  margin: 0 3px;
+}
+
+b.r3 {
+  margin: 0 2px;
+}
+
+b.rtop b.r4, b.rbottom b.r4 {
+  margin: 0 1px;
+  height: 2px;
+}
+
+.button-divsec {
+  width: auto;
+  border-top: 0px solid #ddd;
+  padding: 6px 0px 2px 0px;
+  margin: 2px 0px 0px 0px;
+  font-size: 1.2em;
+}
+
+.button-divsec p {
+  float: left;
+  margin-top: 3px;
+  margin-left: 4px;
+}
+
+/* --------------------------------------------------
+  =Sections
+----------------------------------------------------- */
+
+#ticket ul#ticket_canvas {
+  border: 1px solid #d4dce8;
+  border-top: 0px;
+  margin-bottom: 15px;
+  clear: both;
+  display: block;
+  height: 100%;
+}
+
+#ticket ul li.section {
+  padding: 0 15px;
+  margin: 0 0 15px 0;
+}
+
+#ticket ul li.section h2, #ticket ul li#section_nav ul {
+  padding: 8px 10px;
+  font-size: 14px;
+  background: #5C82AF url("/images/tickets/ticket_sect_bg.jpg") top left repeat-x;
+  color: #fff;
+  height: 26px;
+}
+
+* html #ticket ul li.section h2 {
+  margin-bottom: -4px;
+}
+
+#ticket ul li.section h2 em.title {
+  float: left;
+  color: #900;
+}
+
+#ticket ul li.section h2 em.toggle {
+  float: right;
+  width: 18px;
+  height: 18px;
+}
+
+#ticket ul li#section_nav ul {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+#ticket ul li#section_nav ul li {
+  float: left;
+  display: inline;
+}
+
+#ticket ul li#section_nav ul li.action {
+  float: right;
+}
+
+#ticket ul li#section_nav ul li a {
+  margin-right: 5px;
+  padding: 0;
+  padding: 4px 9px 3px;
+  font-size: 12px;
+  color: #039;
+  background: #efefef url(/images/blue/bg-nbutton.jpg) repeat-x;
+  text-decoration: underline;
+  font-weight: bold;
+  float: left;
+  border-top: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+
+#ticket ul li#section_nav ul li a.active {
+  background: #fff;
+  color: #000;
+  text-decoration: none;
+}
+
+#ticket ul li#section_nav ul li.selected a {
+  background: #fff;
+  color: #000;
+  text-decoration: none;
+}
+
+#ticket ul li#section_nav ul li.action a {
+  background: #E7FABB;
+  color: #303F0C;
+}
+
+#ticket ul li#section_nav ul li a:hover {
+  background: #eee;
+  color: #06c;
+  text-decoration: none;
+}
+
+#ticket ul li#section_nav ul li a.active:hover {
+  background: #eee;
+  color: #666;
+}
+
+#ticket ul li#section_nav ul li.action a:hover {
+  background: #BADF61;
+  color: #303F0C;
+}
+
+/* --------------------------------------------------
+  =Associations
+----------------------------------------------------- */
+
+div#associations table {
+  border: none;
+}
+
+div#associations table th {
+  padding: 3px 8px;
+  margin: 0;
+}
+
+div#associations table td.number em {
+  padding: 0;
+  margin: 0;
+}
+
+div#associations table td.number em a {
+  padding: 6px 0 0 0;
+}
+
+div#associations table td {
+  padding: 0 0 0 8px;
+}
+
+div#associations table td a {
+  padding: 0;
+}
+
+div#associations table td.rel0 {
+  font-weight: bold;
+  color: #fff;
+  padding-top: 1px;
+}
+
+div#associations table td.rel1 {
+  font-weight: bold;
+  color: #fff;
+  padding-top: 1px;
+}
+
+div#associations table td.rel2 {
+  font-weight: bold;
+  color: #fff;
+  padding-top: 1px;
+}
+
+div#associations table td.rel3 {
+  font-weight: bold;
+  color: #fff;
+  padding-top: 1px;
+}
+
+div#associations table td.rel4 {
+  font-weight: bold;
+  color: #fff;
+  padding-top: 1px;
+}
+
+div#associations table td #assoc_edit_1 {
+  display: block;
+  padding: 0.5em 5px;
+}
+
+div#associations table td.action a {
+  background: url(/images/remove.gif) 0 50% no-repeat;
+  padding-left: 20px;
+}
+
+div#associations table td.number em {
+  color: #3d4652;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+div#associations table td.number em a {
+  padding-left: 10px;
+}
+
+div#associations table td.summary {
+  font-weight: bold;
+  color: #0c1725;
+  font-size: 12px;
+}
+
+/* --------------------------------------------------
+/*  =Notification Panel
+----------------------------------------------------- */
+
+table#ticket_users_list {
+  border: none;
+}
+
+table#users_list {
+  border: none;
+}
+
+table#users_list label {
+  font-weight: normal;
+}
+
+/* --------------------------------------------------
+/*  =Files and Attachments
+----------------------------------------------------- */
+
+div#attachments div ul.files {
+  padding: 0;
+  margin: 0;
+}
+
+div#attachments ul.files li {
+  display: block;
+  padding: 6px 15px 6px 0px;
+  border-top: 1px solid #E0E7EF;
+}
+
+table#tnfiles {
+  width: 100%;
+  border: 0;
+  margin: -5px 0 5px 0;
+}
+
+table#tnfiles td {
+  padding: 5px 0;
+}
+
+.file-thumbn {
+  border: 1px solid #ccc;
+  margin: 5px 15px 3px 0px;
+  float: left;
+}
+
+.tfile {
+  font-weight: bold;
+  float: left;
+  margin-top: 3px;
+  margin-left: 0px;
+  margin-right: 5px;
+}
+
+.tfile-added {
+  color: #555;
+  padding-top: 8px;
+}
+
+.tfile-details {
+  text-align:right;
+  padding: 0;
+  margin: 0;
+  min-width: 102px;
+}
+
+.tfile-details a.link2remote {
+    margin-right:10px;
+}
+
+.tfile-separator {
+  border-bottom: 1px solid #c3cedf;
+}
+
+.tfile-fico {
+  float: left;
+  margin-right: 8px;
+  padding-top: 0;
+}
+
+.tfile-nfile-name {
+  float: left;
+  font-size: 12px;
+  font-weight: bold;
+  padding-top: 0;
+}
+
+tr.first_row {
+  background-color: #ffffff;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+tr.second_row {
+  background-color: #F6F6F6;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+div#attachments form fieldset,
+#attachments #documents_div .document fieldset {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 8px;
+}
+
+div#attachments form fieldset div.attachment_field {
+  float: left;
+  padding-right: 20px;
+}
+
+div#attachments p#add_attachment_link a {
+  background: url(/images/add.gif) top left no-repeat;
+  padding-left: 20px;
+  margin-right: 10px;
+  height: 16px;
+}
+
+#attachments div form #documents_div .document fieldset div .new_tip,
+#attachments #documents_div .document fieldset div .new_tip {
+  margin-top: 5px;
+  width: 100%;
+}
+
+#attachments div form input.button {
+  margin-right: 4px;
+}
+
+#ticket_edit_form div input.button {
+  margin-top: -12px !important;
+}
+
+#ticket_edit_form ul li div a {
+  background-position: top left;
+}
+
+/* --------------------------------------------------
+  =Activity
+----------------------------------------------------- */
+
+div#activity {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #c3cedf;
+  font-weight: normal;
+}
+
+div#activity ul li {
+  margin-bottom: 5px;
+  color: #0c1725;
+}
+
+div#activity ul li h3.author {
+  padding: 0px 0px 4px 0px;
+  font-size: 12px;
+  color: #666;
+  font-weight: normal;
+}
+
+div#activity ul li ul {
+  padding-bottom: 2px;
+  margin: 0 15px;
+}
+
+#ticket div#activity ul li ul li {
+  padding: 0;
+  border-bottom: none;
+  margin-bottom: 8px;
+  color: #444;
+}
+
+div#activity ul li em, li.activitiy ul li em {
+  color: #000;
+}
+
+div#activity ul li em.action_taken {
+  font-weight: bold;
+}
+
+/* --------------------------------------------------
+=Action
+----------------------------------------------------- */
+
+.ticket_action div.col_left {
+    float: left;
+    margin-right: 40px;
+    padding: 0;
+    width: 60%;
+}
+
+.ticket_action div.col_left .small_toolbar {
+  margin-left: 0;
+}
+
+.ticket_action div.col_right {
+  width: 285px;
+  float: right;
+}
+
+
+.ticket_action ul li {
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #eee;
+}
+
+.ticket_action textarea {
+  float: left;
+  width: 100%;
+  height: 200px;
+  letter-spacing: .025em;
+}
+
+.ticket_action input {
+  font-size: 1.15em;
+  letter-spacing: .025em;
+}
+
+.ticket_action .buttons input {
+  bottom: 0;
+}
+
+.ticket_action div#action_form div.col_right {
+  width: 35%;
+  float: right;
+  padding-top: 45px;
+}
+
+.ticket_action div#action_form div.col_right h4 {
+  margin: 12px 0 7px 0;
+  padding: 0;
+  font-size: 12px;
+}
+
+.ticket_action div#action_form div.col_right ul {
+  margin: 0 60px 0 0;
+  padding: 0;
+  list-style-type: none;
+  float: left;
+  width: auto;
+}
+
+.ticket_action div#action_form div.col_right ul li {
+  margin: 0;
+  padding: 0;
+  border: none;
+  display: block;
+  clear: both;
+}
+
+
+.ticket_action div#action_form div.col_right ul li input[type=radio] {
+  float: left;
+  margin: 5px 7px 0 2px !important;
+  padding: 0;
+  position: relative;
+}
+
+.ticket_action div#action_form div.col_right ul li label {
+  float: left;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  color: #000;
+  font-size: 0.9em;
+  line-height: 22px;
+}
+
+.ticket_action div#action_form div.col_right ul li h4 {
+  padding: 1px 5px;
+  margin: 0 0 5px 0;
+  display: block;
+  clear: both;
+}
+
+.ticket_action div#action_form div.col_right ul li.status-open h4 {
+  background-color: #E7FABB;
+}
+
+.ticket_action div#action_form div.col_right ul li.status-closed h4 {
+  background-color: #FFE5E5;
+}
+
+.ticket_action div#action_form div.col_right .reassign {
+  background: #f4f4f4;
+  padding: 5px 1px 5px 10px;
+  margin: 10px 0 1px 0;
+  float: left;
+  min-width: 260px;
+}
+
+.ticket_action div#action_form div.col_right .reassign label {
+  float: left;
+  margin: 0 5px 0 0;
+  padding: 0;
+  color: #000;
+  font-size: 12px;
+}
+
+.ticket_action div#action_form div.col_right .reassign select {
+  max-width: 180px;
+  float: left;
+  margin: 3px 10px 0 0;
+  overflow: hidden;
+}
+
+.ticket_action div#action_form div.col_right .reassign a {
+  float: left;
+  width: 30px;
+  margin: -1px 0 0 0;
+  padding: 0;
+}
+
+.ticket_action div#action_form div.col_right .ticket-time {
+  display: block;
+  clear: both;
+  margin: 0 0 5px 0;
+}
+
+.ticket_action div#action_form div.col_right .ticket-time div {
+  float: left;
+  margin: 0 10px -5px 0;
+  padding: 0;
+}
+
+
+
+.ticket_action div#action_form div.col_right .ticket-time div label {
+  float: left;
+  font-weight: normal;
+  font-size: 0.9em;
+}
+
+.ticket_action div#action_form div.col_right .ticket-time div input {
+  float: right;
+  margin: 10px 0 0 5px;
+  padding-top: 2px;
+  padding-bottom: 3px;
+  width: 30px;
+  font-size: 12px;
+}
+
+/* --- Settings edit work flow  --- */
+
+ul.edit-workflow li .name {
+  width: 50%;
+  display: inline-block;
+  padding-left: 26px;
+}
+
+ul.edit-workflow li.tr div.name form input {
+  margin: 0;
+  padding: 2px 4px;
+}
+
+ul.edit-workflow li .state,
+ul.edit-workflow li .actions  {
+  width: 22%;
+  display: inline-block;
+}
+
+ul.edit-workflow li.tr {
+  background: url(../images/blue/drag-yes.gif) 5px 50% no-repeat;
+  cursor: move;
+}
+
+ul.edit-workflow li.tr .actions a {
+  margin: 0 6px 0 0;
+}
+
+ul.edit-workflow li.tr .actions form input.nbutton {
+  margin: 0 8px 0 0;
+}
+
+/* --- This are styles to use for a <ul> list that needs to look like a <table>, ddd to blue_site.css next to tables styles block  --- */
+
+table td {
+  border-bottom: 1px solid #eee !important;
+}
+
+ul.table-list {
+  margin: .75em 0 .75em 0;
+  width: 100%;
+  border-top: 1px solid #D4DCE8;
+
+}
+
+ul.table-list li.th {
+  text-align: left;
+  background: #EAF3FA;
+  padding: 3px 7px 0 8px;
+  height: 21px;
+  font-weight: bold;
+  font-size: 1em;
+  color: #333;
+  margin: 0;
+  display: block;
+}
+
+ul.table-list li.tr {
+  vertical-align: top;
+  text-align: left;
+  padding: 4px 7px 4px 0px;
+  margin: 0;
+  border-bottom: 1px solid #eee;
+  display: block;
+}
+
+/* --------------------------------------------------
+  =Preview & Comment Render
+----------------------------------------------------- */
+
+#ticket .comment ul,  #ticket ul li.meta .comment ul {
+  float: none;
+  padding-left: 2em;
+}
+
+#ticket .comment ul li, #ticket ul li.meta .comment ul li {
+  list-style-type: disc;
+  padding: 0;
+  border: none;
+}
+
+#ticket .comment em {
+  font-style: italic;
+}
+
+#ticket .comment ol li {
+  list-style-type: decimal;
+}
+
+#ticket .user_image {
+  float: left;
+  width: 10%;
+  border: 1px solid #ecf1f8;
+}
+
+#ticket .comment_data {
+  width: 88%;
+  float: right;
+  border: 1px solid #ecf1f8;
+}
+
+#ticket h3 {
+  margin: 0;
+}
+
+#ticket .comment {
+  padding: 12px;
+  border: none;
+}
+
+#ticket .comment img {
+  display: block;
+  max-width: 100%;
+  border: 1px dashed #ccc;
+}
+
+#ticket .with_body {
+  background: #ecf1f8;
+}
+
+#ticket .without_body {
+  background: #f6f6f6;
+  margin-bottom: -5px;
+}
+
+/* ---------------------------------------------------
+=panel (show/hide)
+------------------------------------------------------ */
+
+/* panel which you
+can open/close -- those are NOT
+the ones in the user start page.
+*/
+
+.collapsible-panel {
+  background: #d4dce8;
+  padding: .375em;
+  margin-bottom: 1.5em;
+}
+
+.collapsible-panel h3 {
+  margin-bottom: 0;
+  cursor: pointer;
+}
+
+.collapsible-panel h3 img {
+  padding-right: 5px;
+}
+
+.collapsible-panel-body {
+  margin: .75em 0 0 0;
+  border-top: 1px solid #d4dce8;
+  padding: .75em;
+}
+
+.conditions {
+  background-color: #FBFBFB;
+}
+
+.conditions  td.title {
+  font-weight: bold;
+  font-style: normal;
+  text-align: left;
+  color: #666666;
+}
+
+/* ---------------------------------------------------
+=search by tags
+------------------------------------------------------ */
+
+#results .info {
+  margin-bottom: 5px;
+}
+
+p.tag_list {
+  margin-bottom: 25px;
+}
+
+/* ---------------------------------------------------
+=settings styles
+------------------------------------------------------ */
+
+.settings-icons {
+  float: left;
+  margin-right: 5px;
+}
+
+.settings-rows td {
+  background: #fbfbfb;
+  border-bottom: 1px solid #fff;
+  padding: 3px 3px 3px 6px;
+}
+
+/* ---------------------------------------------------
+= user workload chart
+------------------------------------------------------ */
+
+#user_workload {
+  margin-top: 20px;
+}
+
+#user_workload table {
+  width: 800px;
+  border: none;
+  border-collapse: collapse;
+  margin: 0 0 0 10px;
+  padding: 0;
+}
+
+#user_workload table td {
+  margin: 0;
+  padding: 4px 0;
+}
+
+#user_workload table td.name {
+  width: 100px;
+  border-right: 1px solid #afafaf;
+}
+
+#user_workload table td.hours div {
+  margin-right: 5px;
+  height: 20px;
+  float: left;
+  overflow: hidden;
+}
+
+#user_workload table td.hours div a {
+  background-color: #ffb340;
+  display: block;
+  width: 100%;
+  text-indent: -1000px;
+}
+
+#user_workload table td.hours div a:hover {
+  background-color: #ff9900;
+}
+
+/* ---------------------------------------------------
+= Metrics page
+------------------------------------------------------ */
+
+#ticket-tool .metrics-col-left {
+  width: 30%;
+  float: left;
+  margin-top: -1.25em;
+}
+
+#ticket-tool .metrics-col-left h2 {
+  font-size: 1.1em;
+}
+
+#ticket-tool .metrics-col-right {
+  width: 68%;
+  float: right;
+}
+
+#ticket-tool .metrics-col-right h2 {
+  font-size: 1.1em;
+}
+
+#ticket-tool .progress-bar {
+  border-bottom: 1px solid #eee;
+  padding: .5em 0;
+  margin: 0;
+}
+
+.progress-bar a {
+  text-decoration: none;
+  color: black;
+}
+.progress-bar a:hover {
+  color: #5274a5;
+}
+
+#ticket-tool .progress-bar .title {
+  font-weight: bold;
+  width: 40%;
+  display: inline-block;
+}
+
+#ticket-tool .progress-bar .values {
+  font-weight: bold;
+  width: 7%;
+  display: inline-block;
+}
+
+#ticket-tool .progress-bar .progress {
+  background: #2e4b73 url( /images/milestones/bg_progressbar.jpg ) repeat-x;
+  width: 60%;
+  display: inline-block;
+}
+
+#ticket-tool table.progress-bar .tblank {
+  background: #fff;
+  border: 0px;
+}
+
+/* Kill Rate Chart */
+
+#ticket-tool div.kill_rate_chart {
+  height: 360px;
+}
+
+#ticket-tool div.kill_rate_chart .chart_title {
+  border-bottom: 1px solid #dddddd;
+  text-align: left;
+  padding: 0;
+  float: left;
+  width: 100%;
+}
+
+#ticket-tool div.kill_rate_chart .chart_title h3 {
+  float: left;
+  border: none;
+}
+
+#ticket-tool div.kill_rate_chart .chart_title ul {
+  float: right;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#ticket-tool div.kill_rate_chart .chart_title ul li {
+  float: left;
+  margin: 0 5px;
+  padding: 0;
+}
+
+#ticket-tool div.kill_rate_chart ul.key {
+  list-style: none;
+  margin: 0;
+  padding: 10px 0 15px 0;
+  clear: both;
+}
+
+#ticket-tool div.kill_rate_chart ul.key li {
+  margin: 0;
+  padding: 0 20px 0 5px;
+  border-left: 20px solid #3d5981;
+  font-weight: bold;
+  font-size: 1.2em;
+  float: left;
+}
+
+#ticket-tool div.kill_rate_chart #kill_rate_chart_container {
+  margin-top: 10px;
+}
+
+#ticket-tool div.kill_rate_chart ul.key li.created {
+  color: #3d5981;
+}
+
+#ticket-tool div.kill_rate_chart ul.key li.closed {
+  color: #438b3a;
+  border-color: #438b3a;
+}
+
+#ticket-tool div.kill_rate_chart ul.key li.net {
+  color: #ff9900;
+  border-color: #ff9900;
+}
+
+/* Agile Planner */
+
+.create_story_droppable_hover,
+.list_droppable_hover .planner-ticket-rows {
+  background-color: lightgoldenrodyellow;
+}
+
+.list_droppable_hover span.blue-box-title {
+  background-color: #eaf3fa;
+}
+
+.planner-boxes {
+  padding: 5px;
+  padding-top: 10px;
+  width: 47%;
+  overflow-y: auto;
+  position: relative;
+}
+
+.planner-boxes .icon-button {
+  margin-right: 2px;
+}
+
+.planner-boxes .icon-button img {
+  margin-top: 7px;
+}
+
+.planner-ticket-rows {
+  background-color: #fff;
+
+
+/*margin: 5px 0px -1px 12px !important;*/
+  margin: 0px 0px 0px 12px!important;
+  font-weight: normal;
+}
+
+.planner-ticket-rows >div {
+  padding: 5px;
+  border: solid 1px #efefef;
+  border-top: none;
+  border-right: none;
+}
+
+.canEdit .planner-ticket-rows >div {
+  cursor: move;
+}
+
+.planner-boxes em {
+  color: #777;
+  font-style: normal;
+}
+
+.dragg {
+  margin: 0;
+  margin-left: -10px;
+  cursor: move;
+  padding-left: 27px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background: url(/images/ico-drag-hor-ver.png) no-repeat 6px 3px;
+}
+
+.planner-top-bar {
+  background-color: #f6f6f6;
+  padding: 6px 10px 1px 12px;
+  margin: 0;
+  height: 33px;
+}
+
+.planner-top-bar .divisions {
+  border-right: 1px solid #fff;
+  padding: 5px 14px 0 0;
+  margin: 0 15px 0 0;
+  float: left;
+  height: 23px;
+}
+
+.planner-top-bar .divisions-last {
+  padding: 5px 14px 0 0;
+  margin: 0 15px 0 0;
+  float: left;
+  height: 23px;
+}
+
+.planner-top-bar label {
+  display: inline;
+  margin-right: 5px;
+}
+
+.planner-top-bar input.radio {
+  margin-top: 5px;
+}
+
+#active_tickets_list_scroll,
+#story_tickets_list_scroll {
+  overflow-y: auto;
+}
+
+.planner-boxes ul {
+  border: 2px solid transparent;
+  margin: 0px;
+}
+
+.planner-boxes ul ul.c_t_list, .cw-col {
+  border-top: 2px solid #ccc;
+  border-left: 2px solid #ccc;
+  background: url(/images/formgradsm.png) repeat-x top;
+  padding-top: 7px;
+  margin-bottom: 5px;
+  padding-bottom: 3px;
+  box-shadow: inset 3px 3px  10px #ccc;
+  -moz-box-shadow: inset 3px 3px  10px #ccc;
+  -webkit-box-shadow: inset 3px 3px  10px #ccc;
+}
+
+.planner-boxes ul.yui3-dd-drop-active-valid {
+  border: 2px dashed #D4DCE8;
+  margin: 0px;
+  margin-bottom: 5px;
+}
+/*
+.planner-boxes ul.yui3-dd-drop-active-invalid {
+  border: 2px dashed red;
+  margin: 0px;
+  margin-bottom: 5px;
+}
+*/
+.planner-boxes ul.yui3-dd-drop-over {
+  border: 2px dashed #91E0A5;
+  margin: 0px;
+  margin-bottom: 5px;
+}
+
+.planner-holding-pen {
+  padding-bottom: 10px;
+}
+
+.yui3-overlay {
+  background-color: #DDD;
+  padding: 0px 2px 2px 0px;
+  filter: alpha(opacity=80);
+  opacity: 0.8;
+}
+
+.yui3-overlay .yui-overlay-content {
+  background-color: #AAA;
+  padding: 0px 2px 2px 0px;
+}
+
+#infoOverlayBody {
+
+}
+
+#infoOverlayBody #overlayTA {
+  width: 20em;
+  height: 4em;
+}
+
+#sysmessage>li {
+  list-style: none;
+}
+
+#story_tickets_list .agile_ticket {
+  margin-bottom: 0.4em;
+}
+
+.canEdit .agile_ticket .blue-box-title {
+  cursor: move;
+}
+
+.noEdit .icon-drag,.noEdit .controls {
+  display: none;
+}
+
+.editing>div {
+  background-color: #FFE58F;
+  box-shadow: inset 3px 3px  10px #ccc;
+  -moz-box-shadow: inset 3px 3px  10px #ccc;
+  -webkit-box-shadow: inset 3px 3px  10px #ccc;
+}
+
+.editLock>div {
+  background-color: #FFC56F;
+  ;
+  box-shadow: inset 3px 3px  6px #FFE58F;
+  -moz-box-shadow: inset 3px 3px  6px #FFE58F;
+  -webkit-box-shadow: inset 3px 3px  6px #FFE58F;
+}
+
+.detail-view {
+  box-shadow: inset 3px 3px  10px #ccc;
+  -moz-box-shadow: inset 3px 3px  10px #ccc;
+  -webkit-box-shadow: inset 3px 3px  10px #ccc;
+}
+
+.detail-view .top-ticket_details {
+  border: solid 4px #FFE58F;
+}
+
+.detail-view.locked .top-ticket_details {
+  border: solid 4px #FFA54F;
+}
+
+.planner-boxes #ticket ul.ticket_details {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+.planner-boxes #ticket {
+
+}
+
+.blue-box-title .icon-time {
+  font-weight: normal;
+  font-size: 12px;
+  vertical-align: top;
+  cursor: default;
+}
+
+.canEdit .icon-time {
+  cursor: pointer;
+}
+
+.closed-story, .closed-ticket,.completed-true {
+  border-left: solid 3px green;
+}
+
+.agile_ticket .summary {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #15478C;
+}
+
+.ticketNr {
+  font-weight: bold!important;
+}
+
+.icons {
+  cursor: pointer;
+  display: inline-block;
+  min-width: 16px;
+  min-height: 16px;
+  margin-bottom: 0.25em;
+}
+
+.icon-edit {
+  background: transparent url(/images/ico-edit.png) center no-repeat
+}
+
+.icon-add {
+  background: transparent url(/images/ico-add.png) 1px 1px no-repeat
+}
+
+.icon-trash {
+  background: transparent url(/images/ico-trash.png) center no-repeat
+}
+
+.icon-detremove {
+  background: transparent url(/images/ico_detremove.gif) center no-repeat
+}
+
+.icon-drag {
+  cursor: move;
+  background: transparent url(/images/ico-drag-hor-ver.png) center no-repeat
+}
+
+.icon-open {
+  cursor: pointer;
+  display: inline-block;
+  min-width: 12px;
+  height: 14px;
+  background: transparent url(/images/open-panel.gif) center no-repeat
+}
+
+.icon-close {
+  cursor: pointer;
+  display: inline-block;
+  min-width: 12px;
+  height: 14px;
+  background: transparent url(/images/close-panel.gif) center no-repeat
+}
+
+.icon-close.no-tickets {
+  background-image: url('/images/close-panel-grey.gif')
+}
+
+.icon-open.no-tickets {
+  background-image: url('/images/open-panel-grey.gif')
+}
+
+.icon-story-true {
+  cursor: pointer;
+  background: transparent url(/images/tickets/ico-story.png) center no-repeat
+}
+
+.icon-story-false {
+  cursor: pointer;
+  background: transparent url(/images/tickets/ico-story.png) center no-repeat;
+  opacity: 0.4;
+  filter: alpha(opacity=40)
+}
+
+.hidden {
+  display: none;
+}
+
+/*
+ * Context menu popup for ticket list page
+*/
+
+#updating-menu {
+  position: absolute;
+  width: 200px;
+  background: #fff url(/images/loading.gif) 18px center no-repeat;
+  color: #999;
+  font-size: 2em;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #999;
+}
+
+.tickets tbody tr.show_menu td {
+  background-color: #dbe5fa;
+}
+
+#loading-menu {
+  background: #fff url(/images/loading-small.gif) 10px center no-repeat;
+  color: #999;
+  font-size: 1.2em;
+  padding: 5px 20px;
+  margin: 0;
+  text-align: center;
+}
+
+.ticket-context-menu {
+  position: absolute;
+  border: 1px solid #eee;
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+  border-right: 1px solid #999;
+  border-bottom: 1px solid #999;
+  border-left: 1px solid #ccc;
+  z-index: 90;
+}
+
+.ticket-context-menu ul {
+  width: 185px;
+  list-style: none;
+  margin: 0;
+  padding: 2px;
+}
+
+.ticket-context-menu ul li {
+  padding: 3px 0 3px 25px;
+  position: relative;
+  width: 185px;
+}
+
+.ticket-context-menu ul li.disabled {
+  padding: 3px 15px 3px 15px;
+  width: 155px;
+  color: #999;
+  text-align: center;
+}
+
+.ticket-context-menu ul li.more {
+  background: url(/images/tickets/context-menu-more.gif) 173px center no-repeat;
+}
+
+.ticket-context-menu ul li.more ul {
+  position: absolute;
+  left: 192px;
+  top: -2px;
+}
+
+.ticket-context-menu ul li.more>ul {
+  left: 182px;
+}
+
+.ticket-context-menu.reverse-y ul li.more>ul {
+  top: auto;
+  bottom: 0;
+}
+
+.ticket-context-menu.reverse-y-small-display ul li.more>ul {
+  top: -2px;
+}
+
+.ticket-context-menu.reverse-x ul li.more ul {
+  left: auto;
+  right: 1
+
+92px;
+/* IE6 */
+}
+
+.ticket-context-menu.reverse-x ul li.more>ul {
+  right: 182px;
+}
+
+.ticket-context-menu ul.bottom_border {
+  border-bottom: 1px solid #ccc;
+}
+
+.ticket-context-menu ul li.edit, .ticket-context-menu ul li.accept,
+.ticket-context-menu ul li.copy_link, .ticket-context-menu ul li.open_link {
+  padding: 0;
+}
+
+.ticket-context-menu ul li:hover {
+  background-color: #eee;
+}
+
+.ticket-context-menu ul li:hover ul {
+  display: block;
+}
+
+.ticket-context-menu ul li a {
+  padding: 3px 0 3px 25px;
+  display: block;
+  width: 160px;
+}
+
+.ticket-context-menu ul li.copy_link a.hover {
+  background-color: #eee;
+  text-decoration: none;
+  width: 160px;
+}
+
+.ticket-context-menu ul li.edit a {
+  background: url(/images/ico-edit.png) 3px center no-repeat;
+}
+
+.ticket-context-menu ul li.accept a {
+  background: url(/images/add.gif) 3px center no-repeat;
+}
+
+.ticket-context-menu ul li.copy_link a {
+  background: url(/images/page_white_link.gif) 3px center no-repeat;
+}
+
+.ticket-context-menu ul li.open_link a {
+  background: url(/images/external-link.gif) 4px center no-repeat;
+}
+
+.ticket-context-menu ul li ul {
+  display: none;
+  width: 160px;
+  z-index: 10000;
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+  border-right: 1px solid #999;
+  border-bottom: 1px solid #999;
+  border-left: 1px solid #ccc;
+}
+
+.ticket-context-menu ul li ul li {
+  padding: 0;
+  width: 160px;
+}
+
+.ticket-context-menu ul li ul li.current {
+  padding: 3px 0 3px 25px;
+  width: 135px;
+  color: #999;
+}
+
+.ticket-context-menu ul li ul li.current {
+  background: url(/images/spaces/ico-yes.gif) 3px center no-repeat;
+}
+
+.ticket-context-menu ul li ul li a {
+  width: 135px;
+}
+
+/* --------------------------------------------------
+= Burndown
+----------------------------------------------------- */
+
+.burndown-controls {
+  clear: both;
+}
+
+.burndown-controls label {
+  margin: 0 6px 0 3px
+}
+
+.burndown-controls .start-date {
+  float: left;
+}
+
+.burndown-controls .milestones-controls {
+  float: left;
+  padding-top: 4px;
+  margin: 0 20px;
+  min-height: 33px;
+}
+
+.burndown-controls .show-controls {
+  float: left;
+  padding: 4px 0;
+  margin-right: 15px;
+  min-height: 30px;
+}
+
+/* --------------------------------------------------
+= For new ticket's comments styles
+----------------------------------------------------- */
+
+.ticket-activity {
+  width: 100%;
+}
+
+.ticket-activity .changeset-wrap {
+  clear: both;
+}
+
+.ticket-activity .changeset-wrap .thumb-col {
+  float: left;
+  width: 68px;
+  background: transparent url(/images/arrow-tickets-changeset.gif) right top no-repeat;
+}
+
+.ticket-activity .changeset-wrap .thumb-col img {
+  border: 1px solid #dfe5ee;
+  width: 50px;
+}
+
+.ticket-activity .changeset-wrap .changeset-col {
+  margin: 0 0 10px 67px;
+  border: 1px solid #dfe5ee;
+}
+
+.ticket-activity .changeset-wrap .changeset-col .changeset-header {
+  padding: 8px 14px 4px 14px;
+}
+
+.ticket-activity .changeset-wrap .changeset-col .header-gray {
+  background-color: #f6f6f6;
+}
+
+.ticket-activity .changeset-wrap .changeset-col .header-blue {
+  background-color: #ecf1f8;
+}
+
+.ticket-activity .changeset-wrap .changeset-col h3 {
+  padding: 0;
+  margin: 0 0 6px 0 !important;
+  font-size: 12px;
+  color: #666;
+  font-weight: normal;
+}
+
+.ticket-activity .changeset-wrap .changeset-col h3 em {
+  font-size: 12px !important;
+  color: #666 !important;
+  float: right;
+}
+
+.ticket-activity .changeset-wrap .changeset-col .changeset-description {
+  background: transparent url(/images/ico-arrow-grey.png) left 5px no-repeat;
+  padding: 0 6px 4px 22px;
+  margin: 0 1px;
+}
+
+.ticket-activity .changeset-wrap .changeset-col .changeset-description span {
+  font-weight: bold;
+  color: #333 !important;
+  font-style: normal !important;
+}
+
+.ticket-activity .changeset-wrap .changeset-col .changeset-description em {
+  color: #5274A5 !important;
+  font-style: italic !important;
+  margin: 0 2px;
+}
+
+.ticket-activity .changeset-wrap .changeset-col .comment {
+  padding: 12px 20px 4px 14px;
+}
+
+/* Support Tool
+----------------------------------------------------- */
+
+/* Not logged top bar  */
+
+.support-tool-top-bar {
+  margin-bottom: 15px;
+}
+
+.support-tool-top-bar h2 {
+  font-size: 14px;
+  margin-bottom: 7px;
+}
+
+.support-tool-top-bar ul {
+  margin: 0 0 18px 0;
+  padding: 0;
+  list-style-type: none;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  height: 36px;
+  background: url(/images//tickets/bg-support-tool-topbar.png) left top repeat-x;
+}
+
+.support-tool-top-bar ul li {
+  float: left;
+  height: 28px;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #ddd;
+  padding-top: 8px;
+}
+
+.support-tool-top-bar ul li.register {
+  width: 10%;
+  border-left: none;
+}
+
+.support-tool-top-bar ul li.register p {
+  width: 70px !important;
+  margin: 0 auto;
+}
+
+.support-tool-top-bar ul li.register a {
+  background: url(/images//ico-circle-tick.png) left 2px no-repeat;
+  padding-left: 20px;
+  display: block;
+}
+
+.support-tool-top-bar ul li.signin {
+  width: 40%;
+}
+
+.support-tool-top-bar ul li.signin div {
+  width: 355px;
+  margin: 0 auto;
+}
+
+.support-tool-top-bar ul li.signin div p {
+  font-weight: bold;
+  float: left;
+  padding-top: 1px;
+}
+
+.support-tool-top-bar ul li.signin div a {
+  float: left;
+  padding-left: 21px;
+  margin-left: 10px;
+}
+
+.support-tool-top-bar ul li.signin div a.assembla {
+  background: url(/images//tickets/ico-assembla-signin.png) left 2px no-repeat;
+}
+
+.support-tool-top-bar ul li.signin div a.google {
+  background: url(/images//tickets/ico-google-signin.png) left 2px no-repeat;
+}
+
+.support-tool-top-bar ul li.signin div a.yahoo {
+  background: url(/images//tickets/ico-yahoo-signin.png) left 2px no-repeat;
+  padding-left: 28px;
+}
+
+.support-tool-top-bar ul li.mailto {
+  width: 35%;
+  display: inline;
+}
+
+.support-tool-top-bar ul li.mailto div {
+  width: 325px;
+  margin: 0 auto;
+  overflow: visible;
+}
+
+.support-tool-top-bar ul li.mailto div p {
+  font-weight: bold;
+  display: inline;
+  padding-top: 1px;
+  overflow: visible;
+}
+
+.support-tool-top-bar ul li.mailto div a {
+  display: inline;
+  background: url(/images/ico_email.gif) left 2px no-repeat;
+  padding-left: 22px;
+  margin-left: 10px;
+  overflow: visible;
+}
+
+.support-tool-top-bar ul li.post-anonymously {
+  width: 14%;
+  border-right: none;
+}
+
+.support-tool-top-bar ul li.post-anonymously div {
+  width: 125px;
+  margin: 0 auto;
+}
+
+.support-tool-top-bar ul li.post-anonymously div a {
+  background: url(/images//ico-anonymous.png) left 1px no-repeat;
+  padding-left: 22px;
+  float: none;
+  display: block;
+  position: relative;
+}
+
+.support-tool-top-bar ul li.post-anonymously div a span {
+  display: none;
+}
+
+.support-tool-top-bar ul li.post-anonymously div a:hover span {
+  display: block;
+  position: absolute;
+  top: 21px;
+  left: -16px;
+  padding: 15px 8px 10px 33px;
+  background: url(/images//tickets/bg-hover-narrow.png) no-repeat left top;
+  color: #000;
+  border-bottom: 1px solid #bbb;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 14px;
+  overflow: visible;
+  text-align: left !important;
+  width: 120px;
+}
+
+.support-tool-top-bar ul li.post-anonymously div a:hover {
+  font-size: 100%;
+}
+
+/* --------------------------------------------------
+= One table Tickets reports
+----------------------------------------------------- */
+
+
+table.one-table .table-separator-row {
+  border: none !important;
+  height: 25px;
+}
+
+table.one-table th {
+  text-transform: capitalize;
+  white-space: nowrap;
+  border: 1px #ccc solid;
+  background-color: #eee !important;
+  font-size: 1em;
+  color: #15478C !important;
+}
+
+table.one-table td{
+  border: 1px #eee solid;
+}
+
+table.one-table .milestone-title {
+  background-color: #D4DCE8;
+  background-image: none;
+  background-repeat: repeat;
+  background-attachment: scroll;
+  border: 1px solid #D4DCE8;
+  margin: 1em 0 0 0;
+  padding: 1px 10px 2px 5px !important;
+}
+
+table.one-table .milestone-title h3 {
+  margin: 0;
+  padding: 0;
+}
+
+/* -------------------------------------------------------------------------------------------------
+= QUESTIONABLE
+= These style definitions do not appear to be used
+= anymore and can probably be removed completely.
+----------------------------------------------------------------------------------------------------- */
+
+.content table {
+  float: left;
+}
+
+/***** OLD Ticket show style, Testing is remaining on this please do not remove 01/08/09 *****/
+
+.screenshot {
+  margin-top: 1em;
+  font-size: 11px;
+}
+
+.screenshot h2 {
+  color: #000066;
+}
+
+.screenshot img {
+  padding: 0.2em;
+  margin-left: 1em;
+}
+
+.ticket_box {
+  background: #ffffdd;
+  border: 1px solid #eaf5cd;
+  border-top: 2px  solid #ddd;
+  padding: 5px;
+  margin: 0;
+}
+
+.ticket_box span {
+  padding-left: 5px;
+}
+
+.ticket_box span.key {
+  padding-left: 0px;
+  padding-right: 6em;
+}
+
+.ticket_box a.change {
+  font-size: 0.85em;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #666666;
+  text-decoration: underline;
+}
+
+table.key-des td.key {
+  width: 150px;
+  padding-left: 5px;
+}
+
+.key {
+  color: #777777;
+  font-size: smaller;
+  white-space: nowrap;
+}
+
+.customs .custom_field {
+  width: 50%;
+  padding-left: 0.4em;
+  padding-right: 1em;
+}
+
+ul.changes, .key-des ul {
+  list-style-type: square;
+}
+
+#static_list {
+  padding-left: 5px;
+}
+
+.main tr {
+  background-color: #FFFFFF;
+}
+
+.extra_panel .main td, .extra_panel .main th {
+  text-transform: capitalize;
+  border: 1px solid #cccccc;
+}
+
+#ticket_users_list {
+  border-width: 0px;
+}
+
+.ticket-reports label.disabled, .ticket-reports td.disabled {
+  color: #aaaaaa;
+}
+
+.time-ago {
+  margin-left: 5px;
+  font-size: 0.8em
+}
+
+span.invested-time {
+  margin: 0 35px 0 5px;
+}
+
+/***** Old Ticket show style End *****/
+
+/* ---------------------------------------------------
+= QUESTIONABLE
+= Not sure about the below styles, will discuss with Francisco and removed it
+------------------------------------------------------ */
+
+label.small-margin {
+  margin-top: 0.3em;
+}
+
+.highlight {
+  background-color: #ffff99;
+}
+
+#results {
+  margin-top: 10px;
+}
+
+#results dd {
+  margin-bottom: 0;
+}
+
+#results .info {
+  margin-bottom: 20px;
+}
+
+#results .author, #results .date, #results .status, #results .space {
+  color: #009900;
+  font-size: x-small;
+}
+
+a.advanced_search {
+  font-size: x-small;
+  margin-left: 10px;
+  vertical-align: super;
+  padding-top: 0px;
+}
+
+.ticket_action, #preview {
+  padding: .5em 0;
+  margin-bottom: 10px;
+  line-height: 2em;
+}
+
+.ticket_action legend, #preview legend {
+  color: #2e4b73;
+}
+
+fieldset.prior_ {
+  padding: 0.3em 0;
+}
+
+fieldset.radio {
+  border: none;
+  margin: 0;
+  padding: 0
+}
+
+fieldset.radio legend {
+  color: #000;
+  float: left;
+  font-size: 100%;
+  font-weight: normal;
+  padding: 0 1em 0 0;
+}
+
+fieldset.radio label {
+  padding-right: 1em
+}
+
+/* Ticket Top Bar */
+
+#ticket_top {
+  float: left;
+}
+
+#ticket_top .llinks {
+  float: left;
+}
+
+#ticket_top .llinks ul {
+  list-style: none;
+  padding: 0.2em;
+  margin-left: 0;
+}
+
+#ticket_top .llinks a {
+  margin-left: 0.3em;
+  margin-right: 0.3em;
+  text-decoration: none;
+}
+
+#ticket_top .llinks li {
+  display: inline;
+  padding: 0.2em 0em;
+  margin-left: 0.12em;
+}
+
+#ticket_top .llinks li.new_ {
+  background: url(/images/tick_but_bg.png);
+  border: 1px solid #89B3E0;
+  padding: 0.2em;
+  margin-right: 0.5em;
+}
+
+#ticket_top .llinks li.settings_ {
+  background: url(/images/tick_but_bg.png);
+  border: 1px solid #89B3E0;
+  padding: 0.2em;
+  margin-right: 0.5em;
+}
+
+#ticket_top .llinks li.edit_ {
+
+/*background: #E3EFFC;*/ background: url(/images/tick_but_bg.png);
+  border: 1px solid #89B3E0;
+  padding: 0.2em;
+  margin-right: 0.5em;
+}
+
+#ticket_top .llinks li.source_ {
+
+/*background: #E3EFFC;*/ background: url(/images/tick_but_bg.png);
+  border: 1px solid #89B3E0;
+  padding: 0.2em;
+  margin-right: 0.5em;
+}
+
+#ticket_top .llinks li.new_ a, #ticket_top .llinks li.settings_ a, #ticket_top .llinks li.edit_, #ticket_top .llinks li.source_ a {
+  color: #000;
+  border: none;
+}
+
+#ticket_top .llinks li.new_ a:hover {
+  color: #003399;
+  border: none;
+}
+
+#ticket_top .rlinks {
+  float: right;
+}
+
+#ticket_top .rlinks ul {
+  list-style: none;
+  padding: 0.2em;
+  margin-left: 0
+}
+
+#ticket_top .rlinks a {
+  background: #E3EFFC;
+  padding: 0.2em;
+}
+
+#ticket_top .rlinks li {
+  display: inline;
+}
+
+#ticket_top .rlinks li label {
+  display: inline;
+  margin: 0 0.5em;
+}
+
+/*#ticket_top .llinks a{margin-left:1em; margin-right:1em;}
+#ticket_top .llinks div.new_ {
+  background: #E3EFFC; float:left; padding:0.2em;
+}
+
+#ticket_top .llinks div.settings_ {
+  background: #e7fabb; float:left;padding:0.2em; margin-left:1em;
+}
+
+#ticket_top .llinks div.source_ {
+  background: #fae7bb; float:left;padding:0.2em; margin-left:1em;
+}*/
+
+/* FIXME: I've not used tables (tr) in grid_view page, I've copied this styles from above and changed a bit. Probably I'll use *-even styled too. */
+
+.priority-color1-odd {
+  background-color: #fdc;
+  border-color: #ffb4b4;
+  color: #a22
+}
+
+.priority-color2-odd {
+  background-color: #ffb;
+  border-color: #eea;
+  color: #880
+}
+
+.priority-color3-odd {
+  background-color: #fbfbfb;
+  border-color: #ddd;
+  color: #444
+}
+
+.priority-color4-odd {
+  background-color: #e7ffff;
+  border-color: #cee;
+  color: #099
+}
+
+.priority-color5-odd {
+  background-color: #e7eeff;
+  border-color: #cde;
+  color: #469
+}
+
+.priority-color6-odd {
+  background-color: #f0f0f0;
+  border-color: #ddd;
+  color: #888
+}
+
+.dnd-droppable-hover {
+  background: #e7ffff;
+}
+
+.editable-content {
+  cursor: pointer;
+}
+
+/* follow/unfollow */
+
+.following {
+  background: transparent url(/images/star-on.png) left 2px no-repeat;
+  width: 20px;
+  float: left;
+  margin-left: 0 !important;
+}
+
+.not-following {
+  background: transparent url(/images/star-off.png) left 2px no-repeat;
+  width: 20px;
+  float: left;
+  margin-left: 0 !important;
+}
+
+.following-assigned {
+  background: transparent url(/images/star-assigned.png) left 2px no-repeat !important;
+  width: 20px;
+  float: left;
+  text-decoration: none;
+  margin-left: 0 !important;
+}
+
+.following-fu {
+  background: transparent url(/images/star-on.png) left 2px no-repeat;
+  width: 20px;
+  float: left;
+  margin-left: 0 !important;
+}
+
+.not-following-fu {
+  background: transparent url(/images/star-off.png) left 2px no-repeat;
+  width: 20px;
+  float: left;
+  margin-left: 0 !important;
+}
+
+.ticket-popup-menu-link {
+  background: transparent url(/images/tickets/ico-popup-menu.png) left 4px no-repeat !important;
+  width: 14px;
+  float: right;
+  text-decoration: none;
+  margin-left: 0 !important;
+}
+
+.ticket-popup-menu-link:hover {
+  background: transparent url(/images/tickets/ico-popup-menu-hover.png) left 4px no-repeat !important;
+}
+
+td.number {
+  white-space: nowrap;
+  padding-right: 7px !important;
+  min-width: 1%;
+  width: 5%;
+  vertical-align: top;
+}
+
+td.number a {
+  margin-left: 22px;
+  padding-top: 2px;
+}
+
+.top-ticket-summary .following {
+  background: transparent url(/images/star-big-on.png) left 2px no-repeat;
+  width: 28px;
+  height: 25px;
+  float: left;
+  text-decoration: none;
+}
+
+.top-ticket-summary a.not-following {
+  background: transparent url(/images/star-big-off.png) left 2px no-repeat;
+  width: 28px;
+  height: 25px;
+  float: left;
+  text-decoration: none;
+}
+
+.top-ticket-summary .following-assigned {
+  background: transparent url(/images/star-big-assigned.png) left 2px no-repeat !important;
+  width: 28px;
+  height: 25px;
+  float: left;
+  text-decoration: none;
+}
+
+/* Yellow message hover */
+
+a.top-box-hover {
+  position: relative;
+  border: none;
+  background-color: transparent;
+  display: block;
+}
+
+a.top-box-hover span {
+  display: none;
+}
+
+a.top-box-hover:hover span {
+  display: block;
+  position: absolute;
+  top: 25px;
+  left: -12px;
+  padding: 9px 5px 5px 10px;
+  background: url(/images/bg-following-message.png) no-repeat left top;
+  color: #000;
+  border: none;
+  border-right: 1px solid #D4DCE8;
+  border-bottom: 1px solid #D4DCE8;
+  font-weight: normal;
+  font-size: 11px;
+  overflow: visible;
+  text-align: left !important;
+  width: 212px;
+}
+
+a.top-box-hover:hover {
+  font-size: 100%;
+
+
+/*Fixes bug in IE5.x/Win */
+}
+
+img.ico-users {
+  margin: 5px 5px 0 10px;
+}
+
+/* For detail form in agile planner */
+
+.top-ticket-summary table {
+  border: none;
+  width: 99%;
+  margin-bottom: 0;
+}
+
+.top-ticket-summary table tr {
+  background-color: transparent;
+}
+
+.top-ticket-summary table td {
+  border: none;
+  padding: none;
+}
+
+.top-ticket_details table td h1 {
+  margin-right: 15px;
+}
+
+.top-ticket_details table td em {
+  margin: 0px;
+}
+
+.top-ticket_details table td h1 input {
+  width: 100%;
+  overflow: hidden;
+}
+
+.RB_window .top-ticket_details table td h1 input {
+  width: 630px;
+  overflow: hidden;
+}
+
+.RB_window ul.ticket_details li.meta ul.last {
+  padding: 0 0 0 18px !important;
+}
+
+/* end For detail form in agile planner end */
+
+/* For view form in agile planner */
+
+.agile_planner #top-edit-option a {
+  position: relative;
+  padding: 15px 9px 5px;
+}
+
+/* end For view form in agile planner */
+
+/* For icon issues on opera see #6990 */
+
+.agile_planner .controls, .agile_planner .ticket-controls {
+  min-width: 120px;
+}
+
+/* end For icon issues on opera see #6990 */
+
+/* ---------------------------------------------------
+= Tickets Browse
+------------------------------------------------------ */
+
+/* Sidebar ------------------------------ */
+
+#sidebar {
+  width: 1px !important;
+  padding: 0;
+  margin: 0;
+  border-bottom: 1px solid #fff;
+}
+
+#browse-sidebar {
+  width: 210px;
+  border: 1px solid #ccc;
+  border-right: none;
+  padding: 7px 10px 2px 10px;
+  background-color: #f2f2f2;
+  margin: 0 0 10px 0;
+  -webkit-border-top-left-radius: 7px;
+  -webkit-border-bottom-left-radius: 7px;
+  -moz-border-radius-topleft: 7px;
+  -moz-border-radius-bottomleft: 7px;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+}
+
+#browse-sidebar img:hover {
+  cursor: pointer;
+}
+
+#browse-sidebar h3 {
+  margin: 0 0 5px 0;
+  color: #333;
+}
+
+#browse-sidebar h4 a {
+  background-color: #DCE3EC;
+  display: block;
+  padding: 2px 5px;
+  height: 18px;
+  text-decoration: none;
+  color: #000;
+}
+
+#browse-sidebar h4 a img {
+  float: left;
+  margin-right: 5px;
+}
+
+#browse-sidebar h4 a span {
+  float: left;
+  display: block !important;
+}
+
+#browse-sidebar .pm-filters {
+  background: none;
+  padding: 0 !important;
+  margin: 0 0 9px 2px;
+  border: none;
+}
+
+#browse-sidebar .pm-filters fieldset {
+  background: none;
+  padding: 0 !important;
+  margin: 0 0 9px 2px;
+  border: none;
+}
+
+#browse-sidebar .pm-filters fieldset .col p a {
+  font-size: 13px;
+}
+
+#browse-sidebar .pm-filters fieldset .col {
+  margin: 0;
+  padding: 0;
+  width: 205px;
+}
+
+#browse-sidebar .pm-filters fieldset .col label {
+  color: #333;
+}
+
+/* Filter and search */
+
+#browse-sidebar .filter-search form.save-filter {
+  border-bottom: 1px solid #ddd;
+}
+
+#browse-sidebar .filter-search form.save-filter fieldset input[type="text"] {
+  width: 175px;
+  float: left;
+}
+
+#browse-sidebar .filter-search form.save-filter fieldset input[type="image"] {
+  margin: 2px 0 0 5px;
+  float: left;
+}
+
+#browse-sidebar .filter-search #find-text fieldset {
+  margin-bottom: 3px;
+  margin-top: 3px;
+}
+
+#browse-sidebar .filter-search #find-text fieldset label {
+  font-weight: normal;
+}
+
+#browse-sidebar .filter-search #find-text input[type="text"] {
+  width: 183px;
+  background: #fff url(../images/ico-search-small.png) 4px 3px no-repeat;
+  padding-left: 22px;
+}
+
+#browse-sidebar .filter-search form.find-text fieldset input[type="checkbox"] {
+  display: inline;
+  margin-right: 5px;
+}
+
+#browse-sidebar .filter-search form.find-text fieldset label {
+  display: inline;
+  margin-right: 10px;
+}
+
+#browse-sidebar input.button {
+  margin-bottom: 7px;
+  font-size: 12px !important;
+}
+
+/* Spaces and groups */
+
+#browse-sidebar #spaces-groups .pm-filters form fieldset .col div #dropdown-spacegroup {
+  left: -10px;
+  top: 0px;
+}
+
+#browse-sidebar #spaces-groups {
+  margin-bottom: -12px;
+}
+
+/* Status, Priority and Milestone */
+
+#browse-sidebar #basic-attributes {
+  margin: 0 0 -5px 0;
+}
+
+#browse-sidebar #basic-attributes fieldset p {
+  margin: 0 0 5px 0;
+  display: block;
+  clear: both;
+}
+
+#browse-sidebar #basic-attributes fieldset p label {
+  width: 80px;
+  float: left;
+  margin: 0;
+}
+
+#browse-sidebar #basic-attributes fieldset p select {
+  width: auto;
+  float: left;
+  margin: 0;
+}
+
+#browse-sidebar #basic-attributes fieldset select {
+  width: 209px;
+  float: none;
+  margin: 5px 0;
+}
+
+/* Custom fields */
+
+#browse-sidebar #custom-fields {
+  margin: 0 0 -5px 0;
+}
+
+#browse-sidebar #custom-fields fieldset p {
+  margin: 0 0 5px 0;
+  display: block;
+  clear: both;
+}
+
+#browse-sidebar #custom-fields fieldset p label {
+  width: 64px;
+  float: left;
+  margin: 0;
+}
+
+#browse-sidebar #custom-fields fieldset p select {
+  width: auto;
+  float: left;
+  margin: 0;
+}
+
+#browse-sidebar #custom-fields fieldset div.vals {
+  width: 209px;
+  float: none;
+  margin: 5px 0;
+}
+
+/* Users */
+
+#browse-sidebar #users {
+  margin: 0 0 0 0;
+}
+
+#browse-sidebar #users fieldset label {
+  font-size: 12px;
+  float: left;
+  margin: -1px 0 4px 0;
+}
+
+#browse-sidebar #users fieldset div.border-bottom {
+  border-bottom: 1px solid #ccc;
+  width: auto;
+  padding-bottom: 7px;
+  margin-bottom: 7px;
+}
+
+#browse-sidebar #users .pm-filters form fieldset .col div #dropdown-usergroup1,
+#browse-sidebar #users .pm-filters form fieldset .col div #dropdown-usergroup2 {
+  background-color: #fff !important;
+  width: auto;
+  z-index: 5;
+  padding: 0;
+  border: 2px solid #ddd;
+  text-align: left;
+  position: absolute;
+  white-space: nowrap;
+  min-width: 120px;
+  margin-top: 42px;
+  position: absolute;
+  left: -10px;
+}
+
+/* Date and Time */
+
+#browse-sidebar #date-time {
+  margin: -5px 0 -5px 0;
+}
+
+#browse-sidebar #date-time form fieldset p {
+  margin: 0 0 5px 0;
+  padding: 0;
+  display: block;
+  clear: both;
+}
+
+#browse-sidebar #date-time fieldset p label {
+  width: 95px;
+  margin: 0;
+}
+
+#browse-sidebar #date-time fieldset select {
+  width: 400px;
+}
+
+#browse-sidebar #date-time fieldset input {
+  width: 70px;
+}
+
+#browse-sidebar #date-time fieldset p.daysback input {
+  width: 2em;
+}
+
+#browse-sidebar #date-time fieldset p.daysback label {
+  width: auto;
+}
+
+/* Fields to Show */
+
+#browse-sidebar #fields {
+  margin: -1px 0 6px 0;
+}
+
+#browse-sidebar #fields ul.fields-to-show {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  float: left;
+  width: 105px;
+}
+
+#browse-sidebar #fields ul.fields-to-show li input[type="checkbox"] {
+  display: inline;
+  margin-right: 5px;
+}
+
+#browse-sidebar #fields ul.fields-to-show li label {
+  display: inline;
+  font-weight: normal;
+}
+
+/* Sorting and Grouping */
+
+#browse-sidebar #sorting {
+  margin: -1px 0 -8px 0;
+}
+
+#browse-sidebar #sorting fieldset label {
+  float: left;
+  margin: 0;
+}
+
+#browse-sidebar #sorting fieldset div {
+  width: 130px;
+  margin: 0 0 4px 78px;
+}
+
+#browse-sidebar #sorting fieldset div.border-bottom {
+  border-bottom: 1px solid #ccc;
+  width: auto;
+  margin: 0 0 7px 0;
+}
+
+#browse-sidebar #sorting fieldset div select {
+  max-width: 130px;
+  margin: 0 0 4px 0;
+}
+
+/* Ticket result ------------------------------ */
+
+table#tickets-right-col-wrap {
+  border-collapse: collapse;
+  padding: 0;
+  border: none;
+}
+
+table#tickets-right-col-wrap tr td.collapse-bar {
+  padding: 0;
+  border: none;
+  width: 1% !important;
+  background: url(../images/collapse-bg.png) left top repeat-y;
+  border-bottom: 1px solid #fff;
+  cursor: pointer;
+}
+
+table#tickets-right-col-wrap tr td.collapse-bar img {
+  margin-top: 15px;
+  margin-left: 2px;
+}
+
+table#tickets-right-col-wrap tr td.tickets-right-col {
+  padding: 0 0 0 7px !important;
+  border: none;
+  width: 99%;
+  border-bottom: 1px solid #fff;
+}
+
+table#tickets-right-col-wrap tr td.tickets-right-col .table-wrap {
+  display: block;
+  clear: both;
+  padding: 0;
+  margin-top: -10px !important;
+}
+
+table#tickets-right-col-wrap tbody tr td #resultsContainer #ticket_list table.listing {
+  margin-top: -1px;
+}
+
+table#tickets-right-col-wrap tbody tr td #resultsContainer h1 {
+  float: left;
+  margin: 7px 0 0 0;
+  padding: 0;
+}
+
+table#tickets-right-col-wrap tbody tr td #resultsContainer h1 span {
+  font-size: 18px;
+  float: left;
+  padding-top: 4px;
+}
+
+table#tickets-right-col-wrap tbody tr td #resultsContainer h1 div.report-title {
+  float: left;
+}
+
+table#tickets-right-col-wrap tbody tr td #resultsContainer h1 div.report-title span {
+  font-size: 16px;
+  padding: 4px 0 0 0;
+}
+
+table#tickets-right-col-wrap tbody tr td #resultsContainer h1 div.report-edit-images {
+  float: left;
+  margin: 4px 0 0 12px;
+}
+
+table#tickets-right-col-wrap tbody tr td #resultsContainer h1 div.report-edit-images img#btnSubmit,
+table#tickets-right-col-wrap tbody tr td #resultsContainer h1 div.report-edit-images img#btnDelete {
+  margin-left: 10px;
+  cursor: pointer;
+  width: 14px;
+  height: 14px;
+}
+
+table#tickets-right-col-wrap tbody tr td #resultsContainer h1 div.report-edit-images img#btnDelete {
+  margin-left: 2px;
+}
+
+table#tickets-right-col-wrap tbody tr td #resultsContainer div.export-links-container {
+  padding-top: 10px;
+}
+
+table#tickets-right-col-wrap tbody tr td #resultsContainer h1 form.inplaceeditor-form input.editor_field {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 2px;
+  margin-right: 7px;
+}
+
+table#tickets-right-col-wrap tbody tr td #resultsContainer h1 form.inplaceeditor-form input.editor_ok_button {
+  font: bold 15px Arial, Helvetica, sans-serif;
+  background: #eee url(/images/bg-grey-button.jpg) top left repeat-x;
+  color: #039;
+  border: 1px solid #bbb;
+  border-top: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  cursor: pointer;
+  padding: 2px 6px !important;
+  line-height: 1em;
+  margin: 0;
+  width: auto;
+  overflow: visible;
+  text-shadow: 1px 1px 0 #fff;
+}
+
+table#tickets-right-col-wrap tbody tr td #resultsContainer h1 form.inplaceeditor-form input.editor_ok_button:hover {
+  color: #06c;
+  border: 1px solid #aaa;
+  background: #eee url(/images/bg-grey-button-hover.jpg) top left repeat-x;
+}
+
+table#tickets-right-col-wrap tbody tr td #resultsContainer h1 form.inplaceeditor-form a.editor_cancel_link {
+  font-size: 12px;
+  font-weight: normal;
+  margin-left: 8px;
+}
+
+.tickets-list-top {
+  display: block;
+  padding: 0;
+  margin: -7px 0 0 0 !important;
+}
+
+#tickets-filter {
+  float: left;
+  width: 420px;
+  overflow: visible;
+  padding: 0;
+}
+
+#tickets-filter form fieldset p {
+  float: left;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+#tickets-filter .col {
+  margin: 11px 10px 0 1px;
+  position: relative;
+  padding: 0 !important;
+}
+
+#tickets-filter .col p {
+  margin-bottom: 0;
+  margin-right: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  float: left;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+#tickets-filter .col p a.rule {
+  text-decoration: none;
+  color: black;
+}
+
+#tickets-filter .col p a.rule:hover {
+  cursor: default;
+}
+
+#tickets-filter .col a.more-filters {
+  font-size: 11px;
+  margin: 0 30px 0 10px !important;
+  color: #666;
+  position: relative;
+  top: -2px;
+}
+
+#tickets-filter .col a.more-filters:hover {
+  color: #06b;
+}
+
+#ticket_list .pagination{
+    border:none;
+}

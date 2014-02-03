@@ -1,0 +1,24 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/08-Security
+
+default:
+  is_secure:   true
+  credentials: Ver_Administración_Clientes
+
+index:
+  credentials: Ver_Administracion_Clientes_VerCliente
+
+show:
+  credentials: Ver_Administracion_Clientes_VerCliente
+
+new:
+  credentials: Ver_Administracion_Clientes_AgregarCliente
+
+edit:
+  credentials: Ver_Administracion_Clientes_EditarCliente
+
+update:
+  credentials: Ver_Administracion_Clientes_EditarCliente
+
+delete:
+  credentials: Ver_Administracion_Clientes_EditarCliente

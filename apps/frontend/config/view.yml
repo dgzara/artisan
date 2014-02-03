@@ -1,0 +1,25 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/13-View
+
+default:
+  http_metas:
+    content-type: text/html
+
+  metas:
+    title:        Quesos Artisan
+    description:  elaboración natural
+    keywords:     quesos, artisan
+    language:     es
+    #robots:       index, follow
+
+  stylesheets:    [base_app_and_alerts_packaged.css, blue_user.css, tickets.css, demo_page.css, demo_table.css]
+
+  javascripts:    [form.js, jquery-1.5.2.js, jquery.ui.js, layout.js, iBox.js, jquery-select.js, jquery.dataTables.js, multiFilterSelect.js, habilitandoDisabled.js]
+
+  has_layout:     true
+  layout:         layout
+
+  components:
+    ayuda: [ayuda, default]
+    menu: [menu, default]
+    submenu: []

@@ -1,0 +1,5 @@
+default:
+  components:
+    menu: [menu, simulacion]
+    submenu: [submenu, costosIndirectos]
+    ayuda: [ayuda, costosIndirectos]

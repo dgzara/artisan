@@ -1,0 +1,42 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/08-Security
+
+default:
+  is_secure:   true
+  credentials: Ver_Ventas_OrdenesDeVenta
+
+index:
+  credentials: Ver_Ventas_OrdenVenta_Lista
+
+show:
+  credentials: Ver_Ventas_OrdenVenta_Lista
+
+validar:
+  credentials: Ver_Ventas_OrdenVenta_Lista_Validar
+
+despachar:
+  credentials: Ver_Ventas_OrdenVenta_Lista_Despachar
+
+recepcion:
+  credentials: Ver_Ventas_OrdenVenta_Lista_Recepcion
+
+cobrar:
+  credentials: Ver_Ventas_OrdenVenta_Lista_Cobrar
+
+devolucion:
+  credentials: Ver_Ventas_OrdenVenta_Lista_Devolucion
+
+new:
+  credentials: Ver_Ventas_OrdenVenta_NuevaOrden
+
+edit:
+  credentials: Ver_Ventas_OrdenVenta_Editar
+
+update:
+  credentials: Ver_Ventas_OrdenVenta_Editar
+
+delete:
+  credentials: Ver_Ventas_OrdenVenta_Editar
+
+factura:
+  credentials: Ver_Ventas_OrdenVenta_Facturas

@@ -1,0 +1,555 @@
+# config/doctrine/schema.yml
+Bodega:
+  actAs: { Timestampable: ~ }
+  columns:
+    nombre: { type: string(255), notnull: true }
+
+Rama:
+  actAs: { Timestampable: ~ }
+  columns:
+    nombre: { type: string(255), notnull: true }
+    
+Usuario:
+  actAs: { Timestampable: ~ }
+  columns:
+    nombre:   { type: string(255), notnull: true }
+    apellido: { type: string(255), notnull: true }
+    email:    { type: string(255), notnull: true, unique: true }
+
+Registro:
+  actAs: { Timestampable: ~ }
+  columns:
+    accion_id : { type: integer, notnull: true}
+    bodega_id : { type: integer, notnull: true }
+    bodega_nombre : { type: string(500), notnull: true }
+    usuario_nombre : { type: string(500), notnull: true }
+    producto_id : { type: integer, notnull: true }
+    nombre : { type: string(500), notnull: true }
+    accion : { type: string(500), notnull: true }
+    cantidad : { type: integer, notnull: true }
+    cantidad_vieja : { type: integer, notnull: true }
+    cantidad_nueva : { type: integer, notnull: true }
+
+
+Producto:
+  actAs: { Timestampable: ~ }
+  columns:
+    nombre: { type: string(255), notnull: true }
+    codigo: { type: string(255), notnull: true }
+    rama_id: { type: integer, notnull: true }
+    presentacion: { type: integer, notnull: true }
+    unidad: { type: string(255) }
+    duracion: { type: integer }
+    maduracion: { type: integer }
+    stock_critico: { type: integer }
+    id_comercio_net: { type: string(255) }
+  relations:
+    Rama: { onDelete: CASCADE, local: rama_id, foreign: id, foreignAlias: Productos }
+    ProductosRelacionados:
+      class: ProductoCompetencia
+      refClass: ProductoCompetenciaProducto
+      local: producto_id
+      foreign: producto_competencia_id
+      foreignAlias: ProductosCompetenciaRelacionados
+
+DescriptorDeProducto:
+  actAs: { Timestampable: ~ }
+  columns:
+    producto_id: { type: integer, notnull: true }
+    insumo_id: { type: integer, notnull: true }
+    cantidad: { type: float, notnull: true }
+    detalle: { type: string(500) }
+  relations:
+    Producto: { onDelete: CASCADE, local: producto_id, foreign: id, foreignAlias: Descriptores }
+    Insumo: { onDelete: CASCADE, local: insumo_id, foreign: id, foreignAlias: Descriptores }
+
+Insumo:
+  actAs: { Timestampable: ~ }
+  columns:
+    nombre: { type: string(255), notnull: true }
+    presentacion: { type: integer }
+    unidad: { type: string(255) }
+    stock_critico: { type: integer, notnull: true }
+
+FormatoQr:
+  actAs: { Timestampable: ~ }
+  columns:
+    ancho: { type: float, notnull: true }
+    largo: { type: float, notnull: true }
+        
+Proveedor:
+  actAs: { Timestampable: ~ }
+  columns:
+    empresa_nombre: { type: string(255), notnull: true, unique: true }
+    empresa_rut: { type: string(255) }
+    empresa_giro: { type: string(255) }
+    empresa_telefono: { type: string(255) }
+    empresa_fax: { type: string(255) }
+    empresa_direccion: { type: string(255) }
+    empresa_comuna: { type: string(255) }
+    empresa_region: { type: string(255) }
+    empresa_casilla_postal: { type: string(255) }
+    ventas_nombre: { type: string(255) }
+    ventas_email: { type: string(255) }
+    ventas_celular: { type: string(255) }
+    ventas_telefono: { type: string(255) }
+    contabilidad_nombre: { type: string(255) }
+    contabilidad_email: { type: string(255) }
+    contabilidad_celular: { type: string(255) }
+    contabilidad_telefono: { type: string(255) }
+
+Cliente:
+  actAs: { Timestampable: ~ }
+  columns:
+    tipo: { type: string(255), notnull: true }
+    name: { type: string(255), notnull: true, unique: true }
+    razon_social: { type: string(255), notnull: true, unique: true }
+    rut: { type: string(255), notnull: true, unique: false }
+    giro: { type: string(255), notnull: true, unique: false }
+    telefono: { type: string(255) }
+    fax: { type: string(255) }
+    direccion: { type: string(255) }
+    comuna: { type: string(255) }
+    ciudad : { type: string(255) }
+    region : { type: string(255) }
+    casilla: { type: string(255) }
+    contacto: { type: string(255) }
+    email: { type: string(255) }
+    cel: { type: string(255) }
+
+ProveedorInsumo:
+  actAs: { Timestampable: ~ }
+  columns:
+    insumo_id : { type: integer, notnull: true }
+    proveedor_id : { type: integer, notnull: true }
+    precio : { type: integer, notnull: true }
+  relations:
+    Proveedor: { onDelete: CASCADE, local: proveedor_id, foreign: id }
+    Insumo: { onDelete: CASCADE, local: insumo_id, foreign: id }
+
+ClienteProducto:
+  actAs: { Timestampable: ~ }
+  columns:
+    producto_id : { type: integer, notnull: true }
+    cliente_id : { type: integer, notnull: true }
+    precio : { type: integer, notnull: true }
+    stock_critico : { type: integer, notnull: true }
+  relations:
+    Cliente:  { onDelete: CASCADE, local: cliente_id, foreign: id }
+    Producto: { onDelete: CASCADE, local: producto_id, foreign: id }
+
+PlantillaColumna:
+  actAs: { Timestampable: ~ }
+  columns:
+    nombre: { type: string(255), notnull: true }
+
+PlantillaPauta:
+  actAs: { Timestampable: ~ }
+  columns:
+    nombre: { type: string(255), notnull: true }
+    rama_id: { type: integer, notnull: true }
+  relations:
+    Columnas: { class: PlantillaColumna, local: plantilla_pauta_id, foreign: plantilla_columna_id, refClass: PlantillaPautaColumna, foreignAlias: PlantillaPauta }
+    Rama: { class: Rama, onDelete: CASCADE, local: rama_id, foreign: id }
+ 
+PlantillaIngrediente:
+  actAs: { Timestampable: ~ }
+  columns:
+    insumo_id: { type: integer, notnull: true }
+    plantilla_pauta_id: { type: integer, notnull: true }
+    cantidad: { type: string(255) }
+  relations:
+    Insumo: { onDelete: CASCADE, local: insumo_id, foreign: id }
+    PlantillaPauta: { onDelete: CASCADE, local: plantilla_pauta_id, foreign: id, foreignAlias: PlantillaIngredientes }
+
+PlantillaEtapa:
+  actAs: { Timestampable: ~ }
+  columns:
+    orden: { type: integer, notnull: true }
+    nombre: { type: string(255) }
+    plantilla_pauta_id: { type: integer, notnull: true }
+  relations:
+    PlantillaPauta: { onDelete: CASCADE, local: plantilla_pauta_id, foreign: id, foreignAlias: PlantillaEtapas }
+
+PlantillaInstruccion:
+  actAs: { Timestampable: ~ }
+  columns:
+    orden: { type: integer, notnull: true }
+    descripcion: { type: string(255) }
+    plantilla_etapa_id : { type: integer, notnull: true }
+  relations:
+    PlantillaEtapa: { onDelete: CASCADE, local: plantilla_etapa_id, foreign: id, foreignAlias: PlantillaInstrucciones }
+
+PlantillaPautaColumna:
+  actAs: { Timestampable: ~ }
+  columns:
+    plantilla_pauta_id: { type: integer, notnull: true }
+    plantilla_columna_id: { type: integer, notnull: true }
+  relations:
+    PlantillaPauta: { onDelete: CASCADE, local: plantilla_pauta_id, foreign: id }
+    PlantillaColumna: { onDelete: CASCADE, local: plantilla_columna_id, foreign: id }
+
+Pauta:
+  actAs: { Timestampable: ~ }
+  columns:
+    plantilla_pauta_id : { type: integer, notnull: true }
+    fecha: { type: timestamp, notnull: true }
+  relations:
+    PlantillaPauta: { onDelete: CASCADE, local: plantilla_pauta_id, foreign: id, foreignAlias: Pautas }
+
+Instruccion:
+  actAs: { Timestampable: ~ }
+  columns:
+    pauta_id : { type: integer, notnull: true }
+    plantilla_instruccion_id: { type: integer, notnull: true }
+    plantilla_columna_id: { type: integer, notnull: true }
+    valor: { type: string(255) }
+  relations:
+    Pauta: { onDelete: CASCADE, local: pauta_id, foreign: id, foreignAlias: Instrucciones }
+    PlantillaInstruccion: { onDelete: CASCADE, local: plantilla_instruccion_id, foreign: id, foreignAlias: Instrucciones }
+
+Ingrediente:
+  actAs: { Timestampable: ~ }
+  columns:
+    pauta_id : { type: integer, notnull: true }
+    plantilla_ingrediente_id: { type: integer, notnull: true }
+    cantidad_usada: { type: integer }
+  relations:
+    Pauta: { onDelete: CASCADE, local: pauta_id, foreign: id, foreignAlias: Ingredientes }
+    PlantillaIngrediente: { onDelete: CASCADE, local: plantilla_ingrediente_id, foreign: id, foreignAlias: Ingredientes }
+
+Lote:
+  actAs: { Timestampable: ~ }
+  columns:
+    pauta_id: { type: integer }
+    fecha_elaboracion : { type: timestamp }
+    producto_id: { type: integer, notnull: true }
+    numero: { type: string(255) }
+    cantidad: { type: integer }
+    cantidad_actual: { type: integer }
+    comentarios: { type: string(500) }
+    fecha_entrada : { type: timestamp }
+    fecha_salida : { type: timestamp }
+    cantidad_danada: { type: integer }
+    cantidad_ff: { type: integer }
+    fecha_empaque : { type: timestamp }
+    cc_valdivia: { type: integer }
+    fecha_envio : { type: timestamp }
+    medio_transporte : { type: string(255) }
+    n_documento: { type: integer }
+    fecha_recepcion : { type: timestamp }
+    cantidad_recibida: { type: integer }
+    cantidad_danada_stgo: { type: integer }
+    cantidad_ff_stgo: { type: integer }
+    cc_santiago: { type: integer }
+    accion : { type: string(255) }
+    padre : { type: integer }
+  relations:
+    Producto: { onDelete: CASCADE, local: producto_id, foreign: id, foreignAlias: Lotes }
+    Pauta: { onDelete: CASCADE, local: pauta_id, foreign: id, foreignAlias: Lotes }
+    Lote: { onDelete: CASCADE, local: padre, foreign: id, foreignAlias: Lotes }
+
+InventarioProductos:
+  actAs: { Timestampable: ~ }
+  columns:
+    bodega_id : { type: integer, notnull: true }
+    producto_id : { type: integer, notnull: true }
+    cantidad : { type: integer, notnull: true }
+    fecha : { type: timestamp, notnull: true }
+  relations:
+    Producto: { onDelete: CASCADE, local: producto_id, foreign: id }
+    Bodega: { onDelete: CASCADE, local: bodega_id, foreign: id }
+
+InventarioMateriaPrima:
+  actAs: { Timestampable: ~ }
+  columns:
+    insumo_id : { type: integer, notnull: true}
+    cantidad : { type: integer, notnull: true }
+    fecha : { type: timestamp, notnull: true }
+  relations:
+    Insumo: { onDelete: CASCADE, local: insumo_id, foreign: id, foreignAlias: Inventario }
+
+RegistroMateriaPrima:
+  actAs: { Timestampable: ~ }
+  columns:
+    insumo_id : { type: integer, notnull: true}
+    cantidad : { type: integer, notnull: true }
+    fecha : { type: timestamp, notnull: true }
+  relations:
+    Insumo: { onDelete: CASCADE, local: insumo_id, foreign: id, foreignAlias: Registro }
+
+PlanProduccion:
+  actAs: { Timestampable: ~ }
+  columns:
+    fecha : { type: timestamp, notnull: true }
+    comentarios: { type: string(500) }
+
+PlanProduccionProducto:
+  actAs: { Timestampable: ~ }
+  columns:
+    plan_id : { type: integer, notnull: true }
+    producto_id : { type: integer, notnull: true }
+    cantidad : { type: integer }
+  relations:
+    PlanProduccion: { onDelete: CASCADE, local: plan_id, foreign: id }
+    Producto: { onDelete: CASCADE, local: producto_id, foreign: id }
+
+OrdenCompra:
+  actAs: { Timestampable: ~ }
+  columns:
+    fecha : { type: timestamp, notnull: true }
+    proveedor_id: { type: integer, notnull: true }
+    lugar_id : { type: integer, notnull: true }
+    numero: { type: integer, notnull: true, unique: true }
+    condiciones: { type: string(500) }
+    fecha_recepcion: { type: timestamp }
+    encargado_recepcion: { type: string(255) }
+    guia_despacho: { type: string(255) }
+    encargado_despacho: { type: string(255) }
+    fecha_factura: { type: timestamp }
+    n_factura: { type: integer }
+    fecha_pago: { type: timestamp }
+    forma_pago: { type: string(500) }
+    n_documento: { type: integer }
+    accion: { type: string(255), notnull: true }
+    archivo_adjunto: { type: string(500) }
+    archivo_adjunto2: { type: string(500) }
+    archivo_adjunto3: { type: string(500) }
+  relations:
+    Proveedor: { onDelete: CASCADE, local: proveedor_id, foreign: id, foreignAlias: Ordenes }
+    Bodega: { onDelete: CASCADE, local: lugar_id, foreign: id, foreignAlias: Ordenes }
+
+OrdenCompraInsumo:
+  actAs: { Timestampable: ~ }
+  columns:
+    insumo_id: { type: integer, notnull: true }
+    orden_compra_id: { type: integer, notnull: true }
+    cantidad: { type: integer }
+    detalle: { type: string(500) }
+    neto: { type: integer }
+    conversion: {type: float, notnull: false }
+  relations:
+    Insumo: { onDelete: CASCADE, local: insumo_id, foreign: id }
+    OrdenCompra: { onDelete: CASCADE, local: orden_compra_id, foreign: id }
+
+OrdenVenta:
+  actAs: { Timestampable: ~ }
+  columns:
+    fecha : { type: timestamp, notnull: true }
+    cliente_id: { type: integer, notnull: true }
+    local_id: { type: integer, notnull: true }
+    numero: { type: integer, notnull: true, unique: true }
+    n_oc: { type: integer(5), notnull: true}
+    condiciones: { type: string(500) }
+    fecha_envio : { type: timestamp }
+    guia_despacho: { type: string(255) }
+    encargado_despacho: { type: string(255) }
+    fecha_recepcion: { type: timestamp }
+    encargado_recepcion: { type: string(255) }
+    fecha_bf: { type: timestamp }
+    boleta_factura: { type: string(255) }
+    n_bf: { type: integer }
+    fecha_pago: { type: timestamp }
+    forma_pago: { type: string(500) }
+    n_documento: { type: integer }
+    accion: { type: string(255), notnull: true }
+    archivo_adjunto: { type: string(500) }
+    archivo_adjunto2: { type: string(500) }
+    archivo_adjunto3: { type: string(500) }
+  relations:
+    Cliente: { onDelete: CASCADE, local: cliente_id, foreign: id, foreignAlias: OrdenesVenta }
+    Local: { onDelete: CASCADE, local: local_id, foreign: id, foreignAlias: OrdenesVenta }
+
+OrdenVentaProducto:
+  actAs: { Timestampable: ~ }
+  columns:
+    producto_id: { type: integer, notnull: true }
+    orden_venta_id: { type: integer, notnull: true }
+    cantidad: { type: integer }
+    detalle: { type: string(500) }
+    neto: { type: integer }
+    descuento: { type: integer }
+  relations:
+    Producto: { onDelete: CASCADE, local: producto_id, foreign: id }
+    OrdenVenta: { onDelete: CASCADE, local: orden_venta_id, foreign: id }
+
+UnidadLote:
+  actAs: { Timestampable: ~ }
+  columns:
+    orden_venta_id: { type: integer, notnull: true }
+    lote_id: { type: integer }
+    unidad_id: { type: integer }
+  relations:
+    Lote: { onDelete: CASCADE, local: lote_id, foreign: id }
+    OrdenVenta: { onDelete: CASCADE, local: orden_venta_id, foreign: id }
+
+Local:
+  actAs: { Timestampable: ~ }
+  columns:
+    codigo: { type: integer, notnull: true }
+    cliente_id : { type: integer, notnull: true }
+    nombre: { type: string(255), notnull: true }
+    telefono: { type: string(255) }
+    fax: { type: string(255) }
+    direccion: { type: string(255) }
+    comuna: { type: string(255) }
+    ciudad: { type: string(255) }
+    region : { type: string(255) }
+    contacto_1: { type: string(255) }
+    email_1: { type: string(255) }
+    cel_1: { type: string(255) }
+    contacto_2: { type: string(255) }
+    email_2: { type: string(255) }
+    cel_2: { type: string(255) }
+    id_comercio_net: { type: string(255) }
+  relations:
+    Cliente: { onDelete: CASCADE, local: cliente_id, foreign: id, foreignAlias: Locales }
+
+ProductoLocal:
+  actAs: { Timestampable: ~ }
+  columns:
+    producto_id : { type: integer, notnull: true }
+    local_id : { type: integer, notnull: true }
+    precio_pactado : { type: integer, notnull: true }
+    fecha: { type: timestamp, notnull: true }
+  relations:
+    Producto: { onDelete: CASCADE, local: producto_id, foreign: id }
+    Local: { onDelete: CASCADE, local: local_id, foreign: id }
+
+Captura:
+  actAs: { Timestampable: ~ }
+  columns:
+    producto_id: { type: integer, notnull: true }
+    local_id: { type: integer, notnull: true }
+    precio: { type: integer, notnull: true }
+    facing: { type: integer, notnull: true }
+    fecha : { type: timestamp, notnull: true }
+    stock : { type: integer, notnull: true }
+    promocion : { type: boolean, notnull: true }
+    promotoras : { type: integer, notnull: true }
+    fuera_formato : { type: integer, notnull: true }
+    mermas : { type: integer, notnull: true }
+    photo : { type: string(32000), notnull: false }
+    modo : { type: integer, notnull: false }
+    alertado : { type: boolean, notnull: false }
+  relations:
+    Producto: { onDelete: CASCADE, local: producto_id, foreign: id, foreignAlias: Capturas }
+    Local: { onDelete: CASCADE, local: local_id, foreign: id, foreignAlias: Capturas }
+
+AspectoCalidad:
+  actAs: { Timestampable: ~ }
+  columns:
+    nombre: { type: string(255) }
+    descripcion: { type: string(255) }
+
+AspectoCalidadCaptura:
+  actAs: { Timestampable: ~ }
+  columns:
+    aspecto_calidad_id : { type: integer, notnull: true }
+    captura_id : { type: integer, notnull: true }
+    valor: { type: boolean, notnull: true }
+  relations:
+    AspectoCalidad: { onDelete: CASCADE, local: aspecto_calidad_id, foreign: id }
+    Captura: { onDelete: CASCADE, local: captura_id, foreign: id }
+
+Foto:
+  actAs: { Timestampable: ~ }
+  columns:
+    captura_id : { type: integer, notnull: true }
+    foto : { type: string(255), notnull: true }
+  relations:
+    Captura: { onDelete: CASCADE, local: captura_id, foreign: id }
+
+Marca:
+  actAs: { Timestampable: ~ }
+  columns:
+    nombre: { type: string(255), notnull: true }
+    rubro: { type: string(255) }
+
+ProductoCompetencia:
+  actAs: { Timestampable: ~ }
+  columns:
+    nombre: { type: string(255), notnull: true }
+    codigo: { type: integer, notnull: true }
+    descripcion: { type: string(255) }
+    presentacion: { type: integer }
+    unidad: { type: string(255) }
+    marca_id: { type: integer, notnull: true }
+  relations:
+    Marca: { onDelete: CASCADE, local: marca_id, foreign: id, foreignAlias: Marca }
+    ProductosRelacionados:
+      class: Producto
+      refClass: ProductoCompetenciaProducto
+      local: producto_competencia_id
+      foreign: productos_id
+      foreignAlias: ProductosRelacionados
+
+ProductoCompetenciaProducto:
+  actAs: { Timestampable: ~ }
+  columns:
+    producto_id : { type: integer, notnull: true }
+    producto_competencia_id : { type: integer, notnull: true }
+  relations:
+    Producto: { onDelete: CASCADE, local: producto_id, foreign: id }
+    ProductoCompetencia: { onDelete: CASCADE, local: producto_competencia_id, foreign: id}
+
+ProductoCompetenciaCaptura:
+  actAs: { Timestampable: ~ }
+  columns:
+    producto_competencia_id : { type: integer, notnull: true }
+    captura_id : { type: integer, notnull: true }
+    precio_captura : { type: integer, notnull: true }
+  relations:
+    ProductoCompetencia: { onDelete: CASCADE, local: producto_competencia_id, foreign: id }
+    Captura: { onDelete: CASCADE, local: captura_id, foreign: id }
+
+TablaQueries:
+  actAs: { Timestampable: ~ }
+  columns:
+    instruccion: { type: string(1000), notnull: true }
+
+AreaDeCostos:
+  actAs: { Timestampable: ~ }
+  columns:
+    nombre: { type: string(255), notnull: true }
+
+CentroDeCostos:
+  actAs: { Timestampable: ~ }
+  columns:
+    area_de_costos_id: { type: integer, notnull: true }
+    nombre: { type: string(255), notnull: true }
+    descripcion: { type: string(500) }
+    monto_default: { type: integer }
+  relations:
+    AreaDeCostos: { onDelete: CASCADE, local: area_de_costos_id, foreign: id, foreignAlias: CentrosdeCostos }
+
+CostosIndirectos:
+  actAs: { Timestampable: ~ }
+  columns:
+    nombre: { type: string(255), notnull:true }
+    area_de_costos_id: { type: integer, notnull: true }
+    centro_de_costos_id: { type: integer, notnull: true }
+    bodega_id : { type: integer, notnull: true }
+    monto : { type: integer, notnull: true }
+    fecha : { type: timestamp, notnull: true }
+    detalle: { type: string(500) }
+    archivo_adjunto: { type: string(500) }
+  relations:
+    AreaDeCostos: { onDelete: CASCADE, local: area_de_costos_id, foreign: id, foreignAlias: CostosIndirectos }
+    CentroDeCostos: { onDelete: CASCADE, local: centro_de_costos_id, foreign: id, foreignAlias: CostosIndirectos }
+    Bodega: { onDelete: CASCADE, local: bodega_id, foreign: id, foreignAlias: CostosIndirectos }
+
+CostosDirectos:
+  actAs: { Timestampable: ~ }
+  columns:
+    lote_id : { type: integer, notnull: true }
+    producto_id : { type: integer, notnull: true }
+    tipo_costo : { type: string(4) }
+    insumo_id : { type: integer, notnull: true }
+    precio_unitario : { type: integer, notnull: true }
+    valor : { type: integer }
+    fecha : { type: timestamp, notnull: true }
+  relations:
+    Lote: { onDelete: CASCADE, local: lote_id, foreign: id }
+    Producto: { onDelete: CASCADE, local: producto_id, foreign: id }
+    Insumo: { onDelete: CASCADE, local: insumo_id, foreign: id }

@@ -1,0 +1,36 @@
+<h1>Detalles del Grupo</h1>
+</br>
+
+<table class="one-table">
+  <tbody>
+    <tr>
+      <th>Nombre:</th>
+      <td><?php echo $grupo->getName() ?></td>
+    </tr>
+    <tr>
+      <th>Descripción:</th>
+      <td><?php echo $grupo->getDescription() ?></td>
+    </tr>
+    <tr>
+      <th valign="top">Permisos:</th>
+      <td>
+          <?php $permisos = $grupo->getPermissions() ?>
+          <ul>
+              <?php foreach($permisos as $permiso):?>
+                    <li><?php echo $permiso->getName()?></li>
+              <?php endforeach;?>
+          </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<div >
+<?php if($sf_user->hasPermission("Ver_Administracion_Usuarios_EditarGrupos")):?>
+<a href="<?php echo url_for('sfGuardGroup/edit?id='.$group->getId()) ?>">Modificar</a>
+&nbsp;-&nbsp;
+<?php endif;?>
+<a href="<?php echo url_for('sfGuardGroup/index') ?>">Volver</a>
+</div>

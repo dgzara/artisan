@@ -1,0 +1,8 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/13-View
+
+default:
+  components:
+    menu: [menu, ventas]
+    ayuda: [ayuda, ventas]
+  javascripts:    [jquery-1.5.2.js, jquery.ui.js, regex.js, jquery.dataTables.js, dataTables.date.js, form.js, loteRecepcionValidator.js]

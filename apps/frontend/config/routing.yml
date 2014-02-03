@@ -1,0 +1,223 @@
+<cliente:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Cliente
+    module:               clienteAdmin
+    prefix_path:          /clienteAdmin
+    column:               id
+    with_wildcard_routes: true
+
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/10-Routing
+
+generarQr:
+  url:     lote/generarqr/:id
+  param:   { module: lote, action: generarqr }
+
+ordenes_ventas:
+  url:     /api/ordenesventas
+  param:   { module: api, action: ordenesVentas, sf_format: json}
+
+despacho:
+  url:     /api/despacho
+  param:   { module: api, action: despacho, sf_format: json}
+
+sesion:
+  url:     /api/sesion
+  param:   { module: api, action: sesion, sf_format: json}  
+
+recepcion:
+  url:     /api/recepcion
+  param:   { module: api, action: recepcion, sf_format: json}
+
+venta:
+  url:     /api/venta
+  param:   { module: api, action: venta, sf_format: json}
+
+previewPlanProduccion:
+  url:     planproduccion/preview/:id
+  param:   { module: planproduccion, action: preview }
+  
+previewLote:
+  url:     lote/preview/:id
+  param:   { module: lote, action: preview }  
+
+cierreLote:
+  url:     lote/cierrelote
+  param:   { module: lote, action: cierrelote } 
+
+cierreLote:
+  url:     lote/close/:id
+  param:   { module: lote, action: close }   
+
+previewOrdenVenta:
+  url:     ordenventa/preview/:id
+  param:   { module: ordenventa, action: preview }   
+
+uploadOrdenVenta:
+  url:     ordenventa/upload
+  param:   { module: ordenventa, action: upload } 
+
+importarOrdenVenta:
+  url:     ordenventa/importar
+  param:   { module: ordenventa, action: importar }  
+
+previewPauta:
+  url:     pauta/preview/:id
+  param:   { module: pauta, action: preview }   
+
+api_base_datos:
+  url:     /api/queries.:sf_format
+  class:   sfDoctrineRoute
+  param:   { module: api, action: listQueries }
+  options: { model: TablaQueries, type: list, method: getTodos }
+  requirements:
+    sf_format: (?:xml|json)
+    sf_method: post
+
+api_recibir_bd:
+  url:    /api/query.:sf_format
+  class:  sfDoctrineRoute
+  param:  { module: api, action: recibirFecha, sf_format: json }
+  options: { model: TablaQueries, type: list }
+  requirements:
+    sf_format: (?:xml|json)
+
+api_enviar_bd:
+  url:     /api/queries.:sf_format/enviar
+  class:   sfDoctrineRoute
+  param:   { module: api, action: listQueries }
+  options: { model: TablaQueries, type: list, method: getDelta }
+  requirements:
+    sf_format: (?:xml|json)
+    sf_method: post
+
+api_guardar_captura:
+  url:    /api/registrocaptura.:sf_format
+  class:  sfDoctrineRoute
+  param:  { module: api, action: guardarCaptura, sf_format: json }
+  options:  { model: Captura, type: object }
+  requirements:
+    sf_format: (?:xml|json)
+    sf_method: post
+
+api_ubicacion_producto:
+  url:    /api/registrocaptura.:sf_format
+  param:  { module: api, action: ubicacionProducto, sf_format: json }
+  requirements:
+    sf_format: (?:xml|json)
+    sf_method: post
+
+api_calidad:
+  url:     /api/aspectos.:sf_format
+  class:   sfDoctrineRoute
+  param:   { module: api, action: list }
+  options:  { model: AspectoCalidad, type: list, method: getAspectos }
+  requirements:
+    sf_format: (?:xml|json)
+
+api_captura_calidad:
+  url:     /api/captura.:sf_format/:id/calidad
+  class:   sfDoctrineRoute
+  param:   { module: api, action: list }
+  options: { model: Captura, type: list, method: getAspectoCalidad }
+  requirements:
+    sf_format: (?:xml|json)
+
+api_productos:
+  url:     /api/productos.:sf_format/:rama
+  class:   sfDoctrineRoute
+  param:   { module: api, action: listProductos }
+  options: { model: Producto, type: list, method: getForRama }
+  requirements:
+    sf_format: (?:xml|json)
+
+api_producto_competencia:
+  url:     /api/productos.:sf_format/:codigo/competencia
+  class:   sfDoctrineRoute
+  param:   { module: api, action: list }
+  options: { model: Producto, type: list, method: getProductosCompetencia }
+  requirements:
+    sf_format: (?:xml|json)
+
+api_productos_todos:
+  url:     /api/productos.:sf_format
+  class:   sfDoctrineRoute
+  param:   { module: api, action: listProductos }
+  options: { model: Producto, type: list, method: getForRama }
+  requirements:
+    sf_format: (?:xml|json)
+
+api_locales_productos:
+  url:     /api/locales.:sf_format/:id/productos
+  class:   sfDoctrineRoute
+  param:   { module: api, action: list }
+  options: { model: Local, type: list, method: getProductos }
+  requirements:
+    sf_format: (?:xml|json)
+
+api_locales:
+  url:     /api/locales.:sf_format
+  class:   sfDoctrineRoute
+  param:   { module: api, action: list }
+  options: { model: Local, type: list, method: getTodos }
+  requirements:
+    sf_format: (?:xml|json)
+
+api_clientes_productos:
+  url:     /api/mercados.:sf_format/:id/productos
+  class:   sfDoctrineRoute
+  param:   { module: api, action: list }
+  options: { model: Cliente, type: list, method: getProductos }
+  requirements:
+    sf_format: (?:xml|json)
+
+api_tipo_clientes:
+  url:     /api/mercados.:sf_format/tipos
+  class:   sfDoctrineRoute
+  param:   { module: api, action: listClientes }
+  options: { model: Cliente, type: list, method: getTipos }
+  requirements:
+    sf_format: (?:xml|json)	
+
+api_clientes_tipo:
+  url:     /api/mercados.:sf_format/:tipo
+  class:   sfDoctrineRoute
+  param:   { module: api, action: listClientes }
+  options: { model: Cliente, type: list, method: getForTipo }
+  requirements:
+    sf_format: (?:xml|json)
+
+api_clientes:
+  url:     /api/mercados.:sf_format
+  class:   sfDoctrineRoute
+  param:   { module: api, action: listClientes }
+  options: { model: Cliente, type: list, method: getForTipo }
+  requirements:
+    sf_format: (?:xml|json)		
+
+sf_guard_signin:
+  url:   /login
+  param: { module: sfGuardAuth, action: signin }
+
+sf_guard_signout:
+  url:   /logout
+  param: { module: sfGuardAuth, action: signout }
+
+sf_guard_password:
+  url:   /request_password
+  param: { module: sfGuardAuth, action: password }
+
+# default rules
+homepage:
+  url:   /
+  param: { module: inicio, action: index }
+
+# generic rules
+# please, remove them by adding more specific rules
+default_index:
+  url:   /:module
+  param: { action: index }
+
+default:
+  url:   /:module/:action/*

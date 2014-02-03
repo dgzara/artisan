@@ -1,0 +1,30 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/08-Security
+
+default:
+  is_secure:   true
+  credentials: Ver_Movil_Capturas
+
+index:
+  credentials: Ver_Movil_Capturas_Lista
+
+show:
+  credentials: Ver_Movil_Capturas_Lista
+
+new:
+  credentials: Ver_Movil_Capturas_Lista
+
+edit:
+  credentials: Ver_Movil_Capturas_Lista
+
+update:
+  credentials: Ver_Movil_Capturas_Lista
+
+delete:
+  credentials: Ver_Movil_Capturas_Lista
+
+alertas:
+  credentials: Ver_Movil_Capturas_Alertas
+
+estadisticas:
+  credentials: Ver_Movil_Capturas_Estadisticas

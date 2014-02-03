@@ -1,0 +1,24 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/08-Security
+
+default:
+  is_secure:   true
+  credentials: Ver_Adquisiciones_InventarioMateriaPrima
+
+index:
+  credentials: Ver_Adquisiciones_InventarioMateriaPrima
+
+show:
+  credentials: Ver_Adquisiciones_InventarioMateriaPrima
+
+new:
+  credentials: Ver_Adquisiciones_InventarioMateriaPrima
+
+edit:
+  credentials: Ver_Adquisiciones_InventarioMateriaPrima
+
+update:
+  credentials: Ver_Adquisiciones_InventarioMateriaPrima
+
+delete:
+  credentials: Ver_Adquisiciones_InventarioMateriaPrima

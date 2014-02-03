@@ -1,0 +1,11 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/13-View
+
+default:
+  components:
+    menu: [menu, administrador]
+    submenu: [submenu, productos]
+    ayuda: [ayuda, producto]
+  stylesheets:    [base_app_and_alerts_packaged.css, blue_user.css, tickets.css]
+
+  javascripts:    [form.js, jquery-1.5.2.js, jquery.ui.js, layout.js, iBox.js]
