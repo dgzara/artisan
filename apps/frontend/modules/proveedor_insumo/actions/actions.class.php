@@ -36,8 +36,8 @@ class proveedor_insumoActions extends sfActions
           "1" => $v->getInsumo()->getNombre(),
           "2" => $v->getProveedor()->getEmpresaNombre(),
           "3" => '$'.$formato->format($v->getPrecio(), 'd', 'CLP'),
-          "4" => '<a href="'.$ver.'"><img src="/web/images/tools/icons/event_icons/ico-story.png" border="0"></a>',
-          "5" => '<a href="'.$mod.'"><img src="/web/images/tools/icons/event_icons/ico-edit.png" border="0"></a></a>',
+          "4" => '<a href="'.$ver.'"><img src="../images/tools/icons/event_icons/ico-story.png" border="0"></a>',
+          "5" => '<a href="'.$mod.'"><img src="../images/tools/icons/event_icons/ico-edit.png" border="0"></a></a>',
         );
       }
 

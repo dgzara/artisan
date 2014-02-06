@@ -34,8 +34,8 @@ class plantilla_pautaActions extends sfActions
           "0" => $v->getId(),
           "1" => $v->getNombre(),
           "2" => $v->getRama()->getNombre(),
-          "3" => '<a href="'.$ver.'"><img src="/web/images/tools/icons/event_icons/ico-story.png" border="0"></a>',
-          "4" => '<a href="'.$mod.'"><img src="/web/images/tools/icons/event_icons/ico-edit.png" border="0"></a></a>',
+          "3" => '<a href="'.$ver.'"><img src="../images/tools/icons/event_icons/ico-story.png" border="0"></a>',
+          "4" => '<a href="'.$mod.'"><img src="../images/tools/icons/event_icons/ico-edit.png" border="0"></a></a>',
         );
       }
 

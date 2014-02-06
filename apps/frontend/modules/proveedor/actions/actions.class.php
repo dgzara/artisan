@@ -37,8 +37,8 @@ class proveedorActions extends sfActions
           "3" => $v->getVentasNombre(),
           "4" => $v->getVentasEmail(),
           "5" => $v->getVentasCelular(),
-          "6" => '<a href="'.$ver.'"><img src="/web/images/tools/icons/event_icons/ico-story.png" border="0"></a>',
-          "7" => '<a href="'.$mod.'"><img src="/web/images/tools/icons/event_icons/ico-edit.png" border="0"></a></a>',
+          "6" => '<a href="'.$ver.'"><img src="../images/tools/icons/event_icons/ico-story.png" border="0"></a>',
+          "7" => '<a href="'.$mod.'"><img src="../images/tools/icons/event_icons/ico-edit.png" border="0"></a></a>',
         );
       }
 

@@ -86,7 +86,7 @@ $(document).ready(function() {
                 "bStateSave": true,
                 "sPaginationType": "full_numbers",
                 "bProcessing": true,
-//      "bServerSide": true,
+        "bServerSide": true,
                 "sAjaxSource": "<?php echo url_for('captura/index') ?>",
                 "aoColumnDefs": [
                     { "sClass": "right", "aTargets": [ 2 ], "sType": "uk_date" },

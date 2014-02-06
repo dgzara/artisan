@@ -44,7 +44,7 @@ $(document).ready(function() {
                 "bStateSave": true,
                 "sPaginationType": "full_numbers",
                 "bProcessing": true,
-//      "bServerSide": true,
+        "bServerSide": true,
                 "sAjaxSource": "<?php echo url_for('lote/cierrelote') ?>",
                 "aoColumnDefs": [
                     { "aTargets": [ 1 ], "sType": "uk_date" }

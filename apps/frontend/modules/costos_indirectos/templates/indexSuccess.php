@@ -47,7 +47,7 @@ $(document).ready(function() {
                 "bStateSave": true,
                 "sPaginationType": "full_numbers",
                 "bProcessing": true,
-//      "bServerSide": true,
+        "bServerSide": true,
                 "sAjaxSource": "<?php echo url_for('costos_indirectos/index') ?>",
                 "aoColumnDefs": [
                     { "sClass": "right", "aTargets": [ 5 ], "sType": "currency" }

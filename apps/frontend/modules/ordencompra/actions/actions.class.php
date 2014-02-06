@@ -1571,7 +1571,7 @@ EOF
           $deshacer = '';
           if($v->getAccion()!='Validar'){
             $des = $this->getController()->genUrl('ordencompra/deshacer?id='.$v->getId());
-            $deshacer = '<a href="'.$des.'" class="deshacer_button"><img src="/web/images/tools/icons/event_icons/ico-undo.png" border="0"></a>';
+            $deshacer = '<a href="'.$des.'" class="deshacer_button"><img src="../images/tools/icons/event_icons/ico-undo.png" border="0"></a>';
           }
 
           $estado_accion = $v->getAccion();
@@ -1596,8 +1596,8 @@ EOF
             "4" => '$'.$formato->format($v->getNeto(),'d','CLP'),
             "5" => $estado_accion,
             "6" => $deshacer,
-            "7" => '<a href="'.$ver.'"><img src="/web/images/tools/icons/event_icons/ico-story.png" border="0"></a>',
-            "8" => '<a href="'.$mod.'"><img src="/web/images/tools/icons/event_icons/ico-edit.png" border="0"></a></a>',
+            "7" => '<a href="'.$ver.'"><img src="../images/tools/icons/event_icons/ico-story.png" border="0"></a>',
+            "8" => '<a href="'.$mod.'"><img src="../images/tools/icons/event_icons/ico-edit.png" border="0"></a></a>',
             //"9" => '<a href="'.$mod.'"><img src="/images/tools/icons/event_icons/ico-edit.png" border="0"></a></a>',
             "9" => '<input type="checkbox" class="checkbox1" value="'.$v->getId().'" accion="'.$v->getAccion().'"> <br>',
           );

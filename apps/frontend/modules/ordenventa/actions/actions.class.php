@@ -1291,8 +1291,8 @@ public function executeDelete(sfWebRequest $request)
               "6" => $v->getValorNeto(),
               "7" => $v->getIVA(),
               "8" => $v->getValorTotal(),
-              "9" => '<a href="'.$ver.'"><img src="/web/images/tools/icons/event_icons/ico-story.png" border="0"></a>',
-              "10" => '<a href="'.$mod.'"><img src="/web/images/tools/icons/event_icons/ico-edit.png" border="0"></a></a>',
+              "9" => '<a href="'.$ver.'"><img src="../images/tools/icons/event_icons/ico-story.png" border="0"></a>',
+              "10" => '<a href="'.$mod.'"><img src="../images/tools/icons/event_icons/ico-edit.png" border="0"></a></a>',
             );
           }
 
@@ -1345,7 +1345,7 @@ public function executeDelete(sfWebRequest $request)
           $deshacer = '';
           if($v->getAccion() != 'Validar'){
             $des = $this->getController()->genUrl('ordenventa/deshacer?id='.$v->getId());
-            $deshacer = '<a href="'.$des.'"><img src="/quesosar/web/images/tools/icons/event_icons/ico-undo.png" border="0"></a>';
+            $deshacer = '<a href="'.$des.'"><img src="../images/tools/icons/event_icons/ico-undo.png" border="0"></a>';
           }
 
             $estado_accion = $v->getAccion();
@@ -1378,9 +1378,9 @@ public function executeDelete(sfWebRequest $request)
             "5" => $v->getValorNeto(),
             "6" => $estado_accion,
             "7" => $deshacer,
-            "8" => '<a class="jt" rel="/quesosar/web/ordenventa/preview/'.$v->getId().'" title="Orden '.$v->getNumero().'" href="'.$ver.'"><img src="/quesosar/web/images/tools/icons/event_icons/ico-story.png" border="0" /></a>',
-            //"8" => '<a href="'.$ver.'"><img src="/quesosar/web/images/tools/icons/event_icons/ico-story.png" border="0"></a>',
-            "9" => '<a href="'.$mod.'"><img src="/quesosar/web/images/tools/icons/event_icons/ico-edit.png" border="0"></a></a>',
+            "8" => '<a class="jt" rel="/quesosar/web/ordenventa/preview/'.$v->getId().'" title="Orden '.$v->getNumero().'" href="'.$ver.'"><img src="../images/tools/icons/event_icons/ico-story.png" border="0" /></a>',
+            //"8" => '<a href="'.$ver.'"><img src="../images/tools/icons/event_icons/ico-story.png" border="0"></a>',
+            "9" => '<a href="'.$mod.'"><img src="../images/tools/icons/event_icons/ico-edit.png" border="0"></a></a>',
             "10" => '<input type="checkbox" class="checkbox1" value="'.$v->getId().'" accion="'.$v->getAccion().'"> <br>',
           );
        }

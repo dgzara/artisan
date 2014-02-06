@@ -83,7 +83,7 @@ $(document).ready(function() {
                 "bStateSave": true,
                 "sPaginationType": "full_numbers",
                 "bProcessing": true,
-//      "bServerSide": true,
+        "bServerSide": true,
                 "sAjaxSource": "<?php echo url_for('planproduccion/index') ?>",
                  "fnDrawCallback": function() {
             		$('a.jt').cluetip({
@@ -94,7 +94,7 @@ $(document).ready(function() {
                 	sticky: true,
                 	mouseOutClose: true,
                 	closePosition: 'title',
-                	closeText: '<img src="../web/images/cross.png" alt="close" />'
+                	closeText: '<img src="..../images/cross.png" alt="close" />'
             		});
         		}, 
                 "fnInitComplete": function() {

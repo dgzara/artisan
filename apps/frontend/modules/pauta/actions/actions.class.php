@@ -614,8 +614,8 @@ class pautaActions extends sfActions
           "0" => $v->getId(),
           "1" => $v->getPlantillaPauta()->getNombre(),
           "2" => $v->getDateTimeObject('fecha')->format('d M Y'),
-          "3" => '<a class="jt" rel="/quesosar/web/pauta/preview/'.$v->getId().'" title="Pauta '.$v->getPlantillaPauta()->getNombre().'" href="'.$ver.'"><img src="/quesosar/web/images/tools/icons/event_icons/ico-story.png" border="0" /></a>',
-          "4" => '<a href="'.$mod.'"><img src="/quesosar/web/images/tools/icons/event_icons/ico-edit.png" border="0"></a></a>',
+          "3" => '<a class="jt" rel="/quesosar/web/pauta/preview/'.$v->getId().'" title="Pauta '.$v->getPlantillaPauta()->getNombre().'" href="'.$ver.'"><img src="../images/tools/icons/event_icons/ico-story.png" border="0" /></a>',
+          "4" => '<a href="'.$mod.'"><img src="../images/tools/icons/event_icons/ico-edit.png" border="0"></a></a>',
           "5" => $items[0]['name'],
         );
       }
@@ -662,8 +662,8 @@ class pautaActions extends sfActions
           "0" => $v->getId(),
           "1" => $v->getPlantillaPauta()->getNombre(),
           "2" => $v->getDateTimeObject('fecha')->format('d-m-Y'),
-          "3" => '<a class="jt" rel="/web/pauta/preview/'.$v->getId().'" title="Pauta '.$v->getPlantillaPauta()->getNombre().'" href="'.$ver.'"><img src="/web/images/tools/icons/event_icons/ico-story.png" border="0" /></a>',
-          "4" => '<a href="'.$mod.'"><img src="/web/images/tools/icons/event_icons/ico-edit.png" border="0"></a></a>',
+          "3" => '<a class="jt" rel="/web/pauta/preview/'.$v->getId().'" title="Pauta '.$v->getPlantillaPauta()->getNombre().'" href="'.$ver.'"><img src="../images/tools/icons/event_icons/ico-story.png" border="0" /></a>',
+          "4" => '<a href="'.$mod.'"><img src="../images/tools/icons/event_icons/ico-edit.png" border="0"></a></a>',
         );
       }
 	    

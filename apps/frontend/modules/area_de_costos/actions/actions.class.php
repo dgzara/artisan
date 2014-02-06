@@ -33,8 +33,8 @@ class area_de_costosActions extends sfActions
 	$aaData[] = array(
           "0" => $v->getId(),
           "1" => $v->getNombre(),
-          "2" => '<a href="'.$ver.'"><img src="/web/images/tools/icons/event_icons/ico-story.png" border="0"></a>',
-          "3" => '<a href="'.$mod.'"><img src="/web/images/tools/icons/event_icons/ico-edit.png" border="0"></a></a>',
+          "2" => '<a href="'.$ver.'"><img src="../images/tools/icons/event_icons/ico-story.png" border="0"></a>',
+          "3" => '<a href="'.$mod.'"><img src="../images/tools/icons/event_icons/ico-edit.png" border="0"></a></a>',
         );
       }
 

@@ -1,6 +1,6 @@
 /* * FancyBox - jQuery Plugin * Simple and fancy lightbox alternative * * Examples and documentation at: http://fancybox.net * * Copyright (c) 2008 - 2010 Janis Skarnelis * * Version: 1.3.1 (05/03/2010) * Requires: jQuery v1.3+ * * Dual licensed under the MIT and GPL licenses: * http://www.opensource.org/licenses/mit-license.php * http://www.gnu.org/licenses/gpl.html */ #fancybox-loading {position: fixed; top: 50%; left: 50%; height: 40px; width: 40px; margin-top: -20px; margin-left: -20px; cursor: pointer; overflow: hidden; z-index: 1104; display: none}
 * html #fancybox-loading {/* IE6 */ position: absolute; margin-top: 0}
-#fancybox-loading div {position: absolute; top: 0; left: 0; width: 40px; height: 480px; background-image: url('/quesosar/web/images/jquery.fancybox/fancybox.png')}
+#fancybox-loading div {position: absolute; top: 0; left: 0; width: 40px; height: 480px; background-image: url('../images/jquery.fancybox/fancybox.png')}
 #fancybox-overlay {position: fixed; top: 0; left: 0; bottom: 0; right: 0; background: #000; z-index: 1100; display: none}
 * html #fancybox-overlay {/* IE6 */ position: absolute; width: 100%}
 #fancybox-tmp {padding: 0; margin: 0; border: 0; overflow: auto; display: none}
@@ -8,7 +8,7 @@
 #fancybox-outer {position: relative; width: 100%; height: 100%; background: #FFF}
 #fancybox-inner {position: absolute; top: 0; left: 0; width: 1px; height: 1px; padding: 0; margin: 0; outline: none; overflow: hidden}
 #fancybox-hide-sel-frame {position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: transparent}
-#fancybox-close {position: absolute; top: -15px; right: -15px; width: 30px; height: 30px; background-image: url('/quesosar/web/images/jquery.fancybox/fancybox.png'); background-position: -40px 0px; cursor: pointer; z-index: 1103; display: none}
+#fancybox-close {position: absolute; top: -15px; right: -15px; width: 30px; height: 30px; background-image: url('../images/jquery.fancybox/fancybox.png'); background-position: -40px 0px; cursor: pointer; z-index: 1103; display: none}
 #fancybox_error {color: #444; font: normal 12px/20px Arial; padding: 7px; margin: 0}
 #fancybox-content {height: auto; width: auto; padding: 0; margin: 0}
 #fancybox-img {width: 100%; height: 100%; padding: 0; margin: 0; border: none; outline: none; line-height: 0; vertical-align: top; -ms-interpolation-mode: bicubic}
@@ -17,47 +17,47 @@
 .fancybox-title-inside {padding: 10px 0; text-align: center; color: #333}
 .fancybox-title-outside {padding-top: 5px; color: #FFF; text-align: center; font-weight: bold}
 .fancybox-title-over {color: #FFF; text-align: left}
-#fancybox-title-over {padding: 10px; background-image: url('/quesosar/web/images/jquery.fancybox/fancy_title_over.png'); display: block}
+#fancybox-title-over {padding: 10px; background-image: url('../images/jquery.fancybox/fancy_title_over.png'); display: block}
 #fancybox-title-wrap {display: inline-block}
 #fancybox-title-wrap span {height: 32px; float: left}
-#fancybox-title-left {padding-left: 15px; background-image: url('/quesosar/web/images/jquery.fancybox/fancybox.png'); background-position: -40px -90px; background-repeat: no-repeat}
-#fancybox-title-main {font-weight: bold; line-height: 29px; background-image: url('/quesosar/web/images/jquery.fancybox/fancybox-x.png'); background-position: 0px -40px; color: #FFF}
-#fancybox-title-right {padding-left: 15px; background-image: url('/quesosar/web/images/jquery.fancybox/fancybox.png'); background-position: -55px -90px; background-repeat: no-repeat}
-#fancybox-left, #fancybox-right {position: absolute; bottom: 0px; height: 100%; width: 35%; cursor: pointer; outline: none; background-image: url('/quesosar/web/images/jquery.fancybox/blank.gif'); z-index: 1102; display: none}
+#fancybox-title-left {padding-left: 15px; background-image: url('../images/jquery.fancybox/fancybox.png'); background-position: -40px -90px; background-repeat: no-repeat}
+#fancybox-title-main {font-weight: bold; line-height: 29px; background-image: url('../images/jquery.fancybox/fancybox-x.png'); background-position: 0px -40px; color: #FFF}
+#fancybox-title-right {padding-left: 15px; background-image: url('../images/jquery.fancybox/fancybox.png'); background-position: -55px -90px; background-repeat: no-repeat}
+#fancybox-left, #fancybox-right {position: absolute; bottom: 0px; height: 100%; width: 35%; cursor: pointer; outline: none; background-image: url('../images/jquery.fancybox/blank.gif'); z-index: 1102; display: none}
 #fancybox-left {left: 0px}
 #fancybox-right {right: 0px}
 #fancybox-left-ico, #fancybox-right-ico {position: absolute; top: 50%; left: -9999px; width: 30px; height: 30px; margin-top: -15px; cursor: pointer; z-index: 1102; display: block}
-#fancybox-left-ico {background-image: url('/quesosar/web/images/jquery.fancybox/fancybox.png'); background-position: -40px -30px}
-#fancybox-right-ico {background-image: url('/quesosar/web/images/jquery.fancybox/fancybox.png'); background-position: -40px -60px}
+#fancybox-left-ico {background-image: url('../images/jquery.fancybox/fancybox.png'); background-position: -40px -30px}
+#fancybox-right-ico {background-image: url('../images/jquery.fancybox/fancybox.png'); background-position: -40px -60px}
 #fancybox-left:hover, #fancybox-right:hover {visibility: visible; /* IE6 */ }
 #fancybox-left:hover span {left: 20px}
 #fancybox-right:hover span {left: auto; right: 20px}
 .fancy-bg {position: absolute; padding: 0; margin: 0; border: 0; width: 20px; height: 20px; z-index: 1001}
-#fancy-bg-n {top: -20px; left: 0; width: 100%; background-image: url('/quesosar/web/images/jquery.fancybox/fancybox-x.png')}
-#fancy-bg-ne {top: -20px; right: -20px; background-image: url('/quesosar/web/images/jquery.fancybox/fancybox.png'); background-position: -40px -162px}
-#fancy-bg-e {top: 0; right: -20px; height: 100%; background-image: url('/quesosar/web/images/jquery.fancybox/fancybox-y.png'); background-position: -20px 0px}
-#fancy-bg-se {bottom: -20px; right: -20px; background-image: url('/quesosar/web/images/jquery.fancybox/fancybox.png'); background-position: -40px -182px}
-#fancy-bg-s {bottom: -20px; left: 0; width: 100%; background-image: url('/quesosar/web/images/jquery.fancybox/fancybox-x.png'); background-position: 0px -20px}
-#fancy-bg-sw {bottom: -20px; left: -20px; background-image: url('/quesosar/web/images/jquery.fancybox/fancybox.png'); background-position: -40px -142px}
-#fancy-bg-w {top: 0; left: -20px; height: 100%; background-image: url('/quesosar/web/images/jquery.fancybox/fancybox-y.png')}
-#fancy-bg-nw {top: -20px; left: -20px; background-image: url('/quesosar/web/images/jquery.fancybox/fancybox.png'); background-position: -40px -122px}
-/* IE */ #fancybox-loading.fancybox-ie div {background: transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/quesosar/web/images/jquery.fancybox/fancy_loading.png', sizingMethod='scale')}
-.fancybox-ie #fancybox-close {background: transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/quesosar/web/images/jquery.fancybox/fancy_close.png', sizingMethod='scale')}
-.fancybox-ie #fancybox-title-over {background: transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/quesosar/web/images/jquery.fancybox/fancy_title_over.png', sizingMethod='scale'); zoom: 1}
-.fancybox-ie #fancybox-title-left {background: transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/quesosar/web/images/jquery.fancybox/fancy_title_left.png', sizingMethod='scale')}
-.fancybox-ie #fancybox-title-main {background: transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/quesosar/web/images/jquery.fancybox/fancy_title_main.png', sizingMethod='scale')}
-.fancybox-ie #fancybox-title-right {background: transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/quesosar/web/images/jquery.fancybox/fancy_title_right.png', sizingMethod='scale')}
-.fancybox-ie #fancybox-left-ico {background: transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/quesosar/web/images/jquery.fancybox/fancy_nav_left.png', sizingMethod='scale')}
-.fancybox-ie #fancybox-right-ico {background: transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/quesosar/web/images/jquery.fancybox/fancy_nav_right.png', sizingMethod='scale')}
+#fancy-bg-n {top: -20px; left: 0; width: 100%; background-image: url('../images/jquery.fancybox/fancybox-x.png')}
+#fancy-bg-ne {top: -20px; right: -20px; background-image: url('../images/jquery.fancybox/fancybox.png'); background-position: -40px -162px}
+#fancy-bg-e {top: 0; right: -20px; height: 100%; background-image: url('../images/jquery.fancybox/fancybox-y.png'); background-position: -20px 0px}
+#fancy-bg-se {bottom: -20px; right: -20px; background-image: url('../images/jquery.fancybox/fancybox.png'); background-position: -40px -182px}
+#fancy-bg-s {bottom: -20px; left: 0; width: 100%; background-image: url('../images/jquery.fancybox/fancybox-x.png'); background-position: 0px -20px}
+#fancy-bg-sw {bottom: -20px; left: -20px; background-image: url('../images/jquery.fancybox/fancybox.png'); background-position: -40px -142px}
+#fancy-bg-w {top: 0; left: -20px; height: 100%; background-image: url('../images/jquery.fancybox/fancybox-y.png')}
+#fancy-bg-nw {top: -20px; left: -20px; background-image: url('../images/jquery.fancybox/fancybox.png'); background-position: -40px -122px}
+/* IE */ #fancybox-loading.fancybox-ie div {background: transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/jquery.fancybox/fancy_loading.png', sizingMethod='scale')}
+.fancybox-ie #fancybox-close {background: transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/jquery.fancybox/fancy_close.png', sizingMethod='scale')}
+.fancybox-ie #fancybox-title-over {background: transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/jquery.fancybox/fancy_title_over.png', sizingMethod='scale'); zoom: 1}
+.fancybox-ie #fancybox-title-left {background: transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/jquery.fancybox/fancy_title_left.png', sizingMethod='scale')}
+.fancybox-ie #fancybox-title-main {background: transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/jquery.fancybox/fancy_title_main.png', sizingMethod='scale')}
+.fancybox-ie #fancybox-title-right {background: transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/jquery.fancybox/fancy_title_right.png', sizingMethod='scale')}
+.fancybox-ie #fancybox-left-ico {background: transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/jquery.fancybox/fancy_nav_left.png', sizingMethod='scale')}
+.fancybox-ie #fancybox-right-ico {background: transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/jquery.fancybox/fancy_nav_right.png', sizingMethod='scale')}
 .fancybox-ie .fancy-bg {background: transparent !important}
-.fancybox-ie #fancy-bg-n {filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/quesosar/web/images/jquery.fancybox/fancy_shadow_n.png', sizingMethod='scale')}
-.fancybox-ie #fancy-bg-ne {filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/quesosar/web/images/jquery.fancybox/fancy_shadow_ne.png', sizingMethod='scale')}
-.fancybox-ie #fancy-bg-e {filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/quesosar/web/images/jquery.fancybox/fancy_shadow_e.png', sizingMethod='scale')}
-.fancybox-ie #fancy-bg-se {filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/quesosar/web/images/jquery.fancybox/fancy_shadow_se.png', sizingMethod='scale')}
-.fancybox-ie #fancy-bg-s {filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/quesosar/web/images/jquery.fancybox/fancy_shadow_s.png', sizingMethod='scale')}
-.fancybox-ie #fancy-bg-sw {filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/quesosar/web/images/jquery.fancybox/fancy_shadow_sw.png', sizingMethod='scale')}
-.fancybox-ie #fancy-bg-w {filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/quesosar/web/images/jquery.fancybox/fancy_shadow_w.png', sizingMethod='scale')}
-.fancybox-ie #fancy-bg-nw {filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/quesosar/web/images/jquery.fancybox/fancy_shadow_nw.png', sizingMethod='scale')}
+.fancybox-ie #fancy-bg-n {filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/jquery.fancybox/fancy_shadow_n.png', sizingMethod='scale')}
+.fancybox-ie #fancy-bg-ne {filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/jquery.fancybox/fancy_shadow_ne.png', sizingMethod='scale')}
+.fancybox-ie #fancy-bg-e {filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/jquery.fancybox/fancy_shadow_e.png', sizingMethod='scale')}
+.fancybox-ie #fancy-bg-se {filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/jquery.fancybox/fancy_shadow_se.png', sizingMethod='scale')}
+.fancybox-ie #fancy-bg-s {filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/jquery.fancybox/fancy_shadow_s.png', sizingMethod='scale')}
+.fancybox-ie #fancy-bg-sw {filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/jquery.fancybox/fancy_shadow_sw.png', sizingMethod='scale')}
+.fancybox-ie #fancy-bg-w {filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/jquery.fancybox/fancy_shadow_w.png', sizingMethod='scale')}
+.fancybox-ie #fancy-bg-nw {filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/jquery.fancybox/fancy_shadow_nw.png', sizingMethod='scale')}
 /* Copyright (c) 2005 Assembla, Inc. Released under the Singleton Development License */ /* Design by Andrea Peltrin <http://passiomatic.com/> */ /* --------------------------------------------------- STANDARD STYLES The following block of styles should be placed in the new base.css file ------------------------------------------------------ */ /* --------------------------------------------------- = Page ------------------------------------------------------ */ html, body {margin: 0; padding: 0; direction: ltr}
 body {color: #000; background: #eee; background: #fff; font: 12px/1.5 Arial, Helvetica, 'Liberation Sans', FreeSans, sans-serif; letter-spacing: normal}
 * {/* normalize */ margin: 0; padding: 0}
@@ -74,7 +74,7 @@ h4 {font-size: 1em}
 /* --------------------------------------------------- = General HTML tags ------------------------------------------------------ */ a:link, a:visited {padding: 1px 0; color: #15478C; text-decoration: underline}
 a:hover {text-decoration: none; border: none; color: #06b}
 a img {border: none}
-a.feed-link {padding-left: 16px !important; background: transparent url(/quesosar/web/images/blue/feed-icon.gif) center left no-repeat}
+a.feed-link {padding-left: 16px !important; background: transparent url(../images/blue/feed-icon.gif) center left no-repeat}
 hr {visibility: hidden; border: none; height: 0; margin-top: 3em}
 dt {font-weight: bold}
 dd {margin-bottom: .75em}
@@ -132,52 +132,52 @@ fieldset.blue p input, fieldset.blue p input[type="text"], fieldset.blue p texta
 fieldset.blue p {clear: both; display: block; height: 21px}
 .disabled-field {background: #eee !important; color: #555 !important}
 input[disabled="disabled"] {cursor: default !important; background: #eee !important; color: #555 !important}
-/* --------------------------------------------------- = Buttons ----------------------------------------------------- */ /* Grey input button */ input.button,input.nbutton, .button, a.button, a.button:visited, a.nbutton, a.nbutton:visited {font: bold 12px Arial, Helvetica, 'Liberation Sans', FreeSans, sans-serif !important; background: #eee url(/quesosar/web/images/bg-grey-button.jpg) top left repeat-x; color: #039; border: 1px solid #bbb; border-top: 1px solid #ddd; border-left: 1px solid #ddd; cursor: pointer; padding: 4px 6px; line-height: 1em; margin: 0; width: auto; overflow: visible; text-shadow: 1px 1px 0 #fff}
+/* --------------------------------------------------- = Buttons ----------------------------------------------------- */ /* Grey input button */ input.button,input.nbutton, .button, a.button, a.button:visited, a.nbutton, a.nbutton:visited {font: bold 12px Arial, Helvetica, 'Liberation Sans', FreeSans, sans-serif !important; background: #eee url(../images/bg-grey-button.jpg) top left repeat-x; color: #039; border: 1px solid #bbb; border-top: 1px solid #ddd; border-left: 1px solid #ddd; cursor: pointer; padding: 4px 6px; line-height: 1em; margin: 0; width: auto; overflow: visible; text-shadow: 1px 1px 0 #fff}
 /* Grey text button */ a.nbutton, a.nbutton:visited, a.button, a.button:visited {cursor: pointer; padding: 4px 8px; line-height: 1em; font-size: 12px; margin: 0 .3em 0 0; width: auto; overflow: visible; text-decoration: none; font-style: normal; width: auto; overflow: visible}
-input.button:hover, input.nbutton:hover, a.button:hover, .button:hover, a.nbutton:hover {color: #06c; border: 1px solid #aaa; background: #eee url(/quesosar/web/images/bg-grey-button-hover.jpg) top left repeat-x}
-/* New small grey icon button */ .icon-button, .compact-icon-button {margin: 0 8px 0 0 !important; padding: 0 !important; background: #eee url(/quesosar/web/images/bg-light-grey-button.png) top left repeat-x; width: auto !important; height: 24px !important; border: 1px solid #b7b7b7; float: left; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px}
+input.button:hover, input.nbutton:hover, a.button:hover, .button:hover, a.nbutton:hover {color: #06c; border: 1px solid #aaa; background: #eee url(../images/bg-grey-button-hover.jpg) top left repeat-x}
+/* New small grey icon button */ .icon-button, .compact-icon-button {margin: 0 8px 0 0 !important; padding: 0 !important; background: #eee url(../images/bg-light-grey-button.png) top left repeat-x; width: auto !important; height: 24px !important; border: 1px solid #b7b7b7; float: left; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px}
 .icon-button a, .compact-icon-button a {margin: 0 !important; display: block; clear: both; padding: 2px 6px 2px 6px !important; font-size: 12px !important; font-family: Arial, Helvetica, 'Liberation Sans', FreeSans, sans-serif; text-shadow: #f6f6f6 1px 1px 0; text-decoration: none; border: 1px solid #fff; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px}
 .icon-button a {padding: 2px 8px 2px 7px !important}
-.icon-button a:hover, .compact-icon-button:hover {background: #eee url(/quesosar/web/images/bg-grey-button-hover.jpg) top left repeat-x}
+.icon-button a:hover, .compact-icon-button:hover {background: #eee url(../images/bg-grey-button-hover.jpg) top left repeat-x}
 .icon-button a:hover {color: #06c}
 .icon-button span {background: none !important; width: 0; height: 0}
 .icon-button img {float: left; margin: 0 4px 0 0; background: none}
 .icon-button em {font-style: normal}
 
 /* New small grey icon button icons */
-.add-icon a {background: url(/quesosar/web/images/ico-add.png) 7px 3px no-repeat !important; padding: 2px 8px 2px 26px !important}
-.user-icon a {background: url(/quesosar/web/images/tools/icons/event_icons/ico-user.png) 7px 3px no-repeat !important; padding: 2px 8px 2px 26px !important}
-.list-icon a {background: url(/quesosar/web/images/tools/icons/event_icons/ico-ticket.png) 7px 3px no-repeat !important; padding: 2px 8px 2px 29px !important}
-.ciclo-icon a {background: url(/quesosar/web/images/tools/icons/event_icons/ico-ciclo.png) 7px 3px no-repeat !important; padding: 2px 8px 2px 29px !important}
-.alertas-icon a {background: url(/quesosar/web/images/tools/icons/event_icons/ico-alerts.png) 7px 3px no-repeat !important; padding: 2px 8px 2px 26px !important}
-.estadisticas-icon a {background: url(/quesosar/web/images/tools/icons/event_icons/estadisticas.png) 7px 3px no-repeat !important; padding: 2px 8px 2px 26px !important}
-.email-icon a {background: url(/quesosar/web/images/ico_email.gif) 9px 3px no-repeat; padding: 2px 8px 2px 31px !important}
+.add-icon a {background: url(../images/ico-add.png) 7px 3px no-repeat !important; padding: 2px 8px 2px 26px !important}
+.user-icon a {background: url(../images/tools/icons/event_icons/ico-user.png) 7px 3px no-repeat !important; padding: 2px 8px 2px 26px !important}
+.list-icon a {background: url(../images/tools/icons/event_icons/ico-ticket.png) 7px 3px no-repeat !important; padding: 2px 8px 2px 29px !important}
+.ciclo-icon a {background: url(../images/tools/icons/event_icons/ico-ciclo.png) 7px 3px no-repeat !important; padding: 2px 8px 2px 29px !important}
+.alertas-icon a {background: url(../images/tools/icons/event_icons/ico-alerts.png) 7px 3px no-repeat !important; padding: 2px 8px 2px 26px !important}
+.estadisticas-icon a {background: url(../images/tools/icons/event_icons/estadisticas.png) 7px 3px no-repeat !important; padding: 2px 8px 2px 26px !important}
+.email-icon a {background: url(../images/ico_email.gif) 9px 3px no-repeat; padding: 2px 8px 2px 31px !important}
 .orcancel {display: inline; margin-top: 4px}
 
 
 
 
 
-/* --------------------------------------------------- = Buttons ----------------------------------------------------- */ /* Grey input button */ input.button,input.nbutton, .button, a.button, a.button:visited, a.nbutton, a.nbutton:visited {font: bold 12px Arial, Helvetica, 'Liberation Sans', FreeSans, sans-serif !important; background: #eee url(/quesosar/web/images/bg-grey-button.jpg) top left repeat-x; color: #039; border: 1px solid #bbb; border-top: 1px solid #ddd; border-left: 1px solid #ddd; cursor: pointer; padding: 4px 6px; line-height: 1em; margin: 0; width: auto; overflow: visible; text-shadow: 1px 1px 0 #fff}
+/* --------------------------------------------------- = Buttons ----------------------------------------------------- */ /* Grey input button */ input.button,input.nbutton, .button, a.button, a.button:visited, a.nbutton, a.nbutton:visited {font: bold 12px Arial, Helvetica, 'Liberation Sans', FreeSans, sans-serif !important; background: #eee url(../images/bg-grey-button.jpg) top left repeat-x; color: #039; border: 1px solid #bbb; border-top: 1px solid #ddd; border-left: 1px solid #ddd; cursor: pointer; padding: 4px 6px; line-height: 1em; margin: 0; width: auto; overflow: visible; text-shadow: 1px 1px 0 #fff}
 /* Red text button */ a.nbutton, a.nbutton:visited, a.button, a.button:visited {cursor: pointer; padding: 4px 8px; line-height: 1em; font-size: 12px; margin: 0 .3em 0 0; width: auto; overflow: visible; text-decoration: none; font-style: normal; width: auto; overflow: visible}
-input.button:hover, input.nbutton:hover, a.button:hover, .button:hover, a.nbutton:hover {color: #06c; border: 1px solid #aaa; background: #eee url(/quesosar/web/images/bg-grey-button-hover2-BLUE.jpg) top center repeat-x}
-/* New small grey icon button */ .icon-button2, .compact-icon-button2 {margin: 0 8px 0 0 !important; padding: 0 !important; background: #eee url(/quesosar/web/images/bg-light-grey-button2-BLUE.jpg) top center repeat-x; width: auto !important; height: 24px !important; border: 1px solid #b7b7b7; float: left; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px}
+input.button:hover, input.nbutton:hover, a.button:hover, .button:hover, a.nbutton:hover {color: #06c; border: 1px solid #aaa; background: #eee url(../images/bg-grey-button-hover2-BLUE.jpg) top center repeat-x}
+/* New small grey icon button */ .icon-button2, .compact-icon-button2 {margin: 0 8px 0 0 !important; padding: 0 !important; background: #eee url(../images/bg-light-grey-button2-BLUE.jpg) top center repeat-x; width: auto !important; height: 24px !important; border: 1px solid #b7b7b7; float: left; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px}
 .icon-button2 a, .compact-icon-button2 a {margin: 0 !important; display: block; clear: both; padding: 2px 6px 2px 6px !important; font-size: 12px !important; font-family: Arial, Helvetica, 'Liberation Sans', FreeSans, sans-serif; text-shadow: #f6f6f6 1px 1px 0; text-decoration: none; border: 1px solid #fff; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px}
 .icon-button2 a {padding: 2px 8px 2px 7px !important}
-.icon-button2 a:hover, .compact-icon-button2:hover {background: #eee url(/quesosar/web/images/bg-grey-button-hover2-BLUE.jpg) top center repeat-x}
+.icon-button2 a:hover, .compact-icon-button2:hover {background: #eee url(../images/bg-grey-button-hover2-BLUE.jpg) top center repeat-x}
 .icon-button2 a:hover {color: #06c}
 .icon-button2 span {background: none !important; width: 0; height: 0}
 .icon-button2 img {float: left; margin: 0 4px 0 0; background: none}
 .icon-button2 em {font-style: normal}
 
 /* New small grey icon button icons */
-.add-icon a {background: url(/quesosar/web/images/ico-add.png) 7px 3px no-repeat !important; padding: 2px 8px 2px 26px !important}
-.user-icon a {background: url(/quesosar/web/images/tools/icons/event_icons/ico-user.png) 7px 3px no-repeat !important; padding: 2px 8px 2px 26px !important}
-.list-icon a {background: url(/quesosar/web/images/tools/icons/event_icons/ico-ticket.png) 7px 3px no-repeat !important; padding: 2px 8px 2px 29px !important}
-.ciclo-icon a {background: url(/quesosar/web/images/tools/icons/event_icons/ico-ciclo.png) 7px 3px no-repeat !important; padding: 2px 8px 2px 29px !important}
-.alertas-icon a {background: url(/quesosar/web/images/tools/icons/event_icons/ico-alerts.png) 7px 3px no-repeat !important; padding: 2px 8px 2px 29px !important}
-.estadisticas-icon a {background: url(/quesosar/web/images/tools/icons/event_icons/estadisticas.png) 7px 3px no-repeat !important; padding: 2px 8px 2px 29px !important}
-.email-icon a {background: url(/quesosar/web/images/ico_email.gif) 9px 3px no-repeat; padding: 2px 8px 2px 31px !important}
+.add-icon a {background: url(../images/ico-add.png) 7px 3px no-repeat !important; padding: 2px 8px 2px 26px !important}
+.user-icon a {background: url(../images/tools/icons/event_icons/ico-user.png) 7px 3px no-repeat !important; padding: 2px 8px 2px 26px !important}
+.list-icon a {background: url(../images/tools/icons/event_icons/ico-ticket.png) 7px 3px no-repeat !important; padding: 2px 8px 2px 29px !important}
+.ciclo-icon a {background: url(../images/tools/icons/event_icons/ico-ciclo.png) 7px 3px no-repeat !important; padding: 2px 8px 2px 29px !important}
+.alertas-icon a {background: url(../images/tools/icons/event_icons/ico-alerts.png) 7px 3px no-repeat !important; padding: 2px 8px 2px 29px !important}
+.estadisticas-icon a {background: url(../images/tools/icons/event_icons/estadisticas.png) 7px 3px no-repeat !important; padding: 2px 8px 2px 29px !important}
+.email-icon a {background: url(../images/ico_email.gif) 9px 3px no-repeat; padding: 2px 8px 2px 31px !important}
 .orcancel {display: inline; margin-top: 4px}
 
 
@@ -186,15 +186,15 @@ input.button:hover, input.nbutton:hover, a.button:hover, .button:hover, a.nbutto
 
 
 
-/* Styles for Feature pages new Signup button */ a.blue-button {background: #15478C url(/quesosar/web/images/bg-blue-button.png) top left repeat-x; font-size: 16px; color: #fff !important; text-decoration: none; font-weight: bold; display: block; text-align: center; padding: 3px 4px 9px 4px; height: 21px; text-shadow: #5D8A01 1px 1px 0; margin: 10px auto 10px auto; -moz-border-radius: 7px; -webkit-border-radius: 7px}
-a.blue-button:hover {background: #5A9DD0 url(/quesosar/web/images/bg-blue-button-hover.png) top left repeat-x}
+/* Styles for Feature pages new Signup button */ a.blue-button {background: #15478C url(../images/bg-blue-button.png) top left repeat-x; font-size: 16px; color: #fff !important; text-decoration: none; font-weight: bold; display: block; text-align: center; padding: 3px 4px 9px 4px; height: 21px; text-shadow: #5D8A01 1px 1px 0; margin: 10px auto 10px auto; -moz-border-radius: 7px; -webkit-border-radius: 7px}
+a.blue-button:hover {background: #5A9DD0 url(../images/bg-blue-button-hover.png) top left repeat-x}
 a.blue-button img {margin-left: 6px}
 /* --------------------------------------------------- = Page subtabs ----------------------------------------------------- */ .page-subtabs {display: block; clear: both; height: 24px; border-bottom: 1px solid #D4DCE8; margin: 10px 0}
 .page-subtabs ul {margin: 0; padding: 0; list-style-type: none}
 .page-subtabs ul li {float: left; margin: 0; padding: 0}
-.page-subtabs ul li a {display: block; padding: 3px 10px 2px 10px; background: #eee url(/quesosar/web/images/bg-grey-button.jpg) top left repeat-x; border: 1px solid #DCE3EC; border-bottom: none; font-weight: bold}
-.page-subtabs ul li a:hover {background: #f9f9f9 url(/quesosar/web/images/bg-grey-button-hover.jpg) top left repeat-x}
-.page-subtabs ul li.current a {margin: 0 5px; background: #fff url(/quesosar/web/images/bg-square-tabs-current.png) top left repeat-x; border: 1px solid #D4DCE8; border-bottom: 1px solid #fff; color: #000; text-decoration: none}
+.page-subtabs ul li a {display: block; padding: 3px 10px 2px 10px; background: #eee url(../images/bg-grey-button.jpg) top left repeat-x; border: 1px solid #DCE3EC; border-bottom: none; font-weight: bold}
+.page-subtabs ul li a:hover {background: #f9f9f9 url(../images/bg-grey-button-hover.jpg) top left repeat-x}
+.page-subtabs ul li.current a {margin: 0 5px; background: #fff url(../images/bg-square-tabs-current.png) top left repeat-x; border: 1px solid #D4DCE8; border-bottom: 1px solid #fff; color: #000; text-decoration: none}
 /* --------------------------------------------------- = Utilities = Use this styles to prevent the use of inline styles ----------------------------------------------------- */ .cut {clear: both; height: 1px; overflow: hidden; width: auto}
 .hidden {display: none}
 .inline {display: inline}
@@ -214,7 +214,7 @@ ul.clean {list-style-type: none}
 .space-image {margin-left:1em; vertical-align:top; display:table-cell}
 .no-padding {padding: 0}
 .extra-padding {padding: 1em 1.25em}
-.extra-padding input.deletem {background:url(/quesosar/web/images/delete.gif) center left no-repeat; width: 14px; height: 16px}
+.extra-padding input.deletem {background:url(../images/delete.gif) center left no-repeat; width: 14px; height: 16px}
 .extra-padding-bottom {padding-bottom: .75em}
 .padding-top-off {padding-top: 0}
 .padding-bottom-off {padding-bottom: 0}
@@ -302,46 +302,46 @@ table.sortable th{ cursor:pointer; color: #15478c}
 .additional-footer {color: #666; margin-bottom: 12px; font-size: 13px}
 .additional-footer a {color: #333}
 .additional-footer a:hover {color: #06c}
-/* ----- Marketing Sites footer styles ----- */ #footer.marketing {background: #fff url(/quesosar/web/images/bg-footer.png) left top repeat-x; border: none !important; padding: 5px 0 1px 0 !important; margin-top: 35px !important}
+/* ----- Marketing Sites footer styles ----- */ #footer.marketing {background: #fff url(../images/bg-footer.png) left top repeat-x; border: none !important; padding: 5px 0 1px 0 !important; margin-top: 35px !important}
 /* Product sites links */ #footer-logos {display: block; clear: both; text-align: center; margin: 0 auto; width: 735px}
 #footer-logos p.logo a {width: 178px; display: block; float: left; padding: 7px 10px; text-decoration: none; -webkit-border-radius: 7px; -moz-border-radius: 7px; border-radius: 7px; color: #666; margin-top: 0}
-#footer-logos p.logo a:hover {text-decoration: none !important; background: #f6f6f6 url(/quesosar/web/images/bg-logos-footer.png) left bottom repeat-x; color: #15478C}
+#footer-logos p.logo a:hover {text-decoration: none !important; background: #f6f6f6 url(../images/bg-logos-footer.png) left bottom repeat-x; color: #15478C}
 #footer-logos p.logo a span {text-decoration: underline; font-size: 12px; display: block; font-weight: bold; padding: 0; margin: 0}
 /* Social links */ .social-links {width: 970px; display: block; clear: both; margin: 0 auto; height: 20px; margin-bottom: 25px; margin-top: 20px}
 .social-links div {text-align: center; width: 530px; overflow: visible; margin: 0 auto; margin-bottom: 20px}
 .social-links p {float: left; padding: 0 10px 0 33px; margin: 0}
-.social-links p.blog-link {background: url(/quesosar/web/images/index/icon-rss.png) 10px 1px no-repeat}
-.social-links p.rss-link {background: url(/quesosar/web/images/index/ico-rss.png) 10px 1px no-repeat}
-.social-links p.twitter-link {background: url(/quesosar/web/images/index/ico-twitter.png) 10px 1px no-repeat}
+.social-links p.blog-link {background: url(../images/index/icon-rss.png) 10px 1px no-repeat}
+.social-links p.rss-link {background: url(../images/index/ico-rss.png) 10px 1px no-repeat}
+.social-links p.twitter-link {background: url(../images/index/ico-twitter.png) 10px 1px no-repeat}
 #site-links {width: 800px; margin: 0 auto; border: 1px solid #ccc; border-right: none; border-left: none; padding: 10px; margin-bottom: 20px}
 #site-links span {color: #ccc; padding: 0 6px 0 8px}
-/* --------------------------------------------------- = Portfolio header ------------------------------------------------------ */ .portfolio-header {background: #333 url(/quesosar/web/images/bg-top.png) top left repeat-x !important}
+/* --------------------------------------------------- = Portfolio header ------------------------------------------------------ */ .portfolio-header {background: #333 url(../images/bg-top.png) top left repeat-x !important}
 .portfolio-header div #header {margin: 0 10px; width: auto}
 .portfolio-header div #header #logo {padding: 6px 0 6px 8px; height: 40px}
 /* --------------------------------------------------- = List with gray line separator ------------------------------------------------------ */ .gray-line-list {margin: 0}
 .gray-line-list ul {margin: 0 0 .75em 0; list-style-type: none; padding-top: 4px}
 .gray-line-list ul li {border-bottom: 1px solid #ddd; padding: 4px 4px 0 4px; margin-bottom: 2px}
 /* --------------------------------------------------- = Icons = Use this tags on divs or list ------------------------------------------------------ */ /* Single icon tag for div */ .icon {float: left; margin: 0 .5em 0 0}
-/* styles to add action icons to DIVs or UL LIs */ .icon-edit {background: transparent url(/quesosar/web/images/ico-edit.png) left 1px no-repeat; padding-left: 23px !important; list-style: none; margin-bottom: .25em}
-.icon-page-history {background: transparent url(/quesosar/web/images/wiki/ico_pagehistory.gif) left 1px no-repeat; padding-left: 23px !important; list-style: none; margin-bottom: .25em}
-.icon-print {background: transparent url(/quesosar/web/images/wiki/ico_print.gif) left 1px no-repeat; padding-left: 23px !important; list-style: none; margin-bottom: .25em}
-.icon-delete {background: transparent url(/quesosar/web/images/remove.gif) left 1px no-repeat; padding-left: 23px !important; list-style: none; margin-bottom: .25em}
-.icon-settings {background: transparent url(/quesosar/web/images/ico_settings.png) left top no-repeat; padding-left: 23px !important; list-style: none; margin-bottom: .25em}
-.icon-add {background: transparent url(/quesosar/web/images/ico-add.png) left top no-repeat; padding-left: 21px !important; list-style: none; margin-bottom: .25em}
-.icon-import-export {background: transparent url(/quesosar/web/images/tools/icons/ico-import-export.gif) left 1px no-repeat; padding-left: 23px !important; list-style: none; margin-bottom: .25em}
-.icon-teamsize {background: transparent url(/quesosar/web/images/ico-team.png) left top no-repeat; padding-left: 23px !important; list-style: none; margin-bottom: .25em}
-.icon-diskspace {background: transparent url(/quesosar/web/images/ico-disk-space.png) left 1px no-repeat; padding-left: 23px !important; list-style: none; margin-bottom: .25em}
-.icon-spacepayer {background: transparent url(/quesosar/web/images/ico-payer.png) left 1px no-repeat; padding-left: 23px !important; list-style: none; margin-bottom: .25em}
-.icon-package {background: transparent url(/quesosar/web/images/ico-package.png) left 1px no-repeat; padding-left: 23px !important; list-style: none; margin-bottom: .25em}
-.icon-email {background: transparent url(/quesosar/web/images/admin/ico_email.gif) left 1px no-repeat; padding-left: 23px !important; list-style: none; margin-bottom: .25em}
-.icon-time {background: transparent url(/quesosar/web/images/ico-time.png) left 1px no-repeat; padding-left: 21px !important; list-style: none; margin-bottom: .25em}
-.icon-chart {background: transparent url(/quesosar/web/images/ico-chart.png) left 1px no-repeat; padding-left: 22px !important; list-style: none; margin-bottom: .25em}
-.icon-addmessage {background: transparent url(/quesosar/web/images/ico-addmessage.png) left 1px no-repeat; padding-left: 22px !important; list-style: none; margin-bottom: .25em}
+/* styles to add action icons to DIVs or UL LIs */ .icon-edit {background: transparent url(../images/ico-edit.png) left 1px no-repeat; padding-left: 23px !important; list-style: none; margin-bottom: .25em}
+.icon-page-history {background: transparent url(../images/wiki/ico_pagehistory.gif) left 1px no-repeat; padding-left: 23px !important; list-style: none; margin-bottom: .25em}
+.icon-print {background: transparent url(../images/wiki/ico_print.gif) left 1px no-repeat; padding-left: 23px !important; list-style: none; margin-bottom: .25em}
+.icon-delete {background: transparent url(../images/remove.gif) left 1px no-repeat; padding-left: 23px !important; list-style: none; margin-bottom: .25em}
+.icon-settings {background: transparent url(../images/ico_settings.png) left top no-repeat; padding-left: 23px !important; list-style: none; margin-bottom: .25em}
+.icon-add {background: transparent url(../images/ico-add.png) left top no-repeat; padding-left: 21px !important; list-style: none; margin-bottom: .25em}
+.icon-import-export {background: transparent url(../images/tools/icons/ico-import-export.gif) left 1px no-repeat; padding-left: 23px !important; list-style: none; margin-bottom: .25em}
+.icon-teamsize {background: transparent url(../images/ico-team.png) left top no-repeat; padding-left: 23px !important; list-style: none; margin-bottom: .25em}
+.icon-diskspace {background: transparent url(../images/ico-disk-space.png) left 1px no-repeat; padding-left: 23px !important; list-style: none; margin-bottom: .25em}
+.icon-spacepayer {background: transparent url(../images/ico-payer.png) left 1px no-repeat; padding-left: 23px !important; list-style: none; margin-bottom: .25em}
+.icon-package {background: transparent url(../images/ico-package.png) left 1px no-repeat; padding-left: 23px !important; list-style: none; margin-bottom: .25em}
+.icon-email {background: transparent url(../images/admin/ico_email.gif) left 1px no-repeat; padding-left: 23px !important; list-style: none; margin-bottom: .25em}
+.icon-time {background: transparent url(../images/ico-time.png) left 1px no-repeat; padding-left: 21px !important; list-style: none; margin-bottom: .25em}
+.icon-chart {background: transparent url(../images/ico-chart.png) left 1px no-repeat; padding-left: 22px !important; list-style: none; margin-bottom: .25em}
+.icon-addmessage {background: transparent url(../images/ico-addmessage.png) left 1px no-repeat; padding-left: 22px !important; list-style: none; margin-bottom: .25em}
 .side-title{ margin: 8px 0px 0px 20px}
-.icon-addtask {background: transparent url(/quesosar/web/images/ico-addtask.png) left 1px no-repeat; padding-left: 22px !important; list-style: none; margin-bottom: .25em}
-.icon-uncomplete {background: transparent url(/quesosar/web/images/uncheck.png) left 1px no-repeat; padding-left: 22px !important; list-style: none; margin-bottom: .25em}
-.icon-report {background: transparent url(/quesosar/web/images/ico-report.png) left 1px no-repeat; padding-left: 21px !important; list-style: none; margin-bottom: 0; min-width: 15px; height: 17px; display: block}
-.icon-add-payer {background: transparent url(/quesosar/web/images/ico-add-payer.png) left top no-repeat; padding-left: 21px !important; list-style: none; margin-bottom: .25em}
+.icon-addtask {background: transparent url(../images/ico-addtask.png) left 1px no-repeat; padding-left: 22px !important; list-style: none; margin-bottom: .25em}
+.icon-uncomplete {background: transparent url(../images/uncheck.png) left 1px no-repeat; padding-left: 22px !important; list-style: none; margin-bottom: .25em}
+.icon-report {background: transparent url(../images/ico-report.png) left 1px no-repeat; padding-left: 21px !important; list-style: none; margin-bottom: 0; min-width: 15px; height: 17px; display: block}
+.icon-add-payer {background: transparent url(../images/ico-add-payer.png) left top no-repeat; padding-left: 21px !important; list-style: none; margin-bottom: .25em}
 /* --------------------------------------------------- = Searches ------------------------------------------------------ */ h3.search-term {color: #666; border-bottom: 1px solid #ccc; padding-bottom: 0.375em; margin-bottom: 1.5em}
 h3.search-term span {font-style: italic; color: #15478C}
 #search-again {margin: 0 auto; background: #EAF3FA; padding: 1em 1.25em; border: 1px solid #D4DCE8; width: 30em}
@@ -356,11 +356,11 @@ h3.search-term span {font-style: italic; color: #15478C}
 #search-results li {margin-bottom: .375em}
 #search-results li span {float: left; width: 16px; height: 16px}
 #search-results li div {margin-left: .75em; width: 100%}
-/* --------------------------------------------------- = Messages (Rails' flash styling) ------------------------------------------------------ */ /* Use this to grab use attention on a importart message */ .panel-critical {background: url(/quesosar/web/images/ico-alert.gif) .75em .75em no-repeat; padding: .75em; padding-left: 30px; color: #591212; margin-bottom: 1.5em}
+/* --------------------------------------------------- = Messages (Rails' flash styling) ------------------------------------------------------ */ /* Use this to grab use attention on a importart message */ .panel-critical {background: url(../images/ico-alert.gif) .75em .75em no-repeat; padding: .75em; padding-left: 30px; color: #591212; margin-bottom: 1.5em}
 .panel-critical a:link, .panel-critical a:visited {color: #000; border-color: #a62121}
 .panel-critical span.invitation {color: #000}
-.panel-info {background: #FFFFBB url(/quesosar/web/images/ico-info.gif) .75em .75em no-repeat; padding: .75em; padding-left: 30px; margin-bottom: 1.5em}
-.panel-warn {background: #FFFFBB url(/quesosar/web/images/ico-warn.png) 8px 8px no-repeat; padding: .75em; padding-left: 30px; margin-bottom: 1.5em}
+.panel-info {background: #FFFFBB url(../images/ico-info.gif) .75em .75em no-repeat; padding: .75em; padding-left: 30px; margin-bottom: 1.5em}
+.panel-warn {background: #FFFFBB url(../images/ico-warn.png) 8px 8px no-repeat; padding: .75em; padding-left: 30px; margin-bottom: 1.5em}
 /* --------------------------------------------------- = Boxes ------------------------------------------------------ */ /* General box attributes */ .box, .outlined-box, .highlight-box, .green-box, .blue-box, .lightblue-box {padding: 1em 1.25em; margin-bottom: .75em}
 .box ul, .outlined-box ul, .highlight-box ul, .green-box ul, .blue-box ul, .lightblue-box ul {list-style: none; margin: .5em 0 0 0}
 .box ul li, .outlined-box ul li, .highlight-box ul li, .green-box ul li, .blue-box ul li, .lightblue-box ul li {padding: 0; vertical-align: text-bottom; margin-bottom: .75em}
@@ -368,7 +368,7 @@ h3.search-term span {font-style: italic; color: #15478C}
 .blue-box-title, .green-box-title {padding: 6px 8px !important; margin-bottom: 0 !important; font-size: 16px !important}
 #tickets.blue-box-title {/* ticket metrics/dashboard page */ margin: 0 0 -10px 0; font-size: 1.1em}
 .yellow-box {background-color: #FFFEE7; border-top: 1px solid #FFE358; border-bottom: 1px solid #FFE358; padding: 8px; clear: both; display: block; margin: 10px 0 20px 0}
-.yellow-box-info {background: #FFFFBB url(/quesosar/web/images/ico-info.gif) .75em .75em no-repeat; background-color: #FFFEE7; border-top: 1px solid #FFE358; border-bottom: 1px solid #FFE358; clear: both; display: block; padding: .75em .75em .75em 30px; margin: 10px 0 1.5em 0}
+.yellow-box-info {background: #FFFFBB url(../images/ico-info.gif) .75em .75em no-repeat; background-color: #FFFEE7; border-top: 1px solid #FFE358; border-bottom: 1px solid #FFE358; clear: both; display: block; padding: .75em .75em .75em 30px; margin: 10px 0 1.5em 0}
 /* Legend for fieldset.blue-box */ .blue-box legend{ font-size: 14px; font-weight: bold; padding: 0 7px 0 7px}
 /* This grey box can be used for instructions panels on tools */ .box {background: #f6f6f6}
 .box h2 {font-size: 15px !important}
@@ -400,22 +400,22 @@ h3.search-term span {font-style: italic; color: #15478C}
 .lightblue-box.customer-support p {margin: 5px 40px 0 20px; padding: 0; font-size: 14px; float: left}
 .lightblue-box.customer-support ul {margin: 0; padding: 0; border: none; list-style: none}
 .lightblue-box.customer-support ul li {float: left; margin: 0 20px; padding: 0; font-size: 14px; color: #13478c}
-.lightblue-box.customer-support ul li.phone {background: url(/quesosar/web/images/ico_telephone.gif) left 50% no-repeat; padding-left: 20px; margin-top: 5px}
-.lightblue-box.customer-support ul li.email {background: url(/quesosar/web/images/ico_email.gif) left 50% no-repeat; padding-left: 20px; margin-top: 5px}
+.lightblue-box.customer-support ul li.phone {background: url(../images/ico_telephone.gif) left 50% no-repeat; padding-left: 20px; margin-top: 5px}
+.lightblue-box.customer-support ul li.email {background: url(../images/ico_email.gif) left 50% no-repeat; padding-left: 20px; margin-top: 5px}
 /* Box style reset */ .box-nostyle {background: #fff; border: none; padding: 0}
 /* Box styles to emphasize boxed content */ .boxed-styles {margin: 0; padding: 10px 15px; border: 4px solid #E7FABB}
 .boxed-styles h2 {font-size: 1.45em; line-height: 1.2em; color: #333; margin: 0 0 5px 0}
 .boxed-styles em {color: #C00; font-weight: bold; font-style: normal}
 .boxed-styles ul {margin: 0; list-style-type: none}
-.boxed-styles ul li {margin: 0 0 2px 0; list-style-type: none; background: url(/quesosar/web/images/arrow-featured.gif) no-repeat left 5px; padding-left: 15px; font-size: 1.15em; line-height: 1.5em}
+.boxed-styles ul li {margin: 0 0 2px 0; list-style-type: none; background: url(../images/arrow-featured.gif) no-repeat left 5px; padding-left: 15px; font-size: 1.15em; line-height: 1.5em}
 .boxed-styles ul li.note {margin: 5px 0 2px 0; list-style-type: none; background: none; font-size: .9em; line-height: 1.5em; padding: 0}
 /* This brings back overriden bullets on boxes */ .bulleted-box ul li {list-style-type: disc; margin-left: 12px; margin-bottom: 4px}
-p.simple-video-link a {font-weight: bold; padding-left: 20px; background: url(/quesosar/web/images/features/bullet-video.png) 0px 0px no-repeat}
+p.simple-video-link a {font-weight: bold; padding-left: 20px; background: url(../images/features/bullet-video.png) 0px 0px no-repeat}
 div.simple-video-link {margin-bottom: 1.125em}
-div.simple-video-link a {font-weight: bold; padding-left: 20px; background: url(/quesosar/web/images/features/bullet-video.png) 0px 0px no-repeat}
-p.video-link a {font-weight: bold; font-size:13px; padding: 4px 8px 5px 28px; background: #f3fcdd url(/quesosar/web/images/features/bullet-video.png) 6px 4px no-repeat; line-height: 1.6em}
+div.simple-video-link a {font-weight: bold; padding-left: 20px; background: url(../images/features/bullet-video.png) 0px 0px no-repeat}
+p.video-link a {font-weight: bold; font-size:13px; padding: 4px 8px 5px 28px; background: #f3fcdd url(../images/features/bullet-video.png) 6px 4px no-repeat; line-height: 1.6em}
 p.video-link a:hover {color: #fff; background-color: #15478c}
-div.video-link a {font-weight: bold; font-size:13px; padding: 4px 8px 5px 28px; line-height: 24px; background: #f3fcdd url(/quesosar/web/images/features/bullet-video.png) 6px 4px no-repeat}
+div.video-link a {font-weight: bold; font-size:13px; padding: 4px 8px 5px 28px; line-height: 24px; background: #f3fcdd url(../images/features/bullet-video.png) 6px 4px no-repeat}
 div.video-link a:hover {color: #fff; background-color: #15478c}
 /* --------------------------------------------------- = Panels - panel which you can open/close = those are NOT the ones in the user start page. ------------------------------------------------------ */ .collapsible-panel {padding: .75em 1.25em; margin-bottom: 1em; background: #f6f6f6; border: 1px solid #BCC5D7}
 .collapsible-panel h3 {margin: -.75em -1em -.5em -1em; cursor: pointer; padding: 0px; color: #15478C; font-size: 100%}
@@ -428,7 +428,7 @@ div.video-link a:hover {color: #fff; background-color: #15478c}
 .pagination a:hover, .pagination a:active {/*border: 1px solid #5D8A01; background-color: #15478C; color: #fff */}
 .pagination span.current {padding: 4px 7px 4px 7px; margin: 2px; border: 1px solid #15478C; font-weight: bold; background-color: #15478C; color: #FFF}
 .pagination span.disabled {padding: 2px 5px 2px 5px; margin: 2px; border: 1px solid #ddd; color: #ddd}
-/* --------------------------------------------------- =Tag styles ------------------------------------------------------ */ /* Use this style when you need tags on the left content column */ .tags {background: transparent url(/quesosar/web/images/ico_tag.gif) 0px 4px no-repeat; padding: 0 0 4px 20px; border-bottom: 1px solid #D4DCE8; margin-bottom: 1.5em; font-size: 13px}
+/* --------------------------------------------------- =Tag styles ------------------------------------------------------ */ /* Use this style when you need tags on the left content column */ .tags {background: transparent url(../images/ico_tag.gif) 0px 4px no-repeat; padding: 0 0 4px 20px; border-bottom: 1px solid #D4DCE8; margin-bottom: 1.5em; font-size: 13px}
 .tags a:link {background: #ECF3FE; padding: 0 .3em .2em .3em; margin: 0; line-height: 1.8em}
 .tags a:hover {background: #15478C; color: #fff}
 /* tag cloud */ .cloud {margin: 0; padding: 0; line-height: 230%}
@@ -482,7 +482,7 @@ h2.edit-timeentry{ width: 537px}
 .and_at2 {float: left; background-color: #eee}
 .btn-timeentry{margin-top:1em;}
 /*THIS IS THE LINE ------------------------------------------------*/ /* --------------------------------------------------- NONSTANDARD & QUESTIONABLE STYLES The following block of styles are controller or tool specific. They should be considered "below the line" and NOT included in the new base.css file. Move these styles to individual controller or specific tool stylesheets. ------------------------------------------------------ */ /* THIS DEFINITION COLLIDES WITH ANOTHER DEFINITION FOR '#wiki-content' */ #help-panel #wiki-content {padding: 0; width: 58em; margin: .375em auto; background: #fff; background: #e5f0ff; height: 20em; _overflow-y: scroll; /* for IE, need to test this */ }
-/* TODO: remove those */ a.a-add:link, a.a-add:visited {background: transparent url(/quesosar/web/images/ico_add.gif) center left no-repeat; padding: 2px; padding-left: 21px; font-weight: bold}
+/* TODO: remove those */ a.a-add:link, a.a-add:visited {background: transparent url(../images/ico_add.gif) center left no-repeat; padding: 2px; padding-left: 21px; font-weight: bold}
 /* --------------------------------------------------- =about page ------------------------------------------------------ */ #philosophy {background-color: #e7fabb; color: #2d4000}
 #philosophy h2 {border-bottom: 1px solid #a7cc52}
 /* --------------------------------------------------- =portal page ----- Check this styles ------------------------------------------------------ */ .all {list-style: none}
@@ -500,19 +500,19 @@ h2.edit-timeentry{ width: 537px}
 .public h3 {margin-bottom: .75em}
 /* --------------------------------------------------- =wiki controller ------------------------------------------------------ */ .wlabel {color: #333; font-size: 1.2em; font-family: Arial, Verdana; padding-bottom: 4px}
 .extern-content {background: #e5f0ff}
-.wiki-hk-deleted {list-style-image: url(/quesosar/web/images/wiki/ico_wdeleted.gif); list-style-position: outside}
-.wiki-hk-new {list-style-image: url(/quesosar/web/images/wiki/ico_wnew.gif); list-style-position: outside}
+.wiki-hk-deleted {list-style-image: url(../images/wiki/ico_wdeleted.gif); list-style-position: outside}
+.wiki-hk-new {list-style-image: url(../images/wiki/ico_wnew.gif); list-style-position: outside}
 #wiki-name {border-bottom: 3px solid #c6d3e1; padding-bottom: 5px; float: left; width: 100%}
 #wiki-name.panel-critical{ margin-bottom: 0px}
 #wiki-name h2 {float: left; margin: 0; padding: 0; font-size: 16px}
 #wiki-name-subtitle {font-size: 11px; color: gray; float: right; margin-right: 5px}
 #wiki_version_change_comment {width: 90%}
-/* --------------------------------------------------- =Buttons and general layout ------------------------------------------------------ */ /* * button-30: 30px high button */ .button-30 {margin: 0; padding: 0; background: url(/quesosar/web/images/box-30-left.gif) top left no-repeat; height: 30px; overflow: hidden; float: left}
-.button-30-inner {background: url(/quesosar/web/images/box-30-right.gif) top right no-repeat; margin: 0; padding: 0}
+/* --------------------------------------------------- =Buttons and general layout ------------------------------------------------------ */ /* * button-30: 30px high button */ .button-30 {margin: 0; padding: 0; background: url(../images/box-30-left.gif) top left no-repeat; height: 30px; overflow: hidden; float: left}
+.button-30-inner {background: url(../images/box-30-right.gif) top right no-repeat; margin: 0; padding: 0}
 .button-30-inner a {display: block; margin: 0; padding: 6px; font: bold 1.2em Arial, sans-serif; color: #039; text-decoration: none}
 .button-30-inner a:hover {color: #06c}
-.button-30-inner a.add {background: url(/quesosar/web/images/ico_add.gif) 6px 50% no-repeat; padding-left: 25px}
-/* --------------------------------------------------- =spaces && spaces/admin controllers ------------------------------------------------------ */ .restrict_message {font-family: Arial, Helvetica, Sans-serif; background: #ffe8ec url(/quesosar/web/images/admin/ico_restrict.gif) 11px 10px no-repeat; border-top: 1px solid #FEC0BA; border-bottom: 1px solid #FEC0BA; margin-bottom: 14px; padding: 10px 15px 9px 50px; font-size: 1.2em}
+.button-30-inner a.add {background: url(../images/ico_add.gif) 6px 50% no-repeat; padding-left: 25px}
+/* --------------------------------------------------- =spaces && spaces/admin controllers ------------------------------------------------------ */ .restrict_message {font-family: Arial, Helvetica, Sans-serif; background: #ffe8ec url(../images/admin/ico_restrict.gif) 11px 10px no-repeat; border-top: 1px solid #FEC0BA; border-bottom: 1px solid #FEC0BA; margin-bottom: 14px; padding: 10px 15px 9px 50px; font-size: 1.2em}
 .restrict_message p {line-height: 1.3em; margin-bottom: 4px}
 .pay-table {width: 100%; border: 0}
 .pay-table p {font-family: Arial, Helvetica, Sans-serif; font-size: 1.2em}
@@ -527,7 +527,7 @@ ul.template_list li strong {color: #5D8A01; font-size: 1.8em; margin: 6px 0 0 10
 ul.template_list li span {float: left; margin-top: 8px; margin-left: 10px; font-size: 1.2em; font-style: italic}
 /* --------------------------------------------------- = New calendar ------------------------------------------------------ */ #ticket-tool .metrics-col-right #metrics-calendar .blue-box-title h2 {font-size: 0.935em}
 #metrics-calendar .blue-box-title h2 {font-size: 1em; color: #000; margin: 0; padding: 0}
-#metrics-calendar .blue-box-title a {float: right; margin-top: -20px; padding: 2px 0 2px 18px; font-size: 0.8em; background: url( /quesosar/web/images/calendar.png ) left center no-repeat}
+#metrics-calendar .blue-box-title a {float: right; margin-top: -20px; padding: 2px 0 2px 18px; font-size: 0.8em; background: url( ../images/calendar.png ) left center no-repeat}
 .new-calendar {padding: 0; margin: 0; border-left: 1px solid #BCC5D7; color: #888; text-align: center; background-color: #fff; margin-bottom: 1em; clear: both}
 .new-calendar p {margin-right: 3px; color: #000000}
 .new-calendar p.day {color: #888; margin: 0 0 0 3px; padding: 0; text-align: left; border:none}
@@ -549,13 +549,13 @@ ul.template_list li span {float: left; margin-top: 8px; margin-left: 10px; font-
 .new-calendar td ul li:hover div.details {position: absolute; display: block; margin-left: 14px; padding-top: 8px}
 .new-calendar td ul li:hover div.details p {padding: 4px 8px; margin: 0}
 .new-calendar td ul li.completed a {color: #3cc00d}
-.new-calendar td ul li.completed:hover div.details {background: url(/quesosar/web/images/calendar-completed-details-bg.png) top left no-repeat}
+.new-calendar td ul li.completed:hover div.details {background: url(../images/calendar-completed-details-bg.png) top left no-repeat}
 .new-calendar td ul li.completed:hover div.details p {background-color: #e9fbdb; border: 1px solid #3cc00d; border-top: none}
 .new-calendar td ul li.due a {color: #c00d0d}
-.new-calendar td ul li.due:hover div.details {background: url(/quesosar/web/images/calendar-due-details-bg.png) top left no-repeat}
+.new-calendar td ul li.due:hover div.details {background: url(../images/calendar-due-details-bg.png) top left no-repeat}
 .new-calendar td ul li.due:hover div.details p {background-color: #fad7d7; border: 1px solid #c00d0d; border-top: none}
 .new-calendar td ul li.upcoming a {color: #0d61c0}
-.new-calendar td ul li.upcoming:hover div.details {background: url(/quesosar/web/images/calendar-upcoming-details-bg.png) top left no-repeat}
+.new-calendar td ul li.upcoming:hover div.details {background: url(../images/calendar-upcoming-details-bg.png) top left no-repeat}
 .new-calendar td ul li.upcoming:hover div.details p {background-color: #dbe8f7; border: 1px solid #0d61c0; border-top: none}
 .new-calendar td#calendar-key {margin: 0; padding: 10px 0}
 .new-calendar td#calendar-key ul {list-style: none; margin: 0; padding: 0}
@@ -570,7 +570,7 @@ ul.template_list li span {float: left; margin-top: 8px; margin-left: 10px; font-
 #popup-video .title-inside{ padding-top: 10px}
 #popup-user-profile .profile-info-wrap {margin: -5px 28% 1em 0}
 #popup-user-profile .no-picture {float: right; border: 1px solid #ddd; margin-top: 5px}
-#popup-user-profile .icon-edit {background: transparent url(/quesosar/web/images/ico-edit.png) no-repeat 0% 1px !important}
+#popup-user-profile .icon-edit {background: transparent url(../images/ico-edit.png) no-repeat 0% 1px !important}
 #popup-user-profile table.data-profile, #popup-user-profile table.data-profile-noline {margin: 0; border: none}
 #popup-user-profile table.data-profile td {padding: 0.25em; padding-left: 0; padding-right: 0; border-top: 1px dotted #ccc; border-bottom: 1px dotted #ccc}
 #popup-user-profile table.data-profile-noline td {padding: 0.25em; padding-left: 0; padding-right: 0; border: none}
@@ -603,7 +603,7 @@ div.recent ul li a {font-size: 1.15em; font-weight: bold}
 div.recent ul li p {margin-bottom: 0}
 h2#partners {font-size: 1.5em; border-bottom: 1px dotted #ddd; padding-bottom: 0}
 h2#partners span {font-weight: normal; font-size: 0.85em}
-#odesk-partner h3 {background: url(/quesosar/web/images/odesk/odesk_logo.png) top left no-repeat; height: 20px; width: 67px; overflow: hidden; text-indent: -1000px; margin-top: 10px}
+#odesk-partner h3 {background: url(../images/odesk/odesk_logo.png) top left no-repeat; height: 20px; width: 67px; overflow: hidden; text-indent: -1000px; margin-top: 10px}
 #rentacoder-partner h3 {background: url(http://www.rentacoder.com/RentACoder/images/HomePage/raclogo.jpg) -15px 0px no-repeat; height: 37px; width: 262px; overflow: hidden; text-indent: -1000px}
 /*------------------------- = oDesk Widget Styles -------------------------*/ #od, #od * {font-family: Tahoma, Arial, Helvetica, sans-serif; padding: 0; margin: 0}
 #od {width: 220px; border: 3px solid #ccc; padding: 12px; position: relative; margin: 0 auto}
@@ -621,13 +621,13 @@ h2#partners span {font-weight: normal; font-size: 0.85em}
 #od #powered_by img {position: relative; top: 4px}
 /******************************************************************** Fixed layout for marketing pages (home_layout and search_layout) *********************************************************************/ #fixed-width-wrapper, .fixed-width-wrapper{width:990px; margin:0 auto;}
 .menu-wrapper{background:#5D8A01;}
-.sub-tab-wrapper {background:#E5E5E5 url(/quesosar/web/images/bg-submenu.jpg) repeat-x scroll left top; border-bottom:none;}
+.sub-tab-wrapper {background:#E5E5E5 url(../images/bg-submenu.jpg) repeat-x scroll left top; border-bottom:none;}
 .home-fixed-width-wrapper {width:990px; margin:0 auto}
 /******************************************************************** Styles for tool delayed screen *********************************************************************/ /* Tool delayed function */ .delayed-page {text-align: center}
 .delayed-page .delayed-banner {background-color: #FFF9D8; border: 1px solid #D1DEEC; padding: 25px 0 17px 0; margin-bottom: 20px; text-align: center}
 .delayed-page .delayed-banner h1 span {color: #14468C; float: none}
 .delayed-page .delayed-banner p.loading-animation {color: #14468C; margin-top: 10px}
-.delayed-page .delayed-banner h2 a.refresh {background: transparent url(/quesosar/web/images/icon-refresh.png) left 1px no-repeat; padding-left: 22px}
+.delayed-page .delayed-banner h2 a.refresh {background: transparent url(../images/icon-refresh.png) left 1px no-repeat; padding-left: 22px}
 /**************** video link and social bookmarks style *********/ #footer-w .tutorial-and-bookmark {position: relative; margin: 10px 0 20px 0;}
 #footer-w .video-link {text-align: center;}
 #footer-w .addthis_toolbox {position: absolute; right: 15px; top: 2px;}
@@ -658,7 +658,7 @@ h2#partners span {font-weight: normal; font-size: 0.85em}
 #upload-file, #upload-file-panel {background: #eee; padding: .75em}
 #upload-file-panel {margin-top: .75em; background: #ddd}
 #upload-file a.a-button:link, #upload-file a.a-button:visited {margin-left: 0; margin-right: 0}
-/* Styles from 'newsticket.css, used on 'newsticker.js' */ #newsticker {padding-top: 13px; padding-bottom: 15px; text-align: center; font-size: 1.1em; background: url(/quesosar/web/images/bg_testimonials.jpg) repeat-x; margin-top: 20px}
+/* Styles from 'newsticket.css, used on 'newsticker.js' */ #newsticker {padding-top: 13px; padding-bottom: 15px; text-align: center; font-size: 1.1em; background: url(../images/bg_testimonials.jpg) repeat-x; margin-top: 20px}
 #newsticker ul {list-style: none; margin: 0px; font-style:italic; text-align:center}
 * html #newsticker ul {height: 1.6em; overflow: visible}
 #newsticker li.error {color: #f00}
@@ -679,7 +679,7 @@ strong.highlight {background-color: #fff8a6}
 #utilities a:link, #utilities a:visited, #utilities a:hover, #utilities a:active {/*color: #fff;*/ /*border-bottom: 1px solid #eee;*/ font-weight: bold}
 #utilities a:visited {}
 #utilities a:hover {color: #AA273D; border: none}
-/***** Navigation Tabs ********/ /* NAVIGATION TABS */ ul#primary {margin: 1em 0 0 0; padding: 0; position: relative; bottom: 0px; width: 100%; float:left; background:url(/quesosar/web/images/top_tabbg.gif) bottom left repeat-x; list-style-type: none}
+/***** Navigation Tabs ********/ /* NAVIGATION TABS */ ul#primary {margin: 1em 0 0 0; padding: 0; position: relative; bottom: 0px; width: 100%; float:left; background:url(../images/top_tabbg.gif) bottom left repeat-x; list-style-type: none}
 /* Hack for IE because it treats height like min-height */ * html ul#primary {height:1%}
 ul#primary li {display: inline}
 ul#primary a, ul#primary span, ul#primary a.current {/*width: 6em;*/ display: block; float: left; padding: 4px 10px; margin: 1px 2px 0 0; text-align: center; text-decoration: none; color: #333}
@@ -693,16 +693,16 @@ ul#primary span, ul#primary a.current, ul#primary a.current:hover {border: 1px s
 #middlerightcontent{ width:250px; float:right; margin:-5px -10px 10px 5px; position:relative; font-size:1em; line-height:18px; z-index:500}
 * html #middlerightcontent{ margin:-5px -5px 10px 5px}
 #middleleftsidebar{ width:250px; float:left; margin:-5px 5px 10px -10px; position:relative; font-size:1em; line-height:18px; z-index:500}
-/* Old ones, have to replace them */ .side-col .add {background: #E3EFFC url(/quesosar/web/images/blue/bg-action-add.gif) center left no-repeat}
-.side-col .edit {background: #E7FABB url(/quesosar/web/images/blue/bg-action-edit.gif) center left no-repeat}
-.side-col .print {background: #E7FABB url(/quesosar/web/images/blue/bg-action-print.gif) center left no-repeat}
+/* Old ones, have to replace them */ .side-col .add {background: #E3EFFC url(../images/blue/bg-action-add.gif) center left no-repeat}
+.side-col .edit {background: #E7FABB url(../images/blue/bg-action-edit.gif) center left no-repeat}
+.side-col .print {background: #E7FABB url(../images/blue/bg-action-print.gif) center left no-repeat}
 .side-col .show {background: #FAE7BB center left no-repeat}
 .side-col .complete {background: #fff9b2}
-.side-col .delete {background: #ffd9d9 url(/quesosar/web/images/blue/bg-action-delete.gif) center left no-repeat}
-.side-col .center {background: #E7FABB url(/quesosar/web/images/blue/bg-action-center.gif) center left no-repeat}
+.side-col .delete {background: #ffd9d9 url(../images/blue/bg-action-delete.gif) center left no-repeat}
+.side-col .center {background: #E7FABB url(../images/blue/bg-action-center.gif) center left no-repeat}
 .side-col .close {background: #eee}
 .greybg_ {background: #e6e6e6}
-.tab-bar {list-style: none; margin: 0; padding: 0; background: transparent url(/quesosar/web/images/bg-tab-bar.gif) bottom left repeat-x}
+.tab-bar {list-style: none; margin: 0; padding: 0; background: transparent url(../images/bg-tab-bar.gif) bottom left repeat-x}
 .tab-bar li {float: left; margin: 0; margin-left: .375em; padding: .375em .75em; border: 1px solid #eee; border-bottom: none; text-decoration: none; background: #eee}
 .tab-bar li.current {background: #fff; text-decoration: none; border: 1px solid #666; border-bottom: 1px solid #fff}
 .tab-bar li.current a:link, .tab-bar li.current a:visited {font-weight: bold; border: none; text-decoration: none}
@@ -739,19 +739,19 @@ ul#primary span, ul#primary a.current, ul#primary a.current:hover {border: 1px s
 #content form fieldset.create-invoice {border: 1px solid blue; padding:5px;}
 /* --------------------------------------------------- = Contact Links ------------------------------------------------------ */ div.contact-link a, span.im-id {display: block; padding: 0 12px 0 22px; font-size: 11px; text-decoration: none; color: #555}
 .user_role-user_contact_links div a:hover {color: #06b}
-div.email {background: url('/quesosar/web/images/ico_email.gif') left 1px no-repeat}
-div.yahoo {background: url('/quesosar/web/images/contact/ico-yahoo-messenger.png') left 1px no-repeat}
-div.aim {background: url('/quesosar/web/images/contact/ico-aim.png') left 1px no-repeat}
-div.msn {background: url('/quesosar/web/images/contact/ico-msn-messenger.png') left 1px no-repeat}
-div.icq {background: url('/quesosar/web/images/contact/ico-icq.png') left 1px no-repeat}
-div.googletalk {background: url('/quesosar/web/images/contact/ico-google-talk.png') left 1px no-repeat}
-div.jabber {background: url('/quesosar/web/images/contact/ico-jabber.png') left 1px no-repeat}
+div.email {background: url('../images/ico_email.gif') left 1px no-repeat}
+div.yahoo {background: url('../images/contact/ico-yahoo-messenger.png') left 1px no-repeat}
+div.aim {background: url('../images/contact/ico-aim.png') left 1px no-repeat}
+div.msn {background: url('../images/contact/ico-msn-messenger.png') left 1px no-repeat}
+div.icq {background: url('../images/contact/ico-icq.png') left 1px no-repeat}
+div.googletalk {background: url('../images/contact/ico-google-talk.png') left 1px no-repeat}
+div.jabber {background: url('../images/contact/ico-jabber.png') left 1px no-repeat}
 /* --------------------------------------------------- = OpenID signup ------------------------------------------------------ */ .openid-signup {margin: 0 5px 5px 0; padding: 10px 10px 16px 15px; background-color: #F6F6F6; border-top: 1px solid #D4DCE8; border-bottom: 1px solid #D4DCE8}
 .openid-signup h2 {font-size: 14px; margin: 0 0 12px 0}
 .openid-signup a, a.icon-button-2 {font-weight: normal; text-decoration: none; color: #039; border: 1px solid #bbb; border-top: 1px solid #ddd; border-left: 1px solid #ddd; padding: 4px 8px; font-size: 12px; margin: 0; width: auto; margin-right: 4px; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px}
 .openid-signup a:hover, a.icon-button-2:hover, a.file-input-custom-button-hover {border: 1px solid #aaa; color: #06b}
-.openid-signup a.google-account {background: #eee url(/quesosar/web/images/bg-google-button.png) top left no-repeat; padding-left: 30px}
-.openid-signup a.yahoo-account {background: #eee url(/quesosar/web/images/bg-yahoo-button.png) top left no-repeat; padding-left: 36px}
+.openid-signup a.google-account {background: #eee url(../images/bg-google-button.png) top left no-repeat; padding-left: 30px}
+.openid-signup a.yahoo-account {background: #eee url(../images/bg-yahoo-button.png) top left no-repeat; padding-left: 36px}
 div#login {width: 250px; background-color:white}
 div#login .extra{ border-top: 1px dashed #DDD; margin-top:20px}
 div#login div{ margin-top:10px}
@@ -759,18 +759,18 @@ div#login fieldset.blue p label{ width: 80px}
 div#login fieldset.blue p#chk label{ width:185px; font-weight:normal; font-style:italic}
 #fancybox-title.fancybox-title-inside, #popup-video .title-inside{ border-top: 1px solid #ddd; margin-top: 10px; line-height: 1.4em; font: bold 16px Arial, Helvetica, serif; color: #000; text-align: left}
 a.no-underline {text-decoration: none}
-.dragable {background: url("/quesosar/web/images/blue/drag-yes.gif") no-repeat scroll left top transparent; cursor: move; float: left; height: 14px; margin: 2px 9px 0 7px; padding: 0; width: 14px}
+.dragable {background: url("../images/blue/drag-yes.gif") no-repeat scroll left top transparent; cursor: move; float: left; height: 14px; margin: 2px 9px 0 7px; padding: 0; width: 14px}
 /* --------------------------------------------------- = Ticket attachments ------------------------------------------------------ */ .add_file {font-weight: bold; margin-left:20px }
 div.document div {float: left; padding-right: 20px}
 div.document .fixed_width {width: 270px}
 div.document fieldset {display: inline; vertical-align: bottom; border-bottom: solid 1px gray; padding:0; margin:0}
 div.document label, p.new_tip {padding:0; margin:0}
-div.document .recycle {font-weight: bold; background: url(/quesosar/web/images/ico-trash.png) top left no-repeat; padding-left: 20px; height: 16px}
-/* ------------------------------------------------------------ This stylesheet is for the grayed-out tabs and landing page --------------------------------------------------------------- */ /* Styles for the grayed out tabs, must be included in "top-bar.css" ---------------------------------------------------------------*/ ul#main-menu li.orange {float: left; margin-right: 2px; padding: 0; background: #Fc0 url(/quesosar/web/images/bg-square-tabs.png) bottom left repeat-x; border: none}
+div.document .recycle {font-weight: bold; background: url(../images/ico-trash.png) top left no-repeat; padding-left: 20px; height: 16px}
+/* ------------------------------------------------------------ This stylesheet is for the grayed-out tabs and landing page --------------------------------------------------------------- */ /* Styles for the grayed out tabs, must be included in "top-bar.css" ---------------------------------------------------------------*/ ul#main-menu li.orange {float: left; margin-right: 2px; padding: 0; background: #Fc0 url(../images/bg-square-tabs.png) bottom left repeat-x; border: none}
 ul#main-menu li.orange a:hover {background: #Fa0; color: #fff !important}
 ul#main-menu li.orange a:link, ul#main-menu li.orange a:visited {text-decoration: none; padding: 4px 8px 4px 8px; height: 20px; display: block; z-index:9999}
 ul#main-menu li.orange a:hover, ul#main-menu li.orange a:active {color: #15478C}
-ul#main-menu li.grayed-out {float: left; margin-right: 2px; padding: 0; background: #eee url(/quesosar/web/images/bg-square-tabs.png) bottom left repeat-x; border: none}
+ul#main-menu li.grayed-out {float: left; margin-right: 2px; padding: 0; background: #eee url(../images/bg-square-tabs.png) bottom left repeat-x; border: none}
 ul#main-menu li.grayed-out a:hover {background: #D7EEA3; color: #15478C !important}
 ul#main-menu li.grayed-out a:link, ul#main-menu li.grayed-out a:visited {text-decoration: none; padding: 4px 8px 4px 8px; height: 20px; display: block; z-index:9999}
 ul#main-menu li.grayed-out a:hover, ul#main-menu li.grayed-out a:active {color: #15478C}
@@ -835,8 +835,8 @@ div.upgrade-page-link .icon-button a {font-weight: bold}
 .why-upgrade .tools-screenshots {float: right; margin: 0 5px 5px 5px}
 /* Testimonials */ .upgrade-testimonials {margin: 15px 0 0 0; padding: 12px 40px 20px 0; background-color: #FAFAED; border: 1px solid #F3F3F3; clear: both; font-size: 14px}
 .upgrade-testimonials .client-logo {width: 180px; margin: 0; text-align: left; margin: 7px 0 0 25px; float: left}
-.upgrade-testimonials blockquote {background: url(/quesosar/web/images/open-quote.gif) no-repeat left top; padding-left: 45px; text-align: left; line-height: 140%; margin: 8px 8px 8px 235px}
-.upgrade-testimonials blockquote span {background: url(/quesosar/web/images/close-quote.gif) no-repeat right bottom; display: block; padding-right: 30px}
+.upgrade-testimonials blockquote {background: url(../images/open-quote.gif) no-repeat left top; padding-left: 45px; text-align: left; line-height: 140%; margin: 8px 8px 8px 235px}
+.upgrade-testimonials blockquote span {background: url(../images/close-quote.gif) no-repeat right bottom; display: block; padding-right: 30px}
 .upgrade-testimonials .client {margin: 0; padding-bottom: 18px; text-align: left; border-bottom: 1px dotted #ccc}
 .upgrade-testimonials .client-noborder {margin: 0 auto; text-align: left; margin-left: 280px}
 .setup-link {font-size: 18px; font-weight: bold; background-color: #F3FCDD; padding: 16px 0 18px 0; color: #111; margin-top: 5px; border: none; text-align: center; clear: both}
@@ -911,10 +911,10 @@ span.reply a:hover {font-weight: bold; color: #666; font-size: 11px; margin-left
 #tool_page .settings .tit {font-weight: bold; padding-top: 3px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 5px; margin-bottom: 0px; margin-left: 0px}
 #tool_page .settings .desc {color: #333333; line-height: 150%; margin: 0px; /* clear: left;*/ padding: 5px 5px 5px 0}
 #tool_page .settings pre {overflow: auto; background: #000; color: #fff}
-#tool_page .dotted {margin-top: 6px; height: 5px; margin-bottom: 6px; background-image: url(/quesosar/web/images/tools/back_dot.gif); background-repeat: repeat-x}
+#tool_page .dotted {margin-top: 6px; height: 5px; margin-bottom: 6px; background-image: url(../images/tools/back_dot.gif); background-repeat: repeat-x}
 #tool_page .buttondiv {padding: 0px; margin: 0px}
 #tool_page #client-wrap {width: 380px; clear: left; margin-top: 0px}
-#tool_page .clients {background-image: url(/quesosar/web/images/tools/back_clients.jpg); background-repeat: repeat-x; float: left; width: 104px; font-size: 10px; border-right-width: 2px; border-right-style: solid; border-right-color: #FFFFFF; margin-top: 10px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 5px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px; line-height: 13px}
+#tool_page .clients {background-image: url(../images/tools/back_clients.jpg); background-repeat: repeat-x; float: left; width: 104px; font-size: 10px; border-right-width: 2px; border-right-style: solid; border-right-color: #FFFFFF; margin-top: 10px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 5px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px; line-height: 13px}
 #tool_page .clients b {font-size: 11px; color: #666666; line-height: 14px}
 #tool_page .clients a {font-size: 12px; line-height: 16px}
 #tool_page #win {height: 35px; margin-top: 0px; margin-right: 0px; margin-bottom: 5px; margin-left: 0px; padding-top: 5px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px}
@@ -967,10 +967,10 @@ dl.messages dd p {margin: 0; margin-bottom: .75em}
 #flows ul.flow-list li {margin-bottom: 0; padding: .25em 0 0 0}
 #flows ul.flow-list li h2 {font-size: 1.15em; margin: 0 0 .25em 0}
 #flows ul.flow-list li img {margin-top: 2px; margin-right: 5px}
-#flows div.attachments, #old_flows div.attachments {margin-left: 0; padding-left: 20px; background: transparent url('/quesosar/web/images/ico-attachment.png') center left no-repeat}
+#flows div.attachments, #old_flows div.attachments {margin-left: 0; padding-left: 20px; background: transparent url('../images/ico-attachment.png') center left no-repeat}
 .flow_header {color: #999999; font-weight: bold}
 #flows li div.meta {color: #666; font-size: 11px; margin-left: 0}
-.attachments-form {background: transparent url('/quesosar/web/images/ico-attachment-big.png') left 7px no-repeat; padding-left: 40px; margin: 20px 0 10px 0 !important}
+.attachments-form {background: transparent url('../images/ico-attachment-big.png') left 7px no-repeat; padding-left: 40px; margin: 20px 0 10px 0 !important}
 /* used on grouped by priority */ #flows li.grouped {border-bottom: none}
 span#flow-by-line {font-size: 11px; margin-top: -5px}
 span#flow-by-line strong {color: #666}
@@ -987,9 +987,9 @@ span#flow-by-line strong {color: #666}
 #flow-details dd {padding-bottom: .75em; border-bottom: 1px solid #ddd}
 #reply_message {height: 43px; width: 160px; margin: 0px 0px 0px 0px}
 .filter_cont {padding: 5px 20px 15px 15px}
-.attachment-icon {padding: 4px 0px 0px 20px; background: url(/quesosar/web/images/ico-attachment.png) no-repeat 0 6px}
+.attachment-icon {padding: 4px 0px 0px 20px; background: url(../images/ico-attachment.png) no-repeat 0 6px}
 /* --------------------------------------------------- = Toolbars for textareas ------------------------------------------------------ */ .small_toolbar {background-color: #fff; height: 18px; width: 190px; margin-left: 180px}
-.small_toolbar a:link, .wikitoolbar a:visited {background: transparent url(/quesosar/web/images/wiki/simple_toolbar.png) left top no-repeat; border-left: 1px solid #d7d7d7; border-right: 1px solid #d7d7d7; border-top: 1px solid #d7d7d7; border-bottom: 1px solid #fff; cursor: default; display: block; float: left; width: 24px; height: 16px}
+.small_toolbar a:link, .wikitoolbar a:visited {background: transparent url(../images/wiki/simple_toolbar.png) left top no-repeat; border-left: 1px solid #d7d7d7; border-right: 1px solid #d7d7d7; border-top: 1px solid #d7d7d7; border-bottom: 1px solid #fff; cursor: default; display: block; float: left; width: 24px; height: 16px}
 .small_toolbar a:link:hover, .wikitoolbar a:visited:hover {background-color: transparent; border: 1px solid #15478C}
 .small_toolbar a#em {background-position: 2px 0}
 .small_toolbar a#strong {background-position: 2px -16px}
@@ -1013,27 +1013,27 @@ span#flow-by-line strong {color: #666}
 /* space/admin/resource page */ ul.backup_info {list-style: none; margin: 0}
 ul.backup_info li {padding-left: 0.5em}
 table.diskspace {margin-left: 20px; width: 35%}
-.but_add {width: auto; overflow: visible; background: #F30 url(/quesosar/web/images/tools/bg_add.jpg); font-family: Arial, Helvetica, sans-serif; color: #FFFFFF; font-weight: bold; font-size: 13px; padding: 2px 4px; border-top: 1px solid #ddd; border-right: 1px solid #ddd; border-bottom: 1px solid #aaa; border-left: 1px solid #aaa}
+.but_add {width: auto; overflow: visible; background: #F30 url(../images/tools/bg_add.jpg); font-family: Arial, Helvetica, sans-serif; color: #FFFFFF; font-weight: bold; font-size: 13px; padding: 2px 4px; border-top: 1px solid #ddd; border-right: 1px solid #ddd; border-bottom: 1px solid #aaa; border-left: 1px solid #aaa}
 .but_add:hover {width: auto; overflow: visible; background: #f60; color: #FFFFFF; border-top: 1px solid #aaa; border-right: 1px solid #aaa; border-bottom: 1px solid #ddd; border-left: 1px solid #ddd; cursor: pointer}
-.but_delete {width: auto; overflow: visible; background: #D0D0D0 url(/quesosar/web/images/tools/bg_delete.jpg); font-family: Arial, Helvetica, sans-serif; color: #333333; font-weight: bold; font-size: 13px; padding: 2px 4px; border-top: 1px solid #ddd; border-right: 1px solid #ddd; border-bottom: 1px solid #aaa; border-left: 1px solid #aaa}
+.but_delete {width: auto; overflow: visible; background: #D0D0D0 url(../images/tools/bg_delete.jpg); font-family: Arial, Helvetica, sans-serif; color: #333333; font-weight: bold; font-size: 13px; padding: 2px 4px; border-top: 1px solid #ddd; border-right: 1px solid #ddd; border-bottom: 1px solid #aaa; border-left: 1px solid #aaa}
 .but_delete:hover {width: auto; overflow: visible; background: #ddd; color: #000; border-top: 1px solid #aaa; border-right: 1px solid #aaa; border-bottom: 1px solid #ccc; border-left: 1px solid #ccc; cursor: pointer}
 .but_canc {float: left; margin-left: 8px; margin-top: 8px}
 /* --------------------------------------------------- = Admin pages - Upgrade ------------------------------------------------------ */ .upgrade-title h1 {width: auto; font-size: 1.25em; border-bottom: 1px solid #BCC5D7; margin-bottom: 5px}
 /* Left column */ .upgrade-content {margin: 0 260px 0 0}
-.upgrade-content h2 {padding: 7px 0 8px 38px; margin: 18px 0 20px 0; background: url(/quesosar/web/images/upgrade-arrow-big.gif) no-repeat left top; font-size: 1.75em}
+.upgrade-content h2 {padding: 7px 0 8px 38px; margin: 18px 0 20px 0; background: url(../images/upgrade-arrow-big.gif) no-repeat left top; font-size: 1.75em}
 .main-features #mf-top {height: 2px; border-top: 1px solid #e0e7ef}
 .main-features ul.mf {margin: 0px; padding: 6px 0 6px 15px; list-style: none; background-color: #F3FCDD; border-top: 1px solid #e0e7ef; border-bottom: 1px solid #e0e7ef}
-.main-features ul.mf li {background: transparent url(/quesosar/web/images/feature-star.gif) no-repeat 0px 3px; font-size: 1.1em; line-height: 1.35em; font-family: Arial, Helvetica, Sans-serif; font-weight: bold; padding: 4px 0 4px 24px; margin: 0px}
+.main-features ul.mf li {background: transparent url(../images/feature-star.gif) no-repeat 0px 3px; font-size: 1.1em; line-height: 1.35em; font-family: Arial, Helvetica, Sans-serif; font-weight: bold; padding: 4px 0 4px 24px; margin: 0px}
 .main-features #mf-bottom {height: 2px; border-bottom: 1px solid #e0e7ef}
 .main-features ul.mf li span {color: #F30}
 .main-features p.mkt-text {font-family: Arial, Helvetica, Sans-serif; font-size: 1.35em; line-height: 1.5em; margin: 20px 0 20px 0}
 .main-features p.mkt-text span {color: #5D8A01; font-weight: bold}
 .main-features .mf-button {width: auto; float: left}
-.main-features .mf-button #mfbutton {float: left; background: url(/quesosar/web/images/box-right.gif) top right no-repeat}
-.main-features .mf-button #mfbtn-inner {margin: 0; padding: 5px 0 0 0; background: url(/quesosar/web/images/box-left.gif) top left no-repeat}
-.main-features .mf-button #mfbtn-inner a {display: block; margin: 0; padding: 0px 0 0 12px; font: bold 1.2em Arial, sans-serif; color: #039; text-decoration: none; background: url(/quesosar/web/images/box-left.gif) bottom left no-repeat}
+.main-features .mf-button #mfbutton {float: left; background: url(../images/box-right.gif) top right no-repeat}
+.main-features .mf-button #mfbtn-inner {margin: 0; padding: 5px 0 0 0; background: url(../images/box-left.gif) top left no-repeat}
+.main-features .mf-button #mfbtn-inner a {display: block; margin: 0; padding: 0px 0 0 12px; font: bold 1.2em Arial, sans-serif; color: #039; text-decoration: none; background: url(../images/box-left.gif) bottom left no-repeat}
 .main-features .mf-button #mfbtn-inner a:hover {color: #06c}
-.main-features .mf-button #mfbtn-inner em {display: block; margin: 0; padding: 1px 14px 5px 0; font-style: normal; background: url(/quesosar/web/images/box-right.gif) bottom right no-repeat}
+.main-features .mf-button #mfbtn-inner em {display: block; margin: 0; padding: 1px 14px 5px 0; font-style: normal; background: url(../images/box-right.gif) bottom right no-repeat}
 .main-features .mf-button #mfbtn-inner img {margin-right: 5px; vertical-align: middle}
 .main-features .mf-or-cancel {float: left; padding-top: 4px; margin-left: 15px}
 /* Right sidebar */ .feature-list {width: 245px; float: right; margin-top: 10px}
@@ -1047,7 +1047,7 @@ b.rtop b.r4, b.rbottom b.r4 {margin: 0 1px; height: 2px }
 .feature-list-sidebar .feature-content {padding: 7px 15px}
 .feature-list-sidebar .feature-content h2 {font-size: 1.25em; color: #5D8A01}
 .feature-list-sidebar ul.features {margin: 0px; list-style: none}
-.feature-list-sidebar ul.features li {background: transparent url(/quesosar/web/images/tick-bgblue.gif) 0px 0px no-repeat; font-size: 1.1em; line-height: 1.25em; font-family: Arial, Helvetica, Sans-serif; margin: 4px 0 0; padding: 0 0 5px 22px; font-weight: bold}
+.feature-list-sidebar ul.features li {background: transparent url(../images/tick-bgblue.gif) 0px 0px no-repeat; font-size: 1.1em; line-height: 1.25em; font-family: Arial, Helvetica, Sans-serif; margin: 4px 0 0; padding: 0 0 5px 22px; font-weight: bold}
 #migrate th.title {font-size: 1.5em; font-weight: bold; color: #000000}
 #migrate tr.odd {background-color: #DBDBDB}
 /*------------------------------------------------------------------- = Admin pages - Space admin/tools page --------------------------------------------------------------------*/ .tools-title h1 {width: auto; font-size: 1.25em; border-bottom: 1px solid #BCC5D7; margin-bottom: 5px}
@@ -1066,8 +1066,8 @@ b.rtop b.r4, b.rbottom b.r4 {margin: 0 1px; height: 2px }
 .tools-list-sidebar ul.installed-tools {margin: 0px; list-style: none}
 .tools-list-sidebar ul.installed-tools li {border-bottom: 1px dotted #bcc5d7; padding: 8px 0 8px 0; margin: 1px 0 0 0}
 .tools-list-sidebar ul.installed-tools li h3 {float: left; width: 105px; margin: 0; padding: 0 0 0 0; font-size: 14px}
-.tools-list-sidebar ul.installed-tools li p.settings-tool {font-weight: normal; background: url(/quesosar/web/images/ico_settings.png) no-repeat left 1px; float: right; padding-left: 20px; margin: 0}
-.tools-list-sidebar ul.installed-tools li p.delete-tool {font-weight: normal; background: url(/quesosar/web/images/remove.gif) no-repeat left 1px; float: right; padding-left: 20px; margin: 0 0 0 8px}
+.tools-list-sidebar ul.installed-tools li p.settings-tool {font-weight: normal; background: url(../images/ico_settings.png) no-repeat left 1px; float: right; padding-left: 20px; margin: 0}
+.tools-list-sidebar ul.installed-tools li p.delete-tool {font-weight: normal; background: url(../images/remove.gif) no-repeat left 1px; float: right; padding-left: 20px; margin: 0 0 0 8px}
 /* Admin - space resources page */ .space-declaration {padding-top: 10px; padding-bottom: 6px; padding-left: 12px; margin-bottom: 15px; border-right: none; border-left: none}
 .space-declaration h2 {margin-bottom: 7px; font-size: 16px !important}
 .space-declaration p.icon-delete {margin-top: 5px; padding-left: 20px !important}
@@ -1102,18 +1102,18 @@ table.skype-table th.bulk {font-weight: normal; padding-left: 22px}
 table.skype-table td.conference-button-row {background-color: #ffffff; border-bottom: 1px solid #D4DCE8; padding-top: 10px}
 table.skype-table td.conference-button-row .conference-button {width: 205px !important; float: left}
 table.skype-table td.conference-button-row .conference-button-text {float: left; padding-top: 4px; font-size: 13px}
-.get-skype-box {max-width: 1128px; padding: 14px 10px 14px 62px; margin: 10px 0 0 0; background: #f6f6f6 url(/quesosar/web/images/skype_tool/icon-skype.png) 11px 11px no-repeat}
-/* --------------------------------------------------- = Spread the Word ------------------------------------------------------ */ .spread .spread-top {background: transparent url(/quesosar/web/images/spread/ico-spread.png) top left no-repeat; margin-top: 30px; padding: 6px 0 15px 64px}
+.get-skype-box {max-width: 1128px; padding: 14px 10px 14px 62px; margin: 10px 0 0 0; background: #f6f6f6 url(../images/skype_tool/icon-skype.png) 11px 11px no-repeat}
+/* --------------------------------------------------- = Spread the Word ------------------------------------------------------ */ .spread .spread-top {background: transparent url(../images/spread/ico-spread.png) top left no-repeat; margin-top: 30px; padding: 6px 0 15px 64px}
 .spread .spread-top h1 {font-size: 24px; padding: 0 0 10px 0}
 .spread .spread-top h1 span {color: #94B350; padding-right: 8px}
 .spread .spread-top p {font-size: 14px; line-height: 1.5em; margin-top: 0 !important}
 .spread .spread-left {float: left; width: 575px; margin-left: 63px; margin-bottom: 20px}
 .spread .spread-box {border-top: 1px dotted #ccc; padding: 0; width: 580px}
 .spread .spread-box h2 {padding: 0; margin: 0}
-.spread .tweet a, .spread .tweet h2 {background: url(/quesosar/web/images/spread/twitter.png) left 9px no-repeat; font-size: 14px; padding: 15px 0 16px 45px; display: block}
-.spread .facebook {background: url(/quesosar/web/images/spread/facebook.png) left 10px no-repeat; padding: 11px 0 14px 45px !important; width: 535px !important}
+.spread .tweet a, .spread .tweet h2 {background: url(../images/spread/twitter.png) left 9px no-repeat; font-size: 14px; padding: 15px 0 16px 45px; display: block}
+.spread .facebook {background: url(../images/spread/facebook.png) left 10px no-repeat; padding: 11px 0 14px 45px !important; width: 535px !important}
 .spread .facebook h2 {padding: 6px 0 10px 0 !important}
-.spread .button-email a {background: url(/quesosar/web/images/spread/button-email.png) left 9px no-repeat; font-size: 14px; padding: 15px 0 16px 45px; display: block; border-bottom: 1px dotted #ccc}
+.spread .button-email a {background: url(../images/spread/button-email.png) left 9px no-repeat; font-size: 14px; padding: 15px 0 16px 45px; display: block; border-bottom: 1px dotted #ccc}
 .spread .spread-right {float: right; width: 300px; border-top: 1px dotted #ccc}
 .spread .spread-right p.logos {display: block; width: 275px; text-align: center; margin: 25px 0 25px 0}
 .spread p.no-thanks {width: 300px; margin: 20px auto}
@@ -1131,7 +1131,7 @@ table.skype-table td.conference-button-row .conference-button-text {float: left;
 .nl_field {border: 1px solid #ccc; width: 80%; margin-bottom: 5px}
 /** New style for Branding Tool Page **/ .spacefield_align {width: 256px; padding-top: 3px; float: left; clear: left; font-weight: bold}
 ul#main-menu li.search-field {background: transparent !important}
-ul#main-menu li.search-field input.main-search {margin: 0; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; font-size: 11px; padding: 2px 3px 2px 24px; background: #fff url(/quesosar/web/images/ico-search-small.png) 5px top no-repeat; color: #333}
+ul#main-menu li.search-field input.main-search {margin: 0; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; font-size: 11px; padding: 2px 3px 2px 24px; background: #fff url(../images/ico-search-small.png) 5px top no-repeat; color: #333}
 /* OLD TOOLS STYLES BELOW -- REMOVE! */ #tools-wrapper {width: 98%}
 #tools-table {width: 100%}
 #tools-table th {text-align: center; vertical-align: middle}
@@ -1140,7 +1140,7 @@ ul#main-menu li.search-field input.main-search {margin: 0; -moz-border-radius: 5
 #tools-table td.actions {padding-top: 8px; width: 13%; font-weight: bold}
 #tools-table td.description {text-align: left; width: 54%; padding-top: 14px; padding-bottom: 8px; padding-right: 5px}
 #tools-table td.price {width: 15%; font-style: italic; font-weight: bold; font-size: 13px; color: #15478c}
-/* found on _builder.rhtml */ .ticket-reports .tab-bar {background: transparent url(/quesosar/web/images/tr-bg-tab-bar.png) bottom left repeat-x}
+/* found on _builder.rhtml */ .ticket-reports .tab-bar {background: transparent url(../images/tr-bg-tab-bar.png) bottom left repeat-x}
 .ticket-reports .tab-bar li {background: #fff}
 .ticket-reports .tab-bar li.current {background: #eee; border-bottom: 1px solid #eee}
 /* order by links */ .page-list {margin: .75em 0; text-align: right; font-weight: bold}
@@ -1160,7 +1160,7 @@ ul#main-menu li.search-field input.main-search {margin: 0; -moz-border-radius: 5
 .tools-ad-sidebar {background-color: #F3F6Fc; margin: 15px 0; padding: 15px 15px 8px 15px}
 .tools-ad-sidebar h3 {font-size: 16px; margin: 0 0 2px 0; text-align: center; line-height: 1.4em}
 .tools-ad-sidebar .sidebar-testimonial {border-top: 1px dotted #ccc; border-bottom: 1px dotted #ccc; text-align: center; padding: 58px 0 8px 0; margin: 15px 0}
-.logo-testimonial {background: transparent url("/quesosar/web/images/index/logos/echolibre.png") center 14px no-repeat}
+.logo-testimonial {background: transparent url("../images/index/logos/echolibre.png") center 14px no-repeat}
 .tools-ad-sidebar .sidebar-testimonial p {margin-bottom: 10px; text-align: center !important}
 .tools-ad-sidebar p {text-align: center !important}
 .tools-ad-sidebar .try-box-link {background-color: #FEFAE1; border-top: 1px solid #FDD646; border-bottom: 1px solid #FDD646; text-align: center; padding: 8px; margin: 15px 0 15px 0}
@@ -1175,16 +1175,16 @@ a.activity-link {font-weight: normal; font-size: 12px; margin: 7px 15px 0 1px; f
 .scrum-box {padding: 1px 20px 12px 22px}
 .scrum-box h4 {margin: 10px 0 5px 0; font-size: 13px}
 .trialplanupgrade {background-color: #FFFEE7; border-top: 1px solid #FFE358; border-bottom: 1px solid #FFE358; padding: 8px; clear: both; display: block; margin: 10px 0 20px 0}
-#my-spaces-table a.delete-action {background: url(/quesosar/web/images/remove.gif) no-repeat; padding-left: 20px}
-/* --------------------------------------------------- = Icon links ------------------------------------------------------ */ #export-links .rss-export a {background: url('/quesosar/web/images/feed-icon.gif') left 2px no-repeat; padding-left: 18px}
-#export-links .csv-export a {background: url('/quesosar/web/images/code/file_icons/ico-xls.png') left top no-repeat; padding-left: 20px}
-#export-links .xml-export a {background: url('/quesosar/web/images/code/file_icons/ico-xml.png') left top no-repeat; padding-left: 20px}
-#export-links .print a {background: url('/quesosar/web/images/wiki/ico_print.gif') left no-repeat; padding-left: 20px}
-#export-links .link a {background: url('/quesosar/web/images/external-link.gif') left no-repeat; padding-left: 20px}
+#my-spaces-table a.delete-action {background: url(../images/remove.gif) no-repeat; padding-left: 20px}
+/* --------------------------------------------------- = Icon links ------------------------------------------------------ */ #export-links .rss-export a {background: url('../images/feed-icon.gif') left 2px no-repeat; padding-left: 18px}
+#export-links .csv-export a {background: url('../images/code/file_icons/ico-xls.png') left top no-repeat; padding-left: 20px}
+#export-links .xml-export a {background: url('../images/code/file_icons/ico-xml.png') left top no-repeat; padding-left: 20px}
+#export-links .print a {background: url('../images/wiki/ico_print.gif') left no-repeat; padding-left: 20px}
+#export-links .link a {background: url('../images/external-link.gif') left no-repeat; padding-left: 20px}
 #export-links .link-popup {display: none; background: #ddd; border: solid 1px; position: absolute; right: 0px; z-index: 1000; width: 300px; padding: 5px}
 /* Post a message via email */ .post-via-email {float: left}
-.post-via-email a.post-it {float: left; background: transparent url(/quesosar/web/images/ico_email.gif) left top no-repeat; padding: 0 0 0 22px; margin: 7px 0 0 -4px}
-#send-instructions {background: url(/quesosar/web/images/messages/bg-send-instructions.gif) left -8px no-repeat; position: absolute; top: 119px; left: 370px}
+.post-via-email a.post-it {float: left; background: transparent url(../images/ico_email.gif) left top no-repeat; padding: 0 0 0 22px; margin: 7px 0 0 -4px}
+#send-instructions {background: url(../images/messages/bg-send-instructions.gif) left -8px no-repeat; position: absolute; top: 119px; left: 370px}
 #send-instructions ul.instructions-box {border: 1px solid #ccc; border-left: none; list-style-type: none; margin: 0 5px 0 5px; padding: 0; float: left}
 #send-instructions ul.instructions-box li {background-color: #fff; padding: 8px 11px; font-size: 11px}
 #send-instructions ul.instructions-box li.instructions-top {background-color: #FEFAE1; border-bottom: 1px solid #ccc; padding: 5px 11px; font-size: 12px}
@@ -1195,19 +1195,19 @@ a.activity-link {font-weight: normal; font-size: 12px; margin: 7px 15px 0 1px; f
 #send-instructions ul.instructions-box li ul li {padding: 0; margin: 0; line-height: 1.4em}
 #send-instructions ul.instructions-box li p span {color: #c00; font-weight: bold}
 #send-instructions ul.instructions-box li p.close-box {margin: 0 15px 1px 0; padding: 0}
-#send-instructions ul.instructions-box li p.close-box a {background: url(/quesosar/web/images/ico_close.gif) right top no-repeat; display: block; margin: 0; padding: 0 20px 0 0; text-align: right; font-weight: normal; width: 100%}
+#send-instructions ul.instructions-box li p.close-box a {background: url(../images/ico_close.gif) right top no-repeat; display: block; margin: 0; padding: 0 20px 0 0; text-align: right; font-weight: normal; width: 100%}
 /*--------------------------------------------------------- = Generic Comment Discussions (needs to be migrated from tickets.css) ----------------------------------------------------------*/ #comment-preview-section {margin-bottom: 30px; padding-bottom: 15px; border-bottom: 2px solid #EEE}
 /* --------------------------------------------------- Add this styles to "blue_spaces.css" ------------------------------------------------------ */ /* Team sharing subtab ------------------------------------------------------ */ /* Lauyout/sidebar tweak */ html>body #team-share .side-col {width: 330px; margin-left: -330px}
 html>body #team-share .main-col {margin-right: 350px}
 #team-share h1 {font-size: 16px; margin: -1px 0 0 0}
 /* Spaces table */ #team-share div div #spaces_list table {margin-bottom: 40px}
 #team-share div div #spaces_list table tbody tr td.team-name {padding-top: 5px}
-#team-share div div #spaces_list table tbody tr td.team-name a {background: transparent url(/quesosar/web/images/ico-add-groups.png) left 1px no-repeat; padding: 1px 0 1px 22px; margin: 0; display: block; line-height: 16px}
+#team-share div div #spaces_list table tbody tr td.team-name a {background: transparent url(../images/ico-add-groups.png) left 1px no-repeat; padding: 1px 0 1px 22px; margin: 0; display: block; line-height: 16px}
 #team-share div div #spaces_list table tbody tr td.edit-permission {padding-top: 5px; min-width: 80px}
 #team-share div div #spaces_list table tbody tr td.edit-permission span {float: left; margin: 0; padding: 0; color: #333; width: 80px}
-#team-share div div #spaces_list table tbody tr td.edit-permission a {background: transparent url(/quesosar/web/images/ico-edit-small.png) left 50% no-repeat; width: 16px; height: 15px; float: left; margin: 0; color: #333}
+#team-share div div #spaces_list table tbody tr td.edit-permission a {background: transparent url(../images/ico-edit-small.png) left 50% no-repeat; width: 16px; height: 15px; float: left; margin: 0; color: #333}
 #team-share div div #spaces_list table tbody tr td.remove {width: 1%; text-align: right}
-#team-share div div #spaces_list table tbody tr td.remove a {background: transparent url(/quesosar/web/images/remove.gif) left 50% no-repeat; display: block; width: 16px; height: 16px; margin-right: 5px}
+#team-share div div #spaces_list table tbody tr td.remove a {background: transparent url(../images/remove.gif) left 50% no-repeat; display: block; width: 16px; height: 16px; margin-right: 5px}
 #team-share div div .help-instructions {padding-bottom: 5px}
 #team-share div div .help-instructions h2 {margin-bottom: 10px}
 /* "Share permission with" sidebar */ #team-share div .blue-box-title {padding: 8px 0 0 10px; height: 24px}
@@ -1218,9 +1218,9 @@ html>body #team-share .main-col {margin-right: 350px}
 #team-share div .blue-box #team-search ul.result-list li {display: block; clear: both; padding: 0}
 #team-share div .blue-box #team-search ul.result-list li p {float: left; margin: 0; padding: 0 0 5px 0}
 #team-share div .blue-box #team-search ul.result-list li p a {padding: 0; margin: 0; display: block}
-#team-share div .blue-box #team-search ul.result-list li p.add-team a {background: transparent url(/quesosar/web/images/ico-add.png) left top no-repeat; width: 16px; height: 16px; margin: 1px 5px 0 0; padding: 0}
+#team-share div .blue-box #team-search ul.result-list li p.add-team a {background: transparent url(../images/ico-add.png) left top no-repeat; width: 16px; height: 16px; margin: 1px 5px 0 0; padding: 0}
 #team-share div .blue-box #selected-team, #team-share div .blue-box #selected-team fieldset ul {margin: 0 5px 0 0; padding: 0}
-#team-share div .blue-box #selected-team fieldset ul li.selectedteam {background: #EAF3FA url(/quesosar/web/images/tick.png) 5px 4px no-repeat; font-size: 13px; font-weight: bold; margin: 5px 0 8px 0; padding: 2px 2px 2px 25px; height: 20px}
+#team-share div .blue-box #selected-team fieldset ul li.selectedteam {background: #EAF3FA url(../images/tick.png) 5px 4px no-repeat; font-size: 13px; font-weight: bold; margin: 5px 0 8px 0; padding: 2px 2px 2px 25px; height: 20px}
 #team-share div .blue-box #selected-team fieldset ul li {font-size: 11px; padding: 0; margin: 0; height: 12px}
 #team-share div .blue-box #selected-team fieldset ul li p {font-weight: bold; color: #333; margin: 0; padding: 0}
 #team-share div .blue-box #selected-team fieldset ul li label input[type="radio"] {margin: 0 5px 0 0; padding: 0; position: relative; top: 1px}
@@ -1286,7 +1286,7 @@ table.appbody_{ width:80%; border-bottom:0}
 #list .tab1 td{ border-bottom:1px solid #ddd; padding:0.6em 1px; text-align:center;}
 #list .tab1 td.tooltip{ vertical-align: top; padding: 0 0 0.5em 1em; text-align:left;}
 #list .tab1 label{display:inline;}
-#list .tab1 label.ttip{background:url(/quesosar/web/images/6.jpg) no-repeat; padding: 0 0 0 1.6em;}
+#list .tab1 label.ttip{background:url(../images/6.jpg) no-repeat; padding: 0 0 0 1.6em;}
 #list .tab1 span.txt{font-weight:normal; font-style:italic;}
 #list .tab1 input{ margin-top:2px;}
 #list .tab2{width:100%; border:none;}
@@ -1378,7 +1378,7 @@ th.joblist_w{ width:15%}
 .talent-list p {}
 div.picture {float: left; width: 110px; margin-right: 1.5em}
 div.picture img {line-height: 0; padding: 5px; border: 1px solid #ccc}
-/* Questionable styles from 'blue_jobs.css'*/ #apply-to-job {padding: .5em 1em; margin-bottom: 1em; background: url(/quesosar/web/images/call-bg-jobs.png) no-repeat; /*for yellow bg */ font-weight: bold; height:25px; /*margin-bottom: 1em; border-top:1px dotted #999; padding:1em 0;*/ /*background: #f6f6f6; width:130px; border:1px solid #999; text-align:center; margin:0 auto; for grey bg */ }
+/* Questionable styles from 'blue_jobs.css'*/ #apply-to-job {padding: .5em 1em; margin-bottom: 1em; background: url(../images/call-bg-jobs.png) no-repeat; /*for yellow bg */ font-weight: bold; height:25px; /*margin-bottom: 1em; border-top:1px dotted #999; padding:1em 0;*/ /*background: #f6f6f6; width:130px; border:1px solid #999; text-align:center; margin:0 auto; for grey bg */ }
 #apply-to-job a{ color: #9F4949; border-bottom: none; text-decoration: underline; /*background:#5D8A01; padding:0.4em; color:#fff; font-weight:bold;*/ }
 #apply-to-job a:hover{ text-decoration: none; /*background:#ffffcc; color:#5D8A01; border:1px solid #999;*/ }
 /* --------------------------------------------------- = This stylesheet for Assembla Header, including = menu and submenu styles. = Chat tool using custom styles for Header position (exception) ------------------------------------------------------ */ /* --------------------------------------------------- =header ------------------------------------------------------ */ #header-w {font-size: 12px; background: #5D8A01}
@@ -1392,7 +1392,7 @@ div.picture img {line-height: 0; padding: 5px; border: 1px solid #ccc}
 #search-form #searchfor {color: #000}
 #search-form #searchfor:focus {background: #fff; color: #000}
 #search-form {color: #6b7e99}
-#header em.parent-fork {display: block !important; padding: 0 0 0 19px !important; font-size: 11px; float: none !important; font-style: normal; margin: 0 0 0 1px !important; font-weight: normal; background: transparent url(/quesosar/web/images/ico-forked.png) left 3px no-repeat}
+#header em.parent-fork {display: block !important; padding: 0 0 0 19px !important; font-size: 11px; float: none !important; font-style: normal; margin: 0 0 0 1px !important; font-weight: normal; background: transparent url(../images/ico-forked.png) left 3px no-repeat}
 #header em.parent-fork a {float: none !important; padding: 0 !important; margin: 0 !important; display: inline-block}
 /* User utility links */ #header-links {font-family: arial, helvetica, sans-serif; letter-spacing: normal; float: right}
 #logo {width: auto; margin-bottom: 1px; float: left;}
@@ -1412,15 +1412,15 @@ div.picture img {line-height: 0; padding: 5px; border: 1px solid #ccc}
 #logo a:link, #logo a:visited {border-bottom: none; float: none}
 #show-help a:link, #show-help a:visited {color: #E3EFFC; text-decoration: underline; padding-left: 12px}
 #show-help a:hover {color: #E3EFFC; text-decoration: none}
-#show-help a.closed:link, #show-help a.closed:visited {background: transparent url(/quesosar/web/images/bg-open-help.gif) center left no-repeat}
-#show-help a.open:link, #show-help a.open:visited {background: transparent url(/quesosar/web/images/bg-close-help.gif) center left no-repeat}
+#show-help a.closed:link, #show-help a.closed:visited {background: transparent url(../images/bg-open-help.gif) center left no-repeat}
+#show-help a.open:link, #show-help a.open:visited {background: transparent url(../images/bg-close-help.gif) center left no-repeat}
 /* --------------------------------------------------- =space name and utility links ------------------------------------------------------ */ h1.header-w {color: #C4CA9C; padding-bottom: 0px}
 h1.header-w span {color: #FFFFFF}
 h1 span {display: block !importnat; float: left; padding: 0 0 5px 0}
 #header-w span#space-role {color: #C4CA9C; float: right; text-align: right; font-family: Arial, Helvetica, sans-serif; text-transform: none; font-size: 13px; font-weight: normal; white-space: nowrap; clear: both}
 #header-w span#space-role span {margin-left: 5px}
-#header-w .fork {background: url(/quesosar/web/images/ico-fork.png) left 2px no-repeat; padding-left: 26px; margin-left: 6px}
-#header-w .watch {background: url(/quesosar/web/images/ico-watch.png) left 1px no-repeat; padding-left: 23px; margin-left: 6px}
+#header-w .fork {background: url(../images/ico-fork.png) left 2px no-repeat; padding-left: 26px; margin-left: 6px}
+#header-w .watch {background: url(../images/ico-watch.png) left 1px no-repeat; padding-left: 23px; margin-left: 6px}
 #header-w span#space-role input.nbutton {margin: 10px 0 0 0; float: right; font-size: small; font-weight: bold}
 div#announcement {background: #000000 none repeat scroll 0 0; color: #FFFFFF; font-size: 1.2em; font-weight: bold; padding: 0.3em; text-align: center}
 div#announcement span.top-bar {padding: 0.5em 0.5em 0.5em 2.2em; vertical-align: middle}
@@ -1438,43 +1438,43 @@ a.noBorder {border: 0px; cursor: pointer}
 .top-header span#space-role a:hover {border-bottom: none}
 /* --------------------------------------------------- = Main menu - Square tabs ------------------------------------------------------ */ #main-menu-w {background: #5D8A01; font-size: 13px; letter-spacing: normal}
 ul#main-menu {margin: 0 10px; width: auto; list-style: none; height: 28px}
-ul#main-menu li {float: left; margin-right: 4px; padding: 0; background: #96B506 url(/quesosar/web/images/bg-square-tabs.png) bottom left repeat-x; border: none}
-ul#main-menu li.users_tabs {background: #fff9c6 url(/quesosar/web/images/bg-square-tabs.png) bottom left repeat-x}
+ul#main-menu li {float: left; margin-right: 4px; padding: 0; background: #96B506 url(../images/bg-square-tabs.png) bottom left repeat-x; border: none}
+ul#main-menu li.users_tabs {background: #fff9c6 url(../images/bg-square-tabs.png) bottom left repeat-x}
 ul#main-menu li:hover {background: #D7EEA3; color: #fff}
 ul#main-menu li a:link, ul#main-menu li a:visited {border-color: #013F00; border-style:solid; border-width:1px; text-decoration: none; padding: 4px 8px 4px 8px; height: 20px; display: block; z-index: 9999; min-width: 80px; text-align: center; color: #FFF}
 ul#main-menu li a:hover, ul#main-menu li a:active, div#more_menu a:hover {border-color: #013F00; border-style:solid; border-width:1px; color: #15478C}
-ul#main-menu li.current, ul#main-menu li.current a { background: /*url(/quesosar/web/images/flecha_actual2.png)*/ #E7FABB no-repeat center; font-weight: bold; color: #15478C }
-ul#main-menu li.portfolio a {background-image: url(/quesosar/web/images/portfolio-a-menu.png); background-position: 68px 6px; background-repeat: no-repeat; padding-right: 29px !important; display: block; font-weight: bold}
+ul#main-menu li.current, ul#main-menu li.current a { background: /*url(../images/flecha_actual2.png)*/ #E7FABB no-repeat center; font-weight: bold; color: #15478C }
+ul#main-menu li.portfolio a {background-image: url(../images/portfolio-a-menu.png); background-position: 68px 6px; background-repeat: no-repeat; padding-right: 29px !important; display: block; font-weight: bold}
 ul#main-menu li.current a:hover {text-decoration: none}
 
 
 .search-field {border: none; float: right !important; padding: 0 !important; background: transparent; margin: -5px 0 0 0 !important; z-index: 99}
 .home-fixed-width-wrapper ul#main-menu {margin-right: 0px}
 .search-field:hover {background: transparent}
-.search-field input.main-search {margin: 0; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; font-size: 11px !important; padding: 3px 3px 3px 24px; background: #fff url(/quesosar/web/images/ico-search-small.png) 5px 1px no-repeat; color: #666; width: 140px; border: 1px solid #bbb}
+.search-field input.main-search {margin: 0; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; font-size: 11px !important; padding: 3px 3px 3px 24px; background: #fff url(../images/ico-search-small.png) 5px 1px no-repeat; color: #666; width: 140px; border: 1px solid #bbb}
 .more_tabs_menu_item a {background: none; z-index: 9999}
 .more_tabs_menu {z-index: 100; padding-top: 0; padding-bottom: 0; background: #E7FABB; position: absolute; top: 95px; left: 500px; margin-left: 0; margin-top: 2px; border-top: 1px solid #fff}
 .more_tabs_menu_item {padding: 0; background-color: #E7FABB; border-bottom: 1px solid #fff}
 .more_tabs_menu_item:hover {background-color: #D7EEA3; text-decoration: none}
 div#more_menu a:visited, div#more_menu a:link {background: none; float: none; height: auto; padding: 3px 8px 3px 7px; margin: 0; text-decoration: none; display: block}
 .more_tabs_menu_item a {background: none; z-index: 9999}
-/* --------------------------------------------------- = Sub Menu ------------------------------------------------------ */ ul.menu-submenu {margin: 0; padding: 6px 0; height: 19px; list-style: none; background: #e5e5e5 url(/quesosar/web/images/bg-submenu.jpg) repeat-x left top; font-family: Arial, Helvetica, sans-serif; float: left; width: 100%}
+/* --------------------------------------------------- = Sub Menu ------------------------------------------------------ */ ul.menu-submenu {margin: 0; padding: 6px 0; height: 19px; list-style: none; background: #e5e5e5 url(../images/bg-submenu.jpg) repeat-x left top; font-family: Arial, Helvetica, sans-serif; float: left; width: 100%}
 ul.menu-submenu li {float: left}
 ul.menu-submenu li a {display: block; height: 26px; line-height: 20px; float: left; padding: 0 11px; border-right: 1px solid #e6e6e6; font-size: 12px; font-weight: bold}
-ul.menu-submenu li .selected {background: url(/quesosar/web/images/arrow-selected.png) no-repeat center 21px; font-weight:bold; text-decoration: none}
+ul.menu-submenu li .selected {background: url(../images/arrow-selected.png) no-repeat center 21px; font-weight:bold; text-decoration: none}
 ul.menu-submenu li .first {margin-left: 10px; border-left: 1px solid #e6e6e6}
 
 
 ul#wiki-submenu, ul#wiki-breadcrumbs {padding-top: 0; height: 27px}
 ul#wiki-breadcrumbs {background: none; height: auto; width: auto; margin-top: 0.55em; margin-left: 0.5em}
 ul#wiki-bredcrumbs li .first {margin-left: 0}
-ul#wiki-submenu li span.wiki-spacer, ul#wiki-breadcrumbs li span.wiki-spacer {padding: 0 3px; float: left; width: 9px; height: 33px; overflow: hidden; text-indent: -1000px; background: url(/quesosar/web/images/wiki-separator.gif) center center no-repeat}
+ul#wiki-submenu li span.wiki-spacer, ul#wiki-breadcrumbs li span.wiki-spacer {padding: 0 3px; float: left; width: 9px; height: 33px; overflow: hidden; text-indent: -1000px; background: url(../images/wiki-separator.gif) center center no-repeat}
 ul#wiki-breadcrumbs li span.wiki-spacer {height: 22px; padding: 0}
 ul#wiki-submenu li a, ul#wiki-breadcrumbs li div {border: none; padding: 6px 8px 0 8px}
 ul#wiki-breadcrumbs li div {height: auto; padding-top: 0; display: block; line-height: 21px; float: left; font-size: 1em}
 ul#wiki-submenu li a.current, ul#wiki-breadcrumbs li div.current {font-weight: bold; color: #000; text-decoration: none}
 ul#wiki-submenu li.root {margin-left: 36px}
-ul#wiki-submenu li.root a, ul#wiki-submenu li.root div, ul#wiki-breadcrumbs li.root a, ul#wiki-breadcrumbs li.root div {padding-left: 21px; background: url(/quesosar/web/images/wiki/ico_whome.gif) 3px center no-repeat}
+ul#wiki-submenu li.root a, ul#wiki-submenu li.root div, ul#wiki-breadcrumbs li.root a, ul#wiki-breadcrumbs li.root div {padding-left: 21px; background: url(../images/wiki/ico_whome.gif) 3px center no-repeat}
 ul#wiki-submenu li ul {display: none}
 ul#wiki-submenu li ul li {float: none; display: block; width: 100%; margin: 0; padding: 0}
 ul#wiki-submenu li:hover ul li a {float: none; background: none; padding: 0 11px; margin: 0; display: block; background-color: transparent}
@@ -1485,10 +1485,10 @@ ul#wiki-submenu li.utility-links {float: right; margin: 0; margin-right: 36px; p
 ul#wiki-submenu li.utility-links div {float: left; padding: 0 10px; height: 33px}
 ul#wiki-submenu li.utility-links div.new-page-link {background-color: #e6eff8; border-left: 1px solid #c6d3e1; border-right: 1px solid #c6d3e1}
 ul#wiki-submenu li.utility-links div.settings-link, ul#wiki-submenu li.utility-links div.manage-link {padding: 0 5px; margin: 0; width: 16px; overflow: hidden}
-ul#wiki-submenu li.utility-links div.manage-link {margin-left: 5px; background: url(/quesosar/web/images/page_white_stack.gif) center center no-repeat}
-ul#wiki-submenu li.utility-links div.settings-link {background: url(/quesosar/web/images/ico_settings.png) center center no-repeat}
+ul#wiki-submenu li.utility-links div.manage-link {margin-left: 5px; background: url(../images/page_white_stack.gif) center center no-repeat}
+ul#wiki-submenu li.utility-links div.settings-link {background: url(../images/ico_settings.png) center center no-repeat}
 ul#wiki-submenu li.utility-links div.settings-link a, ul#wiki-submenu li.utility-links div.manage-link a {position: relative; display: block; height: 30px; width: 16px; overflow: hidden; text-indent: -1000px}
-ul#wiki-submenu li.utility-links div.new-page-link a {background: url(/quesosar/web/images/ico_add.gif) left center no-repeat; padding-left: 18px}
+ul#wiki-submenu li.utility-links div.new-page-link a {background: url(../images/ico_add.gif) left center no-repeat; padding-left: 18px}
 /* --------------------------------------------------- = Help Panel ------------------------------------------------------ */ /* Help panel is almost like panel from user/start page, but without "move" cursor on the title */ #help-panel {background: #5274A5; border-top: 1px solid #5274A5; border-bottom: 3px solid #5274A5; z-index: 5; _width: 100%}
 #top_links {background-color: white; position: absolute; display: inline; width: auto; z-index: 5; background-color: #33567F; padding: 5px 20px; border: 2px solid #5A80B5; text-align: left}
 #top_links a {color: #77a0d9}
@@ -1499,12 +1499,12 @@ ul.none li {padding: 2px; margin: 2px}
 /* Marketing pages header hack */ #header-w .home-fixed-width-wrapper #header #header-links .search-field input {margin-top: 15px}
 #header-w .home-fixed-width-wrapper #header #header-links #user-box {margin-top: 9px; margin-right: 30px}
 .wiki-tool {min-width: 780px; max-width: 1400px}
-.wiki-tool-wrap {background: url(/quesosar/web/images/wiki/bg-left-sidebar.gif) left top no-repeat}
+.wiki-tool-wrap {background: url(../images/wiki/bg-left-sidebar.gif) left top no-repeat}
 .wiki-tool #top-wiki-wrap {width: 220px; margin: 0; background: #fff; display: block; height: 30px; clear: both; position: relative; left: 20px; top: 0; overflow: visible}
 /* Wiki left sidebar */ .wiki-tool #wiki-left-sidebar {width: 220px; float: left; margin: 15px 0 0 0; padding: 0 0 24px 0; background-color: #f6f6f6}
 .wiki-tool #wiki-left-sidebar .wiki-controls {display: block; clear: both; height: 35px; margin: 0 12px 0 15px}
 .wiki-tool #wiki-left-sidebar .new-page-button {margin: 0; padding: 0; float: left}
-.wiki-tool #wiki-left-sidebar .new-page-button a {margin: 2px 4px; display: block; clear: both; background: url(/quesosar/web/images/ico-add.png) 2px 2px no-repeat; padding: 1px 3px 0 22px; font-size: 12px; text-decoration: none}
+.wiki-tool #wiki-left-sidebar .new-page-button a {margin: 2px 4px; display: block; clear: both; background: url(../images/ico-add.png) 2px 2px no-repeat; padding: 1px 3px 0 22px; font-size: 12px; text-decoration: none}
 .wiki-tool #wiki-left-sidebar .control-buttons {margin: 0 -8px 0 0; padding: 0; float: right}
 #wiki-left-sidebar .wiki-controls .control-buttons p.compact-icon-button {padding: 2px 0 0 0 !important; height: 22px !important}
 .wiki-tool #wiki-left-sidebar .new-page-wrap a:hover {background-color: #fff}
@@ -1531,8 +1531,8 @@ a.tooltip:hover {font-size: 100%; /*Fixes bug in IE5.x/Win */ }
 .wiki-tool .wiki-content-col {width: auto; margin: 0 0 0 220px}
 .wiki-tool .wiki-content-col .wiki-top-wrap {clear: right; display: block; height: 22px; border-bottom: 1px solid #D0D7E1}
 .wiki-tool .wiki-content-col .wiki-top-wrap ul#wiki-view-menu {width: auto; display: block; padding: 0; margin: 0 7px 0 0; list-style-type: none; float: left; border: none}
-.wiki-tool .wiki-content-col .wiki-top-wrap ul#wiki-view-menu li {background: #eee url(/quesosar/web/images/bg-grey-button.jpg) top left repeat-x; border: 1px solid #D0D7E1; float: left; padding: 0; margin: 0 2px 0 0; height: 21px}
-.wiki-tool .wiki-content-col .wiki-top-wrap ul#wiki-view-menu li:hover {background: #fff url(/quesosar/web/images/bg-grey-button-hover.jpg) top left repeat-x; border: 1px solid #D0D7E1; border-bottom: 1px solid #D0D7E1}
+.wiki-tool .wiki-content-col .wiki-top-wrap ul#wiki-view-menu li {background: #eee url(../images/bg-grey-button.jpg) top left repeat-x; border: 1px solid #D0D7E1; float: left; padding: 0; margin: 0 2px 0 0; height: 21px}
+.wiki-tool .wiki-content-col .wiki-top-wrap ul#wiki-view-menu li:hover {background: #fff url(../images/bg-grey-button-hover.jpg) top left repeat-x; border: 1px solid #D0D7E1; border-bottom: 1px solid #D0D7E1}
 .wiki-tool .wiki-content-col .wiki-top-wrap ul#wiki-view-menu li.current {border-bottom: 1px solid #FFF}
 .wiki-tool .wiki-content-col .wiki-top-wrap ul#wiki-view-menu li.current a {background: #fff; text-decoration: none; font-weight: bold; color: #000; border-bottom: 1px solid #FFF}
 .wiki-tool .wiki-content-col .wiki-top-wrap ul#wiki-view-menu li.current a:hover {color: #13468C}
@@ -1560,12 +1560,12 @@ a.tooltip:hover {font-size: 100%; /*Fixes bug in IE5.x/Win */ }
 .wiki-tool #mceEditor-fake {border: 1px solid #ccc; width: 100%}
 .wiki-tool #mceEditor-fake #mceEditor-toolbar {background-color: #F4F4ED; border-bottom: 1px solid #ccc; padding: 0}
 .wiki-tool #mceEditor-fake #mceEditor-textarea {width: 100%; margin: 0; border: none; overflow: auto; height: 400px}
-.wiki-tool #mceEditor-fake #mceEditor-bottom {background: #F4F4ED url(/quesosar/web/images/wiki/sample-edit-resize.gif) right bottom no-repeat; border-top: 1px solid #ccc; padding: 0 0 0 3px; height: 20px}
+.wiki-tool #mceEditor-fake #mceEditor-bottom {background: #F4F4ED url(../images/wiki/sample-edit-resize.gif) right bottom no-repeat; border-top: 1px solid #ccc; padding: 0 0 0 3px; height: 20px}
 .wiki-tool div#page-name-change {margin: 5px 0 7px 0; background-color: #F1F5FA; display: block; height: 29px; padding: 6px 0 0 10px}
 .wiki-tool div#page-name-change label {float: left; margin: 1px 5px 0 0; padding: 0}
 .wiki-tool div#page-name-change p {font-size: 16px; margin: 5px 0 0 0; float: left}
 .wiki-tool div#page-name-change p span {color: #666}
-.wiki-tool div#page-name-change p span a {background: transparent url(/quesosar/web/images/blue/drag-yes.gif) left 1px no-repeat; font-size: 12px; font-weight: bold; padding-left: 19px; margin-left: 10px}
+.wiki-tool div#page-name-change p span a {background: transparent url(../images/blue/drag-yes.gif) left 1px no-repeat; font-size: 12px; font-weight: bold; padding-left: 19px; margin-left: 10px}
 .wiki-preview-save {width: 320px; float: right; position: absolute; right: 20px; text-align: right; margin-top: 9px}
 .w-new {width: 248px; right: 10px; margin-top: 0}
 .wiki-preview-save .button, .wiki-preview-save .orcancel {float: left; margin-right: 7px}
@@ -1578,8 +1578,8 @@ a.tooltip:hover {font-size: 100%; /*Fixes bug in IE5.x/Win */ }
 .wiki-tool #wiki-history-right-col .box {padding-top: 0}
 .wiki-tool #wiki-history-right-col .box h2 {font-size: 15px !important; margin: 15px 0 5px 0 !important}
 .wiki-tool #wiki-history-right-col .box p {line-height: 1.4em}
-.wiki-tool #wiki-history-right-col .box .wiki-hk-deleted {list-style-image: url(/quesosar/web/images/wiki/ico_wdeleted.gif)}
-.wiki-tool #wiki-history-right-col .box .wiki-hk-new {list-style-image: url(/quesosar/web/images/wiki/ico_wnew.gif)}
+.wiki-tool #wiki-history-right-col .box .wiki-hk-deleted {list-style-image: url(../images/wiki/ico_wdeleted.gif)}
+.wiki-tool #wiki-history-right-col .box .wiki-hk-new {list-style-image: url(../images/wiki/ico_wnew.gif)}
 #wiki-page-versions, #wiki-history-key {list-style: none}
 #wiki-history-key {margin: 0 0 0 20px; padding: 0}
 #wiki-history-key li {margin: 0; padding: 0}
@@ -1588,9 +1588,9 @@ a.tooltip:hover {font-size: 100%; /*Fixes bug in IE5.x/Win */ }
 del {text-decoration: line-through; background: #f5cccc}
 ins {text-decoration: underline; text-decoration: none; background-color: #e7fabb}
 /* Comments tab */ .wiki-comments {}
-.wiki-comments a.add-a-comment {background: transparent url(/quesosar/web/images/ico-addmessage.png) left 1px no-repeat; padding: 0 0 4px 21px; display: block; clear: left; margin: 15px 0}
+.wiki-comments a.add-a-comment {background: transparent url(../images/ico-addmessage.png) left 1px no-repeat; padding: 0 0 4px 21px; display: block; clear: left; margin: 15px 0}
 .wiki-comments .comment-wrap {clear: both}
-.wiki-comments .comment-wrap .thumb-col {float: left; width: 68px; background: transparent url(/quesosar/web/images/arrow-wiki-messages.gif) right top no-repeat}
+.wiki-comments .comment-wrap .thumb-col {float: left; width: 68px; background: transparent url(../images/arrow-wiki-messages.gif) right top no-repeat}
 .wiki-comments .comment-wrap .thumb-col img {border: 1px solid #dfe5ee; width: 50px}
 .wiki-comments .comment-wrap .changeset-col {margin: 0 0 10px 67px; border: 1px solid #dfe5ee}
 .wiki-comments .comment-wrap .changeset-col .changeset-header {padding: 6px 14px 1px 14px}
@@ -1603,7 +1603,7 @@ ins {text-decoration: underline; text-decoration: none; background-color: #e7fab
 .wiki-comments .comment-wrap .changeset-col .comment p {line-height: 1.4em}
 .wiki-comments .comment-wrap .changeset-col .comment h4 {margin: 2px 0 !important; padding: 0 !important}
 .wiki-comments .leave-a-comment {margin: 7px 0 10px 0 !important; padding: 4px 0 0 0 !important; border-top: 1px dotted #ddd}
-.wiki-comments .leave-a-comment form label {background: transparent url(/quesosar/web/images/fake-toolbar.png) right 2px no-repeat; margin-bottom: 0; height: 23px; float: left; font-size: 13px !important}
+.wiki-comments .leave-a-comment form label {background: transparent url(../images/fake-toolbar.png) right 2px no-repeat; margin-bottom: 0; height: 23px; float: left; font-size: 13px !important}
 .wiki-comments .leave-a-comment #flow_body_toolbar {float: left; margin-top: 10px}
 .wiki-comments .leave-a-comment form textarea {width: 90% !important}
 /* Re-order wiki pages */ ul#manage-wiki-list {list-style-type: none !important; margin-left: 10px}
@@ -1627,7 +1627,7 @@ ul#manage-wiki-list li img {margin: 0 5px 0 0}
 .milestones .milestone-wrap ul.tasks-list .task-check {padding: 0; margin: 0; float: left}
 .milestones .milestone-wrap ul.tasks-list p {display: inline; margin: -5px 0 0 5px; color: #555555}
 /* Messages list */ .milestones .milestone-wrap ul.messages-list {padding: 0; margin: 10px 0; list-style: none}
-.milestones .milestone-wrap ul.messages-list li {padding: 0 0 0 21px; margin: 5px 0; list-style: none; background: url(/quesosar/web/images/ico-message.png) no-repeat left top}
+.milestones .milestone-wrap ul.messages-list li {padding: 0 0 0 21px; margin: 5px 0; list-style: none; background: url(../images/ico-message.png) no-repeat left top}
 .milestones .milestone-wrap .status-line {border-bottom: 1px solid #eee; padding: 6px 0 4px 0}
 .milestones .milestone-wrap .status-line-no-border {padding: 5px 0 4px 0}
 .milestones .milestone-wrap .days-left {color: #900; font-weight: bold}
@@ -1639,21 +1639,21 @@ ul#manage-wiki-list li img {margin: 0 5px 0 0}
 .milestones .milestone-wrap .status-line .progress-content {padding: 0; margin: 0; background-color: #900; width: 200px; height: 18px; display: inline}
 .milestones .milestone-wrap .status-line .progress-content .tclosed {background-color: #A2BDE3}
 .milestones .milestone-wrap .status-line .progress-content .topen {background-color: #fff}
-.icon-reopen-milestone {background: transparent url(/quesosar/web/images/milestones/ico_mreopen.gif) left 1px no-repeat; padding-left: 22px !important; list-style: none; margin-bottom: .25em}
-.milestones .moverdue {margin: 0px; padding: 7px 0 7px 0; background: #F5CCCC url(/quesosar/web/images/milestones/ico_moverdue.gif) no-repeat 9px 10px; width: 100%; display: block; float: left}
-.milestones .mnormal {margin: 0px; padding: 7px 0 7px 0; background: #E6EFF8 url(/quesosar/web/images/milestones/ico-ongoing.png) no-repeat 9px 10px; width: 100%; display: block; float: left}
-.milestones .mcompleted {margin: 0px; padding: 7px 0 7px 0; background: #E7FABB url(/quesosar/web/images/milestones/ico_mcompleted.gif) no-repeat 9px 10px; width: 100%; display: block; float: left}
+.icon-reopen-milestone {background: transparent url(../images/milestones/ico_mreopen.gif) left 1px no-repeat; padding-left: 22px !important; list-style: none; margin-bottom: .25em}
+.milestones .moverdue {margin: 0px; padding: 7px 0 7px 0; background: #F5CCCC url(../images/milestones/ico_moverdue.gif) no-repeat 9px 10px; width: 100%; display: block; float: left}
+.milestones .mnormal {margin: 0px; padding: 7px 0 7px 0; background: #E6EFF8 url(../images/milestones/ico-ongoing.png) no-repeat 9px 10px; width: 100%; display: block; float: left}
+.milestones .mcompleted {margin: 0px; padding: 7px 0 7px 0; background: #E7FABB url(../images/milestones/ico_mcompleted.gif) no-repeat 9px 10px; width: 100%; display: block; float: left}
 .milestones .milestonetit {margin-right: 360px; line-height: 1.25em}
 .milestones .milestonetit h1 {font-family: Arial, Helvetica, sans-serif; font-size: 1.35em; color: #000000; margin: 0px; text-indent: 30px}
 .milestone_progress_bar {width: 200px; background: #FFF; float: left; display: inline; border: 1px solid #CCCCCC; padding: 0; margin: 0 3px 0 0}
 .milestones .milestone_progress_bar span {margin: 0px; display: inline-block}
 /* LINE --- Previous styles: need to check to delete ------------------------------------------------------ */ .milestonesn {margin: 0; width: 100%; /*wi dth: 520px;*/ padding: 0 0 15px}
 .milestonesn .mnormal {margin: 0px; padding: 7px 0px 0px 10px; background: #E6EFF8}
-.milestonesn .moverdue {margin: 0px; padding: 7px 0px 0px 29px; background: #F5CCCC url(/quesosar/web/images/milestones/ico_moverdue.gif) no-repeat 9px 10px}
-.milestonesn .mcompleted {margin: 0px; padding: 7px 0px 0px 29px; background: #E7FABB url(/quesosar/web/images/milestones/ico_mcompleted.gif) no-repeat 9px 10px}
+.milestonesn .moverdue {margin: 0px; padding: 7px 0px 0px 29px; background: #F5CCCC url(../images/milestones/ico_moverdue.gif) no-repeat 9px 10px}
+.milestonesn .mcompleted {margin: 0px; padding: 7px 0px 0px 29px; background: #E7FABB url(../images/milestones/ico_mcompleted.gif) no-repeat 9px 10px}
 .milestonesn .milestonetit {float: left; margin-right: auto; width: 80%; /*width : 420px;*/ line-height: 1.25em; padding-bottom: 6px}
 .milestonesn .milestonetit h1 {font-family: Arial, Helvetica, sans-serif; font-size: 1.4em; color: #000000; margin: 0px; padding: 1px 0px 0px}
-.milestonesn .medit {margin-top: 1px; padding: 0px 0px 0px 20px; font-family: Arial, Helvetica, sans-serif; font-size: 1em; float: right; width: 43px; background: url(/quesosar/web/images/milestones/ico_medit.gif) no-repeat 0px 1px}
+.milestonesn .medit {margin-top: 1px; padding: 0px 0px 0px 20px; font-family: Arial, Helvetica, sans-serif; font-size: 1em; float: right; width: 43px; background: url(../images/milestones/ico_medit.gif) no-repeat 0px 1px}
 .milestonesn .mdescription {padding: 8px 0px 8px 10px; border-bottom: 1px dotted #ddd}
 .milestonesn .mprogress {padding: 7px 0px 6px; border-bottom: 1px dotted #ddd}
 .milestonesn .mprogress .mdays {float: left; padding: 0px; width: auto}
@@ -1677,7 +1677,7 @@ ul#manage-wiki-list li img {margin: 0 5px 0 0}
 .milestonesn .mtasks .mtask_assigned {padding: 0px; font-family: Arial, Helvetica, sans-serif; font-size: 11px; float: right; width: 190px; text-align: right}
 table.m_progress_bar {width: 200px; height: 20px; background: #ddd; float: left; margin: 0px 8px 0px 5px; padding: 0px}
 table.m_progress_bar td {border: 1px solid #D7D7D7}
-table.m_progress_bar .tclosed {background: #5D8A01 url(/quesosar/web/images/milestones/bg_progressbar.jpg ) repeat-x}
+table.m_progress_bar .tclosed {background: #5D8A01 url(../images/milestones/bg_progressbar.jpg ) repeat-x}
 table.m_progress_bar .topen {background: #fff}
 .msidebar {margin: 0; padding: 0px; background: #F6F6F6}
 b.rtop, b.rbottom {display: block; background: #FFF }
@@ -1689,20 +1689,20 @@ b.rtop b.r4, b.rbottom b.r4 {margin: 0 1px; height: 2px }
 .msidebar .mround {margin: 0px; padding: 0px}
 .msidebar h1 {margin: 0; padding: 5px 0px 5px 15px; font-size: 1.25em; color: #666666}
 .msidebar .views {margin: 0; padding: 0px}
-.msidebar .viewssel {font-weight: bold; margin: 0px; padding: 0px; background: url(/quesosar/web/images/milestones/ind_msidebar.gif) no-repeat 0px 5px}
-.msidebar .upcoming {margin: 0px; padding: 4px 0px 7px 39px; background: url(/quesosar/web/images/milestones/ico_upcoming.gif) no-repeat 16px 5px}
-.msidebar .completed {margin: 0px; padding: 4px 0px 7px 39px; background: url(/quesosar/web/images/milestones/ico_completed.gif) no-repeat 16px 5px}
-.msidebar .all {margin: 0px; padding: 4px 0px 7px 39px; background: url(/quesosar/web/images/milestones/ico_all.gif) no-repeat 16px 5px}
-.msidebar .import_export {margin: 0px 0px 3px; padding: 4px 0px 7px 37px; background: url(/quesosar/web/images/milestones/ico_importexport.gif ) no-repeat 15px 5px}
-.msidebar .calendar {margin: 0px 0px 3px; padding: 4px 0px 7px 37px; background: url(/quesosar/web/images/calendar.png ) no-repeat 15px 5px; font-size: 1em}
-.msidebar .editm {margin: 0px; padding: 4px 0px 7px 37px; background: url(/quesosar/web/images/milestones/ico_medit.gif ) no-repeat 15px 5px}
-.msidebar .deletem {margin: 0px; padding: 4px 0px 7px 37px; background: url( /quesosar/web/images/milestones/ico_mdelete.gif ) no-repeat 15px 5px}
-.msidebar .reopenm {margin: 0px; padding: 4px 0px 7px 37px; background: url(/quesosar/web/images/milestones/ico_mreopen.gif ) no-repeat 15px 5px}
+.msidebar .viewssel {font-weight: bold; margin: 0px; padding: 0px; background: url(../images/milestones/ind_msidebar.gif) no-repeat 0px 5px}
+.msidebar .upcoming {margin: 0px; padding: 4px 0px 7px 39px; background: url(../images/milestones/ico_upcoming.gif) no-repeat 16px 5px}
+.msidebar .completed {margin: 0px; padding: 4px 0px 7px 39px; background: url(../images/milestones/ico_completed.gif) no-repeat 16px 5px}
+.msidebar .all {margin: 0px; padding: 4px 0px 7px 39px; background: url(../images/milestones/ico_all.gif) no-repeat 16px 5px}
+.msidebar .import_export {margin: 0px 0px 3px; padding: 4px 0px 7px 37px; background: url(../images/milestones/ico_importexport.gif ) no-repeat 15px 5px}
+.msidebar .calendar {margin: 0px 0px 3px; padding: 4px 0px 7px 37px; background: url(../images/calendar.png ) no-repeat 15px 5px; font-size: 1em}
+.msidebar .editm {margin: 0px; padding: 4px 0px 7px 37px; background: url(../images/milestones/ico_medit.gif ) no-repeat 15px 5px}
+.msidebar .deletem {margin: 0px; padding: 4px 0px 7px 37px; background: url( ../images/milestones/ico_mdelete.gif ) no-repeat 15px 5px}
+.msidebar .reopenm {margin: 0px; padding: 4px 0px 7px 37px; background: url(../images/milestones/ico_mreopen.gif ) no-repeat 15px 5px}
 #add_milestone {height: 43px; margin: 0px auto}
 #mark_completed {height: 43px; margin: 0 auto}
-.new_ticket {float: left; display: block; margin: 5px 0 10px; padding: 0px 12px 2px 22px; background: url(/quesosar/web/images/milestones/new_ticket.gif ) no-repeat left 1px}
-.new_task {float: left; display: block; margin: 5px 0 10px; padding: 0px 12px 2px 22px; background: url(/quesosar/web/images/milestones/new_task.gif ) no-repeat left 1px}
-.new_message {float: left; display: block; margin: 5px 0 10px; padding: 0px 12px 2px 22px; background: url(/quesosar/web/images/milestones/new_message.gif ) no-repeat left 1px}
+.new_ticket {float: left; display: block; margin: 5px 0 10px; padding: 0px 12px 2px 22px; background: url(../images/milestones/new_ticket.gif ) no-repeat left 1px}
+.new_task {float: left; display: block; margin: 5px 0 10px; padding: 0px 12px 2px 22px; background: url(../images/milestones/new_task.gif ) no-repeat left 1px}
+.new_message {float: left; display: block; margin: 5px 0 10px; padding: 0px 12px 2px 22px; background: url(../images/milestones/new_message.gif ) no-repeat left 1px}
 /* --------------------------------------------------- = milestones (From blue_site.css) ------------------------------------------------------ */ .milestones {margin-left: 0em}
 .milestones td {padding-top: 0; padding-bottom: 1em}
 .milestones td p {color: #666; margin: 0}
@@ -1710,7 +1710,7 @@ b.rtop b.r4, b.rbottom b.r4 {margin: 0 1px; height: 2px }
 /* Edit link */ .milestones h4 a:link, .milestones h4 a:visited {font-weight: normal}
 .milestones td.done {width: 1.5em; padding-left: 2em}
 .milestones td span {color: #666}
-/* Alert */ .milestones .alert {padding: 0.3em 0.3em 0.3em 3em; background: #FFFFCC url(/quesosar/web/images/bg-alert.gif) center left no-repeat; display: inline}
+/* Alert */ .milestones .alert {padding: 0.3em 0.3em 0.3em 3em; background: #FFFFCC url(../images/bg-alert.gif) center left no-repeat; display: inline}
 /* Late Milestones */ #s-late-m {}
 #s-late-m h3 {padding: 0.2em 0.3em; margin-bottom: 0; background: #FAE1E5; border-bottom: 1px solid #d7d7d7}
 #s-late-m h3 a {border: none}
@@ -1734,11 +1734,11 @@ b.rtop b.r4, b.rbottom b.r4 {margin: 0 1px; height: 2px }
 #view_milestones_ ul {list-style: none; margin-left: 0}
 #view_milestones_ li a {margin-left: 1.9em}
 #view_milestones_ li {vertical-align: middle; padding: 0.3em 0; margin: 0.5em 0}
-#view_milestones_ li.all {background: #E3EFFC url(/quesosar/web/images/blue/all.png) center left no-repeat}
+#view_milestones_ li.all {background: #E3EFFC url(../images/blue/all.png) center left no-repeat}
 #view_milestones_ li.current {font-weight: bold}
-#view_milestones_ li.upcome {background: #fff9b2 url(/quesosar/web/images/blue/upcoming.png) center left no-repeat}
-#view_milestones_ li.late {background: #fae1e5 url(/quesosar/web/images/blue/late.png) center left no-repeat}
-#view_milestones_ li.complete {background: #e3fce3 url(/quesosar/web/images/blue/completed.png) center left no-repeat}
+#view_milestones_ li.upcome {background: #fff9b2 url(../images/blue/upcoming.png) center left no-repeat}
+#view_milestones_ li.late {background: #fae1e5 url(../images/blue/late.png) center left no-repeat}
+#view_milestones_ li.complete {background: #e3fce3 url(../images/blue/completed.png) center left no-repeat}
 .tasklink_ a {padding: 0.1em 0.3em; font-size: 0.9em}
 .tasklink_ a:hover {background: #003366; color: #fff; text-decoration: none}
 .tasklink_ .tlink_ {padding-left: 2em; padding-top: 1em; text-align: right}
@@ -1777,14 +1777,14 @@ p.percent {font-size: 10px; line-height: 2.4em; margin: 0}
 .release-files-box p {margin: 0 !important}
 .release-files-box ul {margin: 3px 0 0 0; padding: 0; list-style-type: none}
 .release-files-box ul li {margin: 1px 0 0 0}
-.release-files-box ul li a {background: url(/quesosar/web/images/code/ico-download.png) left 1px no-repeat; padding-left: 22px}
+.release-files-box ul li a {background: url(../images/code/ico-download.png) left 1px no-repeat; padding-left: 22px}
 .milestone-options {float: right; margin-right: 12px; width: 330px; text-align: right; clear: right}
 .milestone-options em {color: #fff !important; margin: 0 4px 0 5px !important}
 /* Edit Release */ .edit-release {background-color: }
 .form-edit-release {margin-top: 10px}
 .form-edit-release fieldset {border: 2px solid #DCE3EC; padding: 20px; margin: 0 0 20px 0; display: block}
 .form-edit-release fieldset legend {background-color: #fff; font-size: 15px; padding: 0 5px; color: #333}
-.form-edit-release fieldset.attachments-form {background: transparent url('/quesosar/web/images/ico-attachment-big.png') 12px 26px no-repeat}
+.form-edit-release fieldset.attachments-form {background: transparent url('../images/ico-attachment-big.png') 12px 26px no-repeat}
 .form-edit-release fieldset.attachments-form label {margin-left:32px; margin-top: -5px}
 .form-edit-release fieldset.attachments-form input {margin-left:32px; margin-top: 0}
 .form-edit-release fieldset.attachments-form input.button {margin-left:2px}
@@ -1818,7 +1818,7 @@ table.u-stream td.user {text-align: left; vertical-align: top; padding: 0; margi
 table.u-stream td.user a {font-weight: bold; padding: 2px 4px 9px 0; display: block; text-align: left; padding-left: 10px; line-height: 1.3em}
 table.u-stream td.description span.user-info a {padding: 9px 2px 9px 0; text-decoration: underline; font-weight: bold; color: #15478C; line-height: 1.2em}
 table.u-stream td.description span.user-info a:hover {text-decoration: none}
-.alert-settings {font-family: Arial, Helvetica, 'Liberation Sans', FreeSans, sans-serif; background: #fefefe url(/quesosar/web/images/bg-alert-settings.png) no-repeat scroll -7px -5px; border: 3px solid #E7FABB; margin-bottom: 10px; padding: 8px 30px 2px 6px}
+.alert-settings {font-family: Arial, Helvetica, 'Liberation Sans', FreeSans, sans-serif; background: #fefefe url(../images/bg-alert-settings.png) no-repeat scroll -7px -5px; border: 3px solid #E7FABB; margin-bottom: 10px; padding: 8px 30px 2px 6px}
 .alert-settings span {font-size: 1.1em}
 .alert-settings .panel {color: #15478C; font-size: 12px; font-weight: normal; cursor: pointer; height: 23px; margin-bottom: 0; padding: 0 0 0 4px; text-decoration: underline}
 .alert-settings .panel:hover {text-decoration: none}
@@ -1843,7 +1843,7 @@ table.u-stream div.description a.space-n:hover {color: #06b; text-decoration: no
 table.u-stream div.description em {color: #5274A5; margin: 0 7px 0 2px}
 table.u-stream div.description span {color: #ccc; margin: 0 3px}
 table.u-stream td.space-name .space-symbol {font-family: Arial, Helvetica, 'Liberation Sans', FreeSans, sans-serif; color: #999; margin: 0 3px 0 0; padding: 0}
-table.u-stream tbody tr td.space-name div.description div.ticket-change {background: url(/quesosar/web/images/ico-arrow-grey.png) left 3px no-repeat; display: block; margin: 1px 0 0 1px; padding: 0 0 2px 21px; clear: left}
+table.u-stream tbody tr td.space-name div.description div.ticket-change {background: url(../images/ico-arrow-grey.png) left 3px no-repeat; display: block; margin: 1px 0 0 1px; padding: 0 0 2px 21px; clear: left}
 table.u-stream tbody tr td.space-name div.description div.ticket-change strong {color: #333; margin: 0}
 table.u-stream tbody tr td.space-name div.description div.ticket-change em {color: #5274A5 !important; font-style: italic !important; margin: 0 4px; padding: 0}
 table.u-stream tbody tr td.space-name div.description .ticket-comment {font-style: italic; color: #333; margin: 0}
@@ -1857,48 +1857,48 @@ a.get-space {margin-right: 0.5em}
 .top-space select {margin-left: 1em; padding: 0.2em}
 .top-space select option {padding-bottom: 0.2em}
 /* Event Icons - should perhaps be moved out into a sitewide CSS */ .u-stream .icon {height: 16px; width: 16px; overflow: hidden; font-size: 0px; background-repeat: no-repeat}
-.ico-add-user {background-image: url('/quesosar/web/images/tools/icons/event_icons/event-icons-sprite.png'); background-position: left -0px}
-.ico-application {background-image: url('/quesosar/web/images/tools/icons/event_icons/event-icons-sprite.png'); background-position: left -16px}
-.ico-build-fail {background-image: url('/quesosar/web/images/tools/icons/event_icons/event-icons-sprite.png'); background-position: left -32px}
-.ico-build-ok {background-image: url('/quesosar/web/images/tools/icons/event_icons/event-icons-sprite.png'); background-position: left -48px}
-.ico-build {background-image: url('/quesosar/web/images/tools/icons/event_icons/event-icons-sprite.png'); background-position: left -64px}
-.ico-changeset {background-image: url('/quesosar/web/images/tools/icons/event_icons/event-icons-sprite.png'); background-position: left -80px}
-.ico-code-commit {background-image: url('/quesosar/web/images/tools/icons/event_icons/event-icons-sprite.png'); background-position: left -96px}
-/* FIXME add to sprites */ .ico-gerrit {background-image: url(/quesosar/web/images/tools/icons/event_icons/ico-gerrit.png)}
-.ico-comment {background-image: url('/quesosar/web/images/tools/icons/event_icons/event-icons-sprite.png'); background-position: left -112px}
-.ico-commit {background-image: url('/quesosar/web/images/tools/icons/event_icons/event-icons-sprite.png'); background-position: left -96px}
-.ico-deploy-request-log {background-image: url('/quesosar/web/images/tools/icons/event_icons/event-icons-sprite.png'); background-position: left -128px}
-.ico-deploy-request-send {background-image: url('/quesosar/web/images/tools/icons/event_icons/event-icons-sprite.png'); background-position: left -144px}
-.ico-deploy-response-failed {background-image: url('/quesosar/web/images/tools/icons/event_icons/event-icons-sprite.png'); background-position: left -160px}
-.ico-deploy-response-successful {background-image: url('/quesosar/web/images/tools/icons/event_icons/event-icons-sprite.png'); background-position: left -176px}
-.ico-document {background-image: url('/quesosar/web/images/tools/icons/event_icons/event-icons-sprite.png'); background-position: left -192px}
-.ico-events {background-image: url('/quesosar/web/images/tools/icons/event_icons/event-icons-sprite.png'); background-position: left -208px}
-.ico-file {background-image: url('/quesosar/web/images/tools/icons/event_icons/event-icons-sprite.png'); background-position: left -224px}
-.ico-image {background-image: url('/quesosar/web/images/tools/icons/event_icons/event-icons-sprite.png'); background-position: left -240px}
-.ico-job-agreement {background-image: url('/quesosar/web/images/tools/icons/event_icons/event-icons-sprite.png'); background-position: left -256px}
-.ico-job-posting {background-image: url('/quesosar/web/images/tools/icons/event_icons/event-icons-sprite.png'); background-position: left -272px}
-.ico-merge-request {background-image: url('/quesosar/web/images/tools/icons/event_icons/event-icons-sprite.png'); background-position: left -288px}
-.ico-message {background-image: url('/quesosar/web/images/tools/icons/event_icons/event-icons-sprite.png'); background-position: left -304px}
-.ico-milestone {background-image: url('/quesosar/web/images/tools/icons/event_icons/event-icons-sprite.png'); background-position: left -320px}
-.ico-scrum {background-image: url('/quesosar/web/images/tools/icons/event_icons/event-icons-sprite.png'); background-position: left -336px}
-.ico-server-disabled {background-image: url('/quesosar/web/images/tools/icons/event_icons/event-icons-sprite.png'); background-position: left -352px}
-.ico-space {background-image: url('/quesosar/web/images/tools/icons/event_icons/event-icons-sprite.png'); background-position: left -368px}
-.ico-ticket-commented {background-image: url('/quesosar/web/images/tools/icons/event_icons/ico-ticket-commented.png'); background-position: left top}
-.ico-ticket-created {background-image: url('/quesosar/web/images/tools/icons/event_icons/ico-ticket-created.png'); background-position: left top}
-.ico-ticket-fixed {background-image: url('/quesosar/web/images/tools/icons/event_icons/ico-ticket-fixed.png'); background-position: left top}
-.ico-ticket-invalidated {background-image: url('/quesosar/web/images/tools/icons/event_icons/event-icons-sprite.png'); background-position: left -432px}
-.ico-ticket-milestones {background-image: url('/quesosar/web/images/tools/icons/event_icons/event-icons-sprite.png'); background-position: left -448px}
-.ico-ticket {background-image: url('/quesosar/web/images/tools/icons/event_icons/event-icons-sprite.png'); background-position: left -464px}
-.ico-ticket-reopened {background-image: url('/quesosar/web/images/tools/icons/event_icons/event-icons-sprite.png'); background-position: left -480px}
-.ico-ticket-test {background-image: url('/quesosar/web/images/tools/icons/event_icons/ico-ticket-test.png'); background-position: left top}
-.ico-ticket-updated {background-image: url('/quesosar/web/images/tools/icons/event_icons/ico-ticket-updated.png'); background-position: left top}
-.ico-time {background-image: url('/quesosar/web/images/tools/icons/event_icons/event-icons-sprite.png'); background-position: left -528px}
-.ico-url {background-image: url('/quesosar/web/images/tools/icons/event_icons/event-icons-sprite.png'); background-position: left -544px}
-.ico-user {background-image: url('/quesosar/web/images/tools/icons/event_icons/event-icons-sprite.png'); background-position: left top}
-.ico-wiki {background-image: url('/quesosar/web/images/tools/icons/event_icons/event-icons-sprite.png'); background-position: left -576px}
-.ico-changeset-comment {background-image: url('/quesosar/web/images/tools/icons/event_icons/event-icons-sprite.png'); background-position: left -592px}
+.ico-add-user {background-image: url('../images/tools/icons/event_icons/event-icons-sprite.png'); background-position: left -0px}
+.ico-application {background-image: url('../images/tools/icons/event_icons/event-icons-sprite.png'); background-position: left -16px}
+.ico-build-fail {background-image: url('../images/tools/icons/event_icons/event-icons-sprite.png'); background-position: left -32px}
+.ico-build-ok {background-image: url('../images/tools/icons/event_icons/event-icons-sprite.png'); background-position: left -48px}
+.ico-build {background-image: url('../images/tools/icons/event_icons/event-icons-sprite.png'); background-position: left -64px}
+.ico-changeset {background-image: url('../images/tools/icons/event_icons/event-icons-sprite.png'); background-position: left -80px}
+.ico-code-commit {background-image: url('../images/tools/icons/event_icons/event-icons-sprite.png'); background-position: left -96px}
+/* FIXME add to sprites */ .ico-gerrit {background-image: url(../images/tools/icons/event_icons/ico-gerrit.png)}
+.ico-comment {background-image: url('../images/tools/icons/event_icons/event-icons-sprite.png'); background-position: left -112px}
+.ico-commit {background-image: url('../images/tools/icons/event_icons/event-icons-sprite.png'); background-position: left -96px}
+.ico-deploy-request-log {background-image: url('../images/tools/icons/event_icons/event-icons-sprite.png'); background-position: left -128px}
+.ico-deploy-request-send {background-image: url('../images/tools/icons/event_icons/event-icons-sprite.png'); background-position: left -144px}
+.ico-deploy-response-failed {background-image: url('../images/tools/icons/event_icons/event-icons-sprite.png'); background-position: left -160px}
+.ico-deploy-response-successful {background-image: url('../images/tools/icons/event_icons/event-icons-sprite.png'); background-position: left -176px}
+.ico-document {background-image: url('../images/tools/icons/event_icons/event-icons-sprite.png'); background-position: left -192px}
+.ico-events {background-image: url('../images/tools/icons/event_icons/event-icons-sprite.png'); background-position: left -208px}
+.ico-file {background-image: url('../images/tools/icons/event_icons/event-icons-sprite.png'); background-position: left -224px}
+.ico-image {background-image: url('../images/tools/icons/event_icons/event-icons-sprite.png'); background-position: left -240px}
+.ico-job-agreement {background-image: url('../images/tools/icons/event_icons/event-icons-sprite.png'); background-position: left -256px}
+.ico-job-posting {background-image: url('../images/tools/icons/event_icons/event-icons-sprite.png'); background-position: left -272px}
+.ico-merge-request {background-image: url('../images/tools/icons/event_icons/event-icons-sprite.png'); background-position: left -288px}
+.ico-message {background-image: url('../images/tools/icons/event_icons/event-icons-sprite.png'); background-position: left -304px}
+.ico-milestone {background-image: url('../images/tools/icons/event_icons/event-icons-sprite.png'); background-position: left -320px}
+.ico-scrum {background-image: url('../images/tools/icons/event_icons/event-icons-sprite.png'); background-position: left -336px}
+.ico-server-disabled {background-image: url('../images/tools/icons/event_icons/event-icons-sprite.png'); background-position: left -352px}
+.ico-space {background-image: url('../images/tools/icons/event_icons/event-icons-sprite.png'); background-position: left -368px}
+.ico-ticket-commented {background-image: url('../images/tools/icons/event_icons/ico-ticket-commented.png'); background-position: left top}
+.ico-ticket-created {background-image: url('../images/tools/icons/event_icons/ico-ticket-created.png'); background-position: left top}
+.ico-ticket-fixed {background-image: url('../images/tools/icons/event_icons/ico-ticket-fixed.png'); background-position: left top}
+.ico-ticket-invalidated {background-image: url('../images/tools/icons/event_icons/event-icons-sprite.png'); background-position: left -432px}
+.ico-ticket-milestones {background-image: url('../images/tools/icons/event_icons/event-icons-sprite.png'); background-position: left -448px}
+.ico-ticket {background-image: url('../images/tools/icons/event_icons/event-icons-sprite.png'); background-position: left -464px}
+.ico-ticket-reopened {background-image: url('../images/tools/icons/event_icons/event-icons-sprite.png'); background-position: left -480px}
+.ico-ticket-test {background-image: url('../images/tools/icons/event_icons/ico-ticket-test.png'); background-position: left top}
+.ico-ticket-updated {background-image: url('../images/tools/icons/event_icons/ico-ticket-updated.png'); background-position: left top}
+.ico-time {background-image: url('../images/tools/icons/event_icons/event-icons-sprite.png'); background-position: left -528px}
+.ico-url {background-image: url('../images/tools/icons/event_icons/event-icons-sprite.png'); background-position: left -544px}
+.ico-user {background-image: url('../images/tools/icons/event_icons/event-icons-sprite.png'); background-position: left top}
+.ico-wiki {background-image: url('../images/tools/icons/event_icons/event-icons-sprite.png'); background-position: left -576px}
+.ico-changeset-comment {background-image: url('../images/tools/icons/event_icons/event-icons-sprite.png'); background-position: left -592px}
 #RB_overlay, .RB_overlay {position: absolute; z-index:100; width: 100%; height: 100%; top: 0; left: 0; right: 0; bottom: 0; min-height:100%; background-color: #000; /* for IE */ filter: alpha(opacity=60); /* CSS3 standard */ opacity:0.6}
-#RB_loading {z-index: 101; width: 70px; margin-left: auto; margin-right: auto; margin-top: 200px; padding-bottom: 30px; text-align: center; background: transparent url(/quesosar/web/images/redbox_spinner.gif) no-repeat bottom center}
+#RB_loading {z-index: 101; width: 70px; margin-left: auto; margin-right: auto; margin-top: 200px; padding-bottom: 30px; text-align: center; background: transparent url(../images/redbox_spinner.gif) no-repeat bottom center}
 #RB_window, .RB_window {z-index: 102; background-color: #FFFFFF; display: block; text-align: left; overflow: hidden; margin: 20px auto 0 auto; position:fixed; position: absolute; max-height: 90%!important; overflow-y: auto}
 
 
@@ -1910,22 +1910,22 @@ a.get-space {margin-right: 0.5em}
     
 }
 #barra .modificar a{
-    background: url(/quesosar/web/images/tools/icons/event_icons/ico-edit.png) top left no-repeat;
+    background: url(../images/tools/icons/event_icons/ico-edit.png) top left no-repeat;
     padding: 0 0 10px 20px;
 }
 #barra .pdf a{
-    background: url(/quesosar/web/images/tools/icons/event_icons/fico_pdf.gif) top left no-repeat;
+    background: url(../images/tools/icons/event_icons/fico_pdf.gif) top left no-repeat;
     padding: 0 0 10px 20px;
 }
 #barra .volver a{
-    background: url(/quesosar/web/images/tools/icons/event_icons/ico-back.png) top left no-repeat;
+    background: url(../images/tools/icons/event_icons/ico-back.png) top left no-repeat;
     padding: 0 0 10px 20px;
 }
 #barra .eliminar a{
-    background: url(/quesosar/web/images/tools/icons/event_icons/ico_trash.gif) top left no-repeat;
+    background: url(../images/tools/icons/event_icons/ico_trash.gif) top left no-repeat;
     padding: 0 0 10px 20px;
 }
 #barra .rechazar a{
-    background: url(/quesosar/web/images/tools/icons/event_icons/remove.gif) top left no-repeat;
+    background: url(../images/tools/icons/event_icons/remove.gif) top left no-repeat;
     padding: 0 0 10px 20px;
 }

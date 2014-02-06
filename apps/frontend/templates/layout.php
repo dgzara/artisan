@@ -39,7 +39,7 @@
 
                     <div id="logo">
                         <a href="<?php echo url_for('homepage')?>">
-                            <img src="/web/images/logo.png" height="50" width="49" alt="Ir al inicio" title="Ir al inicio"></img>
+                            <img src="../images/logo.png" height="50" width="49" alt="Ir al inicio" title="Ir al inicio"></img>
                         </a>
                     </div>
                     <h1 class="header-w clear-float">

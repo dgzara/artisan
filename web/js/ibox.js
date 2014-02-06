@@ -532,7 +532,7 @@ var iBox = function() {
 		_pub.setOpacity(null, els.overlay, 0);
 		// firefox mac has issues with opacity and flash
 		if (!_pub.is_firefox) els.overlay.style.background = '#000000';
-		else els.overlay.style.backgroundImage = "url('http://www.quesosartisan.com/web/images/bg.png')";
+		else els.overlay.style.backgroundImage = "url('http://www.quesosartisan.com../images/bg.png')";
 		els.overlay.id = 'ibox_overlay';
 		params = {position: 'absolute', top: 0, left: 0, width: '100%'};
 		_pub.updateObject(els.overlay.style, params);

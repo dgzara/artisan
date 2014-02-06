@@ -144,7 +144,7 @@ $.fn.dataTableExt.afnFiltering.push(
 //          "sSearch": "Buscar en todas las columnas:"
 //      },
 //      "bProcessing": true,
-//      "bServerSide": true,
+        "bServerSide": true,
 //      "sPaginationType": "full_numbers",
 //      "sAjaxSource": "<?php echo url_for('lote/get_data') ?>",
 //      "fnDrawCallback": function() {
@@ -156,7 +156,7 @@ $.fn.dataTableExt.afnFiltering.push(
 //                 sticky: true,
 //                 mouseOutClose: true,
 //                 closePosition: 'title',
-//                 closeText: '<img src="../web/images/cross.png" alt="close" />'
+//                 closeText: '<img src="..../images/cross.png" alt="close" />'
 //             });
 //         },       
 //      "fnServerData": fnDataTablesPipeline      
@@ -172,7 +172,7 @@ $(document).ready(function() {
         "bStateSave": true,
         "sPaginationType": "full_numbers",
         "bProcessing": true,
-//      "bServerSide": true,
+        "bServerSide": true,
         "sAjaxSource": "<?php echo url_for('lote/get_data') ?>",
         "aoColumnDefs": [
             { "aTargets": [ 1 ], "sType": "uk_date" }
@@ -197,7 +197,7 @@ $(document).ready(function() {
                 sticky: true,
                 mouseOutClose: true,
                 closePosition: 'title',
-                closeText: '<img src="../web/images/cross.png" alt="close" />'
+                closeText: '<img src="..../images/cross.png" alt="close" />'
             });
         }   
 	} );

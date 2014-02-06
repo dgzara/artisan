@@ -45,7 +45,7 @@ $(document).ready(function() {
                 "bStateSave": true,
                 "sPaginationType": "full_numbers",
                 "bProcessing": true,
-//      "bServerSide": true,
+        "bServerSide": true,
                 "sAjaxSource": "<?php echo url_for('productos_competencia/index') ?>",
                 "fnInitComplete": function() {
 			/* Add a select menu for each TH element in the table footer */
