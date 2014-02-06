@@ -38,8 +38,8 @@ class localActions extends sfActions
           "4" => $v->getContacto_1(),
           "5" => $v->getEmail_1(),
           "6" => $v->getCel_1(),
-          "7" => '<a href="'.$ver.'"><img src="../images/tools/icons/event_icons/ico-story.png" border="0"></a>',
-          "8" => '<a href="'.$mod.'"><img src="../images/tools/icons/event_icons/ico-edit.png" border="0"></a></a>',
+          "7" => '<a href="'.$ver.'"><img src="images/tools/icons/event_icons/ico-story.png" border="0"></a>',
+          "8" => '<a href="'.$mod.'"><img src="images/tools/icons/event_icons/ico-edit.png" border="0"></a></a>',
         );
       }
 

@@ -39,8 +39,8 @@ class insumoActions extends sfActions
           "1" => $v->getNombre(),
           "2" => $v->getPresentacion().' '.$valor,
           "3" => $v->getStockCritico(),
-          "4" => '<a href="'.$ver.'"><img src="../images/tools/icons/event_icons/ico-story.png" border="0"></a>',
-          "5" => '<a href="'.$mod.'"><img src="../images/tools/icons/event_icons/ico-edit.png" border="0"></a></a>',
+          "4" => '<a href="'.$ver.'"><img src="images/tools/icons/event_icons/ico-story.png" border="0"></a>',
+          "5" => '<a href="'.$mod.'"><img src="images/tools/icons/event_icons/ico-edit.png" border="0"></a></a>',
         );
       }
 

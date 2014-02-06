@@ -45,14 +45,14 @@
                         	<td>
                                 <?php
                                   if($v->getAccion()!='Validar'){
-                                    $deshacer = '<a href="ordenventa/deshacer?id='.$v->getId().'"><img src="../images/tools/icons/event_icons/ico-undo.png" border="0"></a>';
+                                    $deshacer = '<a href="ordenventa/deshacer?id='.$v->getId().'"><img src="images/tools/icons/event_icons/ico-undo.png" border="0"></a>';
                                     echo $deshacer;
                                   }
                                 ?>
                             </td>
-                        	<td><a class="jt" rel="ordenventa/preview/<?php echo $v->getId()?> " title="Orden Venta <?php echo $v->getNumero()?>"  href="<?php echo url_for('ordenventa/show?id='.$v->getId()) ?>"><img src="../images/tools/icons/event_icons/ico-story.png" border="0"></a></td>
+                        	<td><a class="jt" rel="ordenventa/preview/<?php echo $v->getId()?> " title="Orden Venta <?php echo $v->getNumero()?>"  href="<?php echo url_for('ordenventa/show?id='.$v->getId()) ?>"><img src="images/tools/icons/event_icons/ico-story.png" border="0"></a></td>
                         	<?php if($sf_user->hasPermission("Ver_Ventas_OrdenVenta_Editar")):?>
-                            		<td><a href="<?php echo url_for('ordenventa/edit?id='.$v->getId()) ?>"><img src="../images/tools/icons/event_icons/ico-edit.png" border="0"></a></td>
+                            		<td><a href="<?php echo url_for('ordenventa/edit?id='.$v->getId()) ?>"><img src="images/tools/icons/event_icons/ico-edit.png" border="0"></a></td>
                         	<?php endif;?>
                             <td><input type="checkbox" class='checkbox1' value="<?php echo $v->getId()?>"></td>
                     	</tr>

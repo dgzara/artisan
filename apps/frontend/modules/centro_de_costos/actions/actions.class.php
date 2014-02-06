@@ -35,8 +35,8 @@ class centro_de_costosActions extends sfActions
           "1" => $v->getAreaDeCostos()->getNombre(),
           "2" => $v->getNombre(),
           "3" => $v->getDescripcion(),
-          "4" => '<a href="'.$ver.'"><img src="../images/tools/icons/event_icons/ico-story.png" border="0"></a>',
-          "5" => '<a href="'.$mod.'"><img src="../images/tools/icons/event_icons/ico-edit.png" border="0"></a></a>',
+          "4" => '<a href="'.$ver.'"><img src="images/tools/icons/event_icons/ico-story.png" border="0"></a>',
+          "5" => '<a href="'.$mod.'"><img src="images/tools/icons/event_icons/ico-edit.png" border="0"></a></a>',
         );
       }
 

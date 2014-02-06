@@ -39,8 +39,8 @@ class sfGuardUserActions extends autoSfGuardUserActions {
               "2" => $v->getLastName(),
               "3" => $v->getEmailAddress(),
               "4" => $v->getDateTimeObject('last_login')->format('d-m-Y'),
-              "5" => '<a href="'.$ver.'"><img src="../images/tools/icons/event_icons/ico-story.png" border="0"></a>',
-              "6" => '<a href="'.$mod.'"><img src="../images/tools/icons/event_icons/ico-edit.png" border="0"></a></a>',
+              "5" => '<a href="'.$ver.'"><img src="images/tools/icons/event_icons/ico-story.png" border="0"></a>',
+              "6" => '<a href="'.$mod.'"><img src="images/tools/icons/event_icons/ico-edit.png" border="0"></a></a>',
             );
           }
 

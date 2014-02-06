@@ -39,8 +39,8 @@ class clienteActions extends sfActions
           "6" => $v->getContacto(),
           "7" => $v->getEmail(),
           "8" => $v->getCel(),
-          "9" => '<a href="'.$ver.'"><img src="../images/tools/icons/event_icons/ico-story.png" border="0"></a>',
-          "10" => '<a href="'.$mod.'"><img src="../images/tools/icons/event_icons/ico-edit.png" border="0"></a></a>',
+          "9" => '<a href="'.$ver.'"><img src="images/tools/icons/event_icons/ico-story.png" border="0"></a>',
+          "10" => '<a href="'.$mod.'"><img src="images/tools/icons/event_icons/ico-edit.png" border="0"></a></a>',
         );
       }
 

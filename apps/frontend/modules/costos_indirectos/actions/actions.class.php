@@ -40,8 +40,8 @@ class costos_indirectosActions extends sfActions
           "4" => $v->getBodega()->getNombre(),
           "5" => '$'.$this->formato->format($v->getMonto(),'d','CLP'),
           "6" => date('d-m-Y', strtotime($v->getFecha())),
-          "7" => '<a href="'.$ver.'"><img src="../images/tools/icons/event_icons/ico-story.png" border="0"></a>',
-          "8" => '<a href="'.$mod.'"><img src="../images/tools/icons/event_icons/ico-edit.png" border="0"></a></a>',
+          "7" => '<a href="'.$ver.'"><img src="images/tools/icons/event_icons/ico-story.png" border="0"></a>',
+          "8" => '<a href="'.$mod.'"><img src="images/tools/icons/event_icons/ico-edit.png" border="0"></a></a>',
         );
       }
 

@@ -114,7 +114,7 @@ class loteActions extends sfActions
           $deshacer = '';
           if($v->getAccion() != 'A Madurar' && $v->getAccion() != 'Rechazado'){
             $des = $this->getController()->genUrl('lote/deshacer?id='.$v->getId());
-            $deshacer = '<a href="'.$des.'"><img src="../images/tools/icons/event_icons/ico-back.png" border="0"></a>';
+            $deshacer = '<a href="'.$des.'"><img src="images/tools/icons/event_icons/ico-back.png" border="0"></a>';
           }
           
           $estado_accion = $v->getAccion();
@@ -147,8 +147,8 @@ class loteActions extends sfActions
             "7" => $v->getRendimiento().'%',
             "8" => $estado_accion,
             "9" => $deshacer,
-            "10" => '<a class="jt" rel="/web/lote/preview/'.$v->getId().'" title="Lote '.$v->getNumero().'" href="'.$ver.'"><img src="../images/tools/icons/event_icons/ico-story.png" border="0" /></a>',
-            "11" => '<a href="'.$mod.'"><img src="../images/tools/icons/event_icons/ico-edit.png" border="0"></a></a>',
+            "10" => '<a class="jt" rel="/web/lote/preview/'.$v->getId().'" title="Lote '.$v->getNumero().'" href="'.$ver.'"><img src="images/tools/icons/event_icons/ico-story.png" border="0" /></a>',
+            "11" => '<a href="'.$mod.'"><img src="images/tools/icons/event_icons/ico-edit.png" border="0"></a></a>',
             "12" => '<input type="checkbox" class="checkbox1" value="'.$v->getId().'" accion="'.$v->getAccion().'"> <br>',
           );
        }

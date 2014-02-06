@@ -45,7 +45,7 @@ class capturaActions extends sfActions
           "4" => $v->getLocal()->getNombreCompleto(),
           "5" => '$'.$formato->format($v->getPrecio(),'d', 'CLP'),
           "6" => $v->getStock(),
-          "7" => '<a href="'.$ver.'"><img src="../images/tools/icons/event_icons/ico-story.png" border="0"></a>'
+          "7" => '<a href="'.$ver.'"><img src="images/tools/icons/event_icons/ico-story.png" border="0"></a>'
         );
       }
 

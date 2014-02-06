@@ -43,8 +43,8 @@ class planproduccionActions extends sfActions
           "1" => $v->getDateTimeObject('fecha')->format('d-m-Y'),
           "2" => $v->getComentarios(),
           "3" => $list_productos,
-          "4" => '<a class="jt" rel="/web/planproduccion/preview/'.$v->getId().'" title="Plan de Producción '.$v->getId().'" href="'.$ver.'"><img src="../images/tools/icons/event_icons/ico-story.png" border="0" /></a>',
-          "5" => '<a href="'.$mod.'"><img src="../images/tools/icons/event_icons/ico-edit.png" border="0"></a></a>',
+          "4" => '<a class="jt" rel="/web/planproduccion/preview/'.$v->getId().'" title="Plan de Producción '.$v->getId().'" href="'.$ver.'"><img src="images/tools/icons/event_icons/ico-story.png" border="0" /></a>',
+          "5" => '<a href="'.$mod.'"><img src="images/tools/icons/event_icons/ico-edit.png" border="0"></a></a>',
         );
       }
 	  
