@@ -144,7 +144,7 @@ $.fn.dataTableExt.afnFiltering.push(
 //          "sSearch": "Buscar en todas las columnas:"
 //      },
 //      "bProcessing": true,
-        "bServerSide": true,
+//      "bServerSide": true,
 //      "sPaginationType": "full_numbers",
 //      "sAjaxSource": "<?php echo url_for('lote/get_data') ?>",
 //      "fnDrawCallback": function() {
