@@ -1314,9 +1314,9 @@ public function executeDelete(sfWebRequest $request)
                   "3" => $v->getDateTimeObject('fecha_bf')->format('d-m-Y'),
                   "4" => $v->getCliente()->getName(),
                   "5" => $v->getLocal()->getNombre(),
-                  "6" => '$'.$formato->format($v->getValorNeto(),'d','CLP'),
-                  "7" => '$'.$formato->format($v->getIVA(),'d','CLP'),
-                  "8" => '$'.$formato->format($v->getValorTotal(),'d','CLP'),
+                  "6" => '$'.$v->getValorNeto(),
+                  "7" => '$'.$v->getIVA(),
+                  "8" => '$'.$v->getValorTotal(),
                   "9" => '<a href="'.$ver.'"><img src="images/tools/icons/event_icons/ico-story.png" border="0"></a>',
                   "10" => '<a href="'.$mod.'"><img src="images/tools/icons/event_icons/ico-edit.png" border="0"></a></a>',
                 );
