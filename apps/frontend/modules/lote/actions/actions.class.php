@@ -250,9 +250,43 @@ class loteActions extends sfActions
   {
       $fecha= new DateTime("23-06-2011");
       if ($request->isXmlHttpRequest())
-      {
-        $lotes = Doctrine_Core::getTable('Lote')->findAll();
-        foreach ($lotes as $lote) {
+      {        
+        $q = Doctrine_Query::create()
+             ->from('Lote')
+             ->where('l.accion != "Cerrado"')
+             ->andWhere('l.fecha_elaboracion > ?', $fecha);
+
+        $asc_desc = $request->getParameter('sSortDir_0');
+        $col = $request->getParameter('iSortCol_0');
+
+        switch($col)
+        {
+          case 0:
+            $q->orderBy('numero '.$asc_desc);
+            break;
+          case 1:
+            $q->orderBy('fecha_elaboracion '.$asc_desc);
+            break;
+          case 2:
+            //$q->orderBy('pauta_id '.$asc_desc);
+            break;
+          case 3:
+            $q->from('Lote l, l.Producto p')
+              ->orderBy('p.nombre '.$asc_desc);
+            break;
+        }
+
+        $pager = new sfDoctrinePager('Lote', $request->getParameter('iDisplayLength'));
+        $pager->setQuery($q);
+        //Paginación por partes
+        $req_page = ((int)$request->getParameter('iDisplayStart') / (int)$request->getParameter('iDisplayLength')) + 1;
+        $pager->setPage($req_page);
+        $pager->init();
+
+        $aaData = array();
+        $list = $pager->getResults();
+
+        foreach ($list as $lote) {
           if(($lote->getFecha_Salida())!=null)
           {
             $vencimiento= $lote->dateadd($lote->getFecha_Salida(), $lote->getProducto()->getDuracion(),0,0,0,0,0 );
@@ -261,9 +295,9 @@ class loteActions extends sfActions
           {
             $vencimiento = date("d M Y");
           }
-          $cantidadA=$lote-> getCantidad_Actual() - $lote->getVendidas();
-          $fecha_elaboracion= $lote-> getDateTimeObject('fecha_elaboracion');
-          if($vencimiento<date("d M Y") && ($lote-> getAccion())!='Cerrado' && $cantidadA>0 && $fecha_elaboracion>$fecha)
+          $cantidadA = $lote->getCantidad_Actual() - $lote->getVendidas();
+          $fecha_elaboracion = $lote->getDateTimeObject('fecha_elaboracion');
+          if($vencimiento<date("d M Y") && ($lote->getAccion())!='Cerrado' && $cantidadA>0 && $fecha_elaboracion>$fecha)
           {
             $link = 'close/id/'.$lote->getId();
             $aaData[]= array(
@@ -282,12 +316,13 @@ class loteActions extends sfActions
         }
         
         $output = array(
-          "iTotalRecords" => count($aaData),
-          "iTotalDisplayRecords" => count($aaData),
+          "iTotalRecords" => count($pager),
+          "iTotalDisplayRecords" => count($pager),
           "aaData" => $aaData,
+          "sEcho" => $request->getParameter('sEcho'),
         );
-        echo json_encode($output);
-        exit();
+        
+        return $this->renderText(json_encode($output));
       }
   }
 

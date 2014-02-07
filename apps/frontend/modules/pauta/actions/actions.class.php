@@ -634,21 +634,33 @@ class pautaActions extends sfActions
   {
     if ($request->isXmlHttpRequest())
     {
-//      $items = $request->getParameter('items');
-//      $desde = $items[0]['name'];
-//      $hasta = $items[1]['name'];
-
         $desde = '2000/01/01';
         $hasta = '2100/01/01';
 
       $q = Doctrine_Query::create()
-           ->from('Pauta')
-           ->where('fecha BETWEEN ? AND ?', array($desde, $hasta))
-           ->orderBy('fecha DESC');
+           ->from('Pauta');
+
+      $asc_desc = $request->getParameter('sSortDir_0');
+      $col = $request->getParameter('iSortCol_0');
+
+      switch($col)
+      {
+        case 0:
+          $q->orderBy('id '.$asc_desc);
+          break;
+        case 1:
+          $q->from('Pauta p, p.PlantillaPauta pp')
+            ->orderBy('pp.nombre '.$asc_desc);
+          break;
+        case 2:
+          $q->orderBy('fecha '.$asc_desc);
+          break;
+      }
 
       $pager = new sfDoctrinePager('Pauta', $request->getParameter('iDisplayLength'));
       $pager->setQuery($q);
-      $pager->setPage($request->getParameter('page', 1));
+      $req_page = ((int)$request->getParameter('iDisplayStart') / (int)$request->getParameter('iDisplayLength')) + 1;
+      $pager->setPage($req_page);
       $pager->init();
 
       $aaData = array();
@@ -670,8 +682,9 @@ class pautaActions extends sfActions
 
       $output = array(
         "iTotalRecords" => count($pager),
-        "iTotalDisplayRecords" => $request->getParameter('iDisplayLength'),
+        "iTotalDisplayRecords" => count($pager),
         "aaData" => $aaData,
+        "sEcho" => $request->getParameter('sEcho'),
       );
 
       return $this->renderText(json_encode($output));

@@ -75,18 +75,21 @@ $.fn.dataTableExt.afnFiltering.push(
 
 $(document).ready(function() {
 	/* Initialise datatables */
-        var oTable = $('#example').dataTable( {
-		"oLanguage": {
-			"sSearch": "Buscar en todas las columnas:"
-		},
-                "bStateSave": true,
-                "sPaginationType": "full_numbers",
-                "bProcessing": true,
+    var oTable = $('#example').dataTable( {
+    	"oLanguage": {
+    		"sSearch": "Buscar en todas las columnas:"
+    	},
+        "bStateSave": true,
+        "sPaginationType": "full_numbers",
+        "bProcessing": true,
         "bServerSide": true,
-                "sAjaxSource": "<?php echo url_for('pauta/get_data') ?>",
-                "aoColumnDefs": [
-                    { "aTargets": [ 2 ], "sType": "uk_date" }
-                ],
+        "sAjaxSource": "<?php echo url_for('pauta/get_data') ?>",
+        "aoColumnDefs": [
+            { "aTargets": [ 2 ], "sType": "uk_date" }
+        ],
+        "fnServerParams": function ( aoData ) {
+          aoData.push( { "iSortCol_0": 1, "iSortingCols": 1} );
+        },
         "fnDrawCallback": function() {
             $('a.jt').cluetip({
                 cluetipClass: 'jtip',
@@ -100,7 +103,7 @@ $(document).ready(function() {
             });
         }, 
         "fnInitComplete": function() {
-				/* Add a select menu for each TH element in the table footer */
+    			/* Add a select menu for each TH element in the table footer */
                         $("tfoot th").each( function ( i ) {
                                 if(i != 0 && i != 3 && i != 4){
                                     this.innerHTML = fnCreateSelect( oTable.fnGetColumnData(i) );
@@ -109,8 +112,8 @@ $(document).ready(function() {
                                     } );
                                 }
                         } );
-		}
-	} );
+    	}
+    } );
 
 	/* Add event listeners to the two range filtering inputs */
 	$('#filtrar_desde').change( function() { oTable.fnDraw(); } );

@@ -168,10 +168,40 @@ class ventasActions extends sfActions
       $q = Doctrine_Query::create()
            ->from('Lote')
            ->Where('accion = ?', 'Recepcionar');
-      
+    
+      $asc_desc = $request->getParameter('sSortDir_0');
+      $col = $request->getParameter('iSortCol_0');
+
+      switch($col)
+      {
+        case 0:
+          $q->orderBy('id '.$asc_desc);
+          break;
+        case 1:
+          $q->orderBy('fecha_elaboracion '.$asc_desc);
+          break;
+        case 2:
+          $q->from('Lote l, l.Producto p')
+            ->orderBy('p.nombre '.$asc_desc);
+          break;
+        case 3:
+          $q->orderBy('numero '.$asc_desc);
+          break;
+        case 4:
+          $q->orderBy('comentarios '.$asc_desc);
+          break;
+        case 5:
+          $q->orderBy('cantidad '.$asc_desc);
+          break;
+        case 6:
+          $q->orderBy('cantidad_actual '.$asc_desc);
+          break;
+      }
+
       $pager = new sfDoctrinePager('Lote', $request->getParameter('iDisplayLength'));
       $pager->setQuery($q);
-      $pager->setPage($request->getParameter('page', 1));
+      $req_page = ((int)$request->getParameter('iDisplayStart') / (int)$request->getParameter('iDisplayLength')) + 1;
+      $pager->setPage($req_page);
       $pager->init();
 
       $aaData = array();
@@ -195,8 +225,9 @@ class ventasActions extends sfActions
 
       $output = array(
         "iTotalRecords" => count($pager),
-        "iTotalDisplayRecords" => $request->getParameter('iDisplayLength'),
+        "iTotalDisplayRecords" => count($pager),
         "aaData" => $aaData,
+        "sEcho" => $request->getParameter('sEcho'),
       );
 
       return $this->renderText(json_encode($output));

@@ -41,14 +41,17 @@ $(document).ready(function() {
         "oLanguage": {
             "sSearch": "Buscar en todas las columnas:"
         },
-                "bStateSave": true,
-                "sPaginationType": "full_numbers",
-                "bProcessing": true,
+        "bStateSave": true,
+        "sPaginationType": "full_numbers",
+        "bProcessing": true,
         "bServerSide": true,
-                "sAjaxSource": "<?php echo url_for('lote/cierrelote') ?>",
-                "aoColumnDefs": [
-                    { "aTargets": [ 1 ], "sType": "uk_date" }
-                ]
+        "sAjaxSource": "<?php echo url_for('lote/cierrelote') ?>",
+        "fnServerParams": function ( aoData ) {
+          aoData.push( { "iSortCol_0": 1, "iSortingCols": 1} );
+        },
+        "aoColumnDefs": [
+            { "aTargets": [ 1 ], "sType": "uk_date" }
+        ]
     });
 });
 </script>

@@ -86,24 +86,27 @@ $(document).ready(function() {
 		"oLanguage": {
 			"sSearch": "Buscar en todas las columnas:"
 		},
-                "bStateSave": true,
-                "sPaginationType": "full_numbers",
-                "bProcessing": true,
+        "bStateSave": true,
+        "sPaginationType": "full_numbers",
+        "bProcessing": true,
         "bServerSide": true,
-                "sAjaxSource": "<?php echo url_for('ventas/get_data') ?>",
-                "aoColumnDefs": [
-                    { "aTargets": [ 2 ], "sType": "uk_date" }
-                ],
-                "fnInitComplete": function() {
-			/* Add a select menu for each TH element in the table footer */
-                        $("tfoot th").each( function ( i ) {
-                                if(i != 0 && i != 7){
-                                    this.innerHTML = fnCreateSelect( oTable.fnGetColumnData(i) );
-                                    $('select', this).change( function () {
-                                            oTable.fnFilter( $(this).val(), i );
-                                    } );
-                                }
+        "sAjaxSource": "<?php echo url_for('ventas/get_data') ?>",
+        "aoColumnDefs": [
+            { "aTargets": [ 2 ], "sType": "uk_date" }
+        ],
+        "fnServerParams": function ( aoData ) {
+          aoData.push( { "iSortCol_0": 1, "iSortingCols": 1} );
+        },
+        "fnInitComplete": function() {
+	    /* Add a select menu for each TH element in the table footer */
+            $("tfoot th").each( function ( i ) {
+                    if(i != 0 && i != 7){
+                        this.innerHTML = fnCreateSelect( oTable.fnGetColumnData(i) );
+                        $('select', this).change( function () {
+                                oTable.fnFilter( $(this).val(), i );
                         } );
+                    }
+            } );
 		}
 	} );
 

@@ -124,52 +124,34 @@ $(document).ready(function() {
 		"oLanguage": {
 			"sSearch": "Buscar en todas las columnas:"
 		},
-                "bStateSave": true,
-                "sPaginationType": "full_numbers",
-                "bProcessing": true,
+        "bStateSave": true,
+        "sPaginationType": "full_numbers",
+        "bProcessing": true,
         "bServerSide": true,
-                "sAjaxSource": "<?php echo url_for('ordencompra/get_data') ?>",
-
-                "aoColumnDefs": [
-
-                    { "aTargets": [ 1 ], "sType": "uk_date" },
-
-                    { "sClass": "right", "aTargets": [ 5 ], "sType": "currency" }
-
-                ],
-
-                "fnInitComplete": function() {
-
-			/* Add a select menu for each TH element in the table footer */
-
-                        $("tfoot th").each( function ( i ) {
-
-                                if(i != 0 && i != 3 && i != 6 && i!= 7 && i != 8){
-
-                                    this.innerHTML = fnCreateSelect( oTable.fnGetColumnData(i) );
-
-                                    $('select', this).change( function () {
-
-                                            oTable.fnFilter( $(this).val(), i );
-
-                                    } );
-
-                                }
-
-                        } );
-
+        "sAjaxSource": "<?php echo url_for('ordencompra/get_data') ?>",
+        "aoColumnDefs": [
+            { "aTargets": [ 1 ], "sType": "uk_date" },
+            { "sClass": "right", "aTargets": [ 5 ], "sType": "currency" }
+        ],
+        "fnServerParams": function ( aoData ) {
+          aoData.push( { "iSortCol_0": 1, "iSortingCols": 1} );
+        },
+        "fnInitComplete": function() {
+	/* Add a select menu for each TH element in the table footer */
+            $("tfoot th").each( function ( i ) {
+                if(i != 0 && i != 3 && i != 6 && i!= 7 && i != 8){
+                    this.innerHTML = fnCreateSelect( oTable.fnGetColumnData(i) );
+                    $('select', this).change( function () {
+                            oTable.fnFilter( $(this).val(), i );
+                    } );
+                }
+            });
 		}
-
 	} );
 
-
-
 	/* Add event listeners to the two range filtering inputs */
-
 	$('#filtrar_desde').change( function() { oTable.fnDraw(); } );
-
 	$('#filtrar_hasta').change( function() { oTable.fnDraw(); } );
-
 } );
 
 </script>

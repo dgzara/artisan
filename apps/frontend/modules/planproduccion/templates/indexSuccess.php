@@ -88,6 +88,9 @@ $(document).ready(function() {
         "aoColumnDefs": [
             { "aTargets": [ 1 ], "sType": "uk_date" }
         ],
+        "fnServerParams": function ( aoData ) {
+          aoData.push( { "iSortCol_0": 1, "iSortingCols": 1} );
+        },
         "fnDrawCallback": function() {
     		$('a.jt').cluetip({
         	cluetipClass: 'jtip',

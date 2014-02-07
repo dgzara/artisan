@@ -1533,9 +1533,36 @@ EOF
         $q = Doctrine_Query::create()
              ->from('OrdenCompra');
 
+        $asc_desc = $request->getParameter('sSortDir_0');
+        $col = $request->getParameter('iSortCol_0');
+
+        switch($col)
+        {
+          case 0:
+            $q->orderBy('numero '.$asc_desc);
+            break;
+          case 1:
+            $q->orderBy('fecha '.$asc_desc);
+            break;
+          case 2:
+            $q->orderBy('proveedor_id '.$asc_desc);
+            break;
+          case 3:
+            $q->from('OrdenCompra o, o.OrdenCompraInsumo oc, o.Insumo i')
+              ->orderBy('i.nombre '.$asc_desc);
+            break;
+          case 4:
+            $q->select('o, sum(oc.neto) as neto')
+              ->from('OrdenCompra o, o.OrdenCompraInsumo oc')
+              ->orderBy('neto '.$asc_desc);
+            break;
+        }
+
         $pager = new sfDoctrinePager('OrdenCompra', $request->getParameter('iDisplayLength'));
         $pager->setQuery($q);
-        $pager->setPage($request->getParameter('page', 1));
+        $req_page = ((int)$request->getParameter('iDisplayStart') / (int)$request->getParameter('iDisplayLength')) + 1;
+        //$pager->setPage($request->getParameter('page', 1));
+        $pager->setPage($req_page);
         $pager->init();
 
         $aaData = array();
@@ -1605,9 +1632,11 @@ EOF
 
         $output = array(
           "iTotalRecords" => count($pager),
-          "iTotalDisplayRecords" => $request->getParameter('iDisplayLength'),
+          "iTotalDisplayRecords" => count($pager),
           "aaData" => $aaData,
+          "sEcho" => $request->getParameter('sEcho'),
         );
+
         return $this->renderText(json_encode($output));
        }
     }
