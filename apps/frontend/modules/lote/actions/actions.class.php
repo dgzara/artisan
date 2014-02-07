@@ -246,7 +246,7 @@ class loteActions extends sfActions
 
   }
 
-  public function executeCierreLote(sfWebRequest $request)
+  public function executeCierrelote(sfWebRequest $request)
   {
 
   }
