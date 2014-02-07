@@ -259,8 +259,12 @@ EOF
 
     );
 
+        // Adjuntamos el PDF
+        $data = $this->getPDF();
+        $attachment = Swift_Attachment::newInstance($data, 'artisan_oc_'.$orden_compra->getId().'.pdf', 'application/pdf');
+        $message->attach($attachment);
 
-
+        // Enviamos el correo
         $this->getMailer()->send($message);
 
 
@@ -1418,6 +1422,65 @@ EOF
         echo 'fail Form Insumo';
         $this->setTemplate('edit');
     }
+  }
+
+  protected function getPDF()
+  {
+      $config = sfTCPDFPluginConfigHandler::loadConfig();
+      sfTCPDFPluginConfigHandler::includeLangFile($this->getUser()->getCulture());
+
+      $doc_title    = "Orden de compra";
+      $doc_subject  = "Detalles del orden de compra";
+      $doc_keywords = "Artisan";
+      
+      //create new PDF document (document units are set by default to millimeters)
+      $pdf = new sfTCPDF(PDF_PAGE_ORIENTATION, PDF_UNIT, PDF_PAGE_FORMAT, true);
+
+      // set document information
+      $pdf->SetCreator(PDF_CREATOR);
+      $pdf->SetAuthor(PDF_AUTHOR);
+      $pdf->SetTitle($doc_title);
+      $pdf->SetSubject($doc_subject);
+      $pdf->SetKeywords($doc_keywords);
+
+      $pdf->SetHeaderData(PDF_HEADER_LOGO, PDF_HEADER_LOGO_WIDTH, PDF_HEADER_TITLE, PDF_HEADER_STRING, ALGO);
+      
+      //set margins
+      $pdf->SetMargins(PDF_MARGIN_LEFT, PDF_MARGIN_TOP, PDF_MARGIN_RIGHT);
+
+      //set auto page breaks
+      $pdf->SetAutoPageBreak(TRUE, PDF_MARGIN_BOTTOM);
+      $pdf->SetHeaderMargin(PDF_MARGIN_HEADER);
+      $pdf->SetFooterMargin(PDF_MARGIN_FOOTER);
+      $pdf->setImageScale(PDF_IMAGE_SCALE_RATIO); //set image scale factor
+
+      $pdf->setHeaderFont(Array(PDF_FONT_NAME_MAIN, '', PDF_FONT_SIZE_MAIN));
+      $pdf->setFooterFont(Array(PDF_FONT_NAME_DATA, '', PDF_FONT_SIZE_DATA));
+
+      //initialize document
+      $pdf->AliasNbPages();
+      $pdf->AddPage();
+
+      // set barcode
+      //$pdf->SetBarcode("FIRMA");
+
+      $orden_compra_id = $request->getParameter('orde_compra_id');
+      $orden_compra = Doctrine_Core::getTable('OrdenCompra')->find(array($request->getParameter('orden_compra_id')));
+
+      sfContext::getInstance()->getConfiguration()->loadHelpers('Partial');
+
+
+      $htmlcontent  = get_partial('ordencompra/pdf',array('orden_compra'=>$orden_compra));
+      $pdf->writeHTML($htmlcontent , true, 0);
+      
+      // add page header/footer
+      $pdf->setPrintHeader(true);
+      $pdf->setPrintFooter(true);
+
+      // Close and output PDF document
+      $pdf->Output();
+      // Stop symfony process
+      throw new sfStopException();
   }
 
   public function executePdf(sfWebRequest $request)
