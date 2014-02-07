@@ -30,7 +30,6 @@ Registro:
     cantidad_vieja : { type: integer, notnull: true }
     cantidad_nueva : { type: integer, notnull: true }
 
-
 Producto:
   actAs: { Timestampable: ~ }
   columns:

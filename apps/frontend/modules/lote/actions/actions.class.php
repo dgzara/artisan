@@ -324,6 +324,7 @@ class loteActions extends sfActions
         
         return $this->renderText(json_encode($output));
       }
+      return $this->renderText(json_encode(array('status' => 'fail')));
   }
 
   public function executeClose(sfWebRequest $request)

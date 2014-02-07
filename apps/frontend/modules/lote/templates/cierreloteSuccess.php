@@ -37,7 +37,7 @@
 <script type="text/javascript">
 $(document).ready(function() {
     /* Initialise datatables */
-        var oTable = $('#example').dataTable( {
+    var oTable = $('#example').dataTable( {
         "oLanguage": {
             "sSearch": "Buscar en todas las columnas:"
         },
@@ -46,12 +46,12 @@ $(document).ready(function() {
         "bProcessing": true,
         "bServerSide": true,
         "sAjaxSource": "<?php echo url_for('lote/cierrelote') ?>",
-        "fnServerParams": function ( aoData ) {
-          aoData.push( { "iSortCol_0": 1, "iSortingCols": 1} );
-        },
         "aoColumnDefs": [
             { "aTargets": [ 1 ], "sType": "uk_date" }
-        ]
+        ],
+        "fnServerParams": function ( aoData ) {
+            aoData.push( { "iSortCol_0": 1, "iSortingCols": 1} );
+        },
     });
 });
 </script>

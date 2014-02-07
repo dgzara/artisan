@@ -139,7 +139,7 @@ $.fn.dataTableExt.afnFiltering.push(
 
 $(document).ready(function() {
 	/* Initialise datatables */
-        var oTable = $('#example').dataTable( {
+    var oTable = $('#example').dataTable( {
 		"oLanguage": {
 			"sSearch": "Buscar en todas las columnas:"
 		},
