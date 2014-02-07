@@ -1258,49 +1258,75 @@ public function executeDelete(sfWebRequest $request)
         return $this->renderPartial('global/select', array('list' => $locales, 'name' => false, 'id' => false, 'selected_id' => 0));
     }
 
-    public function executeFactura(sfWebRequest $request){
-        ini_set('memory_limit', '512M');
-        ini_set('max_execution_time', '60');
+    public function executeFactura(sfWebRequest $request)
+    {
         if ($request->isXmlHttpRequest())
         {
-          $q = Doctrine_Query::create();
-          $q->from("OrdenVenta");
-          $q->where("boleta_factura = 'Factura'");
-          $q->orderBy("n_bf");
+            $q = Doctrine_Query::create();
+            $q->from("OrdenVenta o");
+            $q->where("o.boleta_factura = 'Factura'");
 
-          $pager = new sfDoctrinePager('OrdenVenta', $request->getParameter('iDisplayLength'));
-          $pager->setQuery($q);
-          $pager->setPage($request->getParameter('page', 1));
-          $pager->init();
+            $asc_desc = $request->getParameter('sSortDir_0');
+            $col = $request->getParameter('iSortCol_0');
 
+            switch($col)
+            {
+              case 0:
+                $q->orderBy('n_bf '.$asc_desc);
+                break;
+              case 1:
+                $q->orderBy('numero '.$asc_desc);
+                break;
+              case 2:
+                $q->orderBy('accion '.$asc_desc);
+                break;
+              case 3:
+                $q->orderBy('fecha_bf '.$asc_desc);
+                break;
+              case 4:
+                $q->from('OrdenVenta o, o.Cliente c')
+                  ->orderBy('c.name '.$asc_desc);
+                break;
+              case 5:
+                $q->from('OrdenVenta o, o.Local l')
+                  ->orderBy('l.nombre '.$asc_desc);
+                break;
+            }
 
-          $aaData = array();
-          $list = $pager->getResults();
-          foreach ($list as $v)
-          {
-            $ver = $this->getController()->genUrl('ordenventa/show?id='.$v->getId());
-            $mod = $this->getController()->genUrl('ordenventa/edit?id='.$v->getId());
+            $pager = new sfDoctrinePager('OrdenVenta', $request->getParameter('iDisplayLength'));
+            $pager->setQuery($q);
+            $req_page = ((int)$request->getParameter('iDisplayStart') / (int)$request->getParameter('iDisplayLength')) + 1;
+            $pager->setPage($req_page);
+            $pager->init();
 
-            $aaData[] = array(
-              "0" => $v->getNBf(),
-              "1" => '<a href="'.$ver.'">'.$v->getNumero().'</a>',
-              "2" => $v->getAccion(),
-              "3" => $v->getDateTimeObject('fecha_bf')->format('d-m-Y'),
-              "4" => $v->getCliente()->getName(),
-              "5" => $v->getLocal()->getNombre(),
-              "6" => $v->getValorNeto(),
-              "7" => $v->getIVA(),
-              "8" => $v->getValorTotal(),
-              "9" => '<a href="'.$ver.'"><img src="images/tools/icons/event_icons/ico-story.png" border="0"></a>',
-              "10" => '<a href="'.$mod.'"><img src="images/tools/icons/event_icons/ico-edit.png" border="0"></a></a>',
+            $aaData = array();
+            $list = $pager->getResults();
+            foreach ($list as $v)
+            {
+                $ver = $this->getController()->genUrl('ordenventa/show?id='.$v->getId());
+                $mod = $this->getController()->genUrl('ordenventa/edit?id='.$v->getId());
+
+                $aaData[] = array(
+                  "0" => $v->getNBf(),
+                  "1" => '<a href="'.$ver.'">'.$v->getNumero().'</a>',
+                  "2" => $v->getAccion(),
+                  "3" => $v->getDateTimeObject('fecha_bf')->format('d-m-Y'),
+                  "4" => $v->getCliente()->getName(),
+                  "5" => $v->getLocal()->getNombre(),
+                  "6" => $v->getValorNeto(),
+                  "7" => $v->getIVA(),
+                  "8" => $v->getValorTotal(),
+                  "9" => '<a href="'.$ver.'"><img src="images/tools/icons/event_icons/ico-story.png" border="0"></a>',
+                  "10" => '<a href="'.$mod.'"><img src="images/tools/icons/event_icons/ico-edit.png" border="0"></a></a>',
+                );
+            }
+
+            $output = array(
+                "iTotalRecords" => count($pager),
+                "iTotalDisplayRecords" => count($pager),
+                "aaData" => $aaData,
+                "sEcho" => $request->getParameter('sEcho'),
             );
-          }
-
-          $output = array(
-            "iTotalRecords" => count($pager),
-            "iTotalDisplayRecords" => $request->getParameter('iDisplayLength'),
-            "aaData" => $aaData,
-          );
 
           return $this->renderText(json_encode($output));
        }

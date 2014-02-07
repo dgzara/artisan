@@ -252,7 +252,7 @@ class loteActions extends sfActions
       if ($request->isXmlHttpRequest())
       {        
         $q = Doctrine_Query::create()
-             ->from('Lote')
+             ->from('Lote l')
              ->where('l.accion != "Cerrado"')
              ->andWhere('l.fecha_elaboracion > ?', $fecha);
 

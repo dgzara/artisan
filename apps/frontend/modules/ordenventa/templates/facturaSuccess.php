@@ -48,27 +48,30 @@ $(document).ready(function() {
 		"oLanguage": {
 			"sSearch": "Buscar en todas las columnas:"
 		},
-                "bStateSave": true,
-                "sPaginationType": "full_numbers",
-                "bProcessing": true,
+        "bStateSave": true,
+        "sPaginationType": "full_numbers",
+        "bProcessing": true,
         "bServerSide": true,
-                "sAjaxSource": "<?php echo url_for('ordenventa/factura') ?>",
-                "aoColumnDefs": [
-                    { "sClass": "right", "aTargets": [ 3 ], "sType": "uk_date" },
-                    { "sClass": "right", "aTargets": [ 5 ], "sType": "currency" },
-                    { "sClass": "right", "aTargets": [ 6 ], "sType": "currency" },
-                    { "sClass": "right", "aTargets": [ 7 ], "sType": "currency" }
-                ],
-                "fnInitComplete": function() {
-			/* Add a select menu for each TH element in the table footer */
-                        $("tfoot th").each( function ( i ) {
-                                if(i != 0 && i != 8 && i != 9){
-                                    this.innerHTML = fnCreateSelect( oTable.fnGetColumnData(i) );
-                                    $('select', this).change( function () {
-                                            oTable.fnFilter( $(this).val(), i );
-                                    } );
-                                }
-                        } );
+        "sAjaxSource": "<?php echo url_for('ordenventa/factura') ?>",
+        "aoColumnDefs": [
+            { "sClass": "right", "aTargets": [ 3 ], "sType": "uk_date" },
+            { "sClass": "right", "aTargets": [ 5 ], "sType": "currency" },
+            { "sClass": "right", "aTargets": [ 6 ], "sType": "currency" },
+            { "sClass": "right", "aTargets": [ 7 ], "sType": "currency" }
+        ],
+        "fnServerParams": function ( aoData ) {
+        	aoData.push( { "iSortCol_0": 1, "iSortingCols": 1} );
+        },
+        "fnInitComplete": function() {
+	/* Add a select menu for each TH element in the table footer */
+                $("tfoot th").each( function ( i ) {
+                        if(i != 0 && i != 8 && i != 9){
+                            this.innerHTML = fnCreateSelect( oTable.fnGetColumnData(i) );
+                            $('select', this).change( function () {
+                                    oTable.fnFilter( $(this).val(), i );
+                            } );
+                        }
+                } );
 		}
 	} );
 } );

@@ -1548,20 +1548,19 @@ EOF
             $q->orderBy('proveedor_id '.$asc_desc);
             break;
           case 3:
-            $q->from('OrdenCompra o, o.OrdenCompraInsumo oc, o.Insumo i')
+            $q->from('OrdenCompra o, o.Insumo i')
               ->orderBy('i.nombre '.$asc_desc);
             break;
           case 4:
-            $q->select('o, sum(oc.neto) as neto')
-              ->from('OrdenCompra o, o.OrdenCompraInsumo oc')
-              ->orderBy('neto '.$asc_desc);
+            //$q->select('o, sum(oc.neto) as neto')
+            //  ->from('OrdenCompra o, o.OrdenCompraInsumo oc')
+            //  ->orderBy('neto '.$asc_desc);
             break;
         }
 
         $pager = new sfDoctrinePager('OrdenCompra', $request->getParameter('iDisplayLength'));
         $pager->setQuery($q);
         $req_page = ((int)$request->getParameter('iDisplayStart') / (int)$request->getParameter('iDisplayLength')) + 1;
-        //$pager->setPage($request->getParameter('page', 1));
         $pager->setPage($req_page);
         $pager->init();
 

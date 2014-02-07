@@ -88,7 +88,7 @@ $(document).ready(function() {
             { "aTargets": [ 2 ], "sType": "uk_date" }
         ],
         "fnServerParams": function ( aoData ) {
-          aoData.push( { "iSortCol_0": 1, "iSortingCols": 1} );
+          aoData.push( { "iSortCol_0": 2, "iSortingCols": 1} );
         },
         "fnDrawCallback": function() {
             $('a.jt').cluetip({
