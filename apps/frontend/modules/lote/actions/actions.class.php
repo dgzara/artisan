@@ -251,15 +251,15 @@ class loteActions extends sfActions
 
   }
 
-  public function executeCierreGetData(sfWebRequest $request)
+  public function executeCierre_get_data(sfWebRequest $request)
   {
       $fecha= new DateTime("23-06-2011");
       if ($request->isXmlHttpRequest())
       {        
         $q = Doctrine_Query::create()
-             ->from('Lote l')
-             ->where('l.accion != "Cerrado"')
-             ->andWhere('l.fecha_elaboracion > ?', $fecha);
+             ->from('Lote')
+             ->where('accion != "Cerrado"')
+             ->andWhere('fecha_elaboracion > ?', $fecha);
 
         $asc_desc = $request->getParameter('sSortDir_0');
         $col = $request->getParameter('iSortCol_0');
