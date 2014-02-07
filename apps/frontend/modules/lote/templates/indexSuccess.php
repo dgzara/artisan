@@ -137,32 +137,6 @@ $.fn.dataTableExt.afnFiltering.push(
 	}
 );
 
-// $(document).ready(function() {
-//  /* Initialise datatables */
-//         var oTable = $('#example').dataTable( {
-//      "oLanguage": {
-//          "sSearch": "Buscar en todas las columnas:"
-//      },
-//      "bProcessing": true,
-//      "bServerSide": true,
-//      "sPaginationType": "full_numbers",
-//      "sAjaxSource": "<?php echo url_for('lote/get_data') ?>",
-//      "fnDrawCallback": function() {
-//             $('a.jt').cluetip({
-//                 cluetipClass: 'jtip',
-//                 arrows: true,
-//                 dropShadow: false,
-//                 hoverIntent: false,
-//                 sticky: true,
-//                 mouseOutClose: true,
-//                 closePosition: 'title',
-//                 closeText: '<img src="..../images/cross.png" alt="close" />'
-//             });
-//         },       
-//      "fnServerData": fnDataTablesPipeline      
-//  } );
-
-
 $(document).ready(function() {
 	/* Initialise datatables */
         var oTable = $('#example').dataTable( {
@@ -177,6 +151,9 @@ $(document).ready(function() {
         "aoColumnDefs": [
             { "aTargets": [ 1 ], "sType": "uk_date" }
         ],
+        "fnServerParams": function ( aoData ) {
+          aoData.push( { "iSortCol_0": 1, "iSortingCols": 1} );
+        },
         "fnInitComplete": function() {
 			/* Add a select menu for each TH element in the table footer */
             $("tfoot th").each( function ( i ) {
