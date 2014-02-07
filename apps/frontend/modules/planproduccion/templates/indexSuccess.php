@@ -80,34 +80,37 @@ $(document).ready(function() {
 		"oLanguage": {
 			"sSearch": "Buscar en todas las columnas:"
 		},
-                "bStateSave": true,
-                "sPaginationType": "full_numbers",
-                "bProcessing": true,
+        "bStateSave": true,
+        "sPaginationType": "full_numbers",
+        "bProcessing": true,
         "bServerSide": true,
-                "sAjaxSource": "<?php echo url_for('planproduccion/index') ?>",
-                 "fnDrawCallback": function() {
-            		$('a.jt').cluetip({
-                	cluetipClass: 'jtip',
-                	arrows: true,
-                	dropShadow: false,
-                	hoverIntent: false,
-                	sticky: true,
-                	mouseOutClose: true,
-                	closePosition: 'title',
-                	closeText: '<img src="..../images/cross.png" alt="close" />'
-            		});
-        		}, 
-                "fnInitComplete": function() {
-				/* Add a select menu for each TH element in the table footer */
-                        $("tfoot th").each( function ( i ) {
-                                if(i == 1 ){
-                                    this.innerHTML = fnCreateSelect( oTable.fnGetColumnData(i) );
-                                    $('select', this).change( function () {
-                                            oTable.fnFilter( $(this).val(), i );
-                                    } );
-                                }
-                        } );
-				}
+        "sAjaxSource": "<?php echo url_for('planproduccion/index') ?>",
+        "aoColumnDefs": [
+            { "aTargets": [ 1 ], "sType": "uk_date" }
+        ],
+        "fnDrawCallback": function() {
+    		$('a.jt').cluetip({
+        	cluetipClass: 'jtip',
+        	arrows: true,
+        	dropShadow: false,
+        	hoverIntent: false,
+        	sticky: true,
+        	mouseOutClose: true,
+        	closePosition: 'title',
+        	closeText: '<img src="..../images/cross.png" alt="close" />'
+    		});
+		},
+        "fnInitComplete": function() {
+		/* Add a select menu for each TH element in the table footer */
+                $("tfoot th").each( function ( i ) {
+                        if(i == 1 ){
+                            this.innerHTML = fnCreateSelect( oTable.fnGetColumnData(i) );
+                            $('select', this).change( function () {
+                                    oTable.fnFilter( $(this).val(), i );
+                            } );
+                        }
+                } );
+		}
 	} );
 
 	/* Add event listeners to the two range filtering inputs */

@@ -12,14 +12,39 @@ class planproduccionActions extends sfActions
 {
   public function executeIndex(sfWebRequest $request)
   {
+    $formato = new sfNumberFormat('es_CL');
+
     if ($request->isXmlHttpRequest())
     {
       $q = Doctrine_Query::create()
            ->from('PlanProduccion');
+        
+      $asc_desc = $request->getParameter('sSortDir_0');
+      $col = $request->getParameter('iSortCol_0');
+
+      switch($col)
+      {
+        case 0:
+          $q->orderBy('id '.$asc_desc);
+          break;
+        case 1:
+          $q->orderBy('fecha '.$asc_desc);
+          break;
+        case 2:
+          $q->orderBy('comentarios '.$asc_desc);
+          break;
+        case 3:
+          $q->from('PlanProduccion a, a.PlanProduccionProducto b, b.Producto c')
+            ->orderBy('c.nombre '.$asc_desc);
+          break;
+      }
 
       $pager = new sfDoctrinePager('PlanProduccion', $request->getParameter('iDisplayLength'));
       $pager->setQuery($q);
-      $pager->setPage($request->getParameter('page', 1));
+      //Paginación por partes
+      $req_page = ((int)$request->getParameter('iDisplayStart') / (int)$request->getParameter('iDisplayLength')) + 1;
+      //$pager->setPage($request->getParameter('page', 1));
+      $pager->setPage($req_page);
       $pager->init();
 
       $aaData = array();
@@ -48,14 +73,14 @@ class planproduccionActions extends sfActions
         );
       }
 	  
-	  
       $output = array(
-        "iTotalRecords" => count($pager),
-        "iTotalDisplayRecords" => $request->getParameter('iDisplayLength'),
-        "aaData" => $aaData,
-      );
+          "iTotalRecords" => count($pager),
+          "iTotalDisplayRecords" => count($pager),
+          "aaData" => $aaData,
+          "sEcho" => $request->getParameter('sEcho'),
+        );
 
-      return $this->renderText(json_encode($output));
+        return $this->renderText(json_encode($output));
     }
   }
 
