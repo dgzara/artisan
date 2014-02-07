@@ -246,6 +246,11 @@ class loteActions extends sfActions
 
   }
 
+  public function executeCierreLote(sfWebRequest $request)
+  {
+
+  }
+
   public function executeCierreGetData(sfWebRequest $request)
   {
       $fecha= new DateTime("23-06-2011");
