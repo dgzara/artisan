@@ -1260,6 +1260,7 @@ public function executeDelete(sfWebRequest $request)
 
     public function executeFactura(sfWebRequest $request)
     {
+        $formato = new sfNumberFormat('es_CL');
         if ($request->isXmlHttpRequest())
         {
             $q = Doctrine_Query::create();
