@@ -260,7 +260,7 @@ EOF
     );
 
         // Adjuntamos el PDF
-        $data = $this->getPDF();
+        $data = $this->getPDF($orden_compra);
         $attachment = Swift_Attachment::newInstance($data, 'artisan_oc_'.$orden_compra->getId().'.pdf', 'application/pdf');
         $message->attach($attachment);
 
@@ -1424,7 +1424,7 @@ EOF
     }
   }
 
-  protected function getPDF()
+  protected function getPDF($orden_compra)
   {
       $config = sfTCPDFPluginConfigHandler::loadConfig();
       sfTCPDFPluginConfigHandler::includeLangFile($this->getUser()->getCulture());
@@ -1461,14 +1461,8 @@ EOF
       $pdf->AliasNbPages();
       $pdf->AddPage();
 
-      // set barcode
-      //$pdf->SetBarcode("FIRMA");
-
-      $orden_compra_id = $request->getParameter('orde_compra_id');
-      $orden_compra = Doctrine_Core::getTable('OrdenCompra')->find(array($request->getParameter('orden_compra_id')));
-
+      
       sfContext::getInstance()->getConfiguration()->loadHelpers('Partial');
-
 
       $htmlcontent  = get_partial('ordencompra/pdf',array('orden_compra'=>$orden_compra));
       $pdf->writeHTML($htmlcontent , true, 0);
