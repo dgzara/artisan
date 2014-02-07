@@ -246,7 +246,7 @@ class loteActions extends sfActions
 
   }
 
-  public function executeCierrelote(sfWebRequest $request)
+  public function executeCierreGetData(sfWebRequest $request)
   {
       $fecha= new DateTime("23-06-2011");
       if ($request->isXmlHttpRequest())

@@ -56,8 +56,8 @@ $(document).ready(function() {
         "aoColumnDefs": [
             { "sClass": "right", "aTargets": [ 3 ], "sType": "uk_date" },
             { "sClass": "right", "aTargets": [ 6 ], "sType": "currency" },
-            { "sClass": "right", "aTargets": [ 7 ], "sType": "currency" },
-            { "sClass": "right", "aTargets": [ 8 ], "sType": "currency" }
+            //{ "sClass": "right", "aTargets": [ 7 ], "sType": "currency" },
+            //{ "sClass": "right", "aTargets": [ 8 ], "sType": "currency" },
         ],
         "fnServerParams": function ( aoData ) {
         	aoData.push( { "iSortCol_0": 3, "iSortingCols": 1} );
