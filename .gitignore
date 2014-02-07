@@ -13,6 +13,7 @@ lib/model/doctrine/*Plugin/base/Base*
 lib/model/om/*
 lib/model/map/*
 web/*Plugin/*
-plugins/sfTCPDFPlugin/lib/tcpdf/cache/
+plugins/sfTCPDFPlugin/lib/tcpdf/cache/*
+plugins/sfTCPDFPlugin/lib/tcpdf/cache
 .svn
 .DS_Store

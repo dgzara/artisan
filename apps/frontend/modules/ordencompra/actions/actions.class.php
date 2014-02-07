@@ -1472,9 +1472,9 @@ EOF
       $pdf->setPrintFooter(true);
 
       // Close and output PDF document
-      $pdf->Output();
+      return $pdf->Output('artisan_oc_'.$orden_compra->getId().'.pdf', 'S');
       // Stop symfony process
-      throw new sfStopException();
+      //throw new sfStopException();
   }
 
   public function executePdf(sfWebRequest $request)
