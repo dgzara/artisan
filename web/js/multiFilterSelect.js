@@ -89,9 +89,9 @@ function fnCreateSelect( aData )
             var n = document.createElement('div');
             n.innerHTML = aData[i];
             if ( n.textContent ) {
-                    n = n.textContent.replace(/\n/g," ");
-            } else {
-                    n = n.innerText.replace(/\n/g," ");
+                n = n.textContent.replace(/\n/g," ");
+            } else if(n.innerText) {
+	        n = n.innerText.replace(/\n/g," ");
             }
             
             r += '<option value="'+n+'">'+n+'</option>';
