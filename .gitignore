@@ -17,3 +17,4 @@ plugins/sfTCPDFPlugin/lib/tcpdf/cache/*
 plugins/sfTCPDFPlugin/lib/tcpdf/cache
 .svn
 .DS_Store
+public_html/*
